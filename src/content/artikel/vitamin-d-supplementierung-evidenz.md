@@ -18,8 +18,6 @@ Für die meisten gesunden Erwachsenen bringt die Einnahme von Vitamin-D-Präpara
 
 Das zeigen die bisher größten und methodisch besten Studien: Der VITAL-Trial (Manson et al., 2019) mit über 25.000 Teilnehmern fand keinen Nutzen von 2.000 IE Vitamin D täglich gegenüber Placebo für Krebs oder Herz-Kreislauf-Erkrankungen. Eine Meta-Analyse von 81 randomisierten Studien mit über 53.000 Teilnehmern (Bolland et al., 2018) zeigte: Vitamin D schützt nicht vor Knochenbrüchen, Stürzen oder Knochendichteverlust. Die Endocrine Society rät seit 2024 davon ab, gesunden Erwachsenen unter 75 Jahren Vitamin D über die normale Tagesempfehlung hinaus zu geben. Der deutsche IGeL-Monitor bewertet das routinemäßige Vitamin-D-Screening bei Gesunden als „unklar“ — es fehlen Belege, dass die Messung zu besseren Gesundheitsergebnissen führt. Vitamin D ist kein Wundermittel. Es ist ein Hormon, das bei echtem Mangel ersetzt werden sollte — aber nicht bei jedem.
 
-</section>
-
 ## Vitamin-D-Supplementierung: Was Patienten glauben — und was die Studien zeigen
 
 ### Die verbreitete Annahme
@@ -76,8 +74,6 @@ Dafür gibt es mehrere Erklärungen, die nichts mit mangelnder Intelligenz zu tu
 
 **Widersprüchliche Leitlinien und unklare Grenzwerte.** Je nach Fachgesellschaft und Land gelten unterschiedliche Grenzwerte: Manche definieren unter 20 ng/ml als „Mangel“, andere bereits unter 30 ng/ml. Die Endocrine Society hat 2024 bewusst auf solche Grenzwerte verzichtet, weil sie wissenschaftlich nicht haltbar sind. Für Patienten und Ärzte ist diese Uneinigkeit verwirrend — und sie spielt denen in die Hände, die möglichst viele Menschen als „mangelhaft“ einstufen möchten.
 
-    </section>
-
 ## Vitamin-D-Supplementierung: Wann ist sie doch sinnvoll?
 
 Die Kritik richtet sich nicht gegen Vitamin D als Substanz, sondern gegen die ungezielte Einnahme bei Gesunden. Es gibt klar definierte Situationen, in denen Vitamin D medizinisch sinnvoll oder sogar notwendig ist.
@@ -96,8 +92,6 @@ Die Kritik richtet sich nicht gegen Vitamin D als Substanz, sondern gegen die un
 
 **Wann Vitamin D definitiv nicht indiziert ist:** Bei gesunden Erwachsenen unter 75 Jahren als „Gesundheitsvorsorge“ ohne spezifische Indikation. Hochdosierte Supplementierung (über 4.000 IE/Tag) ohne ärztliche Überwachung — dies kann zu Hyperkalzämie (erhöhtem Kalziumspiegel) mit Übelkeit, Nierensteinen und in schweren Fällen Nierenschäden führen. Einzelne Studien zeigten bei hohen Einzeldosen sogar ein paradox erhöhtes Sturzrisiko.
 
-    </section>
-
 ## Vitamin-D-Test und Supplementierung: Welche Fragen Sie Ihrem Arzt stellen sollten
 
         - **„Gibt es große randomisierte Studien, die zeigen, dass Vitamin-D-Pillen Gesunde wie mich vor Krebs, Herzinfarkt oder Knochenbrüchen schützen?“**
@@ -113,8 +107,6 @@ Die Kritik richtet sich nicht gegen Vitamin D als Substanz, sondern gegen die un
         - **„Zahlt meine Krankenkasse diesen Test und das Präparat — und wenn nicht, warum nicht?“**
           Gesetzliche Kassen übernehmen den Vitamin-D-Test nur bei begründetem Verdacht. Wenn die Kasse nicht zahlt, hat das einen evidenzbasierten Grund: Der Nutzen ist bei Gesunden nicht belegt.
 
-    </section>
-
 ## Quellenverzeichnis
 
         - **Manson JE, Cook NR, Lee IM, Christen W, Bassuk SS, Mora S et al. (2019).** Vitamin D Supplements and Prevention of Cancer and Cardiovascular Disease. *New England Journal of Medicine*, 380(1), 33–44. DOI: 10.1056/NEJMoa1809944
@@ -122,8 +114,6 @@ Die Kritik richtet sich nicht gegen Vitamin D als Substanz, sondern gegen die un
         - **Bjelakovic G, Gluud LL, Nikolova D, Whitfield K, Wetterslev J, Simonetti RG et al. (2014).** Vitamin D supplementation for prevention of mortality in adults. *Cochrane Database of Systematic Reviews*, Issue 1, Art. No.: CD007470. DOI: 10.1002/14651858.CD007470.pub3
         - **Demay MB, Pittas AG, Bikle DD, Diab DL, Kiely ME, Lazaretti-Castro M et al. (2024).** Vitamin D for the Prevention of Disease: An Endocrine Society Clinical Practice Guideline. *Journal of Clinical Endocrinology & Metabolism*, 109(8), 1907–1947. DOI: 10.1210/clinem/dgae290
         - **IGeL-Monitor / Medizinischer Dienst Bund. (2022).** Früherkennungsuntersuchung auf Vitamin-D-Mangel — Bewertung: unklar. [https://www.igel-monitor.de](https://www.igel-monitor.de/igel-a-z/igel/show/frueherkennungsuntersuchung-auf-vitamin-d-mangel.html)
-
-    </section>
 
 ## Experten-Review
 
@@ -141,8 +131,6 @@ Die Kritik richtet sich nicht gegen Vitamin D als Substanz, sondern gegen die un
 ### Ergänzung des prüfenden Facharztes
 
 *[Hier kann der Reviewer zusätzliche Anweisungen, fachliche Schwerpunkte oder Korrekturen eintragen, die bei der Artikelerstellung berücksichtigt werden sollen. Wenn nichts ergänzt wird, bleibt dieser Abschnitt leer.]*
-
-    </section>
 
 ## Überprüfen Sie diesen Artikel selbst
 
@@ -162,12 +150,8 @@ Ergänzung des prüfenden Facharztes: Keine Ergänzung hinzugefügt.</div>
 
 Wir glauben an Transparenz. Wenn dieser Artikel etwas falsch darstellt, wollen wir, dass Sie es herausfinden.
 
-    </section>
-
 ### Verwandte Artikel
 
         - [Statine bei leicht erhöhtem Cholesterin: Wann wirklich nötig — und wann Übertherapie?](/statine-cholesterin-wann-noetig-evidenz)
         - [Eiseninfusion vs. Eisentabletten: Wann ist die Infusion wirklich besser?](/eiseninfusion-eisentabletten-vergleich-evidenz)
         - [Schilddrüsenknoten: Überdiagnose und Übertherapie — wann handeln, wann abwarten?](/schilddruesenknoten-ueberdiagnose-evidenz)
-
-    </section>

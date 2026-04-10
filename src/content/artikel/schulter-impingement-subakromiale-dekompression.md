@@ -20,8 +20,6 @@ Eine Cochrane-Analyse von 2019 bestätigt: Es gibt keine klinisch relevanten Vor
 
 Faustregel: Impingement ohne Sehnenriss → mindestens 3–6 Monate konsequente Physiotherapie. OP erst erwägen, wenn konservative Therapie wirklich ausgeschöpft ist — und auch dann kritisch hinterfragen.
 
-</section>
-
 ## Was Patienten glauben — und was die Studien zeigen
 
 ### Die verbreitete Überzeugung
@@ -90,8 +88,6 @@ Das sogenannte subakromiale Impingement-Syndrom (Einklemmung von Sehnen und Schl
                     - **Finanzielle Anreize:** Die arthroskopische Dekompression ist ein lukrativer Eingriff. Das ist kein Vorwurf an einzelne Chirurgen, aber ein systemischer Faktor, der bei der Bewertung der Evidenz berücksichtigt werden muss.
                     - **Ausbildungstradition:** Generationen von Orthopäden lernten die Dekompression als Standardverfahren. Die Placebo-kontrollierten Daten liegen erst seit 2018 vor. Leitlinien passen sich langsam an.
 
-        </section>
-
 ## Wann ist eine Schulter-OP doch sinnvoll?
 
 Die Evidenz gegen die subakromiale Dekompression bedeutet nicht, dass Schulter-OPs generell sinnlos sind. Es gibt klare Situationen, in denen ein Eingriff angemessen sein kann. Entscheidend ist die genaue Diagnose.
@@ -105,8 +101,6 @@ Die Evidenz gegen die subakromiale Dekompression bedeutet nicht, dass Schulter-O
 
                 **Wichtig:** Die Diagnose „Impingement“ ist oft unscharf. Bildgebende Verfahren (MRT, Ultraschall) zeigen bei über 50-Jährigen häufig „Auffälligkeiten“ an Sehnen und Schleimbeutel — auch bei Menschen ohne jegliche Beschwerden. Ein MRT-Befund allein ist keine Indikation für eine Operation. Die AWMF-Leitlinie betont die Notwendigkeit einer differenzierten Diagnostik und Klassifikation.
 
-        </section>
-
 ## Was Sie Ihren Arzt fragen sollten
 
 #### Konkrete Fragen für Ihr Arztgespräch:
@@ -119,8 +113,6 @@ Die Evidenz gegen die subakromiale Dekompression bedeutet nicht, dass Schulter-O
                     - **„Gibt es einen finanziellen Anreiz für diese Empfehlung?“** — Eine direkte, aber berechtigte Frage. In Systemen mit Einzelleistungsvergütung verdient der Chirurg an der OP. Das heißt nicht, dass jede Empfehlung finanziell motiviert ist — aber Transparenz ist wichtig.
                     - **„Darf ich eine Zweitmeinung einholen, bevor ich mich entscheide?“** — Jeder Patient hat das Recht auf eine unabhängige Zweitmeinung. Seriöse Ärzte unterstützen dies.
 
-        </section>
-
 ### Quellenverzeichnis
 
                     - Beard, D. J. et al. (2018). Arthroscopic subacromial decompression for subacromial shoulder pain (CSAW): a multicentre, pragmatic, parallel group, placebo-controlled, three-group, randomised surgical trial. *The Lancet*, 391(10118), 329–338. [DOI: 10.1016/S0140-6736(17)32457-1](https://doi.org/10.1016/S0140-6736(17)32457-1)
@@ -131,8 +123,6 @@ Die Evidenz gegen die subakromiale Dekompression bedeutet nicht, dass Schulter-O
                     - AWMF (2021). S2e-Leitlinie Subacromiales Impingement. AWMF-Register Nr. 033-056. [AWMF-Register](https://register.awmf.org/de/leitlinien/detail/033-056)
                     - Kanto, K. et al. (2025). Arthroscopic subacromial decompression versus placebo surgery for subacromial pain syndrome: 10 year follow-up of the FIMPACT randomised, placebo surgery controlled trial. *BMJ*, 391, bmj-2025-086201. [DOI: 10.1136/bmj-2025-086201](https://doi.org/10.1136/bmj-2025-086201)
 
-        </section>
-
 ### Experten-Review
 
                         Dr. Georg Bézard
@@ -142,8 +132,6 @@ Die Evidenz gegen die subakromiale Dekompression bedeutet nicht, dass Schulter-O
 Oberarzt für Orthopädie & Traumatologie sowie Facharzt für Unfallchirurgie in Wien. Spezialisiert auf minimalinvasive Schulter-, Hand- und Kniechirurgie. Privatpraxis für evidenzbasierte Orthopädie in Wien-Döbling und Tulln.
 
 [→ www.drbezard.com](https://www.drbezard.com)
-
-        </section>
 
 ### Überprüfen Sie diesen Artikel selbst
 
@@ -166,8 +154,6 @@ Prüfe den folgenden Patientenartikel zum Thema **„Schulter-Impingement: Subak
 Gib eine strukturierte Bewertung mit konkreten Korrekturvorschlägen, falls nötig.
 
 Wir glauben an Transparenz. Wenn dieser Artikel etwas falsch darstellt, wollen wir, dass Sie es herausfinden.
-
-        </section>
 
 ### Verwandte Artikel
 

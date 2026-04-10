@@ -91,7 +91,7 @@ Dafür gibt es mehrere Erklärungen, und keine davon hat damit zu tun, dass Pati
 
 </p></div>
 
-: Wann ist sie doch sinnvoll?
+## Hyaluronsäure bei Kniearthrose: Wann ist sie doch sinnvoll?
 
 Die Evidenz zeigt, dass Hyaluronsäure für die Routinebehandlung nicht empfehlenswert ist. Aber „Routine“ heißt nicht „nie“. Es gibt ein schmales Fenster, in dem die Behandlung vertretbar sein kann — wenn alle der folgenden Bedingungen zutreffen:
 

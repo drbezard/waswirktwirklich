@@ -18,8 +18,6 @@ Statine gehören zu den am besten untersuchten Medikamenten der Welt — und sie
 
 Die größte verfügbare Auswertung — eine Meta-Analyse mit Daten von über 174.000 Patientinnen und Patienten aus 27 randomisierten Studien — zeigt: Pro 1 mmol/L LDL-Senkung (das sogenannte „schlechte“ Cholesterin) sinkt das Risiko für schwere Herz-Kreislauf-Ereignisse um etwa 20 %. Klingt beeindruckend — aber die absolute Zahl der verhinderten Ereignisse hängt vom Ausgangspunkt ab. Bei Menschen mit niedrigem Risiko bedeutet das: Von 1.000 Behandelten über fünf Jahre profitieren etwa 11 messbar, während 989 das Medikament genommen hätten, ohne einen konkreten Nutzen zu erleben. Gleichzeitig sind schwere Nebenwirkungen selten, und die häufig berichteten Muskelschmerzen gehen überwiegend auf den Nocebo-Effekt (die Erwartung von Nebenwirkungen verursacht die Beschwerden) zurück. Die entscheidende Frage ist also nicht „Ist mein Cholesterin zu hoch?“, sondern „Wie hoch ist mein Gesamtrisiko — und rechtfertigt es eine lebenslange Medikamenteneinnahme?“
 
-</section>
-
 ## Statine bei leicht erhöhtem Cholesterin: Was Patienten glauben — und was die Studien zeigen
 
 ### Die verbreitete Annahme
@@ -74,9 +72,7 @@ Dafür gibt es mehrere Erklärungen, die nichts damit zu tun haben, dass Patient
 
 **Finanzielle Strukturen begünstigen Medikation.** Statine sind heute generisch verfügbar und kosten wenige Euro pro Monat — der finanzielle Anreiz liegt nicht beim einzelnen Medikament. Aber das Gesundheitssystem vergütet Medikamentenverordnungen besser als zeitintensive Lebensstilberatung. Für eine 30-minütige Beratung zu Ernährung und Bewegung gibt es im deutschen Abrechnungssystem kaum eine adäquate Vergütung. Für eine Statinverordnung reicht ein Klick.
 
-    </section>
-
-: Wann sind sie doch sinnvoll?
+## Statine bei erhöhtem Cholesterin: Wann sind sie doch sinnvoll?
 
 Die Evidenz zeigt nicht, dass Statine unnütz sind — sie zeigt, dass der Nutzen vom individuellen Risiko abhängt. In folgenden Situationen ist eine Statintherapie klar indiziert oder zumindest gut begründbar:
 
@@ -89,8 +85,6 @@ Die Evidenz zeigt nicht, dass Statine unnütz sind — sie zeigt, dass der Nutze
 **Wenn Sie Diabetes mellitus Typ 2 haben und über 40 Jahre alt sind:** Diabetes ist ein eigenständiger starker Risikofaktor. Die meisten Leitlinien empfehlen bei Diabetes eine Statintherapie auch ohne weitere Risikofaktoren, da das kardiovaskuläre Risiko bei Diabetikern systematisch unterschätzt wird.
 
 **Wann eine Statintherapie in der Primärprävention dagegen fragwürdig ist:** Bei einem Gesamtrisiko unter 5 % über 10 Jahre und ohne die oben genannten Bedingungen — also beispielsweise bei einer 45-jährigen, nicht rauchenden Frau mit einem LDL von 165 mg/dl, normalem Blutdruck und ohne Diabetes — ist der absolute Nutzen so gering, dass Lebensstilmaßnahmen (Ernährung, Bewegung, Rauchstopp) die sinnvollere und nebenwirkungsfreie Strategie darstellen. Die DEGAM-Leitlinie betont: In dieser Konstellation sollte eine partizipative Entscheidungsfindung (Shared Decision Making) stattfinden — der Patient entscheidet mit, nachdem er den absoluten Nutzen und die möglichen Nachteile verstanden hat.
-
-    </section>
 
 ## Statin-Verordnung: Welche Fragen Sie Ihrem Arzt stellen sollten
 
@@ -107,8 +101,6 @@ Die Evidenz zeigt nicht, dass Statine unnütz sind — sie zeigt, dass der Nutze
         - **„Können wir die Entscheidung gemeinsam treffen — auf Basis meines konkreten Risikos?“**
           Partizipative Entscheidungsfindung (Shared Decision Making) ist in den Leitlinien ausdrücklich vorgesehen. Sie haben das Recht, den absoluten Nutzen und die Risiken zu kennen, bevor Sie sich für oder gegen eine lebenslange Therapie entscheiden.
 
-    </section>
-
 ## Quellenverzeichnis
 
         - **Cholesterol Treatment Trialists‘ (CTT) Collaborators, Mihaylova B, Emberson J, Blackwell L, Keech A, Simes J, Barnes EH, Voysey M, Gray A, Collins R, Baigent C. (2012).** The effects of lowering LDL cholesterol with statin therapy in people at low risk of vascular disease: meta-analysis of individual data from 27 randomised trials. *The Lancet*, 380(9841), 581–590. DOI: 10.1016/S0140-6736(12)60367-5
@@ -117,8 +109,6 @@ Die Evidenz zeigt nicht, dass Statine unnütz sind — sie zeigt, dass der Nutze
         - **US Preventive Services Task Force. (2022).** Statin Use for the Primary Prevention of Cardiovascular Disease in Adults: US Preventive Services Task Force Recommendation Statement. *JAMA*, 328(8), 746–753. DOI: 10.1001/jama.2022.13044
         - **Mach F, Baigent C, Catapano AL, et al. / ESC/EAS. (2020).** 2019 ESC/EAS Guidelines for the management of dyslipidaemias. *European Heart Journal*, 41(1), 111–188. DOI: 10.1093/eurheartj/ehz455. Focused Update 2025: [https://www.escardio.org](https://www.escardio.org/guidelines/clinical-practice-guidelines/all-esc-practice-guidelines/dyslipidaemias/)
         - **DEGAM / AWMF. (2024).** S3-Leitlinie Hausärztliche Risikoberatung zur kardiovaskulären Prävention. AWMF-Registernummer 053-024, Version 2.3. [https://register.awmf.org](https://register.awmf.org/de/leitlinien/detail/053-024)
-
-    </section>
 
 ## Experten-Review
 
@@ -136,8 +126,6 @@ Die Evidenz zeigt nicht, dass Statine unnütz sind — sie zeigt, dass der Nutze
 ### Ergänzung des prüfenden Facharztes
 
 *[Hier kann der Reviewer zusätzliche Anweisungen, fachliche Schwerpunkte oder Korrekturen eintragen, die bei der Artikelerstellung berücksichtigt werden sollen. Wenn nichts ergänzt wird, bleibt dieser Abschnitt leer.]*
-
-    </section>
 
 ## Überprüfen Sie diesen Artikel selbst
 
@@ -157,12 +145,8 @@ Ergänzung des prüfenden Facharztes: Keine Ergänzung hinzugefügt.</div>
 
 Wir glauben an Transparenz. Wenn dieser Artikel etwas falsch darstellt, wollen wir, dass Sie es herausfinden.
 
-    </section>
-
 ### Verwandte Artikel
 
         - [Cholesterin und Eier: Was die aktuelle Evidenz zur Ernährung bei Herzrisiko sagt](/cholesterin-ernaehrung-herzrisiko-evidenz)
         - [Blutdrucksenker: Wie tief soll der Blutdruck wirklich?](/blutdrucksenker-zielwert-sprint-evidenz)
         - [Aspirin zur Herzinfarkt-Vorbeugung: Nutzen vs. Blutungsrisiko](/aspirin-herzinfarkt-vorbeugung-evidenz)
-
-    </section>

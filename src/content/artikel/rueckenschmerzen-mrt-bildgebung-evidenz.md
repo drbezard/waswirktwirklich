@@ -18,9 +18,7 @@ Ein MRT bei unkomplizierten Rückenschmerzen verbessert weder Ihre Schmerzen noc
 
 Das klingt zunächst widersinnig. Aber die Evidenz ist eindeutig — zumindest für eine bestimmte, sehr häufige Gruppe: Patienten mit nicht-spezifischem Kreuzschmerz (Rückenschmerzen ohne Ausstrahlung ins Bein und ohne neurologische Ausfälle). Das betrifft etwa 85–90 % aller Rückenschmerzpatienten. Für diese Gruppe zeigen randomisierte Studien und Meta-Analysen mit über 1.800 Patienten, dass sofortige Bildgebung keinen Vorteil gegenüber einer Behandlung ohne MRT bringt. Gleichzeitig belegt eine systematische Übersicht mit über 3.100 beschwerdefreien Personen, dass degenerative Befunde wie Bandscheibenvorwölbungen oder -degenerationen bei fast jedem Menschen im MRT sichtbar sind — auch ohne jede Beschwerde. Diese Zufallsbefunde führen nachweislich zu unnötiger Angst, mehr Operationen, längerer Arbeitsunfähigkeit und höheren Kosten. Anders ist die Situation bei Rückenschmerzen mit Ausstrahlung ins Bein (Radikulopathie) und neurologischen Ausfällen — hier kann ein MRT nach erfolgloser konservativer Therapie oder bei progredienten Lähmungen sehr wohl sinnvoll sein. Die Nationale VersorgungsLeitlinie Kreuzschmerz (AWMF), das American College of Physicians (ACP) und das britische NICE differenzieren deshalb klar zwischen diesen beiden Gruppen.
 
-</section>
-
-: Was Patienten glauben — und was die Studien zeigen
+## Rückenschmerzen und MRT: Was Patienten glauben — und was die Studien zeigen
 
 ### Die verbreitete Annahme
 
@@ -88,8 +86,6 @@ Die Gründe sind menschlich verständlich — und zum Teil systemisch bedingt.
 
 **Die fehlende Unterscheidung zwischen Rückenschmerz und Beinschmerz.** Viele Patienten — und auch manche Ärzte — differenzieren nicht ausreichend zwischen einfachem Rückenschmerz und Rückenschmerz mit Beinausstrahlung und neurologischen Ausfällen. Für letztere Gruppe kann ein MRT nach erfolgloser konservativer Therapie durchaus sinnvoll sein, weil es dann eine therapeutische Konsequenz hat. Wenn diese Unterscheidung in der Beratung fehlt, entsteht der Eindruck, man müsse sich pauschal zwischen „MRT für alle“ und „MRT für niemanden“ entscheiden — was beides falsch wäre.
 
-    </section>
-
 ## Wann ist ein MRT bei Rückenschmerzen doch sinnvoll?
 
 Die Kritik gilt der routinemäßigen, ungezielten Bildgebung — nicht der Bildgebung an sich. Es gibt klare Situationen, in denen ein MRT notwendig und potenziell lebensrettend ist.
@@ -106,8 +102,6 @@ Die Kritik gilt der routinemäßigen, ungezielten Bildgebung — nicht der Bildg
 
 **Wann ein MRT definitiv nicht indiziert ist:** Bei unkomplizierten Rückenschmerzen in den ersten 4–6 Wochen ohne Red Flags. Zur „Beruhigung“ des Patienten — denn Studien zeigen, dass MRT-Befunde das Gegenteil bewirken und Angst verstärken können. Zur routinemäßigen Verlaufskontrolle bei bekannten degenerativen Veränderungen, die sich im Bild kaum verändern und keine therapeutische Konsequenz haben.
 
-    </section>
-
 ## MRT bei Rückenschmerzen: Welche Fragen Sie Ihrem Arzt stellen sollten
 
         - **„Welchen konkreten Verdacht haben Sie, der ein MRT jetzt schon rechtfertigt?“**
@@ -123,8 +117,6 @@ Die Kritik gilt der routinemäßigen, ungezielten Bildgebung — nicht der Bildg
         - **„Welche nicht-bildgebenden Maßnahmen kann ich in den nächsten Wochen ergreifen, bevor wir über ein MRT nachdenken?“**
           Strukturierte Bewegungstherapie, Physiotherapie und bei Bedarf zeitlich begrenzte Schmerzmedikation sind die evidenzbasierte Erstbehandlung. In den meisten Fällen bessern sich die Schmerzen damit deutlich.
 
-    </section>
-
 ## Quellenverzeichnis
 
         - **Brinjikji W, Luetmer PH, Comstock B, Bresnahan BW, Chen LE, Deyo RA, Halabi S, Turner JA, Avins AL, James K, Wald JT, Kallmes DF, Jarvik JG. (2015).** Systematic Literature Review of Imaging Features of Spinal Degeneration in Asymptomatic Populations. *American Journal of Neuroradiology (AJNR)*, 36(4), 811–816. DOI: 10.3174/ajnr.A4173
@@ -132,8 +124,6 @@ Die Kritik gilt der routinemäßigen, ungezielten Bildgebung — nicht der Bildg
         - **Jarvik JG, Hollingworth W, Martin B, Emerson SS, Gray DT, Overman S, Robinson D, Staiger T, Wessbecher F, Sullivan SD, Kreuter W, Deyo RA. (2003).** Rapid magnetic resonance imaging vs radiographs for patients with low back pain: a randomized controlled trial. *JAMA*, 289(21), 2810–2818. DOI: 10.1001/jama.289.21.2810
         - **Webster BS, Bauer AZ, Choi Y, Cifuentes M, Pransky GS. (2013).** Iatrogenic consequences of early magnetic resonance imaging in acute, work-related, disabling low back pain. *Spine*, 38(22), 1939–1946. DOI: 10.1097/BRS.0b013e3182a42eb6
         - **Bundesärztekammer, Kassenärztliche Bundesvereinigung, AWMF. (2017).** Nationale VersorgungsLeitlinie Nicht-spezifischer Kreuzschmerz, 2. Auflage. AWMF-Register Nr. nvl-007. [https://register.awmf.org/de/leitlinien/detail/nvl-007](https://register.awmf.org/de/leitlinien/detail/nvl-007)
-
-    </section>
 
 ## Experten-Review
 
@@ -151,8 +141,6 @@ Die Kritik gilt der routinemäßigen, ungezielten Bildgebung — nicht der Bildg
 ### Ergänzung des prüfenden Facharztes
 
 *[Hier kann der Reviewer zusätzliche Anweisungen, fachliche Schwerpunkte oder Korrekturen eintragen, die bei der Artikelerstellung berücksichtigt werden sollen. Wenn nichts ergänzt wird, bleibt dieser Abschnitt leer.]*
-
-    </section>
 
 ## Überprüfen Sie diesen Artikel selbst
 
@@ -172,12 +160,8 @@ Ergänzung des prüfenden Facharztes: Keine Ergänzung hinzugefügt.</div>
 
 Wir glauben an Transparenz. Wenn dieser Artikel etwas falsch darstellt, wollen wir, dass Sie es herausfinden.
 
-    </section>
-
 ### Verwandte Artikel
 
         - [Bandscheibenvorfall: OP vs. konservative Therapie — wann ist was besser?](/bandscheibenvorfall-op-konservativ-evidenz)
         - [Meniskusriss: OP vs. Physiotherapie — wann ist die Arthroskopie wirklich nötig?](/meniskusriss-op-physiotherapie-evidenz)
         - [Schulter-Impingement: Subakromiale Dekompression — sinnvoll oder Schein-OP?](/schulter-impingement-dekompression-evidenz)
-
-    </section>

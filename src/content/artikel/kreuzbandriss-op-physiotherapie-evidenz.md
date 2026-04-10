@@ -18,9 +18,7 @@ Ein Kreuzbandriss bedeutet nicht automatisch, dass Sie operiert werden müssen. 
 
 Das zeigen zwei große randomisierte kontrollierte Studien (RCTs — das höchste Evidenzlevel in der Medizin): Die KANON-Studie (Frobell et al., BMJ 2013) mit 121 Patienten fand nach fünf Jahren keinen Unterschied in der Kniefunktion zwischen sofortiger OP und zunächst konservativer Therapie — etwa die Hälfte der Nicht-Operierten kam dauerhaft ohne OP aus. Die ACL-SNNAP-Studie (Beard et al., Lancet 2022) mit 320 Patienten zeigte allerdings, dass bei chronischer Instabilität (also anhaltendem Wegknicken trotz Physiotherapie) die Rekonstruktion überlegen war. Die Entscheidung hängt also nicht davon ab, ob das Band gerissen ist — sondern davon, wie Ihr Knie auf die Rehabilitation reagiert, welchen Sport Sie betreiben und ob Begleitverletzungen vorliegen.
 
-</section>
-
-: Was Patienten glauben — und was die Studien zeigen
+## Kreuzbandriss: Was Patienten glauben — und was die Studien zeigen
 
 ### Die verbreitete Annahme
 
@@ -74,8 +72,6 @@ Die AAOS — die größte orthopädische Fachgesellschaft weltweit — aktualisi
 
 **Finanzielle Anreize und Vergütungsstrukturen.** Eine Kreuzband-Rekonstruktion wird in Deutschland als stationäre Leistung von den Krankenkassen vergütet und bringt Kliniken und Operateuren deutlich höhere Einnahmen als ein konservativer Therapieplan. Das bedeutet nicht, dass Ärzte aus Eigeninteresse operieren — aber es bedeutet, dass das System die OP finanziell begünstigt.
 
-    </section>
-
 ## Kreuzbandriss: Wann ist die OP doch sinnvoll?
 
 Die Evidenz zeigt nicht, dass eine Kreuzband-OP grundsätzlich unnötig ist. Sie zeigt, dass sie nicht für jeden Patienten automatisch die beste Wahl ist. In folgenden Situationen spricht die Studienlage für eine Rekonstruktion:
@@ -89,8 +85,6 @@ Die Evidenz zeigt nicht, dass eine Kreuzband-OP grundsätzlich unnötig ist. Sie
 **Wenn Sie unter 25 Jahre alt und sportlich sehr aktiv sind:** Junge, hochaktive Patienten haben ein höheres Risiko für Folgeschäden bei konservativer Behandlung, weil sie ihr Knie stärker belasten. In dieser Gruppe empfehlen die meisten Leitlinien eine frühzeitige Rekonstruktion.
 
 **Wann eine OP definitiv nicht indiziert ist:** Eine OP allein aus Angst vor Arthrose ist durch keine Studie gestützt — die Arthrose-Rate ist bei operierten und konservativ behandelten Patienten gleich (Cuzzolin et al., 2021). Ebenso wenig sinnvoll ist eine sofortige OP in der akuten Schwellungsphase (erstes bis zweites Woche nach dem Riss), da dies das Risiko für eine Gelenkversteifung (Arthrofibrose) erhöht. Und: Eine OP bei Patienten, die keine anspruchsvollen Sportarten betreiben und deren Knie im Alltag stabil ist, bietet keinen nachweisbaren Vorteil.
-
-    </section>
 
 ## Kreuzbandriss: Welche Fragen Sie Ihrem Arzt stellen sollten
 
@@ -109,8 +103,6 @@ Die Evidenz zeigt nicht, dass eine Kreuzband-OP grundsätzlich unnötig ist. Sie
         - **„Wie sieht die Rehabilitation nach der OP aus — und wie lange dauert es realistisch, bis ich wieder Sport machen kann?“**
           Die Rückkehr zum Kontaktsport dauert nach einer Kreuzband-OP in der Regel 9 bis 12 Monate. Wenn Ihr Arzt deutlich kürzere Zeiträume verspricht, ist Vorsicht geboten.
 
-    </section>
-
 ## Quellenverzeichnis
 
         - **Frobell RB, Roos EM, Roos HP, Ranstam J, Lohmander LS. (2010).** A Randomized Trial of Treatment for Acute Anterior Cruciate Ligament Tears. *New England Journal of Medicine*, 363(4), 331–342. DOI: 10.1056/NEJMoa0907797
@@ -120,8 +112,6 @@ Die Evidenz zeigt nicht, dass eine Kreuzband-OP grundsätzlich unnötig ist. Sie
         - **Filbay SR, Bullock G, Russell S, et al. (2025).** No Difference in Return-to-Sport Rate or Activity Level in People with ACL Injury Managed with ACL Reconstruction or Rehabilitation Alone: A Systematic Review and Meta-Analysis. *Sports Medicine*, 55, 2191–2205. DOI: 10.1007/s40279-025-02268-5
         - **American Academy of Orthopaedic Surgeons (AAOS). (2022).** Management of Anterior Cruciate Ligament Injuries: Evidence-Based Clinical Practice Guideline. [https://www.aaos.org/aclcpg](https://www.aaos.org/globalassets/quality-and-practice-resources/anterior-cruciate-ligament-injuries/aclcpg.pdf)
         - **AWMF. (2019, derzeit in Überarbeitung).** S1-Leitlinie Vordere Kreuzbandruptur. Registernummer 187-012. [https://register.awmf.org/de/leitlinien/detail/187-012](https://register.awmf.org/de/leitlinien/detail/187-012)
-
-    </section>
 
 ## Experten-Review
 
@@ -139,8 +129,6 @@ Die Evidenz zeigt nicht, dass eine Kreuzband-OP grundsätzlich unnötig ist. Sie
 ### Ergänzung des prüfenden Facharztes
 
 *[Hier kann der Reviewer zusätzliche Anweisungen, fachliche Schwerpunkte oder Korrekturen eintragen, die bei der Artikelerstellung berücksichtigt werden sollen. Wenn nichts ergänzt wird, bleibt dieser Abschnitt leer.]*
-
-    </section>
 
 ## Überprüfen Sie diesen Artikel selbst
 
@@ -160,12 +148,8 @@ Ergänzung des prüfenden Facharztes: Keine Ergänzung hinzugefügt.</div>
 
 Wir glauben an Transparenz. Wenn dieser Artikel etwas falsch darstellt, wollen wir, dass Sie es herausfinden.
 
-    </section>
-
 ### Verwandte Artikel
 
         - [Meniskusriss: OP vs. Physiotherapie — wann ist die Arthroskopie wirklich nötig?](/meniskusriss-op-physiotherapie-evidenz)
         - [Schulter-Impingement: Subakromiale Dekompression — sinnvoll oder Schein-OP?](/schulter-impingement-subakromiale-dekompression-evidenz)
         - [Rückenschmerzen und MRT: Warum Bildgebung oft mehr schadet als hilft](/rueckenschmerzen-mrt-bildgebung-evidenz)
-
-    </section>

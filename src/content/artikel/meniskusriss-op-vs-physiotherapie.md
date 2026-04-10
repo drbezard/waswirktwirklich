@@ -28,7 +28,7 @@ Das zeigen eine Placebo-kontrollierte Studie (FIDELITY), ein Cochrane Review mit
 
 </p></div>
 
-: Was Patienten glauben — und was die Studien zeigen
+## Meniskusriss: Was Patienten glauben — und was die Studien zeigen
 
 ### Die verbreitete Annahme
 

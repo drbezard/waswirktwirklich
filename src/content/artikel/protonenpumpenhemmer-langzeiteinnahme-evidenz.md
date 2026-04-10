@@ -18,8 +18,6 @@ Protonenpumpenhemmer wie Pantoprazol oder Omeprazol sind bei klarer Indikation a
 
 Das ist das zentrale Problem: Nicht die Medikamente selbst sind das Risiko, sondern ihre unkritische Dauerverordnung ohne Indikation. Die einzige große randomisierte Studie — der COMPASS-Trial mit 17.598 Patienten über drei Jahre — fand unter Pantoprazol im Vergleich zu Placebo keine signifikant erhöhten Raten von Nierenerkrankungen, Knochenbrüchen oder Krebs. Die alarmierende Schlagzeilenlage basiert fast ausschließlich auf Beobachtungsstudien, deren Evidenzqualität nach dem GRADE-System (einem standardisierten Bewertungssystem für die Qualität medizinischer Evidenz) durchgehend als „sehr niedrig“ eingestuft wird. Gleichzeitig empfiehlt die American Gastroenterological Association (AGA), bei jedem Langzeitanwender die Indikation regelmäßig zu überprüfen — und die Therapie zu beenden, wenn kein klarer Grund mehr besteht.
 
-</section>
-
 ## Protonenpumpenhemmer in der Langzeiteinnahme: Was Patienten glauben — und was die Studien zeigen
 
 ### Die verbreitete Annahme
@@ -76,8 +74,6 @@ Dieses aktualisierte Praxis-Update der AGA widmete sich explizit dem De-Prescrib
 
 **Das Rebound-Phänomen als Teufelskreis.** Wer PPI über Wochen oder Monate einnimmt und dann abrupt absetzt, erlebt häufig eine vorübergehende Verschlechterung der Symptome — der Magen produziert für einige Tage bis Wochen mehr Säure als vor der Therapie. Viele Patienten interpretieren das als Beweis, dass sie das Medikament „brauchen“, und nehmen es wieder ein. In Wirklichkeit ist es eine physiologische Gegenreaktion, die bei schrittweisem Absetzen beherrschbar ist.
 
-    </section>
-
 ## Protonenpumpenhemmer langfristig: Wann ist die Dauereinnahme medizinisch begründet?
 
 Bei klarer Indikation sind PPI hochwirksame Medikamente, deren Nutzen die potenziellen Risiken bei Weitem überwiegt. Die Frage ist nicht „PPI ja oder nein“, sondern „PPI für wen und wie lange“.
@@ -94,8 +90,6 @@ Bei klarer Indikation sind PPI hochwirksame Medikamente, deren Nutzen die potenz
 
 **Wann PPI definitiv nicht als Dauertherapie indiziert sind:** Ohne dokumentierte Diagnose, „nur zur Sicherheit“ bei Polymedikation ohne Blutungsrisiko, als Fortführung einer Krankenhausverordnung ohne Indikationsprüfung, oder als Selbstmedikation über Monate ohne ärztliche Abklärung der Ursache.
 
-    </section>
-
 ## Protonenpumpenhemmer-Dauertherapie: Welche Fragen Sie Ihrem Arzt stellen sollten
 
         - **„Warum nehme ich dieses Medikament — und besteht der Grund noch?“**
@@ -111,8 +105,6 @@ Bei klarer Indikation sind PPI hochwirksame Medikamente, deren Nutzen die potenz
         - **„Brauche ich zusätzliche Untersuchungen — zum Beispiel eine Magenspiegelung?“**
           Wenn Sie seit Jahren PPI nehmen, ohne dass jemals eine Magenspiegelung (Gastroskopie) gemacht wurde, könnte eine Abklärung sinnvoll sein — nicht wegen der PPI, sondern weil die Ursache Ihrer Beschwerden noch nicht gesichert ist.
 
-    </section>
-
 ## Quellenverzeichnis
 
         - **Moayyedi P, Eikelboom JW, Bosch J, Connolly SJ, Dyal L, Shestakovska O, Leong D, Anand SS, Störk S, Branch KRH, Bhatt DL, Verma S, Hart RG, Yusuf S; COMPASS Investigators. (2019).** Safety of Proton Pump Inhibitors Based on a Large, Multi-Year, Randomized Trial of Patients Receiving Rivaroxaban or Aspirin. *Gastroenterology*, 157(3), 682–691.e2. DOI: 10.1053/j.gastro.2019.05.056
@@ -120,8 +112,6 @@ Bei klarer Indikation sind PPI hochwirksame Medikamente, deren Nutzen die potenz
         - **Xie Y, Bowe B, Yan Y, Xian H, Li T, Al-Aly Z. (2019).** Estimates of all cause mortality and cause specific mortality associated with proton pump inhibitors among US veterans: cohort study. *BMJ*, 365, l1580. DOI: 10.1136/bmj.l1580
         - **Freedberg DE, Kim LS, Yang YX. (2017).** The Risks and Benefits of Long-term Use of Proton Pump Inhibitors: Expert Review and Best Practice Advice From the American Gastroenterological Association. *Gastroenterology*, 152(4), 706–715. DOI: 10.1053/j.gastro.2017.01.031
         - **Targownik LE, Fisher DA, Saini SD. (2022).** AGA Clinical Practice Update on De-Prescribing of Proton Pump Inhibitors: Expert Review. *Gastroenterology*, 162(4), 1334–1342. DOI: 10.1053/j.gastro.2021.12.247
-
-    </section>
 
 ## Experten-Review
 
@@ -139,8 +129,6 @@ Bei klarer Indikation sind PPI hochwirksame Medikamente, deren Nutzen die potenz
 ### Ergänzung des prüfenden Facharztes
 
 *[Hier kann der Reviewer zusätzliche Anweisungen, fachliche Schwerpunkte oder Korrekturen eintragen, die bei der Artikelerstellung berücksichtigt werden sollen. Wenn nichts ergänzt wird, bleibt dieser Abschnitt leer.]*
-
-    </section>
 
 ## Überprüfen Sie diesen Artikel selbst
 
@@ -160,12 +148,8 @@ Ergänzung des prüfenden Facharztes: Keine Ergänzung hinzugefügt.</div>
 
 Wir glauben an Transparenz. Wenn dieser Artikel etwas falsch darstellt, wollen wir, dass Sie es herausfinden.
 
-    </section>
-
 ### Verwandte Artikel
 
         - [Vitamin-D-Supplementierung: Wundermittel oder Hype ohne Evidenz?](/vitamin-d-supplementierung-evidenz)
         - [Statine bei leicht erhöhtem Cholesterin: Wann wirklich nötig — und wann Übertherapie?](/statine-cholesterin-evidenz)
         - [Eiseninfusion vs. Eisentabletten: Wann ist die Infusion wirklich besser?](/eiseninfusion-eisentabletten-evidenz)
-
-    </section>

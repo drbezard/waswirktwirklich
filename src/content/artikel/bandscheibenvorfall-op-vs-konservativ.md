@@ -28,7 +28,7 @@ Das zeigen die SPORT-Studie (501 Patienten, 8 Jahre Nachbeobachtung), die Leiden
 
 </p></div>
 
-: Was Patienten glauben — und was die Studien zeigen
+## Bandscheibenvorfall: Was Patienten glauben — und was die Studien zeigen
 
 ### Die verbreitete Annahme
 

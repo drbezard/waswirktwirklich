@@ -18,9 +18,7 @@ Isotretinoin ist das wirksamste Medikament gegen schwere Akne — und sein Ruf a
 
 Kaum ein Medikament in der Dermatologie ist so gefürchtet und gleichzeitig so wirksam wie Isotretinoin (bekannt unter früheren Markennamen wie Roaccutan oder Accutane). Es ist das einzige Arzneimittel, das alle vier Ursachen der Akne gleichzeitig bekämpft — und es erreicht dauerhafte Remissionsraten (anhaltende Beschwerdefreiheit) von 80–90 %. Trotzdem zögern viele Patienten und Ärzte, weil hartnäckige Mythen über schwere psychiatrische Nebenwirkungen kursieren. Die größte verfügbare Meta-Analyse (Tan et al., 2024, JAMA Dermatology) mit über 1,6 Millionen Teilnehmern fand jedoch kein erhöhtes Risiko für Suizid oder psychiatrische Erkrankungen unter Isotretinoin. Die American Academy of Dermatology (AAD, 2024) und das britische NICE empfehlen Isotretinoin ausdrücklich bei schwerer Akne, bei Akne mit Narbenbildung und bei Versagen der Standardtherapie. Das eigentliche Risiko liegt nicht in dem Medikament — sondern darin, es aus unbegründeter Angst vorzuenthalten.
 
-</section>
-
-: Was Patienten glauben — und was die Studien zeigen
+## Isotretinoin bei Akne: Was Patienten glauben — und was die Studien zeigen
 
 ### Die verbreitete Annahme
 
@@ -74,8 +72,6 @@ Die Angst vor Isotretinoin ist nachvollziehbar — aber sie beruht auf einer Ver
 
 **Finanzielle Anreize für Alternativbehandlungen.** Die Akne-Industrie — von „natürlichen“ Hautpflegeprodukten über Nahrungsergänzungsmittel bis hin zu teuren Laserbehandlungen — hat ein wirtschaftliches Interesse daran, dass Patienten Isotretinoin meiden. Wenn die wirksamste Therapie gleichzeitig eine der günstigsten ist (als Generikum weit verbreitet), ist das für Anbieter teurer Alternativen ein Problem. Das bedeutet nicht, dass jede Kritik an Isotretinoin kommerziell motiviert ist — aber es erklärt, warum die Angstnarrative so hartnäckig sind.
 
-    </section>
-
 ## Isotretinoin bei Akne: Wann ist es sinnvoll — und wann nicht?
 
 **Wenn die Akne schwer ist (noduläre oder zystische Akne):** Bei tiefen, schmerzhaften Knoten und Zysten, die unter der Haut entstehen, ist Isotretinoin laut AAD-Leitlinie (2024) und NICE-Guideline (NG198) die Therapie der ersten Wahl. Hier zu warten, bis Narben entstanden sind, ist medizinisch nicht gerechtfertigt.
@@ -87,8 +83,6 @@ Die Angst vor Isotretinoin ist nachvollziehbar — aber sie beruht auf einer Ver
 **Wenn Standardtherapien versagt haben:** Wenn ein Patient zwei oder mehr adäquate Zyklen oraler Antibiotika (typischerweise Doxycyclin) in Kombination mit topischen Retinoiden (Vitamin-A-Säure-Cremes) und Benzoylperoxid ohne ausreichenden Erfolg durchlaufen hat, ist Isotretinoin der logische nächste Schritt. Die NICE-Leitlinie empfiehlt Isotretinoin ab einem Alter von 12 Jahren, wenn Standardtherapien versagt haben.
 
 **Wann Isotretinoin definitiv nicht eingesetzt werden darf:** Bei Schwangerschaft oder geplanter Schwangerschaft — Isotretinoin ist stark teratogen (fruchtschädigend) und verursacht schwere Fehlbildungen. Frauen im gebärfähigen Alter müssen während und mindestens einen Monat nach der Therapie eine zuverlässige Verhütung sicherstellen. Weitere Kontraindikationen (Gründe, die gegen die Anwendung sprechen) sind schwere Leberfunktionsstörungen, stark erhöhte Blutfettwerte (Hyperlipidämie) und gleichzeitige Einnahme von Tetracyclin-Antibiotika (Risiko einer intrakraniellen Druckerhöhung — erhöhter Druck im Schädelinneren). Bei leichter Akne, die auf topische Therapie anspricht, ist Isotretinoin nicht indiziert.
-
-    </section>
 
 ## Isotretinoin beim Hautarzt: Welche Fragen Sie stellen sollten
 
@@ -105,8 +99,6 @@ Die Angst vor Isotretinoin ist nachvollziehbar — aber sie beruht auf einer Ver
         - **„Wie hoch ist die Wahrscheinlichkeit, dass die Akne nach der Therapie wiederkommt?“**
           Bei den meisten Patienten führt ein Zyklus Isotretinoin zu dauerhafter Remission. Etwa 10–20 % benötigen einen zweiten Zyklus. Fragen Sie, was in Ihrem Fall realistisch zu erwarten ist.
 
-    </section>
-
 ## Quellenverzeichnis
 
         - **Tan NKW, Khoo BZE, Goh CL, Oon HH. (2024).** Risk of Suicide and Psychiatric Disorders Among Isotretinoin Users: A Meta-Analysis. *JAMA Dermatology*, 160(2), 149–159. DOI: 10.1001/jamadermatol.2023.4579
@@ -115,8 +107,6 @@ Die Angst vor Isotretinoin ist nachvollziehbar — aber sie beruht auf einer Ver
         - **Zaenglein AL, Pathy AL, Schlosser BJ, Alikhan A, Baldwin HE, Berson DS, et al. (2024).** Guidelines of care for the management of acne vulgaris. *Journal of the American Academy of Dermatology*, 90(5), 1006.e1–1006.e30. DOI: 10.1016/j.jaad.2023.12.017
         - **Daly M, Walsh SB. (2023).** A systematic review of isotretinoin dosing in acne vulgaris. *JEADV Clinical Practice*, 2(3), 452–463. DOI: 10.1002/jvc2.154
         - **National Institute for Health and Care Excellence (NICE). (2021, aktualisiert 2023).** Acne vulgaris: management. NICE guideline NG198. [https://www.nice.org.uk/guidance/ng198](https://www.nice.org.uk/guidance/ng198)
-
-    </section>
 
 ## Experten-Review
 
@@ -134,8 +124,6 @@ Die Angst vor Isotretinoin ist nachvollziehbar — aber sie beruht auf einer Ver
 ### Ergänzung des prüfenden Facharztes
 
 *[Hier kann der Reviewer zusätzliche Anweisungen, fachliche Schwerpunkte oder Korrekturen eintragen, die bei der Artikelerstellung berücksichtigt werden sollen. Wenn nichts ergänzt wird, bleibt dieser Abschnitt leer.]*
-
-    </section>
 
 ## Überprüfen Sie diesen Artikel selbst
 
@@ -155,12 +143,8 @@ Ergänzung des prüfenden Facharztes: Keine Ergänzung hinzugefügt.</div>
 
 Wir glauben an Transparenz. Wenn dieser Artikel etwas falsch darstellt, wollen wir, dass Sie es herausfinden.
 
-    </section>
-
 ### Verwandte Artikel
 
         - [Hautkrebsscreening: Rettet es Leben — oder führt es zu Überdiagnosen?](/hautkrebsscreening-ueberdiagnose-evidenz)
         - [PRP (Eigenbluttherapie) bei Haarausfall: Wirksam oder teures Placebo?](/prp-eigenbluttherapie-haarausfall-evidenz)
         - [Neurodermitis und Cortison: Warum die Cortison-Angst oft mehr schadet als die Creme](/neurodermitis-cortison-angst-evidenz)
-
-    </section>

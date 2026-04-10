@@ -18,8 +18,6 @@ Topische Kortikosteroide (Cortison-Cremes) sind die am besten untersuchte und wi
 
 Das zeigen über 290 randomisierte Studien mit mehr als 45.000 Patientinnen und Patienten, ausgewertet in Cochrane-Reviews und Netzwerk-Meta-Analysen. Gleichzeitig leiden 21 bis 84 Prozent der Betroffenen an sogenannter Kortikophobie (Cortison-Angst) — einer Furcht vor Nebenwirkungen, die dazu führt, dass sie die verordnete Therapie zu selten, zu kurz oder gar nicht anwenden. Die Folge: schlechtere Krankheitskontrolle, mehr Schübe, mehr Leidensdruck. Alle großen Leitlinien — die deutsche AWMF-S3-Leitlinie (2023), die europäische EuroGuiDerm-Leitlinie (2025) und die britische NICE-Leitlinie — empfehlen topische Kortikosteroide als Therapie der ersten Wahl bei Neurodermitis. Die Angst vor Cortison ist nachvollziehbar, aber in den meisten Fällen unbegründet — und sie richtet mehr Schaden an als die Creme selbst.
 
-</section>
-
 ## Cortison bei Neurodermitis: Was Patienten glauben — und was die Studien zeigen
 
 ### Die verbreitete Annahme
@@ -74,8 +72,6 @@ Kortikophobie ist kein individuelles Versagen — es ist ein systemisches Proble
 
 **Finanzielle Anreize für Alternativprodukte.** Der Markt für „cortisonfreie“ Neurodermitis-Produkte ist milliardenschwer. Naturkosmetik, Nahrungsergänzungsmittel und Heilpraktiker-Behandlungen profitieren direkt von der Cortison-Angst. Die Botschaft „ohne Cortison“ wird als Qualitätsmerkmal vermarktet — obwohl die meisten dieser Produkte keine belastbare Evidenz für ihre Wirksamkeit haben. Für Patienten ist schwer zu erkennen, wo unabhängige Information aufhört und Marketing beginnt.
 
-    </section>
-
 ## Cortison bei Neurodermitis: Wann ist Vorsicht tatsächlich angebracht?
 
 Die Evidenz zeigt, dass Cortison-Cremes bei Neurodermitis die Therapie der ersten Wahl sind. Aber „sicher bei korrekter Anwendung“ heißt nicht „immer und überall bedenkenlos“. Es gibt Situationen, in denen besondere Aufmerksamkeit geboten ist:
@@ -89,8 +85,6 @@ Die Evidenz zeigt, dass Cortison-Cremes bei Neurodermitis die Therapie der erste
 **Wenn Symptome trotz korrekter Anwendung nicht besser werden:** In diesem Fall liegt möglicherweise keine reine Neurodermitis vor, sondern eine Kontaktallergie, eine Hautinfektion (bakteriell oder durch Herpesviren) oder eine andere Erkrankung. Cortison würde dann das falsche Problem behandeln. Wenn nach zwei Wochen leitliniengerechter Therapie keine Besserung eintritt, ist eine Vorstellung beim Dermatologen dringend empfohlen.
 
 **Wann Cortison definitiv nicht indiziert ist:** Bei aktiven Hautinfektionen (Bakterien, Viren, Pilze) auf der betroffenen Stelle, bei Rosacea oder perioraler Dermatitis (hier verschlimmert Cortison das Problem), und bei bekannter Allergie gegen den Wirkstoff oder die Grundlage der Creme.
-
-    </section>
 
 ## Cortison-Creme bei Neurodermitis: Welche Fragen Sie Ihrem Arzt stellen sollten
 
@@ -109,8 +103,6 @@ Die Evidenz zeigt, dass Cortison-Cremes bei Neurodermitis die Therapie der erste
         - **„Wann sollte ich wiederkommen — und woran erkenne ich, dass die Behandlung nicht ausreicht und ich eine Stufe höher brauche?“**
           Neurodermitis erfordert oft ein Stufenschema mit regelmäßiger Anpassung. Ein einmaliges Rezept ohne Nachkontrolle reicht bei mittlerer bis schwerer Neurodermitis nicht aus.
 
-    </section>
-
 ## Quellenverzeichnis
 
         - **Lax SJ, Harvey J, Axon E, Howells L, Sherrat A, Lawton S, Jiyad Z, Flohr C, Thomas KS, Chalmers JR. (2024).** Topical anti-inflammatory treatments for eczema: a Cochrane systematic review and network meta-analysis. *Cochrane Database of Systematic Reviews*. DOI: 10.1002/14651858.CD015064.pub2
@@ -119,8 +111,6 @@ Die Evidenz zeigt, dass Cortison-Cremes bei Neurodermitis die Therapie der erste
         - **Lax SJ, Harvey J, Axon E, Howells L, Sherrat A, Lawton S, Flohr C, Thomas KS, Chalmers JR. (2022).** Strategies for using topical corticosteroids in children and adults with eczema. *Cochrane Database of Systematic Reviews*, Issue 3, Art. No.: CD013356. DOI: 10.1002/14651858.CD013356.pub2
         - **Werfel T, Heratizadeh A, Aberer W, Augustin M, Biedermann T, Bauer A, et al. (2024).** S3-Leitlinie Atopische Dermatitis: Teil 1 — Allgemeine Aspekte, topische und nichtmedikamentöse Therapien, besondere Patientengruppen. *JDDG: Journal der Deutschen Dermatologischen Gesellschaft*, 22(1), 137–209. AWMF-Register Nr. 013-027. DOI: 10.1111/ddg.15230_g
         - **Wollenberg A, Kinberger M, Arents B, Aszodi N, Avila Valle G, Barbarot S, et al. (2025).** European Guideline (EuroGuiDerm) on atopic eczema: Living update. *Journal of the European Academy of Dermatology and Venereology*. DOI: 10.1111/jdv.20639
-
-    </section>
 
 ## Experten-Review
 
@@ -138,8 +128,6 @@ Die Evidenz zeigt, dass Cortison-Cremes bei Neurodermitis die Therapie der erste
 ### Ergänzung des prüfenden Facharztes
 
 *[Hier kann der Reviewer zusätzliche Anweisungen, fachliche Schwerpunkte oder Korrekturen eintragen, die bei der Artikelerstellung berücksichtigt werden sollen. Wenn nichts ergänzt wird, bleibt dieser Abschnitt leer.]*
-
-    </section>
 
 ## Überprüfen Sie diesen Artikel selbst
 
@@ -159,12 +147,8 @@ Ergänzung des prüfenden Facharztes: Keine Ergänzung hinzugefügt.</div>
 
 Wir glauben an Transparenz. Wenn dieser Artikel etwas falsch darstellt, wollen wir, dass Sie es herausfinden.
 
-    </section>
-
 ### Verwandte Artikel
 
         - [PRP (Eigenbluttherapie) bei Haarausfall: Wirksam oder teures Placebo?](/prp-haarausfall-evidenz)
         - [Hautkrebsscreening: Rettet es Leben — oder führt es zu Überdiagnosen?](/hautkrebsscreening-evidenz)
         - [Akne und Isotretinoin: Gefährliches Medikament oder unterschätzte Therapie?](/akne-isotretinoin-evidenz)
-
-    </section>

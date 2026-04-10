@@ -18,9 +18,7 @@ Die Katheterablation bei Vorhofflimmern ist kein Allheilmittel — aber für bes
 
 Das zeigt die aktuelle Studienlage aus mehreren großen randomisierten Studien und Meta-Analysen. Bei Patienten mit Vorhofflimmern und gleichzeitiger Herzinsuffizienz (Herzschwäche mit eingeschränkter Pumpfunktion) senkt die Ablation die Sterblichkeit und die Zahl der Krankenhausaufenthalte deutlich — das belegt insbesondere die CASTLE-AF-Studie (Marrouche et al., 2018). Bei Patienten ohne Herzinsuffizienz zeigt die bisher größte Studie — CABANA (Packer et al., 2019) — zwar eine bessere Rhythmuskontrolle und Lebensqualität, aber keinen eindeutigen Vorteil bei Tod oder Schlaganfall. Eine umfassende Meta-Analyse im Annals of Internal Medicine (2025) bestätigt: Die Ablation senkt langfristig das Schlaganfall- und Sterberisiko, erhöht aber kurzfristig das Schlaganfallrisiko während des Eingriffs. Die ESC-Leitlinie 2024 und die deutsche AWMF-S3-Leitlinie 2025 empfehlen die Ablation inzwischen als Erstlinientherapie bei paroxysmalem Vorhofflimmern — aber die Entscheidung bleibt individuell.
 
-</section>
-
-: Was Patienten glauben — und was die Studien zeigen
+## Katheterablation bei Vorhofflimmern: Was Patienten glauben — und was die Studien zeigen
 
 ### Die verbreitete Annahme
 
@@ -74,8 +72,6 @@ Dafür gibt es mehrere Gründe, die nichts mit mangelndem Wissen der Patienten o
 
 **Finanzielle Anreize bestehen auf beiden Seiten.** Katheterablationen sind hochpreisige Eingriffe — in Deutschland liegt der Fallwert für eine Klinik bei mehreren Tausend Euro. Die steigende Zahl an Ablationszentren hat zu einer Zunahme der Eingriffe geführt, die nicht immer rein medizinisch begründet ist. Gleichzeitig profitiert die Pharmaindustrie von der medikamentösen Dauertherapie. Ein Interessenkonflikt besteht in beiden Richtungen.
 
-    </section>
-
 ## Katheterablation bei Vorhofflimmern: Wann ist sie sinnvoll?
 
 Die Evidenz ist nicht für oder gegen die Ablation insgesamt — sie ist für oder gegen die Ablation bei bestimmten Patienten. Die folgenden Kriterien helfen bei der Einordnung:
@@ -89,8 +85,6 @@ Die Evidenz ist nicht für oder gegen die Ablation insgesamt — sie ist für od
 **Wenn das Vorhofflimmern stark symptomatisch ist und die Lebensqualität erheblich einschränkt:** Selbst wenn kein Überlebensvorteil belegt ist (wie in CABANA), zeigt die Studie eine deutliche Verbesserung der Lebensqualität und eine Halbierung der Rezidivrate. Bei hohem Leidensdruck kann die Ablation auch ohne Herzinsuffizienz eine sinnvolle Option sein — nach ehrlicher Aufklärung über Nutzen und Risiken.
 
 **Wann die Katheterablation nicht indiziert ist:** Bei asymptomatischem Vorhofflimmern, das zufällig entdeckt wird und den Patienten nicht einschränkt, überwiegen die Risiken des Eingriffs den unklaren Nutzen. Bei lang anhaltendem persistierendem Vorhofflimmern (über ein Jahr) mit stark vergrößertem linken Vorhof sind die Erfolgsraten deutlich reduziert. Bei unkontrollierten Risikofaktoren (Adipositas, unbehandeltes Schlafapnoe-Syndrom, exzessiver Alkoholkonsum) sollte zuerst an den Ursachen gearbeitet werden — eine Ablation ohne Lebensstiländerung hat hohe Rezidivraten.
-
-    </section>
 
 ## Katheterablation beim Kardiologen: Welche Fragen Sie stellen sollten
 
@@ -107,8 +101,6 @@ Die Evidenz ist nicht für oder gegen die Ablation insgesamt — sie ist für od
         - **„Was ist der Plan, wenn die erste Ablation nicht dauerhaft erfolgreich ist?“**
           Wiederholungsablationen sind häufig — bei 20–40 % der Patienten ist ein zweiter Eingriff nötig. Ein seriöser Behandlungsplan berücksichtigt dieses Szenario von Anfang an.
 
-    </section>
-
 ## Quellenverzeichnis
 
         - **Marrouche NF, Brachmann J, Andresen D, et al. (2018).** Catheter Ablation for Atrial Fibrillation with Heart Failure. *New England Journal of Medicine*, 378(5), 417–427. DOI: 10.1056/NEJMoa1707855
@@ -117,8 +109,6 @@ Die Evidenz ist nicht für oder gegen die Ablation insgesamt — sie ist für od
         - **Catheter and Surgical Ablation for Atrial Fibrillation: A Systematic Review and Meta-analysis. (2025).** *Annals of Internal Medicine*, 178, 1138–1149. DOI: 10.7326/ANNALS-25-00253
         - **Van Gelder IC, Rienstra M, Bunting KV, et al. (2024).** 2024 ESC Guidelines for the management of atrial fibrillation developed in collaboration with EACTS. *European Heart Journal*, 45(36), 3314–3414. DOI: 10.1093/eurheartj/ehae176
         - **Deutsche Gesellschaft für Kardiologie (DGK). (2025).** AWMF-S3-Leitlinie Vorhofflimmern, 1. Auflage. AWMF-Registernr.: 019-014. [https://register.awmf.org](https://register.awmf.org/assets/guidelines/019-014l_S3_Vorhofflimmern_2025-07.pdf)
-
-    </section>
 
 ## Experten-Review
 
@@ -136,8 +126,6 @@ Die Evidenz ist nicht für oder gegen die Ablation insgesamt — sie ist für od
 ### Ergänzung des prüfenden Facharztes
 
 *[Hier kann der Reviewer zusätzliche Anweisungen, fachliche Schwerpunkte oder Korrekturen eintragen, die bei der Artikelerstellung berücksichtigt werden sollen. Wenn nichts ergänzt wird, bleibt dieser Abschnitt leer.]*
-
-    </section>
 
 ## Überprüfen Sie diesen Artikel selbst
 
@@ -157,12 +145,8 @@ Ergänzung des prüfenden Facharztes: Keine Ergänzung hinzugefügt.</div>
 
 Wir glauben an Transparenz. Wenn dieser Artikel etwas falsch darstellt, wollen wir, dass Sie es herausfinden.
 
-    </section>
-
 ### Verwandte Artikel
 
         - [Stent bei stabiler Angina pectoris: Besser als Medikamente allein?](/stent-stabile-angina-pectoris-evidenz)
         - [Aspirin zur Herzinfarkt-Vorbeugung: Nutzen vs. Blutungsrisiko](/aspirin-herzinfarkt-vorbeugung-evidenz)
         - [Blutdrucksenker: Wie tief soll der Blutdruck wirklich?](/blutdrucksenker-zielwert-sprint-evidenz)
-
-    </section>

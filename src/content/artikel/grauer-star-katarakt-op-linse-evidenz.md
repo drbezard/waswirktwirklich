@@ -18,8 +18,6 @@ Die Katarakt-Operation ist einer der wirksamsten und sichersten chirurgischen Ei
 
 Das ist keine pauschale Kritik an der Augenheilkunde — es ist das Ergebnis systematischer Auswertungen. Die OP selbst ist hervorragend belegt: In Deutschland werden jährlich 600.000 bis 800.000 Katarakt-Operationen durchgeführt (Lapp et al., 2023), mit einer Erfolgsrate von über 95 %. Die entscheidende Frage für Patienten ist nicht ob, sondern wann operiert werden soll — und vor allem: welche Kunstlinse (Intraokularlinse, IOL) wirklich nötig ist. Denn während die gesetzliche Krankenkasse die Standard-Monofokallinse vollständig bezahlt, kosten sogenannte Premiumlinsen (Multifokal-, EDOF- oder torische Linsen) zwischen 500 und 2.500 Euro Aufpreis pro Auge — als Selbstzahlerleistung. Ein Cochrane Review (de Silva et al., 2016) und aktuelle Meta-Analysen zeigen: Multifokallinsen reduzieren die Brillenabhängigkeit, verursachen aber häufiger störende Lichtphänomene wie Halos (Lichtringe) und Blendung. Für die meisten Patienten liefert die Standardlinse exzellente Ergebnisse.
 
-</section>
-
 ## Katarakt-OP und Linsenwahl: Was Patienten glauben — und was die Studien zeigen
 
 ### Die verbreitete Annahme
@@ -76,8 +74,6 @@ Dafür gibt es mehrere Erklärungen, und keine davon hat damit zu tun, dass Pati
 
 **Der Laser als „bessere“ Technik.** Viele Praxen bewerben die Femtosekundenlaser-assistierte Kataraktchirurgie als Upgrade gegenüber der Standard-Phakoemulsifikation. Ein Cochrane Review (Day et al., 2016) mit 16 RCTs fand jedoch keine ausreichende Evidenz für eine Überlegenheit des Lasers. Die Laser-OP ist teurer (oft 1.000–2.000 Euro Aufpreis), bietet aber nach aktuellem Wissensstand keinen nachgewiesenen Vorteil für das Operationsergebnis.
 
-    </section>
-
 ## Premiumlinsen bei der Katarakt-OP: Wann sind sie doch sinnvoll?
 
 Die Evidenz zeigt, dass die Standardlinse für die Mehrheit der Patienten ausgezeichnete Ergebnisse liefert. Aber „Mehrheit“ heißt nicht „alle“. Es gibt klar definierte Situationen, in denen eine Premiumlinse einen echten Mehrwert bieten kann:
@@ -89,8 +85,6 @@ Die Evidenz zeigt, dass die Standardlinse für die Mehrheit der Patienten ausgez
 **Wenn Sie die Einschränkungen akzeptieren:** Eine Multifokallinse ist nur dann sinnvoll, wenn Sie vor der OP wissen, dass Halos und reduzierte Kontrastempfindlichkeit auftreten können — und dass diese Phänomene bei manchen Patienten dauerhaft bestehen bleiben. Wer nachts viel Auto fährt oder unter Augenerkrankungen wie Makuladegeneration (Schädigung der Stelle des schärfsten Sehens) oder Glaukom (Grüner Star, erhöhter Augeninnendruck) leidet, ist in der Regel mit einer Monofokallinse besser beraten.
 
 **Wann eine Premiumlinse definitiv nicht sinnvoll ist:** Bei bestehenden Netzhauterkrankungen (Makuladegeneration, diabetische Retinopathie), bei fortgeschrittenem Glaukom, bei unregelmäßigem Astigmatismus (z. B. nach Hornhautverletzungen) oder bei unrealistischen Erwartungen an „perfektes Sehen ohne Brille“. In diesen Fällen kann eine Multifokallinse die Sehqualität sogar verschlechtern.
-
-    </section>
 
 ## Katarakt-OP: Welche Fragen Sie Ihrem Augenarzt stellen sollten
 
@@ -107,8 +101,6 @@ Die Evidenz zeigt, dass die Standardlinse für die Mehrheit der Patienten ausgez
         - **„Was passiert, wenn ich mit einer Multifokallinse nicht zurechtkomme — kann die Linse ausgetauscht werden?“**
           Ein Linsentausch (IOL-Exchange) ist möglich, aber technisch anspruchsvoller als die Erstimplantation und birgt zusätzliche Risiken. Diese Information sollten Sie vor der Entscheidung haben, nicht danach.
 
-    </section>
-
 ## Quellenverzeichnis
 
         - **de Silva SR, Evans JR, Kirthi V, Ziaei M, Leber M. (2016).** Multifocal versus monofocal intraocular lenses after cataract extraction. *Cochrane Database of Systematic Reviews*, Issue 12, Art. No.: CD003169. DOI: 10.1002/14651858.CD003169.pub4
@@ -116,8 +108,6 @@ Die Evidenz zeigt, dass die Standardlinse für die Mehrheit der Patienten ausgez
         - **Li Y, Zhang Y, Chen M, Li J. (2024).** Comparative efficacy and safety of all kinds of intraocular lenses in presbyopia-correcting cataract surgery: a systematic review and meta-analysis. *BMC Ophthalmology*, 24, 172. DOI: 10.1186/s12886-024-03446-1
         - **Lapp T, Wacker K, Heinz C, Maier P, Eberwein P, Reinhard T. (2023).** Kataraktoperation – Indikation, Technik und Kunstlinsenauswahl. *Deutsches Ärzteblatt International*, 120, 377–386. DOI: 10.3238/arztebl.m2023.0028
         - **National Institute for Health and Care Excellence (NICE). (2017, aktualisiert 2025).** Cataracts in adults: management. NICE Guideline NG77. [https://www.nice.org.uk/guidance/ng77](https://www.nice.org.uk/guidance/ng77)
-
-    </section>
 
 ## Experten-Review
 
@@ -135,8 +125,6 @@ Die Evidenz zeigt, dass die Standardlinse für die Mehrheit der Patienten ausgez
 ### Ergänzung des prüfenden Facharztes
 
 *[Hier kann der Reviewer zusätzliche Anweisungen, fachliche Schwerpunkte oder Korrekturen eintragen, die bei der Artikelerstellung berücksichtigt werden sollen. Wenn nichts ergänzt wird, bleibt dieser Abschnitt leer.]*
-
-    </section>
 
 ## Überprüfen Sie diesen Artikel selbst
 
@@ -156,12 +144,8 @@ Ergänzung des prüfenden Facharztes: Keine Ergänzung hinzugefügt.</div>
 
 Wir glauben an Transparenz. Wenn dieser Artikel etwas falsch darstellt, wollen wir, dass Sie es herausfinden.
 
-    </section>
-
 ### Verwandte Artikel
 
         - [Augentraining gegen Kurzsichtigkeit: Was sagt die Evidenz?](/augentraining-kurzsichtigkeit-evidenz)
         - [Trockene Augen: Welche Augentropfen helfen wirklich — und welche nicht?](/trockene-augen-augentropfen-evidenz)
         - [LASIK und Augenlasern: Langzeitergebnisse, Risiken und realistische Erwartungen](/lasik-augenlasern-langzeit-evidenz)
-
-    </section>
