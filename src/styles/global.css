@@ -43,11 +43,12 @@
 
 /* Studien-Boxen – exakt wie WordPress */
 .studie {
-  background: #F5F7FA;
-  border: 1px solid #D4D4D4;
-  border-radius: 6px;
-  padding: 20px 24px;
-  margin: 24px 0;
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 24px 28px;
+  margin: 28px 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
 }
 
 .studie-name {
@@ -70,6 +71,10 @@
   line-height: 1.7;
   color: #3D3D3F;
   margin: 0;
+}
+
+.studie em, .studie i {
+  font-style: italic;
 }
 
 /* Kernaussage – exakt wie WordPress */
