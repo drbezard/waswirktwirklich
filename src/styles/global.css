@@ -79,9 +79,22 @@
   border-radius: 0 6px 6px 0;
   padding: 24px 28px;
   margin: 0 0 40px 0;
-  font-size: 1rem;
+  font-size: 1.05rem;
   line-height: 1.7;
-  color: #3D3D3F;
+  color: #2D2D2F;
+  font-weight: 600;
+  position: relative;
+}
+
+.kernaussage::before {
+  content: 'KERNAUSSAGE';
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #0D6EBD;
+  margin-bottom: 12px;
+  text-transform: uppercase;
 }
 
 .kernaussage p {
@@ -100,12 +113,14 @@
 }
 
 .article-content h2 {
-  font-size: 1.6rem;
+  font-size: 1.75rem;
   font-weight: 700;
-  margin-top: 48px;
-  margin-bottom: 20px;
+  margin-top: 56px;
+  margin-bottom: 24px;
   color: #111;
   letter-spacing: -0.02em;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #E5E7EB;
 }
 
 .article-content h3 {
@@ -133,4 +148,10 @@
 
 .article-content a:hover {
   color: #0956a0;
+}
+
+/* Grauer Hintergrund für Artikel-Content-Bereich */
+.article-bg {
+  background: #F9FAFB;
+  padding: 48px 0;
 }
