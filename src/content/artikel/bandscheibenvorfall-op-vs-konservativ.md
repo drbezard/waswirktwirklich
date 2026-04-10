@@ -9,17 +9,14 @@ reviewed: false
 
 Fachgebiet: Orthopädie | Evidenzgrad: Stark | Lesedauer: ca. 10 Minuten
 
-  
+Dr. Georg Bézard
 
-      Dr. Georg Bézard
+✓ Geprüft
 
-      ✓ Geprüft
-    
 Facharzt für Unfallchirurgie & Orthopädie · Wien
 Oberarzt für Orthopädie & Traumatologie sowie Facharzt für Unfallchirurgie in Wien. Spezialisiert auf minimalinvasive Schulter-, Hand- und Kniechirurgie. Privatpraxis für evidenzbasierte Orthopädie in Wien-Döbling und Tulln.
 
-    [→ www.drbezard.com](https://www.drbezard.com)
-  
+[→ www.drbezard.com](https://www.drbezard.com)
 
 Die meisten Bandscheibenvorfälle mit Ischias (Beinschmerzen durch Nervenreizung) heilen ohne Operation. Die OP bringt schnellere Schmerzlinderung — aber nach einem Jahr sind die Ergebnisse gleichwertig.
 
@@ -37,22 +34,22 @@ Aber die entscheidende Frage ist nicht: „Geht es nach der OP besser?“ — so
 
 Die beiden größten randomisierten Studien zu dieser Frage — SPORT und die Leiden-Studie — kommen zum selben Schluss: Die Diskektomie bringt in den ersten Wochen bis Monaten schnellere Schmerzlinderung als konservative Therapie. Aber nach 6 bis 12 Monaten gleichen sich die Ergebnisse an. Langfristig macht es keinen messbaren Unterschied, ob operiert wurde oder nicht.
 
-        SPORT-Studie: Weinstein et al. (2006 / 2008 / 2014)
+SPORT-Studie: Weinstein et al. (2006 / 2008 / 2014)
 Multizenter-RCT mit paralleler Beobachtungskohorte · *JAMA* (2006), *Spine* (2008, 4-Jahres-Follow-up), *Spine Journal* (2014, 8-Jahres-Follow-up) · 501 randomisierte Patienten, 13 US-Zentren
 
 Die SPORT-Studie (Spine Patient Outcomes Research Trial) ist die größte randomisierte Studie zu dieser Frage. Sie verglich Diskektomie mit konservativer Therapie bei Patienten mit Bandscheibenvorfall und Ischias. Die Intention-to-Treat-Analyse (also die Auswertung nach ursprünglicher Gruppenzuteilung) zeigte keinen statistisch signifikanten Unterschied zwischen den Gruppen — allerdings wechselten 45 % der konservativ zugeteilten Patienten im Verlauf zur OP, was die Auswertung verwässerte. Die As-Treated-Analyse (Auswertung nach tatsächlich erhaltener Behandlung) zeigte: Operierte Patienten hatten schnellere Schmerzlinderung und bessere Funktionswerte in den ersten Monaten. Nach 8 Jahren hatten operierte Patienten in der As-Treated-Analyse weiterhin bessere Werte — aber beide Gruppen hatten sich substanziell verbessert, und die klinische Bedeutsamkeit des Unterschieds ist umstritten. Entscheidend: 55 % der konservativ zugeteilten Patienten wurden nie operiert und erzielten dennoch gute Ergebnisse.
 
-        Leiden-Studie: Peul et al. (2007 / 2013)
+Leiden-Studie: Peul et al. (2007 / 2013)
 RCT · *New England Journal of Medicine* (2007), 356(22), 2245–2256 · 5-Jahres-Follow-up: *BMJ* (2008) · 283 Patienten, Niederlande
 
 Die Leiden-The Hague Spine Intervention Studie randomisierte Patienten mit 6–12 Wochen andauernder Ischias zu früher Diskektomie oder verlängerter konservativer Therapie (mit OP als Option, falls nötig). Ergebnis: In den ersten 4 bis 12 Wochen erholten sich die operierten Patienten schneller — signifikant bessere Werte bei Beinschmerz, Rückenschmerz und Behinderung. Aber nach einem Jahr: kein messbarer Unterschied mehr zwischen den Gruppen. Die Autoren schlossen: Patienten, deren Schmerzen erträglich sind, können die OP aufschieben, ohne ihre Chancen auf vollständige Erholung nach 12 Monaten zu reduzieren. Die frühe OP bleibt eine valide Option für gut informierte Patienten — aber sie ist keine medizinische Notwendigkeit.
 
-        Cochrane Review: Gibson & Waddell (2007)
+Cochrane Review: Gibson & Waddell (2007)
 Systematischer Review · *Cochrane Database of Systematic Reviews*, Art. No.: CD001350 · 40 Studien, 5.197 Patienten
 
 Dieser Cochrane Review fasst die gesamte Evidenz zur chirurgischen Behandlung lumbaler Bandscheibenvorfälle zusammen. Kernergebnis: Die Diskektomie bietet bei sorgfältig ausgewählten Patienten mit Ischias schnellere Schmerzlinderung als konservative Behandlung. Aber — und das ist der entscheidende Punkt — es gibt keine Evidenz, dass die Chirurgie den langfristigen natürlichen Verlauf der Bandscheibenerkrankung verändert. 90 % der akuten Ischias-Episoden lösen sich mit konservativer Therapie. Der Cochrane Review betont: Nur drei Studien verglichen Diskektomie direkt mit konservativer Therapie — und diese lieferten „suggestive rather than conclusive results“ (eher hinweisende als abschließende Ergebnisse).
 
-        AWMF S2k-Leitlinie: Bandscheibenvorfälle (2020)
+AWMF S2k-Leitlinie: Bandscheibenvorfälle (2020)
 Evidenzbasierte Leitlinie · *AWMF-Register Nr. 033/048* · Deutsche Gesellschaft für Orthopädie und Unfallchirurgie
 
 Die deutsche AWMF-Leitlinie zur konservativen, operativen und rehabilitativen Versorgung bei Bandscheibenvorfällen mit radikulärer Symptomatik empfiehlt: Konservative Therapie als Erstbehandlung. Bettruhe über mehr als 2–4 Tage ist nicht empfohlen — stattdessen Physiotherapie und Bewegung kurz nach dem akuten Ereignis. Chirurgische Interventionen sollen nur bei besonderen Symptomkonstellationen erwogen werden: Cauda-equina-Syndrom, progressive Lähmung, oder fehlendes Ansprechen auf 6–12 Wochen konservative Therapie.
@@ -82,35 +79,34 @@ Die Evidenz spricht klar gegen die Routine-OP bei unkomplizierten Bandscheibenvo
 ## Bandscheibenvorfall beim Arzt: Welche Fragen Sie stellen sollten
 
 - 
-          **„Ist dies ein Notfall — liegen Zeichen eines Cauda-equina-Syndroms oder einer progressiven Lähmung vor?“**
+**„Ist dies ein Notfall — liegen Zeichen eines Cauda-equina-Syndroms oder einer progressiven Lähmung vor?“**
 
-          Die Antwort sollte schnell und klar sein. Wenn ja: sofortige Überweisung in die Neurochirurgie. Wenn nein: kein Grund zur Eile — konservative Therapie hat Zeit.
-        
+Die Antwort sollte schnell und klar sein. Wenn ja: sofortige Überweisung in die Neurochirurgie. Wenn nein: kein Grund zur Eile — konservative Therapie hat Zeit.
+
 - 
-          **„Korreliert der MRT-Befund mit meinen Symptomen — oder könnte es ein Zufallsbefund sein?“**
+**„Korreliert der MRT-Befund mit meinen Symptomen — oder könnte es ein Zufallsbefund sein?“**
 
-          Ein Bandscheibenvorfall im MRT beweist nicht, dass er die Ursache der Schmerzen ist. Der Befund muss zum klinischen Bild passen: Beinschmerz im typischen Versorgungsgebiet, positiver Straight-Leg-Raise-Test, ggf. neurologische Ausfälle.
-        
+Ein Bandscheibenvorfall im MRT beweist nicht, dass er die Ursache der Schmerzen ist. Der Befund muss zum klinischen Bild passen: Beinschmerz im typischen Versorgungsgebiet, positiver Straight-Leg-Raise-Test, ggf. neurologische Ausfälle.
+
 - 
-          **„Kennen Sie die Leiden-Studie (Peul et al., NEJM), die zeigt, dass nach einem Jahr kein Unterschied zwischen OP und konservativer Therapie besteht?“**
+**„Kennen Sie die Leiden-Studie (Peul et al., NEJM), die zeigt, dass nach einem Jahr kein Unterschied zwischen OP und konservativer Therapie besteht?“**
 
-          Ein Wirbelsäulenchirurg, der diese Studie nicht kennt, ist nicht auf dem aktuellen Stand. Sie wurde 2007 im New England Journal of Medicine publiziert und ist eine der wichtigsten Studien zu dieser Frage.
-        
+Ein Wirbelsäulenchirurg, der diese Studie nicht kennt, ist nicht auf dem aktuellen Stand. Sie wurde 2007 im New England Journal of Medicine publiziert und ist eine der wichtigsten Studien zu dieser Frage.
+
 - 
-          **„Wie lange sollte ich konservative Therapie versuchen, bevor wir über eine OP sprechen?“**
+**„Wie lange sollte ich konservative Therapie versuchen, bevor wir über eine OP sprechen?“**
 
-          Die Leitlinien empfehlen 6–12 Wochen. Wenn Ihr Arzt nach 2–3 Wochen zur OP rät (ohne Notfallsymptome), fragen Sie nach dem Grund.
-        
+Die Leitlinien empfehlen 6–12 Wochen. Wenn Ihr Arzt nach 2–3 Wochen zur OP rät (ohne Notfallsymptome), fragen Sie nach dem Grund.
+
 - 
-          **„Welche Komplikationen hat die Diskektomie — und wie hoch ist die Rezidiv-Rate?“**
+**„Welche Komplikationen hat die Diskektomie — und wie hoch ist die Rezidiv-Rate?“**
 
-          Mögliche Komplikationen: Infektion, Nervenschäden, Narbengewebe (Epiduralfibrose), erneuter Vorfall am selben Segment (Rezidiv-Rate 5–15 %). Bei einem Eingriff, der langfristig keine besseren Ergebnisse liefert als Abwarten, sollte jedes Risiko sorgfältig abgewogen werden.
-        
+Mögliche Komplikationen: Infektion, Nervenschäden, Narbengewebe (Epiduralfibrose), erneuter Vorfall am selben Segment (Rezidiv-Rate 5–15 %). Bei einem Eingriff, der langfristig keine besseren Ergebnisse liefert als Abwarten, sollte jedes Risiko sorgfältig abgewogen werden.
+
 - 
-          **„Welche konservativen Optionen haben wir noch nicht ausgeschöpft?“**
+**„Welche konservativen Optionen haben wir noch nicht ausgeschöpft?“**
 
-          Strukturierte Physiotherapie, epidurale Steroidinjektionen, optimierte Schmerzmedikation, psychologische Unterstützung bei Schmerzkatastrophisierung — oft gibt es noch unversuchte Ansätze, bevor eine OP nötig wird.
-        
+Strukturierte Physiotherapie, epidurale Steroidinjektionen, optimierte Schmerzmedikation, psychologische Unterstützung bei Schmerzkatastrophisierung — oft gibt es noch unversuchte Ansätze, bevor eine OP nötig wird.
 
 ## Quellenverzeichnis
 
@@ -128,11 +124,11 @@ Die Evidenz spricht klar gegen die Routine-OP bei unkomplizierten Bandscheibenvo
 
 [Name des Facharztes/der Fachärztin]
 
-      [Fachgebiet, Qualifikation]
+[Fachgebiet, Qualifikation]
 
-      [Praxis/Klinik, Ort]
+[Praxis/Klinik, Ort]
 
-      [Link zur Praxis-Homepage]
+[Link zur Praxis-Homepage]
 
 *„[Platz für ein 1–2-Satz-Statement des Reviewers zum Artikel]“*
 

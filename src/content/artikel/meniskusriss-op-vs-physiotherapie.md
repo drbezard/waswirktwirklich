@@ -9,17 +9,14 @@ reviewed: false
 
 Fachgebiet: Orthopädie | Evidenzgrad: Stark | Lesedauer: ca. 10 Minuten
 
-  
+Dr. Georg Bézard
 
-      Dr. Georg Bézard
+✓ Geprüft
 
-      ✓ Geprüft
-    
 Facharzt für Unfallchirurgie & Orthopädie · Wien
 Oberarzt für Orthopädie & Traumatologie sowie Facharzt für Unfallchirurgie in Wien. Spezialisiert auf minimalinvasive Schulter-, Hand- und Kniechirurgie. Privatpraxis für evidenzbasierte Orthopädie in Wien-Döbling und Tulln.
 
-    [→ www.drbezard.com](https://www.drbezard.com)
-  
+[→ www.drbezard.com](https://www.drbezard.com)
 
 Ein Meniskusriss ist kein automatischer Grund für eine Operation. Bei degenerativen (abnutzungsbedingten) Meniskusrissen ist Physiotherapie genauso wirksam wie die Arthroskopie — und schützt das Kniegelenk langfristig besser.
 
@@ -37,22 +34,22 @@ Aber auch hier gilt die entscheidende Frage: Geht es den Patienten besser, weil 
 
 Zunächst ein grundlegendes Problem: MRT-Befunde sind sehr empfindlich. Eine große Studie an der Framingham-Kohorte (Guermazi et al., 2012) fand: Bei 30–40 % der schmerzfreien Erwachsenen ohne Kniearthrose zeigt das MRT einen Meniskusriss — völlig ohne Beschwerden. Ein Meniskusriss im MRT ist also kein Beweis dafür, dass dieser Riss die Ursache der Schmerzen ist. Trotzdem wird er oft als Operationsgrund herangezogen.
 
-        Placebo-kontrollierter RCT: Sihvonen et al. (2013 / 2020)
+Placebo-kontrollierter RCT: Sihvonen et al. (2013 / 2020)
 Doppelblinder, Placebo-kontrollierter RCT (FIDELITY) · *New England Journal of Medicine* (2013), *JAMA* (2020, 5-Jahres-Follow-up) · 146 Patienten, Finnland
 
 Die FIDELITY-Studie verglich arthroskopische Meniskektomie (Teilentfernung) mit einer Schein-OP: Patienten wurden in Narkose versetzt und erhielten die gleichen Schnitte, aber bei der Schein-OP wurde kein Meniskusgewebe entfernt. Ergebnis nach 12 Monaten: Kein signifikanter Unterschied. Der Lysholm-Score verbesserte sich um 21,7 Punkte nach echter OP versus 23,3 Punkte nach Schein-OP — die Schein-OP schnitt sogar minimal besser ab. Das 5-Jahres-Follow-up (Sihvonen et al., 2020, JAMA) bestätigte: Kein Vorteil der echten OP. Zudem entwickelten Patienten nach Meniskektomie häufiger radiologisch erkennbare Arthrose-Zeichen — weil der entfernte Meniskus als Puffer zwischen den Knochen fehlte.
 
-        ESCAPE-Studie (5-Jahres-Ergebnisse): Skou et al. (2024)
+ESCAPE-Studie (5-Jahres-Ergebnisse): Skou et al. (2024)
 RCT · *JAMA Network Open*, 7(6), e2419631 · 206 Patienten, Dänemark
 
 Die ESCAPE-Studie verglich zwei Gruppen: reine Physiotherapie versus Meniskektomie plus Physiotherapie. Das 5-Jahres-Follow-up — eines der längsten für diese Fragestellung — zeigte: Reine Physiotherapie war genauso wirksam wie Operation plus Physiotherapie. Keine signifikanten Unterschiede in Schmerz, Funktion oder Lebensqualität. Das bedeutet: Die OP lieferte keinen zusätzlichen Nutzen über die Physiotherapie hinaus — selbst nach fünf Jahren nicht.
 
-        Cochrane Review: O’Connor et al. (2022)
+Cochrane Review: O’Connor et al. (2022)
 Systematischer Review und Meta-Analyse · *Cochrane Database of Systematic Reviews*, Issue 3, CD014328 · 16 RCTs, 2.105 Patienten
 
 Dieser Cochrane Review fasst die gesamte verfügbare Evidenz zur Arthroskopie bei degenerativen Kniebeschwerden (einschließlich Meniskusrissen) zusammen. Kernergebnis mit hoher Evidenzqualität: Im Vergleich zur Placebo-OP kein signifikanter Vorteil in Schmerz, Funktion oder Lebensqualität. Im Vergleich zur Physiotherapie: Physiotherapie nicht unterlegen. Zusätzliches Risiko: Die OP erhöht das Osteoarthritis-Risiko (Gelenkverschleiß), weil Meniskusgewebe entfernt wird. Die Schlussfolgerung der Autoren: Ärzte müssen Patienten klar über die fehlende Überlegenheit der OP aufklären.
 
-        Meta-Analyse Langzeitfolgen: Kamstra et al. (2024)
+Meta-Analyse Langzeitfolgen: Kamstra et al. (2024)
 Systematischer Review und Meta-Analyse · *Osteoarthritis and Cartilage*, 32(7), 857–866 · 6 RCTs, 1.078 Patienten
 
 Diese Meta-Analyse untersuchte gezielt die Langzeitfolgen von Übungstherapie versus Meniskektomie. Ergebnis: Physiotherapie zeigte ein geringeres Risiko für Osteoarthritis-Progression im Vergleich zur Meniskektomie. Langfristig ist Physiotherapie also nicht nur gleichwertig, sondern möglicherweise überlegen — weil das Meniskusgewebe als natürlicher Stoßdämpfer erhalten bleibt.
@@ -84,40 +81,39 @@ Die Evidenz spricht klar gegen die Routine-OP bei degenerativen Meniskusrissen. 
 ## Meniskusriss: Welche Fragen Sie Ihrem Arzt stellen sollten
 
 - 
-          **„Ist mein Meniskusriss traumatisch (akut nach Verletzung) oder degenerativ (abnutzungsbedingt)?“**
+**„Ist mein Meniskusriss traumatisch (akut nach Verletzung) oder degenerativ (abnutzungsbedingt)?“**
 
-          Die Unterscheidung ist entscheidend: Bei degenerativen Rissen ist Physiotherapie die erste Wahl. Bei traumatischen Rissen mit Blockade kann eine OP sinnvoll sein. Die Behandlung unterscheidet sich grundlegend.
-        
+Die Unterscheidung ist entscheidend: Bei degenerativen Rissen ist Physiotherapie die erste Wahl. Bei traumatischen Rissen mit Blockade kann eine OP sinnvoll sein. Die Behandlung unterscheidet sich grundlegend.
+
 - 
-          **„Kennen Sie die FIDELITY-Studie, die zeigt, dass die Meniskektomie nicht besser wirkt als eine Schein-OP?“**
+**„Kennen Sie die FIDELITY-Studie, die zeigt, dass die Meniskektomie nicht besser wirkt als eine Schein-OP?“**
 
-          Ein Orthopäde, der diese Studie nicht kennt, ist nicht auf dem aktuellen Stand. Sie wurde 2013 im New England Journal of Medicine publiziert und hat die internationalen Leitlinien verändert.
-        
+Ein Orthopäde, der diese Studie nicht kennt, ist nicht auf dem aktuellen Stand. Sie wurde 2013 im New England Journal of Medicine publiziert und hat die internationalen Leitlinien verändert.
+
 - 
-          **„Kann mein Meniskus repariert (genäht) werden — oder müsste er teilweise entfernt werden?“**
+**„Kann mein Meniskus repariert (genäht) werden — oder müsste er teilweise entfernt werden?“**
 
-          Reparatur erhält das Meniskusgewebe und schützt langfristig besser vor Arthrose als Meniskektomie. Ob eine Reparatur möglich ist, hängt von der Lage des Risses (periphere, gut durchblutete Zone) und dem Risstyp ab.
-        
+Reparatur erhält das Meniskusgewebe und schützt langfristig besser vor Arthrose als Meniskektomie. Ob eine Reparatur möglich ist, hängt von der Lage des Risses (periphere, gut durchblutete Zone) und dem Risstyp ab.
+
 - 
-          **„Würden Sie mir erst ein strukturiertes Physiotherapie-Programm verschreiben — mindestens 8 bis 12 Wochen?“**
+**„Würden Sie mir erst ein strukturiertes Physiotherapie-Programm verschreiben — mindestens 8 bis 12 Wochen?“**
 
-          Die beste verfügbare Evidenz zeigt, dass Physiotherapie der OP gleichwertig ist. Wenn Ihr Arzt sofort zur OP rät, ohne Physiotherapie ernsthaft zu versuchen, holen Sie eine Zweitmeinung ein.
-        
+Die beste verfügbare Evidenz zeigt, dass Physiotherapie der OP gleichwertig ist. Wenn Ihr Arzt sofort zur OP rät, ohne Physiotherapie ernsthaft zu versuchen, holen Sie eine Zweitmeinung ein.
+
 - 
-          **„Welche langfristigen Folgen hat die Meniskektomie — erhöht sie mein Arthrose-Risiko?“**
+**„Welche langfristigen Folgen hat die Meniskektomie — erhöht sie mein Arthrose-Risiko?“**
 
-          Ja, nachweislich (FIDELITY 5-Jahres-Daten, Kamstra et al. Meta-Analyse). Ein ehrlicher Arzt wird das offen ansprechen. Der entfernte Meniskus fehlt als Puffer zwischen den Knochen.
-        
+Ja, nachweislich (FIDELITY 5-Jahres-Daten, Kamstra et al. Meta-Analyse). Ein ehrlicher Arzt wird das offen ansprechen. Der entfernte Meniskus fehlt als Puffer zwischen den Knochen.
+
 - 
-          **„Habe ich eine mechanische Blockade — oder sind meine Beschwerden nur Schmerzen?“**
+**„Habe ich eine mechanische Blockade — oder sind meine Beschwerden nur Schmerzen?“**
 
-          Eine echte mechanische Blockade (das Knie lässt sich nicht vollständig beugen oder strecken) ist eine klarere OP-Indikation als Schmerzen allein. Schmerzen ohne Blockade sprechen oft gut auf Physiotherapie an.
-        
+Eine echte mechanische Blockade (das Knie lässt sich nicht vollständig beugen oder strecken) ist eine klarere OP-Indikation als Schmerzen allein. Schmerzen ohne Blockade sprechen oft gut auf Physiotherapie an.
+
 - 
-          **„Verursacht der Meniskusriss im MRT tatsächlich meine Beschwerden — oder könnte es ein Zufallsbefund sein?“**
+**„Verursacht der Meniskusriss im MRT tatsächlich meine Beschwerden — oder könnte es ein Zufallsbefund sein?“**
 
-          30–40 % der schmerzfreien Erwachsenen haben einen Meniskusriss im MRT. Ein Befund im Bild ist nicht automatisch die Ursache der Schmerzen. Fragen Sie, welche klinischen Tests (McMurray, Thessaly) durchgeführt wurden.
-        
+30–40 % der schmerzfreien Erwachsenen haben einen Meniskusriss im MRT. Ein Befund im Bild ist nicht automatisch die Ursache der Schmerzen. Fragen Sie, welche klinischen Tests (McMurray, Thessaly) durchgeführt wurden.
 
 ## Quellenverzeichnis
 
@@ -135,11 +131,11 @@ Die Evidenz spricht klar gegen die Routine-OP bei degenerativen Meniskusrissen. 
 
 [Name des Facharztes/der Fachärztin]
 
-      [Fachgebiet, Qualifikation]
+[Fachgebiet, Qualifikation]
 
-      [Praxis/Klinik, Ort]
+[Praxis/Klinik, Ort]
 
-      [Link zur Praxis-Homepage]
+[Link zur Praxis-Homepage]
 
 *„[Platz für ein 1–2-Satz-Statement des Reviewers zum Artikel]“*
 

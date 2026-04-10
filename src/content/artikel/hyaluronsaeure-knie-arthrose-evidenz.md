@@ -9,17 +9,14 @@ reviewed: false
 
 Fachgebiet: Orthopädie | Evidenzgrad: Stark | Lesedauer: ca. 10 Minuten
 
-  
+Dr. Georg Bézard
 
-      Dr. Georg Bézard
+✓ Geprüft
 
-      ✓ Geprüft
-    
 Facharzt für Unfallchirurgie & Orthopädie · Wien
 Oberarzt für Orthopädie & Traumatologie sowie Facharzt für Unfallchirurgie in Wien. Spezialisiert auf minimalinvasive Schulter-, Hand- und Kniechirurgie. Privatpraxis für evidenzbasierte Orthopädie in Wien-Döbling und Tulln.
 
-    [→ www.drbezard.com](https://www.drbezard.com)
-  
+[→ www.drbezard.com](https://www.drbezard.com)
 
 Hyaluronsäure-Spritzen ins Kniegelenk wirken bei Arthrose kaum besser als eine Placebo-Injektion mit Kochsalzlösung.
 
@@ -39,27 +36,27 @@ Das entscheidende Experiment in der Medizin ist der Vergleich mit Placebo — in
 
 Genau das zeigen die großen, unabhängigen Auswertungen der verfügbaren Studien aber nicht — oder nur in einem Ausmaß, das klinisch nicht relevant ist.
 
-        Meta-Analyse: Rutjes et al. (2012)
+Meta-Analyse: Rutjes et al. (2012)
 Systematische Übersicht und Meta-Analyse · *Annals of Internal Medicine* · 89 randomisierte kontrollierte Studien (RCTs), 12.667 Patienten
 
 Dies ist die bisher umfassendste unabhängige Auswertung. Ergebnis: Hyaluronsäure-Injektionen brachten im Vergleich zu Placebo eine statistisch minimale Schmerzlinderung — die sogenannte Effektstärke lag bei nur 0,37 Standardabweichungen. Als die Forscher nur die 18 größten und methodisch besten Studien (mit verblindeter Ergebnismessung) analysierten, schrumpfte der Effekt auf 0,11 — weit unter der Schwelle von 0,5, die als klinisch spürbar gilt. Zusätzlich war das Risiko für schwerwiegende unerwünschte Ereignisse (Nebenwirkungen, die einen Arztbesuch oder Krankenhausaufenthalt erfordern) erhöht.
 
-        Cochrane Review: Bellamy et al. (2006)
+Cochrane Review: Bellamy et al. (2006)
 Cochrane Systematic Review · *Cochrane Database of Systematic Reviews* · 76 Studien
 
 Dieses ältere, aber einflussreiche Review kam noch zu einem positiveren Ergebnis: Hyaluronsäure zeigte Vorteile bei Schmerz und Funktion, insbesondere 5 bis 13 Wochen nach der Injektion, mit einer Schmerzverbesserung von 28 bis 54 % gegenüber dem Ausgangswert. Allerdings galt dies auch für die Placebo-Gruppen in ähnlichem Ausmaß. Spätere Analysen zeigten, dass dieses Review viele kleine Studien mit methodischen Schwächen einschloss, die den Effekt überzeichneten. Der Cochrane Review selbst merkte an, dass die Ergebnisse zwischen verschiedenen Produkten und Zeitpunkten erheblich schwankten.
 
-        Netzwerk-Meta-Analyse: Pereira et al. (2024)
+Netzwerk-Meta-Analyse: Pereira et al. (2024)
 Systematische Übersicht und Bayessche Netzwerk-Meta-Analyse · *Osteoarthritis and Cartilage*, 32:1207–1219 · Nur große RCTs (≥100 Patienten pro Gruppe)
 
 Diese aktuelle Analyse beschränkte sich bewusst auf große, methodisch hochwertige Studien — ein strengerer Ansatz als frühere Reviews. Ergebnis: Hyaluronsäure zeigte keine klinisch relevante Schmerzreduktion im Vergleich zu Placebo, war aber mit einem erhöhten Risiko für Studienabbrüche wegen Nebenwirkungen und für schwerwiegende unerwünschte Ereignisse verbunden.
 
-        AAOS Clinical Practice Guideline, 3. Auflage (2021)
+AAOS Clinical Practice Guideline, 3. Auflage (2021)
 Klinische Praxisleitlinie · American Academy of Orthopaedic Surgeons · Systematische Evidenzauswertung
 
 Die AAOS — die weltweit größte orthopädische Fachgesellschaft — spricht sich mit „moderater Empfehlungsstärke“ gegen den routinemäßigen Einsatz von Hyaluronsäure-Injektionen bei Kniearthrose aus. Begründung: Die Gesamtevidenz ist inkonsistent, und das Ausmaß der Verbesserung erreicht kein klinisch bedeutsames Niveau. Das britische NICE-Institut kommt in seiner Leitlinie NG226 zum gleichen Schluss.
 
-        IGeL-Monitor-Bewertung (2025)
+IGeL-Monitor-Bewertung (2025)
 Evidenzbewertung des Medizinischen Dienstes Bund · Deutschland
 
 Der IGeL-Monitor, der in Deutschland individuelle Gesundheitsleistungen (IGeL — also Selbstzahlerleistungen) bewertet, stufte Hyaluronsäure-Injektionen bei Knie- und Hüftarthrose 2025 als „negativ“ ein: Die Schmerzreduktion gegenüber Placebo sei „klinisch nicht von Bedeutung“, das Risiko für Nebenwirkungen jedoch erhöht.
@@ -93,40 +90,39 @@ Die Evidenz zeigt, dass Hyaluronsäure für die Routinebehandlung nicht empfehle
 ## Hyaluronsäure-Spritze beim Orthopäden: Welche Fragen Sie stellen sollten
 
 - 
-          **„Gibt es randomisierte Studien, die zeigen, dass Hyaluronsäure-Spritzen besser wirken als eine Placebo-Injektion mit Kochsalzlösung?“**
+**„Gibt es randomisierte Studien, die zeigen, dass Hyaluronsäure-Spritzen besser wirken als eine Placebo-Injektion mit Kochsalzlösung?“**
 
-          Die ehrliche Antwort ist: Die größten und besten Studien zeigen keinen klinisch relevanten Unterschied. Wenn Ihr Arzt behauptet, die Wirkung sei „klar belegt“, bitten Sie um konkrete Studien.
-        
+Die ehrliche Antwort ist: Die größten und besten Studien zeigen keinen klinisch relevanten Unterschied. Wenn Ihr Arzt behauptet, die Wirkung sei „klar belegt“, bitten Sie um konkrete Studien.
+
 - 
-          **„Warum empfehlen AAOS und NICE diese Behandlung nicht — und warum empfehlen Sie sie mir trotzdem?“**
+**„Warum empfehlen AAOS und NICE diese Behandlung nicht — und warum empfehlen Sie sie mir trotzdem?“**
 
-          Kein konfrontativer Vorwurf, sondern eine berechtigte Frage. Ihr Arzt kann gute individuelle Gründe haben — aber er sollte die Leitlinien kennen und erklären können, warum er davon abweicht.
-        
+Kein konfrontativer Vorwurf, sondern eine berechtigte Frage. Ihr Arzt kann gute individuelle Gründe haben — aber er sollte die Leitlinien kennen und erklären können, warum er davon abweicht.
+
 - 
-          **„Welche Alternativen habe ich — insbesondere Physiotherapie und Bewegungstherapie — und wurden diese bereits konsequent versucht?“**
+**„Welche Alternativen habe ich — insbesondere Physiotherapie und Bewegungstherapie — und wurden diese bereits konsequent versucht?“**
 
-          Physiotherapie und strukturierte Bewegung sind die am besten belegte nicht-operative Therapie bei Kniearthrose. Wenn das noch nicht ausreichend probiert wurde, ist eine Spritze verfrüht.
-        
+Physiotherapie und strukturierte Bewegung sind die am besten belegte nicht-operative Therapie bei Kniearthrose. Wenn das noch nicht ausreichend probiert wurde, ist eine Spritze verfrüht.
+
 - 
-          **„Was genau kostet die Behandlung, wie viele Spritzen sind geplant, und zahlt das meine Krankenkasse?“**
+**„Was genau kostet die Behandlung, wie viele Spritzen sind geplant, und zahlt das meine Krankenkasse?“**
 
-          Transparenz über Kosten ist Ihr Recht. Wenn die Kasse nicht zahlt, hat das einen Grund: Die Evidenz reicht nicht aus.
-        
+Transparenz über Kosten ist Ihr Recht. Wenn die Kasse nicht zahlt, hat das einen Grund: Die Evidenz reicht nicht aus.
+
 - 
-          **„Welche Risiken hat die Injektion — einschließlich Gelenkinfektionen?“**
+**„Welche Risiken hat die Injektion — einschließlich Gelenkinfektionen?“**
 
-          Gelenkinfektionen (septische Arthritis) sind selten, aber potenziell schwerwiegend. Bei einem Eingriff mit fraglichem Nutzen sollten Sie die Risiken genau kennen.
-        
+Gelenkinfektionen (septische Arthritis) sind selten, aber potenziell schwerwiegend. Bei einem Eingriff mit fraglichem Nutzen sollten Sie die Risiken genau kennen.
+
 - 
-          **„Ist meine Arthrose so weit fortgeschritten, dass nur noch eine OP hilft, oder gibt es konservative Optionen, die ich noch nicht ausgeschöpft habe?“**
+**„Ist meine Arthrose so weit fortgeschritten, dass nur noch eine OP hilft, oder gibt es konservative Optionen, die ich noch nicht ausgeschöpft habe?“**
 
-          Hyaluronsäure wird manchmal als „Zeitbrücke“ zur Prothese verkauft. Aber wenn konservative Maßnahmen noch nicht ausgeschöpft sind, ist das der nächste Schritt — nicht eine weitere Spritze.
-        
+Hyaluronsäure wird manchmal als „Zeitbrücke“ zur Prothese verkauft. Aber wenn konservative Maßnahmen noch nicht ausgeschöpft sind, ist das der nächste Schritt — nicht eine weitere Spritze.
+
 - 
-          **„Wie messen wir den Erfolg — und was machen wir, wenn die Spritzen nicht helfen?“**
+**„Wie messen wir den Erfolg — und was machen wir, wenn die Spritzen nicht helfen?“**
 
-          Ein seriöser Behandlungsplan hat klare Erfolgskriterien und einen Plan B. Wenn die Antwort „dann machen wir noch eine Serie“ lautet, sollten Sie skeptisch sein.
-        
+Ein seriöser Behandlungsplan hat klare Erfolgskriterien und einen Plan B. Wenn die Antwort „dann machen wir noch eine Serie“ lautet, sollten Sie skeptisch sein.
 
 ## Quellenverzeichnis
 
@@ -142,11 +138,11 @@ Die Evidenz zeigt, dass Hyaluronsäure für die Routinebehandlung nicht empfehle
 
 [Name des Facharztes/der Fachärztin]
 
-      [Fachgebiet, Qualifikation]
+[Fachgebiet, Qualifikation]
 
-      [Praxis/Klinik, Ort]
+[Praxis/Klinik, Ort]
 
-      [Link zur Praxis-Homepage]
+[Link zur Praxis-Homepage]
 
 *„[Platz für ein 1–2-Satz-Statement des Reviewers zum Artikel]“*
 

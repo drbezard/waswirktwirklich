@@ -9,17 +9,14 @@ reviewed: false
 
 Fachgebiet: Orthopädie | Evidenzgrad: Stark | Lesedauer: ca. 10 Minuten
 
-  
+Dr. Georg Bézard
 
-      Dr. Georg Bézard
+✓ Geprüft
 
-      ✓ Geprüft
-    
 Facharzt für Unfallchirurgie & Orthopädie · Wien
 Oberarzt für Orthopädie & Traumatologie sowie Facharzt für Unfallchirurgie in Wien. Spezialisiert auf minimalinvasive Schulter-, Hand- und Kniechirurgie. Privatpraxis für evidenzbasierte Orthopädie in Wien-Döbling und Tulln.
 
-    [→ www.drbezard.com](https://www.drbezard.com)
-  
+[→ www.drbezard.com](https://www.drbezard.com)
 
 Die arthroskopische subakromiale Dekompression — die häufigste Schulter-OP bei Impingement — wirkt nicht besser als eine Schein-Operation.
 
@@ -39,22 +36,22 @@ Die stärkste Form der medizinischen Evidenz bei chirurgischen Eingriffen ist de
 
 Genau das zeigen die besten verfügbaren Studien aber nicht.
 
-        CSAW-Studie: Beard et al. (2018)
+CSAW-Studie: Beard et al. (2018)
 Placebo-kontrollierter RCT · *The Lancet*, 391(10118), 329–338 · 313 Patienten, 32 Krankenhäuser in Großbritannien
 
 Die CSAW-Studie (Can Shoulder Arthroscopy Work?) verglich drei Gruppen: arthroskopische subakromiale Dekompression (echte OP), Arthroskopie ohne Knochenabtragung (Schein-OP) und Beobachtung ohne Eingriff. Ergebnis nach sechs Monaten: Beide OP-Gruppen schnitten geringfügig besser ab als die Beobachtungsgruppe — aber der Unterschied war klinisch nicht bedeutsam (unter der Schwelle, die Patienten im Alltag spüren). Entscheidend: Zwischen der echten OP und der Schein-OP gab es keinen Unterschied. Der Knochensporn wurde weggeschliffen — aber es machte keinen messbaren Unterschied, ob er weg war oder nicht.
 
-        FIMPACT-Studie: Paavola et al. (2018)
+FIMPACT-Studie: Paavola et al. (2018)
 Doppelblinder, Placebo-kontrollierter RCT · *BMJ*, 362:k2860 · 210 Patienten, Finnland
 
 Die FIMPACT-Studie (Finnish Subacromial Impingement Arthroscopy Controlled Trial) verglich ebenfalls drei Gruppen: echte OP, Schein-OP und Übungstherapie. Ergebnis nach zwei Jahren: Kein klinisch relevanter Unterschied zwischen den drei Gruppen bei Schmerzen in Ruhe oder bei Belastung. Die Schmerzlinderung betrug 36,0 Punkte (von 100) nach echte OP versus 31,4 nach Schein-OP — ein Unterschied, der statistisch und klinisch nicht bedeutsam ist. Die 5-Jahres-Nachbeobachtung (Paavola et al., 2021) bestätigte: Auch langfristig kein Vorteil der echten OP. Die 10-Jahres-Daten stützen die Empfehlung, nicht-operative Therapie als Erstbehandlung zu bevorzugen.
 
-        Cochrane Review: Karjalainen et al. (2019)
+Cochrane Review: Karjalainen et al. (2019)
 Systematischer Review · *Cochrane Database of Systematic Reviews*, Art. No.: CD005619 · 8 RCTs, 1.062 Patienten
 
 Dieser Cochrane Review fasst die gesamte verfügbare Evidenz zusammen. Kernergebnis mit hoher Evidenzqualität: Die subakromiale Dekompression bewirkt nach einem Jahr keinen klinisch bedeutsamen Vorteil gegenüber Placebo-OP bei Schmerz, Funktion und Lebensqualität. Im Vergleich mit Übungstherapie: ebenfalls kein klinisch bedeutsamer Unterschied. Komplikationen (eingefrorene Schulter, Infektionen) traten bei etwa 3 % der operierten Patienten auf — bei einer OP, die keinen nachweisbaren Zusatznutzen hat.
 
-        AWMF-Leitlinie S2e: Subakromiales Impingement (2021)
+AWMF-Leitlinie S2e: Subakromiales Impingement (2021)
 Evidenzbasierte Leitlinie · *AWMF-Register Nr. 033/056* · Deutsche Gesellschaft für Orthopädie und Unfallchirurgie
 
 Die deutsche Leitlinie empfiehlt für die meisten Fälle nicht-operative Behandlung als Therapie der ersten Wahl. Für den Einsatz von Übungstherapie liegt „starke Evidenz“ vor. Die Leitlinie stellt klar: Die subakromiale Dekompression zeigt verglichen mit Placebo-OP „keinen klinisch bedeutsamen Vorteil bezüglich Schmerzen, Funktion und Lebensqualität“.
@@ -86,35 +83,34 @@ Die Evidenz spricht klar gegen die Routine-OP bei subakromialem Impingement. Abe
 ## Schulter-OP beim Orthopäden: Welche Fragen Sie stellen sollten
 
 - 
-          **„Kennen Sie die CSAW- und FIMPACT-Studien, die zeigen, dass die subakromiale Dekompression nicht besser wirkt als eine Schein-OP?“**
+**„Kennen Sie die CSAW- und FIMPACT-Studien, die zeigen, dass die subakromiale Dekompression nicht besser wirkt als eine Schein-OP?“**
 
-          Ein Schulterchirurg, der diese Studien nicht kennt, ist nicht auf dem aktuellen Stand. Die Studien sind seit 2018 publiziert und haben die internationalen Leitlinien verändert.
-        
+Ein Schulterchirurg, der diese Studien nicht kennt, ist nicht auf dem aktuellen Stand. Die Studien sind seit 2018 publiziert und haben die internationalen Leitlinien verändert.
+
 - 
-          **„Habe ich wirklich ein subakromiales Impingement — oder könnte es eine andere Ursache für meine Schulterschmerzen geben?“**
+**„Habe ich wirklich ein subakromiales Impingement — oder könnte es eine andere Ursache für meine Schulterschmerzen geben?“**
 
-          Schulterschmerzen haben viele mögliche Ursachen: Rotatorenmanschettenriss, Kalkschulter, Frozen Shoulder, Arthrose des Schultereckgelenks. Die Behandlung unterscheidet sich erheblich — und nicht jede Diagnose profitiert gleich (wenig) von einer Dekompression.
-        
+Schulterschmerzen haben viele mögliche Ursachen: Rotatorenmanschettenriss, Kalkschulter, Frozen Shoulder, Arthrose des Schultereckgelenks. Die Behandlung unterscheidet sich erheblich — und nicht jede Diagnose profitiert gleich (wenig) von einer Dekompression.
+
 - 
-          **„Welche konservative Therapie wurde bisher versucht — und war sie ausreichend strukturiert und lang genug?“**
+**„Welche konservative Therapie wurde bisher versucht — und war sie ausreichend strukturiert und lang genug?“**
 
-          Die Leitlinien fordern mindestens 6 Monate konsequente Übungstherapie. Wenn das noch nicht geschehen ist, ist eine OP verfrüht — unabhängig davon, was das MRT zeigt.
-        
+Die Leitlinien fordern mindestens 6 Monate konsequente Übungstherapie. Wenn das noch nicht geschehen ist, ist eine OP verfrüht — unabhängig davon, was das MRT zeigt.
+
 - 
-          **„Was genau planen Sie zu operieren — und würde die OP auch ohne den MRT-Befund Sinn ergeben?“**
+**„Was genau planen Sie zu operieren — und würde die OP auch ohne den MRT-Befund Sinn ergeben?“**
 
-          Ein Knochensporn im MRT ist kein automatischer Grund für eine OP. Solche Befunde finden sich auch bei schmerzfreien Menschen. Die Frage ist: Gibt es einen funktionellen Grund für den Eingriff, oder reagieren wir nur auf ein Bild?
-        
+Ein Knochensporn im MRT ist kein automatischer Grund für eine OP. Solche Befunde finden sich auch bei schmerzfreien Menschen. Die Frage ist: Gibt es einen funktionellen Grund für den Eingriff, oder reagieren wir nur auf ein Bild?
+
 - 
-          **„Welche Komplikationen kann die OP haben — und wie rechtfertigen Sie die Risiken angesichts der Evidenzlage?“**
+**„Welche Komplikationen kann die OP haben — und wie rechtfertigen Sie die Risiken angesichts der Evidenzlage?“**
 
-          Auch „kleine“ arthroskopische Eingriffe haben Risiken: Frozen Shoulder (3 % der Fälle laut Cochrane Review), Infektion, Nervenschäden. Bei einem Eingriff ohne nachgewiesenen Zusatznutzen gegenüber Placebo ist jede Komplikation eine zu viel.
-        
+Auch „kleine“ arthroskopische Eingriffe haben Risiken: Frozen Shoulder (3 % der Fälle laut Cochrane Review), Infektion, Nervenschäden. Bei einem Eingriff ohne nachgewiesenen Zusatznutzen gegenüber Placebo ist jede Komplikation eine zu viel.
+
 - 
-          **„Würden Sie mir ein strukturiertes Physiotherapie-Programm verschreiben, bevor wir über eine OP sprechen?“**
+**„Würden Sie mir ein strukturiertes Physiotherapie-Programm verschreiben, bevor wir über eine OP sprechen?“**
 
-          Die beste verfügbare Evidenz zeigt, dass Übungstherapie genauso wirksam ist wie die OP. Wenn Ihr Arzt sofort zur OP rät, ohne Physiotherapie ernsthaft zu versuchen, holen Sie eine Zweitmeinung ein.
-        
+Die beste verfügbare Evidenz zeigt, dass Übungstherapie genauso wirksam ist wie die OP. Wenn Ihr Arzt sofort zur OP rät, ohne Physiotherapie ernsthaft zu versuchen, holen Sie eine Zweitmeinung ein.
 
 ## Quellenverzeichnis
 
@@ -130,11 +126,11 @@ Die Evidenz spricht klar gegen die Routine-OP bei subakromialem Impingement. Abe
 
 [Name des Facharztes/der Fachärztin]
 
-      [Fachgebiet, Qualifikation]
+[Fachgebiet, Qualifikation]
 
-      [Praxis/Klinik, Ort]
+[Praxis/Klinik, Ort]
 
-      [Link zur Praxis-Homepage]
+[Link zur Praxis-Homepage]
 
 *„[Platz für ein 1–2-Satz-Statement des Reviewers zum Artikel]“*
 

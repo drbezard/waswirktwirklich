@@ -7,668 +7,142 @@ excerpt: "Die arthroskopische subakromiale Dekompression wirkt nicht besser als 
 reviewed: false
 ---
 
-:root {
-            --color-bg: #fafafa;
-            --color-text: #1a1a1a;
-            --color-accent: #0d6ebd;
-            --color-accent-light: #e8f1fa;
-            --color-warning: #c0392b;
-            --color-warning-bg: #fdf0ef;
-            --color-success: #27845a;
-            --color-success-bg: #edf7f2;
-            --color-border: #d4d4d4;
-            --color-study-bg: #f5f7fa;
-            --font-serif: Georgia, serif;
-            --font-sans: system-ui, sans-serif;
-            --max-width: 740px;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: var(--font-sans);
-            color: var(--color-text);
-            background-color: var(--color-bg);
-            line-height: 1.7;
-        }
-
-        header {
-            background: linear-gradient(135deg, var(--color-accent) 0%, #0a5299 100%);
-            color: white;
-            padding: 2.5rem 1.5rem;
-            text-align: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
-
-        header h1 {
-            font-size: 1.9rem;
-            margin-bottom: 0.5rem;
-            font-family: var(--font-serif);
-            line-height: 1.3;
-        }
-
-        header .tagline {
-            font-size: 0.9rem;
-            opacity: 0.95;
-            letter-spacing: 0.3px;
-        }
-
-        .container {
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 2rem 1.5rem;
-        }
-
-        .kernaussage {
-            background: linear-gradient(to bottom, var(--color-accent-light), #f0f6fc);
-            border-left: 4px solid var(--color-accent);
-            padding: 1.8rem;
-            margin-bottom: 2.5rem;
-            border-radius: 4px;
-        }
-
-        .kernaussage h2 {
-            color: var(--color-accent);
-            font-size: 1.4rem;
-            margin-bottom: 1rem;
-            font-family: var(--font-serif);
-        }
-
-        .kernaussage p {
-            font-size: 1rem;
-            margin-bottom: 0.8rem;
-        }
-
-        .kernaussage p:last-child {
-            margin-bottom: 0;
-        }
-
-        .kernaussage strong {
-            color: var(--color-accent);
-            font-weight: 600;
-        }
-
-        section {
-            margin-bottom: 3rem;
-        }
-
-        h2 {
-            font-size: 1.6rem;
-            color: var(--color-accent);
-            margin-bottom: 1.2rem;
-            padding-bottom: 0.8rem;
-            border-bottom: 2px solid var(--color-accent-light);
-            font-family: var(--font-serif);
-        }
-
-        h3 {
-            font-size: 1.2rem;
-            color: var(--color-text);
-            margin-top: 1.5rem;
-            margin-bottom: 0.8rem;
-            font-weight: 600;
-        }
-
-        p {
-            margin-bottom: 1rem;
-            text-align: justify;
-        }
-
-        .evidenz {
-            background-color: var(--color-accent-light);
-            border-left: 4px solid var(--color-accent);
-            padding: 1.2rem;
-            margin: 1.5rem 0;
-            border-radius: 3px;
-        }
-
-        .evidenz strong {
-            color: var(--color-accent);
-        }
-
-        .studie {
-            background-color: var(--color-study-bg);
-            border: 1px solid var(--color-border);
-            padding: 1.3rem;
-            margin-bottom: 1.5rem;
-            border-radius: 4px;
-            font-size: 0.95rem;
-        }
-
-        .studie-name {
-            font-weight: 700;
-            color: var(--color-accent);
-            font-size: 1.05rem;
-            margin-bottom: 0.6rem;
-        }
-
-        .studie-details {
-            color: #555;
-            font-style: italic;
-            margin-bottom: 0.8rem;
-            padding-bottom: 0.8rem;
-            border-bottom: 1px solid var(--color-border);
-        }
-
-        .studie-ergebnis {
-            margin-top: 0.8rem;
-            color: var(--color-text);
-        }
-
-        .warnung {
-            background-color: var(--color-warning-bg);
-            border-left: 4px solid var(--color-warning);
-            padding: 1.2rem;
-            margin: 1.5rem 0;
-            border-radius: 3px;
-        }
-
-        .warnung strong {
-            color: var(--color-warning);
-        }
-
-        .ausnahmen {
-            background-color: var(--color-success-bg);
-            border: 1px solid var(--color-success);
-            padding: 1.2rem;
-            margin: 1.5rem 0;
-            border-radius: 4px;
-        }
-
-        .ausnahmen h4 {
-            color: var(--color-success);
-            font-weight: 700;
-            margin-bottom: 0.6rem;
-        }
-
-        .ausnahmen ul {
-            margin-left: 1.5rem;
-            margin-top: 0.8rem;
-        }
-
-        .ausnahmen li {
-            margin-bottom: 0.6rem;
-            line-height: 1.6;
-        }
-
-        .arztfragen {
-            background-color: #f9f9f9;
-            border: 1px solid var(--color-border);
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-            border-radius: 4px;
-        }
-
-        .arztfragen h4 {
-            color: var(--color-accent);
-            font-weight: 700;
-            margin-bottom: 1rem;
-        }
-
-        .arztfragen ol {
-            margin-left: 1.5rem;
-        }
-
-        .arztfragen li {
-            margin-bottom: 0.9rem;
-            line-height: 1.6;
-        }
-
-        .arztfragen strong {
-            color: var(--color-accent);
-        }
-
-        .quellen {
-            background-color: var(--color-study-bg);
-            border: 1px solid var(--color-border);
-            padding: 1.5rem;
-            margin-top: 2rem;
-            border-radius: 4px;
-        }
-
-        .quellen h3 {
-            color: var(--color-accent);
-            border-bottom: 1px solid var(--color-border);
-            padding-bottom: 0.8rem;
-            margin-bottom: 1.2rem;
-        }
-
-        .quellen ol {
-            margin-left: 1.5rem;
-        }
-
-        .quellen li {
-            margin-bottom: 0.9rem;
-            font-size: 0.9rem;
-            line-height: 1.7;
-            color: #333;
-        }
-
-        .quellen a {
-            color: var(--color-accent);
-            text-decoration: none;
-        }
-
-        .quellen a:hover {
-            text-decoration: underline;
-        }
-
-        .review {
-            background-color: #f0f0f0;
-            border: 1px solid var(--color-border);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 4px;
-        }
-
-        .review h3 {
-            color: var(--color-text);
-            border-bottom: none;
-            margin-top: 0;
-            margin-bottom: 0.8rem;
-        }
-
-        .review .expert {
-            font-size: 0.95rem;
-            line-height: 1.6;
-            color: #555;
-        }
-
-        .review-placeholder {
-            font-style: italic;
-            color: #999;
-        }
-
-        .review-ergaenzung {
-            margin-top: 1rem;
-            padding: 1rem;
-            background-color: #fafafa;
-            border-left: 2px solid #ccc;
-        }
-
-        .transparenzprompt {
-            background: linear-gradient(135deg, #f5f5f5 0%, #fff 100%);
-            border: 2px solid var(--color-border);
-            padding: 2rem;
-            margin: 2rem 0;
-            border-radius: 4px;
-            text-align: center;
-        }
-
-        .transparenzprompt h3 {
-            color: var(--color-accent);
-            border-bottom: none;
-            margin-top: 0;
-            margin-bottom: 1rem;
-        }
-
-        .transparenzprompt p {
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-            text-align: left;
-        }
-
-        .prompt-box {
-            background-color: white;
-            border: 1px solid var(--color-border);
-            padding: 1.5rem;
-            border-radius: 4px;
-            font-family: 'Courier New', monospace;
-            font-size: 0.85rem;
-            line-height: 1.5;
-            color: #333;
-            overflow-x: auto;
-            text-align: left;
-        }
-
-        .related-articles {
-            background-color: var(--color-accent-light);
-            border: 1px solid var(--color-accent);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 4px;
-        }
-
-        .related-articles h3 {
-            color: var(--color-accent);
-            border-bottom: none;
-            margin-top: 0;
-            margin-bottom: 1rem;
-        }
-
-        .related-articles ul {
-            list-style: none;
-            margin-left: 0;
-        }
-
-        .related-articles li {
-            padding: 0.6rem 0;
-            border-bottom: 1px solid rgba(13, 110, 189, 0.2);
-        }
-
-        .related-articles li:last-child {
-            border-bottom: none;
-        }
-
-        .related-articles a {
-            color: var(--color-accent);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .related-articles a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: var(--color-text);
-            color: white;
-            padding: 2rem 1.5rem;
-            text-align: center;
-            font-size: 0.9rem;
-            margin-top: 3rem;
-        }
-
-        footer p {
-            margin-bottom: 0.5rem;
-            text-align: center;
-        }
-
-        footer a {
-            color: #b3d9ff;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.4rem;
-            }
-
-            h2 {
-                font-size: 1.3rem;
-            }
-
-            .container {
-                padding: 1.5rem 1rem;
-            }
-
-            .kernaussage {
-                padding: 1.3rem;
-            }
-        }
-
-        /* URL-Slug as comment */
-        /* schulter-impingement-subakromiale-dekompression */
-
-    
-        
-        
-            
 ## Kernaussage
 
-            
+Die arthroskopische subakromiale Dekompression (Abtragen von Knochen unter dem Schulterdach) gehört zu den häufigsten Schulter-OPs. **Zwei große Placebo-kontrollierte Studien zeigen: Der Eingriff wirkt nicht besser als eine Schein-OP.**
 
-                Die arthroskopische subakromiale Dekompression (Abtragen von Knochen unter dem Schulterdach) gehört zu den häufigsten Schulter-OPs. **Zwei große Placebo-kontrollierte Studien zeigen: Der Eingriff wirkt nicht besser als eine Schein-OP.**
-            
+Eine Cochrane-Analyse von 2019 bestätigt: Es gibt keine klinisch relevanten Vorteile gegenüber Placebo — weder bei Schmerz noch bei Funktion oder Lebensqualität. **Strukturierte Physiotherapie ist die empfohlene Erstbehandlung** und macht bei vielen Patienten eine Operation überflüssig.
 
-            
+**Faustregel:** Impingement ohne Sehnenriss → mindestens 3–6 Monate konsequente Physiotherapie. OP erst erwägen, wenn konservative Therapie wirklich ausgeschöpft ist — und auch dann kritisch hinterfragen.
 
-                Eine Cochrane-Analyse von 2019 bestätigt: Es gibt keine klinisch relevanten Vorteile gegenüber Placebo — weder bei Schmerz noch bei Funktion oder Lebensqualität. **Strukturierte Physiotherapie ist die empfohlene Erstbehandlung** und macht bei vielen Patienten eine Operation überflüssig.
-            
-
-            
-
-                **Faustregel:** Impingement ohne Sehnenriss → mindestens 3–6 Monate konsequente Physiotherapie. OP erst erwägen, wenn konservative Therapie wirklich ausgeschöpft ist — und auch dann kritisch hinterfragen.
-            
-
-        
-
-        
-        
-            
 ## Was Patienten glauben — und was die Studien zeigen
 
-            
 ### Die verbreitete Überzeugung
 
-            
+Viele Patienten mit Schulterschmerzen hören von ihrem Arzt: „Da ist es eng unter dem Schulterdach, wir müssen Platz schaffen.“ Das klingt logisch — mechanisches Problem, mechanische Lösung. Doch die Wissenschaft zeichnet ein anderes Bild.
 
-                Viele Patienten mit Schulterschmerzen hören von ihrem Arzt: „Da ist es eng unter dem Schulterdach, wir müssen Platz schaffen.“ Das klingt logisch — mechanisches Problem, mechanische Lösung. Doch die Wissenschaft zeichnet ein anderes Bild.
-            
+Das sogenannte subakromiale Impingement-Syndrom (Einklemmung von Sehnen und Schleimbeutel unter dem Schulterdach, dem Akromion) wurde jahrzehntelang als Hauptursache für Schulterschmerzen angesehen. Die OP-Lösung: arthroskopisch (über kleine Schnitte mit Kamera) den Knochen abschleifen, um mehr Platz zu schaffen. Allein in den USA werden jährlich über 300.000 solcher Eingriffe durchgeführt. Doch seit 2018 gibt es zwei bahnbrechende Studien, die das Konzept grundlegend infrage stellen.
 
-            
-
-                Das sogenannte subakromiale Impingement-Syndrom (Einklemmung von Sehnen und Schleimbeutel unter dem Schulterdach, dem Akromion) wurde jahrzehntelang als Hauptursache für Schulterschmerzen angesehen. Die OP-Lösung: arthroskopisch (über kleine Schnitte mit Kamera) den Knochen abschleifen, um mehr Platz zu schaffen. Allein in den USA werden jährlich über 300.000 solcher Eingriffe durchgeführt. Doch seit 2018 gibt es zwei bahnbrechende Studien, die das Konzept grundlegend infrage stellen.
-            
-
-            
 ### Die CSAW-Studie — Placebo-kontrolliert (2018)
 
-            
-                CSAW: Can Shoulder Arthroscopy Work?
-                
-                    Beard, D. J. et al. (2018). Arthroscopic subacromial decompression for subacromial shoulder pain (CSAW): a multicentre, pragmatic, parallel group, placebo-controlled, three-group, randomised surgical trial. *The Lancet*, 391(10118), 329–338. DOI: 10.1016/S0140-6736(17)32457-1
-                
-                
-                    **Design:** 313 Patienten in 32 britischen Kliniken, randomisiert in drei Gruppen: (1) echte subakromiale Dekompression, (2) Schein-OP (Arthroskopie ohne Knochenabtragung) und (3) keine Operation (nur Beobachtung). Alle Gruppen erhielten postoperativ Physiotherapie.
-                    
+CSAW: Can Shoulder Arthroscopy Work?
 
-                    **Ergebnis nach 6 Monaten:** Der Oxford Shoulder Score (Schulterfunktion) war in der Dekompressionsgruppe 32,7 Punkte, in der Schein-OP-Gruppe 34,2 Punkte — kein signifikanter Unterschied (p=0,31). Beide chirurgischen Gruppen zeigten einen kleinen Vorteil gegenüber der Beobachtungsgruppe, aber dieser Unterschied war **nicht klinisch relevant**.
-                    
+Beard, D. J. et al. (2018). Arthroscopic subacromial decompression for subacromial shoulder pain (CSAW): a multicentre, pragmatic, parallel group, placebo-controlled, three-group, randomised surgical trial. *The Lancet*, 391(10118), 329–338. DOI: 10.1016/S0140-6736(17)32457-1
 
-                    **Interpretation:** Die eigentliche OP — das Abschleifen des Knochens — bringt keinen Zusatznutzen gegenüber dem bloßen Einführen der Kamera. **Der Nutzen ist ein Placebo-Effekt der Operation selbst.**
-                
-            
+**Design:** 313 Patienten in 32 britischen Kliniken, randomisiert in drei Gruppen: (1) echte subakromiale Dekompression, (2) Schein-OP (Arthroskopie ohne Knochenabtragung) und (3) keine Operation (nur Beobachtung). Alle Gruppen erhielten postoperativ Physiotherapie.
 
-            
+**Ergebnis nach 6 Monaten:** Der Oxford Shoulder Score (Schulterfunktion) war in der Dekompressionsgruppe 32,7 Punkte, in der Schein-OP-Gruppe 34,2 Punkte — kein signifikanter Unterschied (p=0,31). Beide chirurgischen Gruppen zeigten einen kleinen Vorteil gegenüber der Beobachtungsgruppe, aber dieser Unterschied war **nicht klinisch relevant**.
+
+**Interpretation:** Die eigentliche OP — das Abschleifen des Knochens — bringt keinen Zusatznutzen gegenüber dem bloßen Einführen der Kamera. **Der Nutzen ist ein Placebo-Effekt der Operation selbst.**
+
 ### Die FIMPACT-Studie — Finnisches Pendant (2018)
 
-            
-                FIMPACT: Finnish Shoulder Impingement Arthroscopy Controlled Trial
-                
-                    Paavola, M. et al. (2018). Subacromial decompression versus diagnostic arthroscopy for shoulder impingement: randomised, placebo surgery controlled clinical trial. *BMJ*, 362, k2860. DOI: 10.1136/bmj.k2860
-                
-                
-                    **Design:** 210 Patienten in drei finnischen Krankenhäusern, randomisiert in drei Gruppen: (1) arthroskopische subakromiale Dekompression, (2) diagnostische Arthroskopie (Schein-OP) und (3) Physiotherapie allein. Doppelblind für die beiden OP-Gruppen.
-                    
+FIMPACT: Finnish Shoulder Impingement Arthroscopy Controlled Trial
 
-                    **Ergebnis nach 24 Monaten:** Alle drei Gruppen verbesserten sich deutlich. **Kein signifikanter Unterschied zwischen Dekompression und Schein-OP** bei Schmerz (VAS) oder Funktion. Die Physiotherapie-Gruppe schnitt ähnlich ab.
-                    
+Paavola, M. et al. (2018). Subacromial decompression versus diagnostic arthroscopy for shoulder impingement: randomised, placebo surgery controlled clinical trial. *BMJ*, 362, k2860. DOI: 10.1136/bmj.k2860
 
-                    **5-Jahres-Follow-up (Paavola et al., 2021, BMJ):** Auch nach 5 Jahren kein Vorteil der echten OP gegenüber der Schein-OP. **Der fehlende Nutzen ist kein kurzfristiges Phänomen — er bleibt langfristig bestehen.**
-                
-            
+**Design:** 210 Patienten in drei finnischen Krankenhäusern, randomisiert in drei Gruppen: (1) arthroskopische subakromiale Dekompression, (2) diagnostische Arthroskopie (Schein-OP) und (3) Physiotherapie allein. Doppelblind für die beiden OP-Gruppen.
 
-            
+**Ergebnis nach 24 Monaten:** Alle drei Gruppen verbesserten sich deutlich. **Kein signifikanter Unterschied zwischen Dekompression und Schein-OP** bei Schmerz (VAS) oder Funktion. Die Physiotherapie-Gruppe schnitt ähnlich ab.
+
+**5-Jahres-Follow-up (Paavola et al., 2021, BMJ):** Auch nach 5 Jahren kein Vorteil der echten OP gegenüber der Schein-OP. **Der fehlende Nutzen ist kein kurzfristiges Phänomen — er bleibt langfristig bestehen.**
+
 ### Cochrane-Übersichtsarbeit (2019)
 
-            
-                Subacromial decompression surgery for rotator cuff disease
-                
-                    Karjalainen, T. V. et al. (2019). Subacromial decompression surgery for rotator cuff disease. *Cochrane Database of Systematic Reviews*, Issue 1, CD005619. DOI: 10.1002/14651858.CD005619.pub3
-                
-                
-                    **Design:** Systematische Übersicht von 8 RCTs mit 1.062 Teilnehmern. Primärer Vergleich: subakromiale Dekompression vs. Placebo-OP.
-                    
+Subacromial decompression surgery for rotator cuff disease
 
-                    **Ergebnis (hohe Evidenzqualität):**
-                    
+Karjalainen, T. V. et al. (2019). Subacromial decompression surgery for rotator cuff disease. *Cochrane Database of Systematic Reviews*, Issue 1, CD005619. DOI: 10.1002/14651858.CD005619.pub3
 
-                        - **Vs. Placebo-OP:** Kein klinisch relevanter Vorteil bei Schmerz, Funktion oder Lebensqualität.
-                        - **Vs. Physiotherapie:** Kein klinisch relevanter Vorteil der OP.
-                    
+**Design:** Systematische Übersicht von 8 RCTs mit 1.062 Teilnehmern. Primärer Vergleich: subakromiale Dekompression vs. Placebo-OP.
 
-                    **Schlussfolgerung der Autoren:** „The data in this review do not support the use of subacromial decompression in the treatment of rotator cuff disease.“ — Die Daten unterstützen die Anwendung der subakromialen Dekompression nicht.
-                
-            
+**Ergebnis (hohe Evidenzqualität):**
 
-            
+- **Vs. Placebo-OP:** Kein klinisch relevanter Vorteil bei Schmerz, Funktion oder Lebensqualität.
+- **Vs. Physiotherapie:** Kein klinisch relevanter Vorteil der OP.
+
+**Schlussfolgerung der Autoren:** „The data in this review do not support the use of subacromial decompression in the treatment of rotator cuff disease.“ — Die Daten unterstützen die Anwendung der subakromialen Dekompression nicht.
+
 ### 10-Jahres-Follow-up: Physiotherapie macht OP überflüssig (2024)
 
-            
-                No need for subacromial decompression in responders to specific exercise treatment: a 10-year follow-up
-                
-                    Hallgren, H. C. B. et al. (2024). No need for subacromial decompression in responders to specific exercise treatment: a 10-year follow-up of a randomized controlled trial. *Journal of Shoulder and Elbow Surgery*. DOI: 10.1016/j.jse.2024.11.014
-                
-                
-                    **Design:** 10-Jahres-Follow-up eines schwedischen RCT. Patienten, die ursprünglich für eine OP vorgesehen waren, erhielten stattdessen 3 Monate strukturierte Physiotherapie.
-                    
+No need for subacromial decompression in responders to specific exercise treatment: a 10-year follow-up
 
-                    **Ergebnis:** Ein erheblicher Anteil der Patienten, die auf Physiotherapie ansprachen, benötigte auch nach 10 Jahren keine Operation. **Die Verbesserungen durch gezielte Übungen hielten langfristig an.**
-                    
+Hallgren, H. C. B. et al. (2024). No need for subacromial decompression in responders to specific exercise treatment: a 10-year follow-up of a randomized controlled trial. *Journal of Shoulder and Elbow Surgery*. DOI: 10.1016/j.jse.2024.11.014
 
-                    **Interpretation:** Selbst Patienten, die von Orthopäden bereits für eine OP eingeplant waren, konnten durch konsequente Physiotherapie dauerhaft auf den Eingriff verzichten.
-                
-            
+**Design:** 10-Jahres-Follow-up eines schwedischen RCT. Patienten, die ursprünglich für eine OP vorgesehen waren, erhielten stattdessen 3 Monate strukturierte Physiotherapie.
+
+**Ergebnis:** Ein erheblicher Anteil der Patienten, die auf Physiotherapie ansprachen, benötigte auch nach 10 Jahren keine Operation. **Die Verbesserungen durch gezielte Übungen hielten langfristig an.**
+
+**Interpretation:** Selbst Patienten, die von Orthopäden bereits für eine OP eingeplant waren, konnten durch konsequente Physiotherapie dauerhaft auf den Eingriff verzichten.
+
 ### FIMPACT 10-Jahres-Follow-up (2025)
 
-            
-                FIMPACT 10-Year Follow-up: Arthroscopic subacromial decompression versus placebo surgery
-                
-                    Kanto, K. et al. (2025). Arthroscopic subacromial decompression versus placebo surgery for subacromial pain syndrome: 10 year follow-up of the FIMPACT randomised, placebo surgery controlled trial. *BMJ*, 391, bmj-2025-086201. DOI: 10.1136/bmj-2025-086201
-                
-                
-                    **Design:** 10-Jahres-Follow-up des FIMPACT-RCT. 210 Patienten, 168 (87%) schlossen das Follow-up ab. Drei Gruppen: ASD, Placebo-OP, Physiotherapie.
-                    
+FIMPACT 10-Year Follow-up: Arthroscopic subacromial decompression versus placebo surgery
 
-                    **Ergebnis nach 10 Jahren:** Kein Unterschied zwischen Dekompression und Schein-OP: VAS Schmerz in Ruhe -1,5 Punkte (95% KI: -8,6 bis 5,6), VAS Schmerz bei Aktivität -3,2 Punkte (-13,0 bis 6,5). **Auch kein Vorteil gegenüber Physiotherapie allein.**
-                    
+Kanto, K. et al. (2025). Arthroscopic subacromial decompression versus placebo surgery for subacromial pain syndrome: 10 year follow-up of the FIMPACT randomised, placebo surgery controlled trial. *BMJ*, 391, bmj-2025-086201. DOI: 10.1136/bmj-2025-086201
 
-                    **Interpretation:** Die bisher längste Nachbeobachtung bestätigt endgültig: **Die subakromiale Dekompression bietet weder kurz-, mittel- noch langfristig einen Vorteil gegenüber einer Schein-OP oder Physiotherapie.**
-                
-            
+**Design:** 10-Jahres-Follow-up des FIMPACT-RCT. 210 Patienten, 168 (87%) schlossen das Follow-up ab. Drei Gruppen: ASD, Placebo-OP, Physiotherapie.
 
-            
+**Ergebnis nach 10 Jahren:** Kein Unterschied zwischen Dekompression und Schein-OP: VAS Schmerz in Ruhe -1,5 Punkte (95% KI: -8,6 bis 5,6), VAS Schmerz bei Aktivität -3,2 Punkte (-13,0 bis 6,5). **Auch kein Vorteil gegenüber Physiotherapie allein.**
 
-            
-                **Warum bestehen Fehlvorstellungen?**
-                
+**Interpretation:** Die bisher längste Nachbeobachtung bestätigt endgültig: **Die subakromiale Dekompression bietet weder kurz-, mittel- noch langfristig einen Vorteil gegenüber einer Schein-OP oder Physiotherapie.**
 
-                    - **Das mechanische Modell ist intuitiv:** „Eng = abschleifen“ klingt logisch. Doch Schulterschmerzen entstehen meist nicht durch mechanische Enge allein, sondern durch eine Kombination aus Entzündung, Sehnendegeneration und muskulärer Dysbalance — Faktoren, die eine OP nicht adressiert.
-                    - **Hohe OP-Zufriedenheit trotz fehlendem Spezialeffekt:** Viele Patienten fühlen sich nach der OP besser. Das liegt am natürlichen Krankheitsverlauf (Impingement bessert sich oft von selbst), am Placebo-Effekt und an der postoperativen Physiotherapie — nicht am Knochenabtragen.
-                    - **Finanzielle Anreize:** Die arthroskopische Dekompression ist ein lukrativer Eingriff. Das ist kein Vorwurf an einzelne Chirurgen, aber ein systemischer Faktor, der bei der Bewertung der Evidenz berücksichtigt werden muss.
-                    - **Ausbildungstradition:** Generationen von Orthopäden lernten die Dekompression als Standardverfahren. Die Placebo-kontrollierten Daten liegen erst seit 2018 vor. Leitlinien passen sich langsam an.
-                
+**Warum bestehen Fehlvorstellungen?**
 
-            
-        
+- **Das mechanische Modell ist intuitiv:** „Eng = abschleifen“ klingt logisch. Doch Schulterschmerzen entstehen meist nicht durch mechanische Enge allein, sondern durch eine Kombination aus Entzündung, Sehnendegeneration und muskulärer Dysbalance — Faktoren, die eine OP nicht adressiert.
+- **Hohe OP-Zufriedenheit trotz fehlendem Spezialeffekt:** Viele Patienten fühlen sich nach der OP besser. Das liegt am natürlichen Krankheitsverlauf (Impingement bessert sich oft von selbst), am Placebo-Effekt und an der postoperativen Physiotherapie — nicht am Knochenabtragen.
+- **Finanzielle Anreize:** Die arthroskopische Dekompression ist ein lukrativer Eingriff. Das ist kein Vorwurf an einzelne Chirurgen, aber ein systemischer Faktor, der bei der Bewertung der Evidenz berücksichtigt werden muss.
+- **Ausbildungstradition:** Generationen von Orthopäden lernten die Dekompression als Standardverfahren. Die Placebo-kontrollierten Daten liegen erst seit 2018 vor. Leitlinien passen sich langsam an.
 
-        
-        
-            
 ## Wann ist eine Schulter-OP doch sinnvoll?
 
-            
+Die Evidenz gegen die subakromiale Dekompression bedeutet nicht, dass Schulter-OPs generell sinnlos sind. Es gibt klare Situationen, in denen ein Eingriff angemessen sein kann. Entscheidend ist die genaue Diagnose.
 
-                Die Evidenz gegen die subakromiale Dekompression bedeutet nicht, dass Schulter-OPs generell sinnlos sind. Es gibt klare Situationen, in denen ein Eingriff angemessen sein kann. Entscheidend ist die genaue Diagnose.
-            
-
-            
-                
 #### Situationen, in denen eine OP erwogen werden sollte:
 
-                
+- **Kompletter Rotatorenmanschettenriss (Sehnenriss):** Bei einem echten, durchgehenden Riss der Supraspinatussehne — besonders bei jüngeren, aktiven Patienten und traumatischer Ursache — kann eine arthroskopische Sehnennaht (Reparatur) sinnvoll sein. Das ist ein anderer Eingriff als die Dekompression.
+- **Versagen konsequenter Physiotherapie:** Wenn nach 3–6 Monaten strukturierter, supervidierter Physiotherapie (nicht nur ein paar Übungsblätter) keine Besserung eintritt, kann eine operative Abklärung gerechtfertigt sein. Laut AWMF-Leitlinie und BESS-Empfehlungen (British Elbow and Shoulder Society) ist dies der Zeitpunkt, an dem chirurgische Optionen in Betracht gezogen werden sollten.
+- **Knöcherne Anomalien:** Ein stark hakenfömiges Akromion (Typ III nach Bigliani) oder ein os acromiale (nicht verwachsener Knochen) kann in seltenen Fällen eine echte strukturelle Enge verursachen, die operativ korrigiert werden kann.
+- **Kalkschulter (Tendinitis calcarea):** Bei großen, symptomatischen Kalkdepots in der Sehne kann die arthroskopische Kalkentfernung (nicht identisch mit der Dekompression) wirksam sein — hier gibt es eigene Evidenz.
 
-                    - **Kompletter Rotatorenmanschettenriss (Sehnenriss):** Bei einem echten, durchgehenden Riss der Supraspinatussehne — besonders bei jüngeren, aktiven Patienten und traumatischer Ursache — kann eine arthroskopische Sehnennaht (Reparatur) sinnvoll sein. Das ist ein anderer Eingriff als die Dekompression.
-                    - **Versagen konsequenter Physiotherapie:** Wenn nach 3–6 Monaten strukturierter, supervidierter Physiotherapie (nicht nur ein paar Übungsblätter) keine Besserung eintritt, kann eine operative Abklärung gerechtfertigt sein. Laut AWMF-Leitlinie und BESS-Empfehlungen (British Elbow and Shoulder Society) ist dies der Zeitpunkt, an dem chirurgische Optionen in Betracht gezogen werden sollten.
-                    - **Knöcherne Anomalien:** Ein stark hakenfömiges Akromion (Typ III nach Bigliani) oder ein os acromiale (nicht verwachsener Knochen) kann in seltenen Fällen eine echte strukturelle Enge verursachen, die operativ korrigiert werden kann.
-                    - **Kalkschulter (Tendinitis calcarea):** Bei großen, symptomatischen Kalkdepots in der Sehne kann die arthroskopische Kalkentfernung (nicht identisch mit der Dekompression) wirksam sein — hier gibt es eigene Evidenz.
-                
+**Wichtig:** Die Diagnose „Impingement“ ist oft unscharf. Bildgebende Verfahren (MRT, Ultraschall) zeigen bei über 50-Jährigen häufig „Auffälligkeiten“ an Sehnen und Schleimbeutel — auch bei Menschen ohne jegliche Beschwerden. Ein MRT-Befund allein ist keine Indikation für eine Operation. Die AWMF-Leitlinie betont die Notwendigkeit einer differenzierten Diagnostik und Klassifikation.
 
-            
-
-            
-                **Wichtig:** Die Diagnose „Impingement“ ist oft unscharf. Bildgebende Verfahren (MRT, Ultraschall) zeigen bei über 50-Jährigen häufig „Auffälligkeiten“ an Sehnen und Schleimbeutel — auch bei Menschen ohne jegliche Beschwerden. Ein MRT-Befund allein ist keine Indikation für eine Operation. Die AWMF-Leitlinie betont die Notwendigkeit einer differenzierten Diagnostik und Klassifikation.
-            
-        
-
-        
-        
-            
 ## Was Sie Ihren Arzt fragen sollten
 
-            
-                
 #### Konkrete Fragen für Ihr Arztgespräch:
 
-                
+- **„Welche genaue Diagnose habe ich — Impingement, Bursitis, Teilriss, Komplettriss?“** — „Impingement“ ist ein Sammelbegriff. Die Behandlung hängt von der genauen Ursache ab. Nur bei einem echten Sehnenriss ist eine OP-Diskussion sinnvoll.
+- **„Kennen Sie die CSAW- und FIMPACT-Studien? Wie ordnen Sie deren Ergebnisse ein?“** — Diese Frage zeigt, dass Sie informiert sind. Ein guter Arzt wird die Studien kennen und erklären, warum er im konkreten Fall dennoch (oder nicht) zur OP rät.
+- **„Habe ich bereits eine strukturierte Physiotherapie über mindestens 3 Monate durchgeführt?“** — Gemeint ist keine Wärmeanwendung mit Ultraschall, sondern ein progressives Kräftigungsprogramm unter Anleitung. Leitlinien fordern dies als Erstbehandlung.
+- **„Was genau wird bei der OP gemacht — und was ist das erwartbare Ergebnis im Vergleich zur Physiotherapie?“** — Wenn der Arzt nur „Platz schaffen“ sagt, fragen Sie nach: Die Evidenz zeigt, dass „Platz schaffen“ nicht besser wirkt als eine Schein-OP.
+- **„Welche Risiken hat der Eingriff — und wie wahrscheinlich sind sie?“** — Jede Arthroskopie birgt Risiken: Infektion (ca. 0,5–1%), Schultersteife, Nervenverletzung, Narkoserisiko. Diese Risiken stehen einem fraglichen Nutzen gegenüber.
+- **„Gibt es einen finanziellen Anreiz für diese Empfehlung?“** — Eine direkte, aber berechtigte Frage. In Systemen mit Einzelleistungsvergütung verdient der Chirurg an der OP. Das heißt nicht, dass jede Empfehlung finanziell motiviert ist — aber Transparenz ist wichtig.
+- **„Darf ich eine Zweitmeinung einholen, bevor ich mich entscheide?“** — Jeder Patient hat das Recht auf eine unabhängige Zweitmeinung. Seriöse Ärzte unterstützen dies.
 
-                    - **„Welche genaue Diagnose habe ich — Impingement, Bursitis, Teilriss, Komplettriss?“** — „Impingement“ ist ein Sammelbegriff. Die Behandlung hängt von der genauen Ursache ab. Nur bei einem echten Sehnenriss ist eine OP-Diskussion sinnvoll.
-                    - **„Kennen Sie die CSAW- und FIMPACT-Studien? Wie ordnen Sie deren Ergebnisse ein?“** — Diese Frage zeigt, dass Sie informiert sind. Ein guter Arzt wird die Studien kennen und erklären, warum er im konkreten Fall dennoch (oder nicht) zur OP rät.
-                    - **„Habe ich bereits eine strukturierte Physiotherapie über mindestens 3 Monate durchgeführt?“** — Gemeint ist keine Wärmeanwendung mit Ultraschall, sondern ein progressives Kräftigungsprogramm unter Anleitung. Leitlinien fordern dies als Erstbehandlung.
-                    - **„Was genau wird bei der OP gemacht — und was ist das erwartbare Ergebnis im Vergleich zur Physiotherapie?“** — Wenn der Arzt nur „Platz schaffen“ sagt, fragen Sie nach: Die Evidenz zeigt, dass „Platz schaffen“ nicht besser wirkt als eine Schein-OP.
-                    - **„Welche Risiken hat der Eingriff — und wie wahrscheinlich sind sie?“** — Jede Arthroskopie birgt Risiken: Infektion (ca. 0,5–1%), Schultersteife, Nervenverletzung, Narkoserisiko. Diese Risiken stehen einem fraglichen Nutzen gegenüber.
-                    - **„Gibt es einen finanziellen Anreiz für diese Empfehlung?“** — Eine direkte, aber berechtigte Frage. In Systemen mit Einzelleistungsvergütung verdient der Chirurg an der OP. Das heißt nicht, dass jede Empfehlung finanziell motiviert ist — aber Transparenz ist wichtig.
-                    - **„Darf ich eine Zweitmeinung einholen, bevor ich mich entscheide?“** — Jeder Patient hat das Recht auf eine unabhängige Zweitmeinung. Seriöse Ärzte unterstützen dies.
-                
-
-            
-        
-
-        
-        
-            
-                
 ### Quellenverzeichnis
 
-                
+- Beard, D. J. et al. (2018). Arthroscopic subacromial decompression for subacromial shoulder pain (CSAW): a multicentre, pragmatic, parallel group, placebo-controlled, three-group, randomised surgical trial. *The Lancet*, 391(10118), 329–338. [DOI: 10.1016/S0140-6736(17)32457-1](https://doi.org/10.1016/S0140-6736(17)32457-1)
+- Paavola, M. et al. (2018). Subacromial decompression versus diagnostic arthroscopy for shoulder impingement: randomised, placebo surgery controlled clinical trial. *BMJ*, 362, k2860. [DOI: 10.1136/bmj.k2860](https://doi.org/10.1136/bmj.k2860)
+- Paavola, M. et al. (2021). Subacromial decompression versus diagnostic arthroscopy for shoulder impingement: a 5-year follow-up of a randomised, placebo surgery controlled clinical trial. *BMJ*, 372, m4497. [DOI: 10.1136/bmj.m4497](https://doi.org/10.1136/bmj.m4497)
+- Karjalainen, T. V. et al. (2019). Subacromial decompression surgery for rotator cuff disease. *Cochrane Database of Systematic Reviews*, Issue 1, CD005619. [DOI: 10.1002/14651858.CD005619.pub3](https://doi.org/10.1002/14651858.CD005619.pub3)
+- Hallgren, H. C. B. et al. (2024). No need for subacromial decompression in responders to specific exercise treatment: a 10-year follow-up of a randomized controlled trial. *Journal of Shoulder and Elbow Surgery*. [DOI: 10.1016/j.jse.2024.11.014](https://doi.org/10.1016/j.jse.2024.11.014)
+- AWMF (2021). S2e-Leitlinie Subacromiales Impingement. AWMF-Register Nr. 033-056. [AWMF-Register](https://register.awmf.org/de/leitlinien/detail/033-056)
+- Kanto, K. et al. (2025). Arthroscopic subacromial decompression versus placebo surgery for subacromial pain syndrome: 10 year follow-up of the FIMPACT randomised, placebo surgery controlled trial. *BMJ*, 391, bmj-2025-086201. [DOI: 10.1136/bmj-2025-086201](https://doi.org/10.1136/bmj-2025-086201)
 
-                    - Beard, D. J. et al. (2018). Arthroscopic subacromial decompression for subacromial shoulder pain (CSAW): a multicentre, pragmatic, parallel group, placebo-controlled, three-group, randomised surgical trial. *The Lancet*, 391(10118), 329–338. [DOI: 10.1016/S0140-6736(17)32457-1](https://doi.org/10.1016/S0140-6736(17)32457-1)
-                    - Paavola, M. et al. (2018). Subacromial decompression versus diagnostic arthroscopy for shoulder impingement: randomised, placebo surgery controlled clinical trial. *BMJ*, 362, k2860. [DOI: 10.1136/bmj.k2860](https://doi.org/10.1136/bmj.k2860)
-                    - Paavola, M. et al. (2021). Subacromial decompression versus diagnostic arthroscopy for shoulder impingement: a 5-year follow-up of a randomised, placebo surgery controlled clinical trial. *BMJ*, 372, m4497. [DOI: 10.1136/bmj.m4497](https://doi.org/10.1136/bmj.m4497)
-                    - Karjalainen, T. V. et al. (2019). Subacromial decompression surgery for rotator cuff disease. *Cochrane Database of Systematic Reviews*, Issue 1, CD005619. [DOI: 10.1002/14651858.CD005619.pub3](https://doi.org/10.1002/14651858.CD005619.pub3)
-                    - Hallgren, H. C. B. et al. (2024). No need for subacromial decompression in responders to specific exercise treatment: a 10-year follow-up of a randomized controlled trial. *Journal of Shoulder and Elbow Surgery*. [DOI: 10.1016/j.jse.2024.11.014](https://doi.org/10.1016/j.jse.2024.11.014)
-                    - AWMF (2021). S2e-Leitlinie Subacromiales Impingement. AWMF-Register Nr. 033-056. [AWMF-Register](https://register.awmf.org/de/leitlinien/detail/033-056)
-                    - Kanto, K. et al. (2025). Arthroscopic subacromial decompression versus placebo surgery for subacromial pain syndrome: 10 year follow-up of the FIMPACT randomised, placebo surgery controlled trial. *BMJ*, 391, bmj-2025-086201. [DOI: 10.1136/bmj-2025-086201](https://doi.org/10.1136/bmj-2025-086201)
-                
-
-            
-        
-
-        
-        
-            
-                
 ### Experten-Review
 
-                
-                    
-                    
-                        **Dr. Georg Bézard**
-                        ✓ Geprüft
-                        
+**Dr. Georg Bézard**
+✓ Geprüft
+
 Facharzt für Unfallchirurgie & Orthopädie · Wien
-                    
-                
-                
+
 Oberarzt für Orthopädie & Traumatologie sowie Facharzt für Unfallchirurgie in Wien. Spezialisiert auf minimalinvasive Schulter-, Hand- und Kniechirurgie. Privatpraxis für evidenzbasierte Orthopädie in Wien-Döbling und Tulln.
 
-                
 [→ www.drbezard.com](https://www.drbezard.com)
 
-            
-        
-
-        
-        
-            
 ### Überprüfen Sie diesen Artikel selbst
 
-            
+Wir stellen Ihnen einen Prompt zur Verfügung, mit dem Sie diesen Artikel mithilfe einer KI (z. B. ChatGPT, Claude, Gemini) unabhängig überprüfen können. Kopieren Sie den folgenden Text und fügen Sie ihn in eine KI Ihrer Wahl ein:
 
-                Wir stellen Ihnen einen Prompt zur Verfügung, mit dem Sie diesen Artikel mithilfe einer KI (z. B. ChatGPT, Claude, Gemini) unabhängig überprüfen können. Kopieren Sie den folgenden Text und fügen Sie ihn in eine KI Ihrer Wahl ein:
-            
-
-            
 Du bist ein medizinischer Faktenprüfer mit Expertise in evidenzbasierter Medizin und Orthopädie/Schulterchirurgie.
 
 Prüfe den folgenden Patientenartikel zum Thema **„Schulter-Impingement: Subakromiale Dekompression — sinnvoll oder Schein-OP?“** auf folgende Kriterien:
@@ -684,21 +158,11 @@ Prüfe den folgenden Patientenartikel zum Thema **„Schulter-Impingement: Subak
 **5. Aktualität:** Entsprechen die Aussagen dem aktuellen Stand der AWMF-Leitlinie, der Cochrane-Evidenz und internationalen Empfehlungen (BESS, AAOS)?
 
 Gib eine strukturierte Bewertung mit konkreten Korrekturvorschlägen, falls nötig.
-            
-            
 
-                Wir glauben an Transparenz. Wenn dieser Artikel etwas falsch darstellt, wollen wir, dass Sie es herausfinden.
-            
+Wir glauben an Transparenz. Wenn dieser Artikel etwas falsch darstellt, wollen wir, dass Sie es herausfinden.
 
-        
-
-        
-        
-            
 ### Verwandte Artikel
 
-            
-
-                - [Meniskusriss: OP vs. Physiotherapie — wann ist die Arthroskopie wirklich nötig?](meniskusriss-op-vs-physiotherapie.html)
-                - [Bandscheibenvorfall: OP vs. konservative Therapie bei Ischias](bandscheibenvorfall-op-vs-konservativ.html)
-                - [Kreuzbandriss: Sofort operieren oder abwarten und trainieren? (in Vorbereitung)](#)
+- [Meniskusriss: OP vs. Physiotherapie — wann ist die Arthroskopie wirklich nötig?](meniskusriss-op-vs-physiotherapie.html)
+- [Bandscheibenvorfall: OP vs. konservative Therapie bei Ischias](bandscheibenvorfall-op-vs-konservativ.html)
+- [Kreuzbandriss: Sofort operieren oder abwarten und trainieren? (in Vorbereitung)](#)

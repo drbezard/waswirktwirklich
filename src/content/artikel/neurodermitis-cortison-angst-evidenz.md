@@ -7,534 +7,139 @@ excerpt: "Cortison-Angst bei Neurodermitis führt oft zu schlechteren Verläufen
 reviewed: false
 ---
 
-:root {
-    --color-bg: #fafafa;
-    --color-text: #1a1a1a;
-    --color-text-secondary: #4a4a4a;
-    --color-accent: #0d6ebd;
-    --color-accent-light: #e8f1fa;
-    --color-warning: #c0392b;
-    --color-warning-bg: #fdf0ef;
-    --color-success: #27845a;
-    --color-success-bg: #edf7f2;
-    --color-border: #d4d4d4;
-    --color-study-bg: #f5f7fa;
-    --font-serif: 'Georgia', 'Times New Roman', serif;
-    --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    --max-width: 740px;
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    font-family: var(--font-sans);
-    font-size: 18px;
-    line-height: 1.7;
-    color: var(--color-text);
-    background: var(--color-bg);
-    -webkit-font-smoothing: antialiased;
-  }
-
-  .article-container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 2rem 1.5rem 4rem;
-  }
-
-  .site-header {
-    text-align: center;
-    padding: 1.5rem 0 2rem;
-    border-bottom: 2px solid var(--color-text);
-    margin-bottom: 2.5rem;
-  }
-
-  .site-header .logo {
-    font-family: var(--font-sans);
-    font-size: 1.6rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    color: var(--color-text);
-  }
-
-  .site-header .tagline {
-    font-size: 0.85rem;
-    color: var(--color-text-secondary);
-    margin-top: 0.25rem;
-  }
-
-  h1 {
-    font-family: var(--font-serif);
-    font-size: 2.2rem;
-    line-height: 1.2;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    color: var(--color-text);
-  }
-
-  .article-meta {
-    font-size: 0.85rem;
-    color: var(--color-text-secondary);
-    margin-bottom: 2.5rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--color-border);
-  }
-
-  h2 {
-    font-family: var(--font-serif);
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 2.5rem 0 1rem;
-    color: var(--color-text);
-    line-height: 1.3;
-  }
-
-  h3 {
-    font-family: var(--font-sans);
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin: 1.5rem 0 0.5rem;
-    color: var(--color-text);
-  }
-
-  p {
-    margin-bottom: 1.2rem;
-  }
-
-  .kernaussage {
-    background: var(--color-accent-light);
-    border-left: 4px solid var(--color-accent);
-    padding: 1.5rem 1.8rem;
-    margin: 0 0 2.5rem;
-    border-radius: 0 6px 6px 0;
-  }
-
-  .kernaussage p {
-    font-size: 1.05rem;
-    line-height: 1.65;
-  }
-
-  .kernaussage p:first-child {
-    font-weight: 600;
-    font-size: 1.15rem;
-  }
-
-  .kernaussage p:last-child {
-    margin-bottom: 0;
-  }
-
-  .studie {
-    background: var(--color-study-bg);
-    border: 1px solid var(--color-border);
-    border-radius: 6px;
-    padding: 1.2rem 1.5rem;
-    margin: 1.5rem 0;
-  }
-
-  .studie-name {
-    font-weight: 700;
-    color: var(--color-accent);
-    font-size: 0.95rem;
-    display: block;
-    margin-bottom: 0.3rem;
-  }
-
-  .studie-details {
-    font-size: 0.88rem;
-    color: var(--color-text-secondary);
-    margin-bottom: 0.5rem;
-  }
-
-  .studie p:last-child {
-    margin-bottom: 0;
-  }
-
-  .warnung {
-    background: var(--color-warning-bg);
-    border-left: 4px solid var(--color-warning);
-    padding: 1.2rem 1.5rem;
-    margin: 1.5rem 0;
-    border-radius: 0 6px 6px 0;
-  }
-
-  .warnung p {
-    margin-bottom: 0;
-  }
-
-  .evidenz {
-    margin-bottom: 2.5rem;
-  }
-
-  .ausnahmen {
-    background: var(--color-success-bg);
-    border-left: 4px solid var(--color-success);
-    padding: 1.5rem 1.8rem;
-    margin: 1.5rem 0;
-    border-radius: 0 6px 6px 0;
-  }
-
-  .ausnahmen p:last-child {
-    margin-bottom: 0;
-  }
-
-  .arztfragen ol {
-    padding-left: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .arztfragen li {
-    margin-bottom: 1rem;
-    padding-left: 0.3rem;
-  }
-
-  .arztfragen li strong {
-    display: block;
-    margin-bottom: 0.2rem;
-  }
-
-  .arztfragen li span {
-    font-size: 0.92rem;
-    color: var(--color-text-secondary);
-  }
-
-  .quellen {
-    border-top: 2px solid var(--color-border);
-    padding-top: 1.5rem;
-    margin-top: 2.5rem;
-  }
-
-  .quellen ol {
-    padding-left: 1.5rem;
-    font-size: 0.88rem;
-    line-height: 1.6;
-    color: var(--color-text-secondary);
-  }
-
-  .quellen li {
-    margin-bottom: 0.8rem;
-  }
-
-  .review {
-    background: #f9f9f9;
-    border: 1px solid var(--color-border);
-    border-radius: 6px;
-    padding: 1.5rem 1.8rem;
-    margin: 2.5rem 0;
-  }
-
-  .review p {
-    font-size: 0.92rem;
-    color: var(--color-text-secondary);
-  }
-
-  .review .placeholder {
-    font-style: italic;
-    color: #888;
-  }
-
-  .transparenzprompt {
-    background: #f0f0f0;
-    border-radius: 8px;
-    padding: 1.8rem;
-    margin: 2.5rem 0 0;
-  }
-
-  .transparenzprompt h2 {
-    margin-top: 0;
-    font-size: 1.2rem;
-  }
-
-  .prompt-box {
-    background: #fff;
-    border: 1px solid var(--color-border);
-    border-radius: 6px;
-    padding: 1.2rem 1.5rem;
-    margin: 1rem 0;
-    font-size: 0.85rem;
-    line-height: 1.6;
-    color: var(--color-text-secondary);
-    font-style: italic;
-    white-space: pre-wrap;
-  }
-
-  .transparenzprompt .closing {
-    font-size: 0.95rem;
-    font-weight: 500;
-    margin-top: 1rem;
-    margin-bottom: 0;
-  }
-
-  blockquote {
-    border-left: 3px solid var(--color-border);
-    padding-left: 1.2rem;
-    margin: 1.2rem 0;
-    color: var(--color-text-secondary);
-    font-style: italic;
-  }
-
-  .internal-links {
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--color-border);
-  }
-
-  .internal-links h3 {
-    font-size: 1rem;
-    color: var(--color-text-secondary);
-    margin-bottom: 0.5rem;
-  }
-
-  .internal-links ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .internal-links li {
-    margin-bottom: 0.4rem;
-  }
-
-  .internal-links a {
-    color: var(--color-accent);
-    text-decoration: none;
-    font-size: 0.95rem;
-  }
-
-  .internal-links a:hover {
-    text-decoration: underline;
-  }
-
-  @media (max-width: 600px) {
-    body { font-size: 16px; }
-    h1 { font-size: 1.7rem; }
-    h2 { font-size: 1.3rem; }
-    .article-container { padding: 1rem 1rem 3rem; }
-    .kernaussage, .ausnahmen, .transparenzprompt { padding: 1.2rem; }
-  }
-
-  
-    Was wirklich wirkt
-    Unabhängig. Werbefrei. Evidenzbasiert.
-  
-
-  
-
-    
 # Neurodermitis und Cortison: Warum die Angst oft mehr schadet als die Creme
 
-    
-      Zuletzt aktualisiert: April 2026 · Lesezeit: ca. 10 Minuten · **Evidenzcheck:** Geprüft anhand aktueller Meta-Analysen und Leitlinien
-    
-
-    
-    
-      
 Topische Kortikosteroide (Cortison-Cremes) sind die am besten untersuchte und wirksamste Erstlinientherapie bei Neurodermitis — und bei korrekter Anwendung deutlich sicherer, als die meisten Patienten glauben.
 
-      
 Das zeigen über 290 randomisierte Studien mit mehr als 45.000 Patientinnen und Patienten, ausgewertet in Cochrane-Reviews und Netzwerk-Meta-Analysen. Gleichzeitig leiden 21 bis 84 Prozent der Betroffenen an sogenannter Kortikophobie (Cortison-Angst) — einer Furcht vor Nebenwirkungen, die dazu führt, dass sie die verordnete Therapie zu selten, zu kurz oder gar nicht anwenden. Die Folge: schlechtere Krankheitskontrolle, mehr Schübe, mehr Leidensdruck. Alle großen Leitlinien — die deutsche AWMF-S3-Leitlinie (2023), die europäische EuroGuiDerm-Leitlinie (2025) und die britische NICE-Leitlinie — empfehlen topische Kortikosteroide als Therapie der ersten Wahl bei Neurodermitis. Die Angst vor Cortison ist nachvollziehbar, aber in den meisten Fällen unbegründet — und sie richtet mehr Schaden an als die Creme selbst.
 
-    
-
-    
-    
-      
 ## Cortison bei Neurodermitis: Was Patienten glauben — und was die Studien zeigen
 
-      
 ### Die verbreitete Annahme
 
-      
 Wer die Diagnose Neurodermitis (atopische Dermatitis, eine chronisch-entzündliche Hauterkrankung mit starkem Juckreiz) erhält, hört früher oder später einen Satz wie diesen: „Cortison? Das macht die Haut dünn, das ist gefährlich, davon wirst du abhängig.“ Eltern von betroffenen Kindern sind besonders verunsichert — sie lesen im Internet von „Cortison-Sucht“, „Hautatrophie“ (Hautverdünnung) und „hormoneller Schädigung“. Die Folge: Viele tragen die verordnete Creme seltener auf als empfohlen, verwenden zu wenig davon oder brechen die Behandlung vorzeitig ab, sobald die Symptome nachlassen — noch bevor die Entzündung tatsächlich abgeklungen ist.
 
-      
 Dieses Phänomen hat einen eigenen Fachbegriff: Kortikophobie (englisch: corticophobia oder topical corticosteroid phobia, abgekürzt TCS-Phobie). Und es ist kein Randproblem — es betrifft die Mehrheit der Neurodermitis-Patienten und ist einer der häufigsten Gründe für Therapieversagen.
 
-      
 ### Was die Forschung zeigt: Cortison wirkt — und ist sicherer als gedacht
 
-      
 Topische Kortikosteroide sind seit den 1950er-Jahren im Einsatz und gehören zu den am intensivsten untersuchten Medikamenten der Dermatologie. Die Evidenz ist eindeutig: Sie sind hochwirksam gegen die Entzündung bei Neurodermitis — und bei leitliniengerechter Anwendung sehr sicher.
 
-      
-        Cochrane Netzwerk-Meta-Analyse: Lax et al. (2024)
-        Systematische Übersicht und Netzwerk-Meta-Analyse · *Cochrane Database of Systematic Reviews* · 291 randomisierte kontrollierte Studien (RCTs), 45.846 Patienten
-        
+Cochrane Netzwerk-Meta-Analyse: Lax et al. (2024)
+Systematische Übersicht und Netzwerk-Meta-Analyse · *Cochrane Database of Systematic Reviews* · 291 randomisierte kontrollierte Studien (RCTs), 45.846 Patienten
+
 Dies ist die bislang umfassendste Auswertung topischer Behandlungen bei Neurodermitis. Ergebnis: Potente topische Kortikosteroide (Wirkstärke der Klasse III nach europäischer Klassifikation, z. B. Mometasonfuroat oder Betamethasonvalerat) gehörten zusammen mit JAK-Inhibitoren (Januskinase-Hemmer, eine neuere Wirkstoffklasse) und Tacrolimus 0,1 % (ein Calcineurin-Inhibitor, der die Immunreaktion in der Haut hemmt) zu den wirksamsten topischen Therapien. Die Wirksamkeit ist konsistent über zahlreiche Studien hinweg belegt.
 
-      
+Systematische Übersicht zur Langzeitsicherheit: Harvey et al. (2023)
+Systematische Übersicht · *Skin Health and Disease* · 7 Studien (2 RCTs mit n = 2.570, davon 1.288 mit topischen Kortikosteroiden; 5 Beobachtungsstudien)
 
-      
-        Systematische Übersicht zur Langzeitsicherheit: Harvey et al. (2023)
-        Systematische Übersicht · *Skin Health and Disease* · 7 Studien (2 RCTs mit n = 2.570, davon 1.288 mit topischen Kortikosteroiden; 5 Beobachtungsstudien)
-        
 Diese Übersicht untersuchte gezielt die Frage, die Patienten am meisten beschäftigt: Ist Cortison-Creme bei längerer Anwendung gefährlich? Die zentralen Ergebnisse: Zwei große RCTs über 3 und 5 Jahre (bei Kindern) verglichen topische Kortikosteroide mit Calcineurin-Inhibitoren. Intermittierende Anwendung (also: bei Schüben auftragen, dazwischen pausieren) führte zu keinem erhöhten Risiko für Wachstumsstörungen, Hautinfektionen, beeinträchtigte Impfantwort oder Lymphome. In der 5-Jahres-Studie mit 1.213 Kindern, die milde bis mittelstarke Kortikosteroide verwendeten, trat ein einziger Fall von milder Hautatrophie auf. Kein Fall von klinisch relevanter Nebenniereninsuffizienz (Störung der körpereigenen Cortisol-Produktion) wurde beobachtet.
 
-      
+Netzwerk-Meta-Analyse: Chu et al. (2023)
+Systematische Übersicht und Netzwerk-Meta-Analyse · *Journal of Allergy and Clinical Immunology* · 219 RCTs, 43.123 Patienten, 68 verschiedene Interventionen
 
-      
-        Netzwerk-Meta-Analyse: Chu et al. (2023)
-        Systematische Übersicht und Netzwerk-Meta-Analyse · *Journal of Allergy and Clinical Immunology* · 219 RCTs, 43.123 Patienten, 68 verschiedene Interventionen
-        
 Diese Analyse wurde im Rahmen der Leitlinienentwicklung der American Academy of Allergy, Asthma & Immunology (AAAAI) durchgeführt und bewertete alle verfügbaren topischen Therapien hinsichtlich Schweregrad, Juckreiz, Schlafqualität, Lebensqualität, Schübe und Nebenwirkungen. Topische Kortikosteroide waren über alle Endpunkte hinweg eine der wirksamsten Therapieoptionen — und zeigten bei korrekter Anwendung ein günstiges Nutzen-Risiko-Verhältnis.
 
-      
+Cochrane Review: Lax et al. (2022)
+Cochrane Systematic Review · *Cochrane Database of Systematic Reviews* · 104 RCTs, 8.443 Patienten
 
-      
-        Cochrane Review: Lax et al. (2022)
-        Cochrane Systematic Review · *Cochrane Database of Systematic Reviews* · 104 RCTs, 8.443 Patienten
-        
 Dieser Review untersuchte speziell die Frage, wie topische Kortikosteroide bei Ekzemen am besten angewendet werden. Zentrale Ergebnisse: Einmal tägliches Auftragen ist ebenso wirksam wie zweimal tägliches Auftragen. Proaktive Therapie (ein- bis zweimal wöchentliches Auftragen nach Abklingen des Schubs auf ehemals betroffene Stellen) reduziert Rückfälle signifikant gegenüber rein reaktiver Behandlung. Milde bis mittelstarke Präparate sind für die meisten Patienten ausreichend.
 
-      
+AWMF-S3-Leitlinie Atopische Dermatitis, Teil 1 (2023)
+Evidenz- und konsensbasierte Leitlinie · *JDDG: Journal der Deutschen Dermatologischen Gesellschaft* · AWMF-Register Nr. 013-027
 
-      
-        AWMF-S3-Leitlinie Atopische Dermatitis, Teil 1 (2023)
-        Evidenz- und konsensbasierte Leitlinie · *JDDG: Journal der Deutschen Dermatologischen Gesellschaft* · AWMF-Register Nr. 013-027
-        
 Die aktuelle deutsche S3-Leitlinie — die höchste Evidenzstufe im deutschen Leitliniensystem — empfiehlt topische Kortikosteroide als Erstlinientherapie bei Neurodermitis ab leichtem bis mittlerem Schweregrad. Bei Unverträglichkeit oder an empfindlichen Stellen wie Gesicht, Körperfalten (intertriginöse Areale) und Anogenitalbereich werden Calcineurin-Inhibitoren als Alternative empfohlen.
 
-      
-
-      
 ### Warum haben trotzdem so viele Angst vor Cortison?
 
-      
 Kortikophobie ist kein individuelles Versagen — es ist ein systemisches Problem mit nachvollziehbaren Ursachen.
 
-      
 **Übertragung von systemischen auf topische Risiken.** Viele Patienten haben gehört, dass Cortison-Tabletten (systemische Kortikosteroide, also Medikamente, die den ganzen Körper betreffen) schwere Nebenwirkungen verursachen können: Gewichtszunahme, Osteoporose (Knochenschwund), Diabetes, Hautverdünnung. Das stimmt — für die Langzeiteinnahme von Tabletten. Topische Kortikosteroide (Cremes, Salben) werden jedoch lokal auf die Haut aufgetragen und gelangen nur in geringsten Mengen in den Blutkreislauf. Die Risiken sind grundlegend verschieden, aber in der öffentlichen Wahrnehmung werden sie gleichgesetzt.
 
-      
 **Die Prävalenz ist erschreckend hoch.** Studien mit dem TOPICOP-Score (einem validierten Fragebogen zur Messung von Kortikophobie) zeigen, dass 21 bis 84 Prozent der Neurodermitis-Patienten oder deren Eltern an klinisch relevanter Cortison-Angst leiden. In einer Studie von 2023 hatten 49 von 100 befragten Eltern einen TOPICOP-Score über 50 Prozent — also schwere Kortikophobie. Höhere Bildung und weibliches Geschlecht waren mit stärkerer Angst assoziiert — was zeigt, dass das Problem nicht durch „mangelnde Aufklärung“ allein erklärt werden kann, sondern auch durch Fehlinformation.
 
-      
 **Unzureichende ärztliche Aufklärung.** In einer durchschnittlichen dermatologischen Konsultation bleibt oft zu wenig Zeit, um die korrekte Anwendung — Menge, Dauer, Stärke, Körperstelle — ausführlich zu erklären. Patienten erhalten ein Rezept, aber keine Anleitung. Wenn dann Nebenwirkungen befürchtet werden, reduzieren sie die Anwendung eigenmächtig — mit dem Ergebnis, dass die Entzündung nicht ausreichend kontrolliert wird, die Symptome wiederkehren und die Überzeugung entsteht: „Cortison hilft nicht.“
 
-      
 **Finanzielle Anreize für Alternativprodukte.** Der Markt für „cortisonfreie“ Neurodermitis-Produkte ist milliardenschwer. Naturkosmetik, Nahrungsergänzungsmittel und Heilpraktiker-Behandlungen profitieren direkt von der Cortison-Angst. Die Botschaft „ohne Cortison“ wird als Qualitätsmerkmal vermarktet — obwohl die meisten dieser Produkte keine belastbare Evidenz für ihre Wirksamkeit haben. Für Patienten ist schwer zu erkennen, wo unabhängige Information aufhört und Marketing beginnt.
 
-    
-
-    
-    
-      
 ## Cortison bei Neurodermitis: Wann ist Vorsicht tatsächlich angebracht?
 
-      
 Die Evidenz zeigt, dass Cortison-Cremes bei Neurodermitis die Therapie der ersten Wahl sind. Aber „sicher bei korrekter Anwendung“ heißt nicht „immer und überall bedenkenlos“. Es gibt Situationen, in denen besondere Aufmerksamkeit geboten ist:
 
-      
 **Wenn starke Präparate dauerhaft im Gesicht angewendet werden:** Die Gesichtshaut ist dünner und durchlässiger als die Haut am Körper. Die AWMF-Leitlinie empfiehlt für das Gesicht grundsätzlich milde Kortikosteroide (Klasse I–II). Mittelstarke Präparate (Klasse III) sollten dort nur kurz (3–5 Tage) bei schweren Schüben eingesetzt werden. Längere Anwendung starker Kortikosteroide im Gesicht kann eine periorale Dermatitis (Hautausschlag um den Mund) oder eine rosaceaartige Dermatitis (Rötung und Entzündung) auslösen.
 
-      
 **Wenn die Anwendung über Monate ohne ärztliche Kontrolle erfolgt:** Intermittierende Anwendung (Schubtherapie mit Pausen) ist sicher — das zeigen die Langzeitstudien über bis zu 5 Jahre. Daueranwendung ohne Monitoring ist es nicht. Wenn Sie seit Monaten täglich Cortison-Creme auftragen, ohne dass Ihr Arzt die Haut kontrolliert hat, sollten Sie einen Termin vereinbaren.
 
-      
 **Wenn an empfindlichen Körperstellen behandelt wird:** Körperfalten (Achseln, Leisten, unter der Brust), der Genitalbereich und die Augenlider sind besonders empfindlich. Hier sollten bevorzugt Calcineurin-Inhibitoren (wie Tacrolimus oder Pimecrolimus) verwendet werden oder — falls Kortikosteroide nötig sind — nur milde Präparate und nur kurzzeitig.
 
-      
 **Wenn Symptome trotz korrekter Anwendung nicht besser werden:** In diesem Fall liegt möglicherweise keine reine Neurodermitis vor, sondern eine Kontaktallergie, eine Hautinfektion (bakteriell oder durch Herpesviren) oder eine andere Erkrankung. Cortison würde dann das falsche Problem behandeln. Wenn nach zwei Wochen leitliniengerechter Therapie keine Besserung eintritt, ist eine Vorstellung beim Dermatologen dringend empfohlen.
 
-      
 **Wann Cortison definitiv nicht indiziert ist:** Bei aktiven Hautinfektionen (Bakterien, Viren, Pilze) auf der betroffenen Stelle, bei Rosacea oder perioraler Dermatitis (hier verschlimmert Cortison das Problem), und bei bekannter Allergie gegen den Wirkstoff oder die Grundlage der Creme.
 
-    
-
-    
-    
-      
 ## Cortison-Creme bei Neurodermitis: Welche Fragen Sie Ihrem Arzt stellen sollten
 
-      
+- 
+**„Welche Stärke hat das Cortison-Präparat, das Sie mir verschreiben — und ist diese Stärke für die betroffene Körperstelle angemessen?“**
+Kortikosteroide werden in vier Wirkstärkeklassen (I–IV) eingeteilt. Nicht jedes Präparat eignet sich für jede Körperstelle. Ihr Arzt sollte Ihnen erklären können, warum er genau dieses Präparat für genau diese Stelle wählt.
 
-        - 
-          **„Welche Stärke hat das Cortison-Präparat, das Sie mir verschreiben — und ist diese Stärke für die betroffene Körperstelle angemessen?“**
-          Kortikosteroide werden in vier Wirkstärkeklassen (I–IV) eingeteilt. Nicht jedes Präparat eignet sich für jede Körperstelle. Ihr Arzt sollte Ihnen erklären können, warum er genau dieses Präparat für genau diese Stelle wählt.
-        
-        - 
-          **„Wie viel Creme soll ich auftragen — und gibt es eine einfache Faustregel?“**
-          Die sogenannte Fingertip Unit (FTU, Fingerspitzeneinheit — die Menge Creme, die auf eine Fingerkuppe passt) ist eine bewährte Dosierungshilfe. Zu wenig auftragen ist einer der häufigsten Fehler.
-        
-        - 
-          **„Wie lange soll ich die Creme im akuten Schub anwenden — und woran erkenne ich, dass ich aufhören kann?“**
-          Viele Patienten hören auf, sobald der Juckreiz nachlässt — aber die Entzündung unter der Haut kann noch aktiv sein. Ihr Arzt sollte Ihnen klare Kriterien nennen, nicht nur „bis es besser ist“.
-        
-        - 
-          **„Sollte ich eine proaktive Erhaltungstherapie machen — also auch nach dem Schub ein- bis zweimal pro Woche dünn auftragen?“**
-          Proaktive Therapie reduziert nachweislich Rückfälle und führt insgesamt zu weniger Cortisonverbrauch. Nicht jeder Arzt spricht dieses Thema von sich aus an.
-        
-        - 
-          **„Gibt es Alternativen zu Cortison für empfindliche Stellen wie Gesicht oder Körperfalten?“**
-          Calcineurin-Inhibitoren (Tacrolimus, Pimecrolimus) und neuere Wirkstoffe wie JAK-Inhibitoren sind evidenzbasierte Alternativen. Ihr Arzt sollte diese Optionen kennen und Ihnen erklären können, wann sie sinnvoller sind als Cortison.
-        
-        - 
-          **„Welche konkreten Nebenwirkungen muss ich bei diesem Präparat an dieser Körperstelle realistisch befürchten — und welche nicht?“**
-          Ein guter Arzt unterscheidet zwischen theoretischen Risiken und realistischen Risiken bei Ihrer individuellen Anwendung. „Cortison hat Nebenwirkungen“ ist keine ausreichende Aufklärung.
-        
-        - 
-          **„Wann sollte ich wiederkommen — und woran erkenne ich, dass die Behandlung nicht ausreicht und ich eine Stufe höher brauche?“**
-          Neurodermitis erfordert oft ein Stufenschema mit regelmäßiger Anpassung. Ein einmaliges Rezept ohne Nachkontrolle reicht bei mittlerer bis schwerer Neurodermitis nicht aus.
-        
-      
+- 
+**„Wie viel Creme soll ich auftragen — und gibt es eine einfache Faustregel?“**
+Die sogenannte Fingertip Unit (FTU, Fingerspitzeneinheit — die Menge Creme, die auf eine Fingerkuppe passt) ist eine bewährte Dosierungshilfe. Zu wenig auftragen ist einer der häufigsten Fehler.
 
-    
+- 
+**„Wie lange soll ich die Creme im akuten Schub anwenden — und woran erkenne ich, dass ich aufhören kann?“**
+Viele Patienten hören auf, sobald der Juckreiz nachlässt — aber die Entzündung unter der Haut kann noch aktiv sein. Ihr Arzt sollte Ihnen klare Kriterien nennen, nicht nur „bis es besser ist“.
 
-    
-    
-      
+- 
+**„Sollte ich eine proaktive Erhaltungstherapie machen — also auch nach dem Schub ein- bis zweimal pro Woche dünn auftragen?“**
+Proaktive Therapie reduziert nachweislich Rückfälle und führt insgesamt zu weniger Cortisonverbrauch. Nicht jeder Arzt spricht dieses Thema von sich aus an.
+
+- 
+**„Gibt es Alternativen zu Cortison für empfindliche Stellen wie Gesicht oder Körperfalten?“**
+Calcineurin-Inhibitoren (Tacrolimus, Pimecrolimus) und neuere Wirkstoffe wie JAK-Inhibitoren sind evidenzbasierte Alternativen. Ihr Arzt sollte diese Optionen kennen und Ihnen erklären können, wann sie sinnvoller sind als Cortison.
+
+- 
+**„Welche konkreten Nebenwirkungen muss ich bei diesem Präparat an dieser Körperstelle realistisch befürchten — und welche nicht?“**
+Ein guter Arzt unterscheidet zwischen theoretischen Risiken und realistischen Risiken bei Ihrer individuellen Anwendung. „Cortison hat Nebenwirkungen“ ist keine ausreichende Aufklärung.
+
+- 
+**„Wann sollte ich wiederkommen — und woran erkenne ich, dass die Behandlung nicht ausreicht und ich eine Stufe höher brauche?“**
+Neurodermitis erfordert oft ein Stufenschema mit regelmäßiger Anpassung. Ein einmaliges Rezept ohne Nachkontrolle reicht bei mittlerer bis schwerer Neurodermitis nicht aus.
+
 ## Quellenverzeichnis
 
-      
+- **Lax SJ, Harvey J, Axon E, Howells L, Sherrat A, Lawton S, Jiyad Z, Flohr C, Thomas KS, Chalmers JR. (2024).** Topical anti-inflammatory treatments for eczema: a Cochrane systematic review and network meta-analysis. *Cochrane Database of Systematic Reviews*. DOI: 10.1002/14651858.CD015064.pub2
+- **Harvey J, Lax SJ, Sherrat A, Lawton S, Sherrat A, Axon E, Flohr C, Chalmers JR, Thomas KS. (2023).** The long-term safety of topical corticosteroids in atopic dermatitis: A systematic review. *Skin Health and Disease*, 3(5), e268. DOI: 10.1002/ski2.268
+- **Chu DK, Schneider L, Asiniwasis RN, Boguniewicz M, De Benedetto A, Ellison K, Guyatt GH, Lio PA, Mark BJ, Shand S, et al. (2023).** Topical treatments for atopic dermatitis (eczema): Systematic review and network meta-analysis of randomized trials. *Journal of Allergy and Clinical Immunology*, 152(6), 1493–1519. DOI: 10.1016/j.jaci.2023.08.030
+- **Lax SJ, Harvey J, Axon E, Howells L, Sherrat A, Lawton S, Flohr C, Thomas KS, Chalmers JR. (2022).** Strategies for using topical corticosteroids in children and adults with eczema. *Cochrane Database of Systematic Reviews*, Issue 3, Art. No.: CD013356. DOI: 10.1002/14651858.CD013356.pub2
+- **Werfel T, Heratizadeh A, Aberer W, Augustin M, Biedermann T, Bauer A, et al. (2024).** S3-Leitlinie Atopische Dermatitis: Teil 1 — Allgemeine Aspekte, topische und nichtmedikamentöse Therapien, besondere Patientengruppen. *JDDG: Journal der Deutschen Dermatologischen Gesellschaft*, 22(1), 137–209. AWMF-Register Nr. 013-027. DOI: 10.1111/ddg.15230_g
+- **Wollenberg A, Kinberger M, Arents B, Aszodi N, Avila Valle G, Barbarot S, et al. (2025).** European Guideline (EuroGuiDerm) on atopic eczema: Living update. *Journal of the European Academy of Dermatology and Venereology*. DOI: 10.1111/jdv.20639
 
-        - **Lax SJ, Harvey J, Axon E, Howells L, Sherrat A, Lawton S, Jiyad Z, Flohr C, Thomas KS, Chalmers JR. (2024).** Topical anti-inflammatory treatments for eczema: a Cochrane systematic review and network meta-analysis. *Cochrane Database of Systematic Reviews*. DOI: 10.1002/14651858.CD015064.pub2
-        - **Harvey J, Lax SJ, Sherrat A, Lawton S, Sherrat A, Axon E, Flohr C, Chalmers JR, Thomas KS. (2023).** The long-term safety of topical corticosteroids in atopic dermatitis: A systematic review. *Skin Health and Disease*, 3(5), e268. DOI: 10.1002/ski2.268
-        - **Chu DK, Schneider L, Asiniwasis RN, Boguniewicz M, De Benedetto A, Ellison K, Guyatt GH, Lio PA, Mark BJ, Shand S, et al. (2023).** Topical treatments for atopic dermatitis (eczema): Systematic review and network meta-analysis of randomized trials. *Journal of Allergy and Clinical Immunology*, 152(6), 1493–1519. DOI: 10.1016/j.jaci.2023.08.030
-        - **Lax SJ, Harvey J, Axon E, Howells L, Sherrat A, Lawton S, Flohr C, Thomas KS, Chalmers JR. (2022).** Strategies for using topical corticosteroids in children and adults with eczema. *Cochrane Database of Systematic Reviews*, Issue 3, Art. No.: CD013356. DOI: 10.1002/14651858.CD013356.pub2
-        - **Werfel T, Heratizadeh A, Aberer W, Augustin M, Biedermann T, Bauer A, et al. (2024).** S3-Leitlinie Atopische Dermatitis: Teil 1 — Allgemeine Aspekte, topische und nichtmedikamentöse Therapien, besondere Patientengruppen. *JDDG: Journal der Deutschen Dermatologischen Gesellschaft*, 22(1), 137–209. AWMF-Register Nr. 013-027. DOI: 10.1111/ddg.15230_g
-        - **Wollenberg A, Kinberger M, Arents B, Aszodi N, Avila Valle G, Barbarot S, et al. (2025).** European Guideline (EuroGuiDerm) on atopic eczema: Living update. *Journal of the European Academy of Dermatology and Venereology*. DOI: 10.1111/jdv.20639
-      
-
-    
-
-    
-    
-      
 ## Experten-Review
 
-      
 **Dieser Artikel wurde geprüft von:**
 
-      
 [Name des Facharztes/der Fachärztin]
 
-      [Fachgebiet, Qualifikation]
+[Fachgebiet, Qualifikation]
 
-      [Praxis/Klinik, Ort]
+[Praxis/Klinik, Ort]
 
-      [Link zur Praxis-Homepage]
+[Link zur Praxis-Homepage]
 
-      
 *„[Platz für ein 1–2-Satz-Statement des Reviewers zum Artikel]“*
 
-      
 *(Hinweis: Dieser Abschnitt wird nach dem ärztlichen Review ausgefüllt.)*
 
-      
 ### Ergänzung des prüfenden Facharztes
 
-      
 *[Hier kann der Reviewer zusätzliche Anweisungen, fachliche Schwerpunkte oder Korrekturen eintragen, die bei der Artikelerstellung berücksichtigt werden sollen. Wenn nichts ergänzt wird, bleibt dieser Abschnitt leer.]*
 
-    
-
-    
-    
-      
 ## Überprüfen Sie diesen Artikel selbst
 
-      
 Kopieren Sie den folgenden Prompt in ChatGPT, Claude oder eine andere KI Ihrer Wahl:
 
-      Du bist ein medizinischer Wissenschaftsjournalist für eine unabhängige, werbefreie Plattform. Du verkaufst nichts, hast keinen Interessenkonflikt und gibst ausschließlich wieder, was die Evidenz hergibt. Du bist extrem kritisch — wenn ein Verfahren in Studien nicht besser wirkt als Placebo, schreibst du das ohne Abschwächung.
+Du bist ein medizinischer Wissenschaftsjournalist für eine unabhängige, werbefreie Plattform. Du verkaufst nichts, hast keinen Interessenkonflikt und gibst ausschließlich wieder, was die Evidenz hergibt. Du bist extrem kritisch — wenn ein Verfahren in Studien nicht besser wirkt als Placebo, schreibst du das ohne Abschwächung.
 
 Schreibe einen evidenzbasierten Patientenartikel (1.800–2.200 Wörter) zum Thema: **Neurodermitis und Cortison: Warum die Cortison-Angst oft mehr schadet als die Creme**
 
@@ -546,18 +151,10 @@ Qualitätskontrolle: Mindestens 3 konkrete RCTs oder Meta-Analysen mit vollstän
 
 Ergänzung des prüfenden Facharztes: Keine Ergänzung hinzugefügt.
 
-      
 Wir glauben an Transparenz. Wenn dieser Artikel etwas falsch darstellt, wollen wir, dass Sie es herausfinden.
 
-    
-
-    
-    
-      
 ### Verwandte Artikel
 
-      
-
-        - [PRP (Eigenbluttherapie) bei Haarausfall: Wirksam oder teures Placebo?](/prp-haarausfall-evidenz)
-        - [Hautkrebsscreening: Rettet es Leben — oder führt es zu Überdiagnosen?](/hautkrebsscreening-evidenz)
-        - [Akne und Isotretinoin: Gefährliches Medikament oder unterschätzte Therapie?](/akne-isotretinoin-evidenz)
+- [PRP (Eigenbluttherapie) bei Haarausfall: Wirksam oder teures Placebo?](/prp-haarausfall-evidenz)
+- [Hautkrebsscreening: Rettet es Leben — oder führt es zu Überdiagnosen?](/hautkrebsscreening-evidenz)
+- [Akne und Isotretinoin: Gefährliches Medikament oder unterschätzte Therapie?](/akne-isotretinoin-evidenz)
