@@ -11,9 +11,14 @@ reviewerTitle: "Facharzt für Unfallchirurgie & Orthopädie · Wien"
 reviewerPhoto: "https://d2xsxph8kpxj0f.cloudfront.net/310519663217967817/nvBCD5Lwybycfp3H24L723/dr-bezard_58e49f8b.jpg"
 reviewerUrl: "https://www.drbezard.com"
 ---
+
+<section class="kernaussage">
+
 Ein Meniskusriss ist kein automatischer Grund für eine Operation. Bei degenerativen (abnutzungsbedingten) Meniskusrissen ist Physiotherapie genauso wirksam wie die Arthroskopie — und schützt das Kniegelenk langfristig besser.
 
 Das zeigen eine Placebo-kontrollierte Studie (FIDELITY), ein Cochrane Review mit 16 RCTs und über 2.100 Patienten sowie die aktuelle AAOS-Leitlinie 2024. Die Meniskektomie (Teilentfernung des Meniskus) bringt bei degenerativen Rissen keinen klinisch relevanten Vorteil gegenüber einer Schein-OP — und erhöht langfristig das Arthrose-Risiko, weil der Meniskus als Stoßdämpfer zwischen den Knochen fehlt. Eine Operation kann bei traumatischen Rissen mit mechanischer Blockade oder bei Korbhenkelrissen sinnvoll sein. In den meisten Fällen jedoch gilt: Physiotherapie zuerst — mindestens 8 bis 12 Wochen strukturiert, bevor eine OP überhaupt diskutiert wird.
+
+</section>
 
 ## Meniskusriss: Was Patienten glauben — und was die Studien zeigen
 

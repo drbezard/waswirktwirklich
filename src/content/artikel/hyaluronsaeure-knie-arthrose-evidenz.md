@@ -11,9 +11,14 @@ reviewerTitle: "Facharzt für Unfallchirurgie & Orthopädie · Wien"
 reviewerPhoto: "https://d2xsxph8kpxj0f.cloudfront.net/310519663217967817/nvBCD5Lwybycfp3H24L723/dr-bezard_58e49f8b.jpg"
 reviewerUrl: "https://www.drbezard.com"
 ---
+
+<section class=”kernaussage”>
+
 Hyaluronsäure-Spritzen ins Kniegelenk wirken bei Arthrose kaum besser als eine Placebo-Injektion mit Kochsalzlösung.
 
-Das ist keine Außenseitermeinung — es ist das Ergebnis der umfassendsten verfügbaren Forschung: Meta-Analysen mit über 12.000 Patientinnen und Patienten, ausgewertet von unabhängigen Forschungsgruppen. Die größten und methodisch besten Studien zeigen einen Schmerzunterschied zu Placebo, der so klein ist, dass Patienten ihn im Alltag nicht spüren. Gleichzeitig steigt das Risiko für Nebenwirkungen — von lokalen Reaktionen wie Schwellung und Schmerz an der Einstichstelle bis hin zu seltenen, aber ernsthaften Komplikationen wie Gelenkinfektionen. Die wichtigsten internationalen Leitlinien — darunter die der American Academy of Orthopaedic Surgeons (AAOS) und des britischen National Institute for Health and Care Excellence (NICE) — empfehlen Hyaluronsäure-Injektionen deshalb nicht für die Routinebehandlung von Kniearthrose. Der deutsche IGeL-Monitor bewertet die Behandlung seit 2025 als „negativ“.
+Das ist keine Außenseitermeinung — es ist das Ergebnis der umfassendsten verfügbaren Forschung: Meta-Analysen mit über 12.000 Patientinnen und Patienten, ausgewertet von unabhängigen Forschungsgruppen. Die größten und methodisch besten Studien zeigen einen Schmerzunterschied zu Placebo, der so klein ist, dass Patienten ihn im Alltag nicht spüren. Gleichzeitig steigt das Risiko für Nebenwirkungen — von lokalen Reaktionen wie Schwellung und Schmerz an der Einstichstelle bis hin zu seltenen, aber ernsthaften Komplikationen wie Gelenkinfektionen. Die wichtigsten internationalen Leitlinien — darunter die der American Academy of Orthopaedic Surgeons (AAOS) und des britischen National Institute for Health and Care Excellence (NICE) — empfehlen Hyaluronsäure-Injektionen deshalb nicht für die Routinebehandlung von Kniearthrose. Der deutsche IGeL-Monitor bewertet die Behandlung seit 2025 als „negativ”.
+
+</section>
 
 ## Hyaluronsäure-Spritzen bei Kniearthrose: Was Patienten glauben — und was die Studien zeigen
 

@@ -11,9 +11,14 @@ reviewerTitle: "Facharzt für Unfallchirurgie & Orthopädie · Wien"
 reviewerPhoto: "https://d2xsxph8kpxj0f.cloudfront.net/310519663217967817/nvBCD5Lwybycfp3H24L723/dr-bezard_58e49f8b.jpg"
 reviewerUrl: "https://www.drbezard.com"
 ---
+
+<section class="kernaussage">
+
 Die arthroskopische subakromiale Dekompression — die häufigste Schulter-OP bei Impingement — wirkt nicht besser als eine Schein-Operation.
 
 Das belegen zwei große Placebo-kontrollierte Studien (CSAW und FIMPACT) sowie ein Cochrane Review mit über 1.000 Patienten: Hochwertige Evidenz zeigt, dass die Operation bei subakromialen Schulterschmerzen keinen klinisch bedeutsamen Vorteil gegenüber einer Placebo-OP (Arthroskopie ohne Knochenabtragung) bringt — weder bei Schmerz noch bei Funktion noch bei Lebensqualität. Gleichzeitig zeigt die Forschung, dass strukturierte Übungstherapie (Physiotherapie) genauso wirksam ist wie die Operation. Die deutsche AWMF-Leitlinie (S2e) und das britische NICE empfehlen deshalb Physiotherapie als Erstbehandlung. Die OP sollte nur in Ausnahmefällen erwogen werden — etwa wenn ein konsequentes Übungsprogramm über mindestens sechs Monate keine Besserung gebracht hat.
+
+</section>
 
 ## Schulter-OP bei Impingement: Was Patienten glauben — und was die Studien zeigen
 

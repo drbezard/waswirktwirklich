@@ -11,9 +11,14 @@ reviewerTitle: "Facharzt für Unfallchirurgie & Orthopädie · Wien"
 reviewerPhoto: "https://d2xsxph8kpxj0f.cloudfront.net/310519663217967817/nvBCD5Lwybycfp3H24L723/dr-bezard_58e49f8b.jpg"
 reviewerUrl: "https://www.drbezard.com"
 ---
+
+<section class="kernaussage">
+
 Die meisten Bandscheibenvorfälle mit Ischias (Beinschmerzen durch Nervenreizung) heilen ohne Operation. Die OP bringt schnellere Schmerzlinderung — aber nach einem Jahr sind die Ergebnisse gleichwertig.
 
 Das zeigen die SPORT-Studie (501 Patienten, 8 Jahre Nachbeobachtung), die Leiden-Studie (Peul et al., NEJM, 283 Patienten) und eine Cochrane-Übersicht: Etwa 90 % der akuten Bandscheibenvorfälle bessern sich mit konservativer Therapie. Viele Bandscheibenvorfälle werden vom Körper selbst resorbiert (abgebaut). Die Operation — in der Regel eine Diskektomie (Entfernung des vorgefallenen Bandscheibengewebes) — ist bei unkomplizierten Verläufen erst dann zu erwägen, wenn 6 bis 12 Wochen konsequente konservative Therapie keine ausreichende Besserung gebracht haben. Ausnahme: Bei Notfällen wie dem Cauda-equina-Syndrom (Blasen-/Darmstörungen, Taubheit im Genitalbereich) oder progressiver Muskellähmung ist sofortiges Handeln erforderlich. Die AWMF-Leitlinie und NICE empfehlen konservative Therapie als Erstbehandlung.
+
+</section>
 
 ## Bandscheibenvorfall: Was Patienten glauben — und was die Studien zeigen
 

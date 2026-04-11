@@ -7,6 +7,15 @@ excerpt: "Evidenzbasierte Analyse der LASIK/LASEK-Operation – Erfolgsraten, Ri
 image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663217967817/nvBCD5Lwybycfp3H24L723/augenlaser-operation-was-die-studien-wirklich-zeigen_cc4ceaa8.png"
 reviewed: false
 ---
+
+<section class="kernaussage">
+
+Die Augenlaser-Chirurgie ist bei richtiger Patientenauswahl ein gut untersuchter, effektiver Eingriff — aber die Werbung verschweigt die Risiken.
+
+Ein Cochrane-Review mit über 4.500 Augen bestätigt: LASIK korrigiert Kurzsichtigkeit bis -12 Dioptrien effektiv. 92–96 % der geeigneten Patienten erreichen eine Sehschärfe von 20/20 ohne Brille. Gleichzeitig zeigt die FDA-PROWL-Studie: 43 % berichten über neue Blendempfindlichkeit, 46 % über Halos. Trockene Augen betreffen bis zu 40 % der Patienten in den ersten 6 Monaten, bei 5–10 % dauerhaft. Die wichtigste Erkenntnis der Forschung: Der Erfolg hängt weniger von der Technik ab als von der sorgfältigen Patientenauswahl. Eine zweite unabhängige Meinung vor dem Eingriff ist keine Vorsicht — sie ist evidenzbasierte Medizin.
+
+</section>
+
 ## Was glauben viele Patienten – und was stimmt wirklich?
 
 Jährlich lassen sich weltweit über 10 Millionen Menschen eine Augenlaser-Operation durchführen. Die Versprechen der Kliniken klingen verlockend: „Brillenfreiheit für immer“, „99% Erfolgsrate“, „schmerzfrei und sicher“. Doch was sagt die unabhängige Wissenschaft dazu? Und was verschweigen die Hochglanzprospekte?
