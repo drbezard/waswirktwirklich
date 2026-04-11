@@ -6,10 +6,6 @@ category: "Kardiologie"
 excerpt: "Katheterablation bei Vorhofflimmern: Wann sie wirklich hilft, wann Medikamente reichen. Die Evidenz aus großen Studien."
 image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663217967817/nvBCD5Lwybycfp3H24L723/vorhofflimmern-katheterablation-evidenz_5395b67a.png"
 reviewed: false
-reviewer: ""
-reviewerTitle: ""
-reviewerPhoto: ""
-reviewerUrl: ""
 ---
 
 <section class="kernaussage">
@@ -17,6 +13,8 @@ reviewerUrl: ""
 Die Katheterablation bei Vorhofflimmern ist kein Allheilmittel — aber für bestimmte Patienten ein klar belegter Vorteil gegenüber Medikamenten allein.
 
 Das zeigt die aktuelle Studienlage aus mehreren großen randomisierten Studien und Meta-Analysen. Bei Patienten mit Vorhofflimmern und gleichzeitiger Herzinsuffizienz (Herzschwäche mit eingeschränkter Pumpfunktion) senkt die Ablation die Sterblichkeit und die Zahl der Krankenhausaufenthalte deutlich — das belegt insbesondere die CASTLE-AF-Studie (Marrouche et al., 2018). Bei Patienten ohne Herzinsuffizienz zeigt die bisher größte Studie — CABANA (Packer et al., 2019) — zwar eine bessere Rhythmuskontrolle und Lebensqualität, aber keinen eindeutigen Vorteil bei Tod oder Schlaganfall. Eine umfassende Meta-Analyse im Annals of Internal Medicine (2025) bestätigt: Die Ablation senkt langfristig das Schlaganfall- und Sterberisiko, erhöht aber kurzfristig das Schlaganfallrisiko während des Eingriffs. Die ESC-Leitlinie 2024 und die deutsche AWMF-S3-Leitlinie 2025 empfehlen die Ablation inzwischen als Erstlinientherapie bei paroxysmalem Vorhofflimmern — aber die Entscheidung bleibt individuell.
+
+</section>
 
 ## Katheterablation bei Vorhofflimmern: Was Patienten glauben — und was die Studien zeigen
 
@@ -31,34 +29,44 @@ Für viele Patienten ist diese Erklärung einleuchtend, besonders wenn Medikamen
 Die Antwort ist nicht schwarz-weiß, sondern hängt entscheidend davon ab, ob der Patient zusätzlich eine Herzinsuffizienz hat oder nicht — und wie man „Erfolg“ definiert: Weniger Vorhofflimmern? Bessere Lebensqualität? Oder weniger Todesfälle und Schlaganfälle?
 
 <div class="studie">
-<span class="studie-name">RCT: CASTLE-AF — Marrouche et al. (2018)
-<div class="studie-details">Randomisierte kontrollierte Studie · <em>New England Journal of Medicine</em> · 363 Patienten mit VHF und Herzinsuffizienz (LVEF ≤ 35 %)
+<span class="studie-name">RCT: CASTLE-AF — Marrouche et al. (2018)</span>
+<div class="studie-details">Randomisierte kontrollierte Studie · <em>New England Journal of Medicine</em> · 363 Patienten mit VHF und Herzinsuffizienz (LVEF ≤ 35 %)</div>
 
 Dies ist die Schlüsselstudie für Patienten mit Vorhofflimmern und gleichzeitiger Herzinsuffizienz mit eingeschränkter Pumpfunktion (HFrEF — Heart Failure with reduced Ejection Fraction, also einer linksventrikulären Auswurffraktion unter 35 %). Ergebnis: Der kombinierte Endpunkt aus Tod und Krankenhausaufenthalt wegen Herzinsuffizienz trat in der Ablationsgruppe bei 28,5 % der Patienten auf, in der Medikamentengruppe bei 44,6 % (p = 0,006). Die Sterblichkeit allein lag bei 13,4 % vs. 25,0 %. Nach 60 Monaten waren 63 % der Ablationspatienten im Sinusrhythmus (normaler Herzrhythmus), verglichen mit nur 22 % unter medikamentöser Therapie. Die Pumpfunktion des Herzens verbesserte sich in der Ablationsgruppe um 8 Prozentpunkte.
 
+</div>
+
 <div class="studie">
-<span class="studie-name">RCT: CABANA — Packer et al. (2019)
-<div class="studie-details">Randomisierte kontrollierte Studie · <em>JAMA</em> · 2.204 Patienten (43 % paroxysmales, 57 % persistierendes VHF)
+<span class="studie-name">RCT: CABANA — Packer et al. (2019)</span>
+<div class="studie-details">Randomisierte kontrollierte Studie · <em>JAMA</em> · 2.204 Patienten (43 % paroxysmales, 57 % persistierendes VHF)</div>
 
 Die bisher größte randomisierte Studie zur Katheterablation bei Vorhofflimmern — allerdings ohne Beschränkung auf Herzinsuffizienz-Patienten. Ergebnis: Beim primären Endpunkt (Tod, Schlaganfall, schwere Blutung oder Herzstillstand) zeigte sich kein statistisch signifikanter Unterschied zwischen Ablation und medikamentöser Therapie (8,0 % vs. 9,2 %; HR 0,86; 95 %-KI 0,65–1,15). Beim kombinierten Endpunkt aus Tod oder kardiovaskulärer Hospitalisierung war die Ablation hingegen überlegen (51,7 % vs. 58,1 %; HR 0,83; 95 %-KI 0,74–0,93). Die Ablation reduzierte Vorhofflimmern-Rezidive um 48 % und verbesserte die Lebensqualität signifikant nach 12 Monaten. Wichtig: 27 % der Patienten in der Medikamentengruppe wechselten zur Ablation (Crossover), was den Vergleich verwässerte.
 
+</div>
+
 <div class="studie">
-<span class="studie-name">RCT: EAST-AFNET 4 — Kirchhof et al. (2020)
+<span class="studie-name">RCT: EAST-AFNET 4 — Kirchhof et al. (2020)</span>
 <div class="studie-details">Randomisierte kontrollierte Studie · <em>New England Journal of Medicine</em> · 2.789 Patienten mit kürzlich diagnostiziertem VHF</div>
 
 Diese Studie untersuchte nicht die Ablation allein, sondern die Strategie der frühen Rhythmuskontrolle (Antiarrhythmika und/oder Ablation) im Vergleich zur üblichen Versorgung (primär Frequenzkontrolle). Ergebnis: Frühe Rhythmuskontrolle senkte das Risiko für den kombinierten Endpunkt aus kardiovaskulärem Tod, Schlaganfall und Hospitalisierung wegen Herzinsuffizienz oder akutem Koronarsyndrom signifikant. Die Studie zeigte: Je früher nach der Diagnose eine rhythmuskontrollierende Therapie begonnen wird, desto größer der Nutzen — ein Paradigmenwechsel in der VHF-Behandlung.
 
+</div>
+
 <div class="studie">
-<span class="studie-name">Meta-Analyse: Annals of Internal Medicine (2025)
+<span class="studie-name">Meta-Analyse: Annals of Internal Medicine (2025)</span>
 <div class="studie-details">Systematische Übersicht und Meta-Analyse · <em>Annals of Internal Medicine</em>, 178, 1138–1149 · Datenbanksuche in 9 Datenbanken (1987–2025), nur RCTs</div>
 
 Die bisher umfassendste Meta-Analyse zur Ablation bei VHF. Ergebnis: Katheterablation senkte im Vergleich zu medikamentöser Therapie das Risiko für ischämischen Schlaganfall nach 30 Tagen (RR 0,63), die Gesamtsterblichkeit (RR 0,73) und Hospitalisierungen wegen Herzinsuffizienz (RR 0,68). Allerdings war das Risiko für einen ischämischen Schlaganfall innerhalb der ersten 30 Tage nach dem Eingriff erhöht (RR 6,81) — ein Hinweis auf das periprozedurale Risiko (also das Risiko, das direkt mit dem Eingriff zusammenhängt). Über die gesamte Nachbeobachtungszeit betrachtet hob sich dieser kurzfristige Nachteil durch den langfristigen Nutzen auf.
 
+</div>
+
 <div class="studie">
-<span class="studie-name">Leitlinie: ESC/EACTS Guidelines (2024)
+<span class="studie-name">Leitlinie: ESC/EACTS Guidelines (2024)</span>
 <div class="studie-details">Europäische Leitlinie · <em>European Heart Journal</em> · Europäische Gesellschaft für Kardiologie und Herzchirurgie</div>
 
 Die 2024 aktualisierten ESC-Leitlinien für Vorhofflimmern haben die Katheterablation erstmals als Erstlinientherapie zur Rhythmuskontrolle bei paroxysmalem VHF (anfallsartigem Vorhofflimmern) empfohlen — nicht mehr nur als Alternative nach Versagen von Antiarrhythmika. Bei Patienten mit Herzinsuffizienz und eingeschränkter Pumpfunktion wird die Ablation zur Verbesserung der Symptomatik, der Pumpfunktion und der Überlebensrate empfohlen. Die deutsche AWMF-S3-Leitlinie von 2025 folgt dieser Einschätzung.
+
+</div>
 
 ### Warum ist die Entscheidung trotzdem nicht einfach?
 

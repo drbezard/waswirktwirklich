@@ -32,6 +32,7 @@ const catSlug = article.data.category.toLowerCase()
 <Base
   title={article.data.seoTitle || article.data.title}
   description={article.data.seoDescription || article.data.excerpt}
+  image={article.data.image}
 >
   <article>
     <!-- Hero Image -->
@@ -90,16 +91,13 @@ const catSlug = article.data.category.toLowerCase()
               {article.data.reviewerTitle && (
                 <p class="text-sm text-primary mb-2">{article.data.reviewerTitle}</p>
               )}
-              <p class="text-sm text-text-secondary leading-relaxed mb-2">
-                Oberarzt für Orthopädie & Traumatologie sowie Facharzt für Unfallchirurgie in Wien. Spezialisiert auf minimalinvasive Schulter-, Hand- und Kniechirurgie. Privatpraxis für evidenzbasierte Orthopädie in Wien-Döbling und Tulln.
-              </p>
               {article.data.reviewerUrl && (
                 <a href={article.data.reviewerUrl} target="_blank" rel="noopener noreferrer"
                    class="inline-flex items-center gap-1 text-sm text-primary hover:text-primary-dark no-underline transition-colors">
                   <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>
-                  www.drbezard.com
+                  {new URL(article.data.reviewerUrl!).hostname.replace('www.', '')}
                 </a>
               )}
             </div>

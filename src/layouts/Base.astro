@@ -5,9 +5,10 @@ interface Props {
   title: string;
   description?: string;
   canonical?: string;
+  image?: string;
 }
 
-const { title, description = 'Keine Meinungen. Nur was die Wissenschaft belegt.', canonical } = Astro.props;
+const { title, description = 'Keine Meinungen. Nur was die Wissenschaft belegt.', canonical, image } = Astro.props;
 const siteTitle = 'Was Wirklich Wirkt';
 const fullTitle = title === siteTitle ? `${siteTitle} – ${description}` : `${title} | ${siteTitle}`;
 ---
@@ -26,7 +27,9 @@ const fullTitle = title === siteTitle ? `${siteTitle} – ${description}` : `${t
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    {image && <meta property="og:image" content={image} />}
     <meta name="robots" content="index, follow" />
+    <link rel="alternate" type="application/rss+xml" title="Was Wirklich Wirkt" href="/rss.xml" />
   </head>
   <body class="min-h-screen flex flex-col bg-bg">
     <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-border-light">

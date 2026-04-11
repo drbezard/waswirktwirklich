@@ -37,8 +37,10 @@ src/
     Base.astro            # Root layout: <head>, sticky header, nav, footer, SEO
   pages/
     index.astro           # Homepage: hero, 3-pillar section, latest 5 articles, search
+    404.astro             # Custom 404 error page
     impressum.astro       # Legal/imprint page
     fachgebiete.astro     # All medical specialties listing
+    rss.xml.ts            # RSS feed (auto-generated from articles)
     artikel/[slug].astro  # Dynamic article detail page
     fachgebiet/[slug].astro # Articles filtered by specialty
   styles/
@@ -85,6 +87,8 @@ seoDescription: string
 - `/fachgebiete` — All medical specialties overview
 - `/fachgebiet/[slug]` — Articles filtered by specialty (slug derived from category name)
 - `/impressum` — Legal page
+- `/rss.xml` — RSS feed for article subscriptions
+- `/404` — Custom error page
 
 ### Styling
 
@@ -129,7 +133,24 @@ Articles have a `reviewed` boolean:
    ---
    ```
 3. Write article content in Markdown below the frontmatter
-4. Use `<div class="studie">` for study citation boxes and `<section class="kernaussage">` for key finding callouts
+4. Use the correct HTML structure for study citation boxes and key finding callouts:
+   ```html
+   <!-- Study box (every tag must be closed!) -->
+   <div class="studie">
+   <span class="studie-name">Study Name: Author et al. (Year)</span>
+   <div class="studie-details">Study type · <em>Journal Name</em> · N participants</div>
+
+   Study description paragraph...
+
+   </div>
+
+   <!-- Key finding callout -->
+   <section class="kernaussage">
+
+   Summary text...
+
+   </section>
+   ```
 5. Commit and push — Vercel deploys automatically
 
 ## Conventions
@@ -170,10 +191,11 @@ No automated test suite is configured. Verify changes by:
 - **No custom config:** No `vercel.json` — uses Vercel defaults
 - **Output:** Fully static site (no server-side rendering)
 - **Sitemap:** Auto-generated via `@astrojs/sitemap` integration
+- **RSS Feed:** Available at `/rss.xml` via `@astrojs/rss`
 
 ## Common Pitfalls
 
-- The `<div class="studie">` blocks in article Markdown use raw HTML — ensure tags are properly closed (some existing articles have unclosed divs)
+- The `<div class="studie">` blocks in article Markdown use raw HTML — ensure all tags are properly closed (`</span>`, `</div>`, `</section>`)
 - Content Collections use the `glob` loader pattern — article filenames must end in `.md`
 - The `searchData` on the homepage intentionally excludes `reviewerPhoto` to avoid bloating the inline JSON
 - Tailwind CSS 4 uses the Vite plugin approach (`@tailwindcss/vite`), not the PostCSS plugin — configuration is in `global.css` via `@theme {}`, not in a `tailwind.config` file

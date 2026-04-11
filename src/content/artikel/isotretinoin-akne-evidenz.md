@@ -6,10 +6,6 @@ category: "Dermatologie"
 excerpt: "Isotretinoin gilt als gefährlich – doch bei schwerer Akne ist es die wirksamste Therapie. Was Studien über Risiken und Nutzen zeigen."
 image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663217967817/nvBCD5Lwybycfp3H24L723/isotretinoin-akne-evidenz_c44917e9.png"
 reviewed: false
-reviewer: ""
-reviewerTitle: ""
-reviewerPhoto: ""
-reviewerUrl: ""
 ---
 
 <section class="kernaussage">
@@ -17,6 +13,8 @@ reviewerUrl: ""
 Isotretinoin ist das wirksamste Medikament gegen schwere Akne — und sein Ruf als „gefährliche Chemiekeule“ wird durch die aktuelle Evidenz nicht gestützt.
 
 Kaum ein Medikament in der Dermatologie ist so gefürchtet und gleichzeitig so wirksam wie Isotretinoin (bekannt unter früheren Markennamen wie Roaccutan oder Accutane). Es ist das einzige Arzneimittel, das alle vier Ursachen der Akne gleichzeitig bekämpft — und es erreicht dauerhafte Remissionsraten (anhaltende Beschwerdefreiheit) von 80–90 %. Trotzdem zögern viele Patienten und Ärzte, weil hartnäckige Mythen über schwere psychiatrische Nebenwirkungen kursieren. Die größte verfügbare Meta-Analyse (Tan et al., 2024, JAMA Dermatology) mit über 1,6 Millionen Teilnehmern fand jedoch kein erhöhtes Risiko für Suizid oder psychiatrische Erkrankungen unter Isotretinoin. Die American Academy of Dermatology (AAD, 2024) und das britische NICE empfehlen Isotretinoin ausdrücklich bei schwerer Akne, bei Akne mit Narbenbildung und bei Versagen der Standardtherapie. Das eigentliche Risiko liegt nicht in dem Medikament — sondern darin, es aus unbegründeter Angst vorzuenthalten.
+
+</section>
 
 ## Isotretinoin bei Akne: Was Patienten glauben — und was die Studien zeigen
 
@@ -31,34 +29,44 @@ Diese Angst hat eine nachvollziehbare Geschichte. In den 1980er und 1990er Jahre
 Die zentrale Frage lautet: Verursacht Isotretinoin Depressionen und Suizidalität — oder hat die schwere Akne selbst diese Wirkung? Und wie steht es um die Wirksamkeit im Vergleich zu anderen Therapien? Die besten verfügbaren Studien geben darauf mittlerweile recht klare Antworten.
 
 <div class="studie">
-<span class="studie-name">Meta-Analyse: Tan et al. (2024)
+<span class="studie-name">Meta-Analyse: Tan et al. (2024)</span>
 <div class="studie-details">Systematische Übersicht und Meta-Analyse · <em>JAMA Dermatology</em> · 25 Studien, 1.625.891 Teilnehmer</div>
 
 Die bisher größte Meta-Analyse zum Thema Isotretinoin und psychiatrische Risiken. Ergebnis: Isotretinoin-Anwender hatten auf Bevölkerungsebene kein erhöhtes Risiko für Suizid oder psychiatrische Erkrankungen. Im Gegenteil — das Risiko für Suizidversuche war 2 bis 4 Jahre nach der Behandlung sogar niedriger als bei Nicht-Anwendern. Das 1-Jahres-Risiko für einen vollendeten Suizid, Suizidversuch, Suizidgedanken und Selbstverletzung lag jeweils unter 0,5 %. Die Rate für Depressionen betrug 3,83 % — nicht höher als in der Allgemeinbevölkerung vergleichbaren Alters.
 
+</div>
+
 <div class="studie">
-<span class="studie-name">Meta-Analyse: Huang & Cheng (2017)
+<span class="studie-name">Meta-Analyse: Huang & Cheng (2017)</span>
 <div class="studie-details">Systematische Übersicht und Meta-Analyse · <em>Journal of the American Academy of Dermatology</em> · 31 Studien</div>
 
 Diese Meta-Analyse verglich Depressionswerte vor und nach der Isotretinoin-Therapie. Ergebnis: Die Depressionsprävalenz (Häufigkeit depressiver Symptome) sank unter der Behandlung signifikant (relatives Risiko 0,59). Die mittleren Depressionswerte verbesserten sich ebenfalls deutlich. In kontrollierten Studien war die Veränderung der Depressionswerte nicht signifikant unterschiedlich zwischen Isotretinoin-Patienten und Patienten mit alternativer Behandlung. Die Autoren schlussfolgerten: Die Therapie der Akne selbst — nicht das spezifische Medikament — verbessert die psychische Gesundheit.
 
+</div>
+
 <div class="studie">
-<span class="studie-name">Cochrane Review: Costa et al. (2018)
+<span class="studie-name">Cochrane Review: Costa et al. (2018)</span>
 <div class="studie-details">Cochrane Systematic Review · <em>Cochrane Database of Systematic Reviews</em> · 31 randomisierte kontrollierte Studien (RCTs), 3.836 Teilnehmer</div>
 
 Der Cochrane Review — der Goldstandard der Evidenzbewertung — fand, dass die klinischen Studiendaten zur Wirksamkeit von Isotretinoin überraschend dünn sind. Die Evidenzqualität war durchgehend niedrig bis sehr niedrig. Drei Studien zeigten keinen Unterschied zwischen Isotretinoin und oralen Antibiotika plus topischen Mitteln bei der Reduktion entzündlicher Läsionen (Pusteln, Knötchen). Das bedeutet nicht, dass Isotretinoin unwirksam ist — die klinische Erfahrung mit Remissionsraten von 80–90 % ist überwältigend. Aber die randomisierte Studienlage hinkt der klinischen Praxis weit hinterher, weil es ethisch schwierig ist, Patienten mit schwerer Akne ein nachweislich wirksames Medikament vorzuenthalten.
 
+</div>
+
 <div class="studie">
-<span class="studie-name">AAD Clinical Practice Guideline (2024)
+<span class="studie-name">AAD Clinical Practice Guideline (2024)</span>
 <div class="studie-details">Evidenzbasierte Praxisleitlinie · <em>Journal of the American Academy of Dermatology</em> · 18 evidenzbasierte Empfehlungen, 5 Good-Practice-Statements</div>
 
 Die aktualisierten Leitlinien der American Academy of Dermatology (AAD) — der weltweit größten dermatologischen Fachgesellschaft — sprechen eine starke Empfehlung für Isotretinoin aus: bei schwerer Akne, bei Akne mit psychosozialer Belastung oder Narbenbildung und bei Versagen der Standardtherapie mit oralen Antibiotika und topischen Mitteln. Die AAD betont, dass die klinische Wirksamkeit trotz der limitierten RCT-Datenlage durch jahrzehntelange klinische Erfahrung und Beobachtungsstudien gut belegt ist.
 
+</div>
+
 <div class="studie">
-<span class="studie-name">Systematische Übersicht: Daly & Walsh (2023)
-<div class="studie-details">Systematische Übersicht · <em>JEADV Clinical Practice</em> · 32 Studien, 5.245 Patienten (davon 15 RCTs)
+<span class="studie-name">Systematische Übersicht: Daly & Walsh (2023)</span>
+<div class="studie-details">Systematische Übersicht · <em>JEADV Clinical Practice</em> · 32 Studien, 5.245 Patienten (davon 15 RCTs)</div>
 
 Diese Übersicht verglich verschiedene Dosierungsschemata von Isotretinoin. Ergebnis: Niedrig dosiertes Isotretinoin (low-dose) war bei allen Akne-Schweregraden ähnlich wirksam wie die konventionelle Dosis — aber mit deutlich weniger Nebenwirkungen. Eine kontinuierliche niedrige Tagesdosis zeigte die beste Wirksamkeit unter den Niedrigdosis-Schemata. Diese Erkenntnis ist klinisch wichtig, weil sie es ermöglicht, die Nebenwirkungslast erheblich zu reduzieren, ohne auf Wirksamkeit zu verzichten.
+
+</div>
 
 ### Warum glauben trotzdem so viele, dass Isotretinoin gefährlich ist?
 

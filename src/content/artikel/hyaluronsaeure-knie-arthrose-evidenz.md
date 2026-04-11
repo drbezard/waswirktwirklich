@@ -53,11 +53,19 @@ Dieses ältere, aber einflussreiche Review kam noch zu einem positiveren Ergebni
 <div class="studie-details">Systematische Übersicht und Bayessche Netzwerk-Meta-Analyse · <em>Osteoarthritis and Cartilage</em>, 32:1207–1219 · Nur große RCTs (≥100 Patienten pro Gruppe)</div>
 
 Diese aktuelle Analyse beschränkte sich bewusst auf große, methodisch hochwertige Studien — ein strengerer Ansatz als frühere Reviews. Ergebnis: Hyaluronsäure zeigte keine klinisch relevante Schmerzreduktion im Vergleich zu Placebo, war aber mit einem erhöhten Risiko für Studienabbrüche wegen Nebenwirkungen und für schwerwiegende unerwünschte Ereignisse verbunden.
-AAOS Clinical Practice Guideline, 3. Auflage (2021)
-Klinische Praxisleitlinie · American Academy of Orthopaedic Surgeons · Systematische Evidenzauswertung</div>
+</div>
+
+
+<div class="studie">
+<span class="studie-name">AAOS Clinical Practice Guideline, 3. Auflage (2021)</span>
+<div class="studie-details">Klinische Praxisleitlinie · American Academy of Orthopaedic Surgeons · Systematische Evidenzauswertung</div>
 Die AAOS — die weltweit größte orthopädische Fachgesellschaft — spricht sich mit „moderater Empfehlungsstärke“ gegen den routinemäßigen Einsatz von Hyaluronsäure-Injektionen bei Kniearthrose aus. Begründung: Die Gesamtevidenz ist inkonsistent, und das Ausmaß der Verbesserung erreicht kein klinisch bedeutsames Niveau. Das britische NICE-Institut kommt in seiner Leitlinie NG226 zum gleichen Schluss.
-IGeL-Monitor-Bewertung (2025)
-Evidenzbewertung des Medizinischen Dienstes Bund · Deutschland</div>
+</div>
+
+
+<div class="studie">
+<span class="studie-name">IGeL-Monitor-Bewertung (2025)</span>
+<div class="studie-details">Evidenzbewertung des Medizinischen Dienstes Bund · Deutschland</div>
 Der IGeL-Monitor, der in Deutschland individuelle Gesundheitsleistungen (IGeL — also Selbstzahlerleistungen) bewertet, stufte Hyaluronsäure-Injektionen bei Knie- und Hüftarthrose 2025 als „negativ“ ein: Die Schmerzreduktion gegenüber Placebo sei „klinisch nicht von Bedeutung“, das Risiko für Nebenwirkungen jedoch erhöht.
 
 </div>

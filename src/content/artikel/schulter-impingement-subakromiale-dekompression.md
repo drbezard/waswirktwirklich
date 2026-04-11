@@ -20,6 +20,8 @@ Eine Cochrane-Analyse von 2019 bestätigt: Es gibt keine klinisch relevanten Vor
 
 Faustregel: Impingement ohne Sehnenriss → mindestens 3–6 Monate konsequente Physiotherapie. OP erst erwägen, wenn konservative Therapie wirklich ausgeschöpft ist — und auch dann kritisch hinterfragen.
 
+</section>
+
 ## Was Patienten glauben — und was die Studien zeigen
 
 ### Die verbreitete Überzeugung
@@ -31,8 +33,10 @@ Das sogenannte subakromiale Impingement-Syndrom (Einklemmung von Sehnen und Schl
 ### Die CSAW-Studie — Placebo-kontrolliert (2018)
 
 <div class="studie">
-<span class="studie-name">CSAW: Can Shoulder Arthroscopy Work?
+<span class="studie-name">CSAW: Can Shoulder Arthroscopy Work?</span>
 
+
+</div>
 
 <div class="studie">
 <span class="studie-name">Beard, D. J. et al. (2018). Arthroscopic subacromial decompression for subacromial shoulder pain (CSAW): a multicentre, pragmatic, parallel group, placebo-controlled, three-group, randomised surgical trial. The Lancet, 391(10118), 329–338. DOI: 10.1016/S0140-6736(17)32457-1</span>

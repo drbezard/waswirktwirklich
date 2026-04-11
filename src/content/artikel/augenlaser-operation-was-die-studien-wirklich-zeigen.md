@@ -6,18 +6,7 @@ category: "Augenheilkunde"
 excerpt: "Evidenzbasierte Analyse der LASIK/LASEK-Operation – Erfolgsraten, Risiken und wer wirklich geeignet ist."
 image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663217967817/nvBCD5Lwybycfp3H24L723/augenlaser-operation-was-die-studien-wirklich-zeigen_cc4ceaa8.png"
 reviewed: false
-reviewer: ""
-reviewerTitle: ""
-reviewerPhoto: ""
-reviewerUrl: ""
 ---
-      Dr. Georg Bézard</span>
-      ✓ Geprüft</span>
-
-    Facharzt für Unfallchirurgie & Orthopädie · Wien</div>
-    Oberarzt für Orthopädie & Traumatologie sowie Facharzt für Unfallchirurgie in Wien. Spezialisiert auf minimalinvasive Schulter-, Hand- und Kniechirurgie. Privatpraxis für evidenzbasierte Orthopädie in Wien-Döbling und Tulln.
-    [→ www.drbezard.com](https://www.drbezard.com)
-
 ## Was glauben viele Patienten – und was stimmt wirklich?
 
 Jährlich lassen sich weltweit über 10 Millionen Menschen eine Augenlaser-Operation durchführen. Die Versprechen der Kliniken klingen verlockend: „Brillenfreiheit für immer“, „99% Erfolgsrate“, „schmerzfrei und sicher“. Doch was sagt die unabhängige Wissenschaft dazu? Und was verschweigen die Hochglanzprospekte?

@@ -6,10 +6,6 @@ category: "Augenheilkunde"
 excerpt: "Katarakt-OP ist hochwirksam — doch welche Linse brauchen Sie wirklich? Was Studien zu Multifokal- vs. Monofokallinsen zeigen."
 image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663217967817/nvBCD5Lwybycfp3H24L723/grauer-star-katarakt-op-linse-evidenz_899aa69e.png"
 reviewed: false
-reviewer: ""
-reviewerTitle: ""
-reviewerPhoto: ""
-reviewerUrl: ""
 ---
 
 <section class="kernaussage">
@@ -17,6 +13,8 @@ reviewerUrl: ""
 Die Katarakt-Operation ist einer der wirksamsten und sichersten chirurgischen Eingriffe in der Medizin — aber die Wahl der richtigen Kunstlinse wird oft von finanziellen Interessen beeinflusst statt von Evidenz.
 
 Das ist keine pauschale Kritik an der Augenheilkunde — es ist das Ergebnis systematischer Auswertungen. Die OP selbst ist hervorragend belegt: In Deutschland werden jährlich 600.000 bis 800.000 Katarakt-Operationen durchgeführt (Lapp et al., 2023), mit einer Erfolgsrate von über 95 %. Die entscheidende Frage für Patienten ist nicht ob, sondern wann operiert werden soll — und vor allem: welche Kunstlinse (Intraokularlinse, IOL) wirklich nötig ist. Denn während die gesetzliche Krankenkasse die Standard-Monofokallinse vollständig bezahlt, kosten sogenannte Premiumlinsen (Multifokal-, EDOF- oder torische Linsen) zwischen 500 und 2.500 Euro Aufpreis pro Auge — als Selbstzahlerleistung. Ein Cochrane Review (de Silva et al., 2016) und aktuelle Meta-Analysen zeigen: Multifokallinsen reduzieren die Brillenabhängigkeit, verursachen aber häufiger störende Lichtphänomene wie Halos (Lichtringe) und Blendung. Für die meisten Patienten liefert die Standardlinse exzellente Ergebnisse.
+
+</section>
 
 ## Katarakt-OP und Linsenwahl: Was Patienten glauben — und was die Studien zeigen
 
@@ -33,34 +31,44 @@ Zunächst die gute Nachricht: Die Katarakt-Operation mittels Phakoemulsifikation
 Die eigentliche Frage — und der Bereich, in dem finanzielle Interessen die Beratung beeinflussen können — betrifft die Wahl der Kunstlinse.
 
 <div class="studie">
-<span class="studie-name">Cochrane Review: de Silva et al. (2016)
+<span class="studie-name">Cochrane Review: de Silva et al. (2016)</span>
 <div class="studie-details">Cochrane Systematic Review · <em>Cochrane Database of Systematic Reviews</em> · 20 randomisierte kontrollierte Studien (RCTs), über 2.000 Patienten</div>
 
 Dieses unabhängige Review verglich Multifokal- mit Monofokallinsen nach Kataraktextraktion. Ergebnis: Patienten mit Multifokallinsen waren signifikant seltener brillenabhängig (relatives Risiko 0,63; 95 %-Konfidenzintervall 0,55–0,73 — das heißt, die Brillenabhängigkeit sank um etwa 37 %). Gleichzeitig berichteten Patienten mit Multifokallinsen häufiger über störende Halos (Lichtringe um Lichtquellen, besonders nachts) und eine reduzierte Kontrastempfindlichkeit (die Fähigkeit, Abstufungen zwischen Hell und Dunkel zu erkennen). Die Fernseh-Sehschärfe war bei beiden Linsentypen vergleichbar.
 
+</div>
+
 <div class="studie">
-<span class="studie-name">Netzwerk-Meta-Analyse: Cho und Won (2022)
+<span class="studie-name">Netzwerk-Meta-Analyse: Cho und Won (2022)</span>
 <div class="studie-details">Systematische Übersicht und Bayessche Netzwerk-Meta-Analyse · <em>JAMA Ophthalmology</em>, 140(11), 1045–1053 · 27 Studien, 2.605 Patienten</div>
 
 Diese umfassende Analyse in einem der renommiertesten Fachjournale verglich Monofokal-, Bifokal-, Trifokal-, EDOF- (Extended Depth of Focus, also Linsen mit erweiterter Tiefenschärfe) und akkommodative Linsen. Ergebnis: Trifokallinsen zeigten die beste unkorrigierte Nahsehschärfe, ohne die Fernsicht zu beeinträchtigen. EDOF-Linsen verbesserten die Zwischensicht. Aber: Die Analyse bestätigte, dass multifokale Designs mit einem erhöhten Risiko für Dysphotopsien (störende Lichtphänomene wie Halos, Blendung und Sterneffekte) verbunden sind.
 
+</div>
+
 <div class="studie">
-<span class="studie-name">Meta-Analyse: Li et al. (2024)
+<span class="studie-name">Meta-Analyse: Li et al. (2024)</span>
 <div class="studie-details">Systematische Übersicht und Netzwerk-Meta-Analyse · <em>BMC Ophthalmology</em>, 24, 172 · 28 RCTs, 2.465 Patienten</div>
 
 Die aktuellste umfassende Netzwerk-Meta-Analyse bestätigte: Trifokallinsen liefern eine überlegene unkorrigierte Nahsehschärfe gegenüber Monofokallinsen (mittlere Differenz: −0,35 logMAR). EDOF- und erweiterte Monofokallinsen verbesserten die Zwischensicht. Für die Fernsicht — dem Hauptgrund, warum die meisten Patienten operiert werden — gab es keinen klinisch relevanten Unterschied zwischen den Linsentypen.
 
+</div>
+
 <div class="studie">
-<span class="studie-name">Übersichtsarbeit: Lapp et al. (2023)
+<span class="studie-name">Übersichtsarbeit: Lapp et al. (2023)</span>
 <div class="studie-details">Klinische Übersichtsarbeit · <em>Deutsches Ärzteblatt International</em>, 120, 377–386</div>
 
 Diese deutschsprachige Übersichtsarbeit fasst den aktuellen Stand zusammen: In Deutschland werden jährlich 600.000 bis 800.000 Kataraktoperationen durchgeführt, überwiegend ambulant unter örtlicher Betäubung. Die Autoren betonen, dass die Linsenauswahl individuell erfolgen muss und eine „adäquate Patientenaufklärung über die Vor- und Nachteile der verschiedenen Linsensysteme“ unverzichtbar ist. Zur Femtosekundenlaser-assistierten Chirurgie stellen sie fest: Die aktuelle Evidenz zeigt keine Überlegenheit gegenüber der Standard-Ultraschall-Methode.
 
+</div>
+
 <div class="studie">
-<span class="studie-name">NICE-Leitlinie NG77 (2017, aktualisiert 2025)
+<span class="studie-name">NICE-Leitlinie NG77 (2017, aktualisiert 2025)</span>
 <div class="studie-details">Klinische Praxisleitlinie · National Institute for Health and Care Excellence · Großbritannien</div>
 
 Die NICE-Leitlinie stellt eine zentrale Forderung auf, die für Patienten besonders wichtig ist: Der Zugang zur Katarakt-OP soll nicht allein von der gemessenen Sehschärfe abhängen. Entscheidend ist, wie stark der Graue Star die Lebensqualität des Patienten beeinträchtigt — beim Lesen, Autofahren, Arbeiten oder im Alltag. Kein Patient soll abgewiesen werden, weil seine Sehschärfe „noch nicht schlecht genug“ ist.
+
+</div>
 
 ### Warum glauben trotzdem so viele, dass sie eine Premiumlinse brauchen?
 

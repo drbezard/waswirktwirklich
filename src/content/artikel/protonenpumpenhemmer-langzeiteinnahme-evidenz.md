@@ -6,10 +6,6 @@ category: "Innere Medizin"
 excerpt: "Pantoprazol & Co. langfristig: Die Risiken sind geringer als gedacht — aber oft fehlt die Indikation. Was Studien zeigen."
 image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663217967817/nvBCD5Lwybycfp3H24L723/protonenpumpenhemmer-langzeiteinnahme-evidenz_9645587b.png"
 reviewed: false
-reviewer: ""
-reviewerTitle: ""
-reviewerPhoto: ""
-reviewerUrl: ""
 ---
 
 <section class="kernaussage">
@@ -17,6 +13,8 @@ reviewerUrl: ""
 Protonenpumpenhemmer wie Pantoprazol oder Omeprazol sind bei klarer Indikation auch langfristig deutlich sicherer als ihr Ruf — aber bei bis zu zwei Dritteln aller Langzeitanwender fehlt ein dokumentierter Grund für die Einnahme.
 
 Das ist das zentrale Problem: Nicht die Medikamente selbst sind das Risiko, sondern ihre unkritische Dauerverordnung ohne Indikation. Die einzige große randomisierte Studie — der COMPASS-Trial mit 17.598 Patienten über drei Jahre — fand unter Pantoprazol im Vergleich zu Placebo keine signifikant erhöhten Raten von Nierenerkrankungen, Knochenbrüchen oder Krebs. Die alarmierende Schlagzeilenlage basiert fast ausschließlich auf Beobachtungsstudien, deren Evidenzqualität nach dem GRADE-System (einem standardisierten Bewertungssystem für die Qualität medizinischer Evidenz) durchgehend als „sehr niedrig“ eingestuft wird. Gleichzeitig empfiehlt die American Gastroenterological Association (AGA), bei jedem Langzeitanwender die Indikation regelmäßig zu überprüfen — und die Therapie zu beenden, wenn kein klarer Grund mehr besteht.
+
+</section>
 
 ## Protonenpumpenhemmer in der Langzeiteinnahme: Was Patienten glauben — und was die Studien zeigen
 
@@ -36,33 +34,43 @@ Fast alle alarmierenden PPI-Risiken stammen aus Beobachtungsstudien. Die wenigen
 
 <div class="studie">
 <span class="studie-name">Randomisierte kontrollierte Studie: Moayyedi et al. (2019) — COMPASS-Trial</span>
-<div class="studie-details">Doppelblinde, placebokontrollierte RCT · <em>Gastroenterology</em> · 17.598 Patienten, mediane Nachbeobachtung 3,01 Jahre (53.152 Patientenjahre)
+<div class="studie-details">Doppelblinde, placebokontrollierte RCT · <em>Gastroenterology</em> · 17.598 Patienten, mediane Nachbeobachtung 3,01 Jahre (53.152 Patientenjahre)</div>
 
 Dies ist die bisher größte und wichtigste randomisierte Studie zur PPI-Sicherheit. 8.791 Patienten erhielten Pantoprazol 40 mg täglich, 8.807 ein Placebo. Ergebnis: Kein signifikanter Unterschied zwischen den Gruppen bei Knochenbrüchen, chronischer Nierenerkrankung, Demenz, Diabetes, COPD (chronisch obstruktive Lungenerkrankung), Krebs jeder Art oder Gesamtsterblichkeit. Einzige Ausnahme: Darminfektionen (enterische Infektionen) traten unter Pantoprazol häufiger auf (OR 1,33; 95-%-Konfidenzintervall 1,01–1,75). Bedeutung: Diese Studie entkräftet direkt die meisten Risikobehauptungen aus Beobachtungsstudien.
 
+</div>
+
 <div class="studie">
-<span class="studie-name">Umbrella-Review: Salvo et al. (2021)
+<span class="studie-name">Umbrella-Review: Salvo et al. (2021)</span>
 <div class="studie-details">Systematischer Überblick über 42 systematische Reviews mit Meta-Analysen · <em>Alimentary Pharmacology & Therapeutics</em>, 54, 129–143</div>
 
 Dieses Review fasste die gesamte verfügbare Meta-Analytik zusammen. Ergebnis: Statistisch signifikante Assoziationen fanden sich für Hüftfrakturen (RR 1,20), akute Nierenschädigung (RR 1,61), Clostridioides-difficile-Infektionen (eine schwere Darminfektion; OR 1,99), Magenkrebs (OR 2,50) und Magenpolypen (Gewebswucherungen in der Magenschleimhaut; OR 2,46). Aber — und das ist entscheidend: Die Evidenzqualität nach GRADE war für fast alle Endpunkte „sehr niedrig“. Kein Zusammenhang wurde für nicht-gastrische Krebsarten oder neurologische Erkrankungen wie Demenz gefunden. Die Autoren betonten, dass die beobachteten Assoziationen durch Störfaktoren erklärt werden könnten.
 
+</div>
+
 <div class="studie">
-<span class="studie-name">Kohortenstudie: Xie et al. (2019)
+<span class="studie-name">Kohortenstudie: Xie et al. (2019)</span>
 <div class="studie-details">Retrospektive Kohortenstudie des US-Veteranen-Systems · <em>BMJ</em> · 157.625 PPI-Anwender vs. 56.842 H2-Blocker-Anwender</div>
 
 Diese vielzitierte Studie fand 45,2 zusätzliche Todesfälle pro 1.000 PPI-Anwender über einen Beobachtungszeitraum von mehreren Jahren, insbesondere durch Herz-Kreislauf-Erkrankungen, Nierenerkrankungen und Krebs. Allerdings: Die Studie verglich PPI-Anwender mit H2-Blocker-Anwendern (nicht mit Nicht-Anwendern) in einer Population von überwiegend älteren, multimorbiden (an mehreren Erkrankungen gleichzeitig leidenden) Veteranen. Die Ergebnisse widersprechen direkt dem COMPASS-Trial, was stark darauf hindeutet, dass die beobachteten Unterschiede durch die unterschiedliche Krankheitslast der Gruppen erklärt werden — nicht durch die PPI selbst.
 
+</div>
+
 <div class="studie">
-<span class="studie-name">AGA Best Practice Advice: Freedberg, Kim & Yang (2017)
+<span class="studie-name">AGA Best Practice Advice: Freedberg, Kim & Yang (2017)</span>
 <div class="studie-details">Expertenreview und Praxisempfehlungen · <em>Gastroenterology</em>, 152(4), 706–715</div>
 
 Die American Gastroenterological Association (AGA) — eine der weltweit führenden gastroenterologischen Fachgesellschaften — bewertete systematisch alle verfügbaren Risikodaten. Fazit: Die Qualität der Evidenz für die meisten postulierten Risiken ist niedrig bis sehr niedrig. PPI sollten bei klarer Indikation in der niedrigsten wirksamen Dosis eingesetzt werden. Bei Langzeitanwendern ohne klare Indikation sollte ein Absetzversuch unternommen werden. Routinemäßige Laborkontrollen (z. B. Magnesium, Vitamin B12) bei asymptomatischen Patienten werden nicht empfohlen.
 
+</div>
+
 <div class="studie">
-<span class="studie-name">AGA Clinical Practice Update: Targownik, Fisher & Saini (2022)
+<span class="studie-name">AGA Clinical Practice Update: Targownik, Fisher & Saini (2022)</span>
 <div class="studie-details">Klinisches Praxis-Update zum Absetzen von PPI · <em>Gastroenterology</em>, 162(4), 1334–1342</div>
 
 Dieses aktualisierte Praxis-Update der AGA widmete sich explizit dem De-Prescribing (dem strukturierten Absetzen) von PPI. Kernaussagen: Bei allen PPI-Anwendern sollte regelmäßig überprüft werden, ob die Indikation noch besteht. Patienten ohne klare Dauerindikation sollten einen Absetzversuch erhalten — schrittweise, um ein Rebound-Phänomen (eine vorübergehende Übersäuerung nach Absetzen, die durch eine reaktive Überproduktion von Magensäure entsteht) zu vermeiden. Patienten auf doppelter Dosis sollten zunächst auf einmal täglich reduziert werden.
+
+</div>
 
 ### Warum glauben trotzdem so viele, dass PPI gefährlich sind?
 

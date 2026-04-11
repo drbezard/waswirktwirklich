@@ -18,6 +18,8 @@ Ein MRT bei unkomplizierten Rückenschmerzen verbessert weder Ihre Schmerzen noc
 
 Das klingt zunächst widersinnig. Aber die Evidenz ist eindeutig — zumindest für eine bestimmte, sehr häufige Gruppe: Patienten mit nicht-spezifischem Kreuzschmerz (Rückenschmerzen ohne Ausstrahlung ins Bein und ohne neurologische Ausfälle). Das betrifft etwa 85–90 % aller Rückenschmerzpatienten. Für diese Gruppe zeigen randomisierte Studien und Meta-Analysen mit über 1.800 Patienten, dass sofortige Bildgebung keinen Vorteil gegenüber einer Behandlung ohne MRT bringt. Gleichzeitig belegt eine systematische Übersicht mit über 3.100 beschwerdefreien Personen, dass degenerative Befunde wie Bandscheibenvorwölbungen oder -degenerationen bei fast jedem Menschen im MRT sichtbar sind — auch ohne jede Beschwerde. Diese Zufallsbefunde führen nachweislich zu unnötiger Angst, mehr Operationen, längerer Arbeitsunfähigkeit und höheren Kosten. Anders ist die Situation bei Rückenschmerzen mit Ausstrahlung ins Bein (Radikulopathie) und neurologischen Ausfällen — hier kann ein MRT nach erfolgloser konservativer Therapie oder bei progredienten Lähmungen sehr wohl sinnvoll sein. Die Nationale VersorgungsLeitlinie Kreuzschmerz (AWMF), das American College of Physicians (ACP) und das britische NICE differenzieren deshalb klar zwischen diesen beiden Gruppen.
 
+</section>
+
 ## Rückenschmerzen und MRT: Was Patienten glauben — und was die Studien zeigen
 
 ### Die verbreitete Annahme
@@ -41,36 +43,46 @@ Die gesamte folgende Evidenz zur Nutzlosigkeit früher MRTs bezieht sich primär
 Die vielleicht wichtigste Erkenntnis der modernen Rückenschmerzforschung lautet: Degenerative Veränderungen der Wirbelsäule sind kein Zeichen einer Krankheit — sie sind Teil des normalen Alterns. Und sie sind bei Menschen ohne jede Beschwerde genauso häufig wie bei Schmerzpatienten.
 
 <div class="studie">
-<span class="studie-name">Systematische Übersicht: Brinjikji et al. (2015)
+<span class="studie-name">Systematische Übersicht: Brinjikji et al. (2015)</span>
 <div class="studie-details">Systematische Literaturübersicht · <em>American Journal of Neuroradiology (AJNR)</em>, 36(4), 811–816 · 33 Studien, 3.110 beschwerdefreie Personen</div>
 
 Diese Übersicht untersuchte, wie häufig MRT-Befunde bei Menschen ohne Rückenschmerzen auftreten. Die Ergebnisse sind eindrucksvoll: Bei 20-Jährigen zeigten bereits 37 % eine Bandscheibendegeneration (Abnutzung der Bandscheibe) im MRT, bei 80-Jährigen waren es 96 %. Bandscheibenvorwölbungen (Disc Bulge, eine leichte Auswölbung der Bandscheibe über ihren normalen Rand hinaus) fanden sich bei 30 % der 20-Jährigen und 84 % der 80-Jährigen. Bandscheibenprotrusionen (stärkere Vorwölbungen) bei 29 % der 20-Jährigen und 43 % der 80-Jährigen. Die Schlussfolgerung der Autoren: Diese Befunde sind Teil des normalen Alterns und sollten nicht als Krankheit interpretiert werden.
 
 Die logische Frage lautet dann: Wenn ein MRT bei Rückenschmerzen kaum zwischen „krank“ und „normal“ unterscheiden kann — bringt es dem Patienten dann wenigstens einen Vorteil in der Behandlung?
 
+</div>
+
 <div class="studie">
-<span class="studie-name">Meta-Analyse: Chou et al. (2009)
+<span class="studie-name">Meta-Analyse: Chou et al. (2009)</span>
 <div class="studie-details">Systematische Übersicht und Meta-Analyse · <em>The Lancet</em>, 373(9662), 463–472 · 6 randomisierte kontrollierte Studien (RCTs), 1.804 Patienten</div>
 
 Diese in The Lancet veröffentlichte Meta-Analyse verglich die Ergebnisse von Patienten, die sofort eine Bildgebung (Röntgen, CT oder MRT) erhielten, mit denen, die zunächst ohne Bildgebung behandelt wurden. Ergebnis: Es gab keinen Unterschied in Schmerz, Funktion, Lebensqualität oder Patientenzufriedenheit — weder kurzfristig noch nach bis zu zwei Jahren. Die Autoren folgern: Routinemäßige sofortige Bildgebung bei Rückenschmerzen ohne Warnsignale verbessert die Behandlungsergebnisse nicht.
 
+</div>
+
 <div class="studie">
-<span class="studie-name">RCT: Jarvik et al. (2003)
+<span class="studie-name">RCT: Jarvik et al. (2003)</span>
 <div class="studie-details">Randomisierte kontrollierte Studie · <em>JAMA</em>, 289(21), 2810–2818 · 380 Patienten</div>
 
 In dieser Studie wurden Patienten mit Rückenschmerzen per Zufall entweder einem schnellen MRT oder einer Röntgenuntersuchung zugeteilt. Nach 12 Monaten gab es keinen Unterschied in der rückenbezogenen Behinderung (gemessen mit dem Roland-Fragebogen). Aber: Die MRT-Gruppe hatte deutlich mehr Wirbelsäulenoperationen — obwohl sie nicht besser abschnitt. Die Autoren warnen, dass die bessere Bildgebung zwar Ärzte und Patienten befriedigt, aber zu einer Kaskade von Folgeeingriffen führen kann, ohne den Patienten zu helfen.
 
+</div>
+
 <div class="studie">
-<span class="studie-name">Kohortenstudie: Webster et al. (2013)
+<span class="studie-name">Kohortenstudie: Webster et al. (2013)</span>
 <div class="studie-details">Retrospektive Kohortenstudie · <em>Spine</em>, 38(22), 1939–1946 · 1.770 Patienten mit arbeitsbedingten Rückenschmerzen</div>
 
 Diese Studie untersuchte die Folgen eines frühen MRTs (innerhalb von 30 Tagen nach Schmerzbeginn) bei akuten, arbeitsbedingten Rückenschmerzen. Die Ergebnisse sind alarmierend: Patienten mit frühem MRT waren im Median 174 Tage arbeitsunfähig — gegenüber nur 21 Tagen bei Patienten ohne frühes MRT. Sie erhielten häufiger Wirbelsäuleninjektionen (11,4 % vs. 0,8 %) und Operationen (3,4 % vs. 0,1 %). Die Behandlungskosten waren fast dreimal so hoch (21.282 vs. 7.198 US-Dollar). Die Autoren sprechen von einem „starken iatrogenen Effekt“ (iatrogen = durch die medizinische Behandlung selbst verursacht) des frühen MRTs.
 
+</div>
+
 <div class="studie">
-<span class="studie-name">Nationale VersorgungsLeitlinie Kreuzschmerz (AWMF, 2017)
+<span class="studie-name">Nationale VersorgungsLeitlinie Kreuzschmerz (AWMF, 2017)</span>
 <div class="studie-details">S3-Leitlinie · <em>AWMF-Register Nr. nvl-007</em> · Bundesärztekammer, Kassenärztliche Bundesvereinigung, AWMF</div>
 
 Die höchste deutsche Leitlinie zu Rückenschmerzen empfiehlt ausdrücklich: Bei nicht-spezifischem Kreuzschmerz (also Rückenschmerzen ohne Hinweis auf eine gefährliche Ursache) soll in den ersten 4–6 Wochen keine Bildgebung erfolgen. Erst wenn die Schmerzen trotz leitliniengerechter Behandlung (Bewegung, Physiotherapie, ggf. Schmerzmedikation) anhalten oder sich verschlechtern, ist eine Bildgebung indiziert — und dann als MRT, nicht als Röntgen.
+
+</div>
 
 ### Warum glauben trotzdem so viele, dass ein MRT hilft?
 
