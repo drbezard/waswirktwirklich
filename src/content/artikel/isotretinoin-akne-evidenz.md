@@ -111,10 +111,10 @@ Bei den meisten Patienten führt ein Zyklus Isotretinoin zu dauerhafter Remissio
 
 ## Quellenverzeichnis
 
-- **Tan NKW, Khoo BZE, Goh CL, Oon HH. (2024).** Risk of Suicide and Psychiatric Disorders Among Isotretinoin Users: A Meta-Analysis. *JAMA Dermatology*, 160(2), 149–159. DOI: 10.1001/jamadermatol.2023.4579
-- **Huang YC, Cheng YC. (2017).** Isotretinoin treatment for acne and risk of depression: A systematic review and meta-analysis. *Journal of the American Academy of Dermatology*, 76(6), 1068–1076.e9. DOI: 10.1016/j.jaad.2016.12.028
-- **Costa CS, Bagatin E, Martimbianco ALC, da Silva EMK, Lúcio MM, Magin P, Riera R. (2018).** Oral isotretinoin for acne. *Cochrane Database of Systematic Reviews*, Issue 11, Art. No.: CD009435. DOI: 10.1002/14651858.CD009435.pub2
-- **Zaenglein AL, Pathy AL, Schlosser BJ, Alikhan A, Baldwin HE, Berson DS, et al. (2024).** Guidelines of care for the management of acne vulgaris. *Journal of the American Academy of Dermatology*, 90(5), 1006.e1–1006.e30. DOI: 10.1016/j.jaad.2023.12.017
+- **Tan NKW, Khoo BZE, Goh CL, Oon HH. (2024).** Risk of Suicide and Psychiatric Disorders Among Isotretinoin Users: A Meta-Analysis. *JAMA Dermatology*, 160(2), 149–159. [DOI: 10.1001/jamadermatol.2023.4579](https://doi.org/10.1001/jamadermatol.2023.4579)
+- **Huang YC, Cheng YC. (2017).** Isotretinoin treatment for acne and risk of depression: A systematic review and meta-analysis. *Journal of the American Academy of Dermatology*, 76(6), 1068–1076.e9. [DOI: 10.1016/j.jaad.2016.12.028](https://doi.org/10.1016/j.jaad.2016.12.028)
+- **Costa CS, Bagatin E, Martimbianco ALC, da Silva EMK, Lúcio MM, Magin P, Riera R. (2018).** Oral isotretinoin for acne. *Cochrane Database of Systematic Reviews*, Issue 11, Art. No.: CD009435. [DOI: 10.1002/14651858.CD009435.pub2](https://doi.org/10.1002/14651858.CD009435.pub2)
+- **Zaenglein AL, Pathy AL, Schlosser BJ, Alikhan A, Baldwin HE, Berson DS, et al. (2024).** Guidelines of care for the management of acne vulgaris. *Journal of the American Academy of Dermatology*, 90(5), 1006.e1–1006.e30. [DOI: 10.1016/j.jaad.2023.12.017](https://doi.org/10.1016/j.jaad.2023.12.017)
 
-- **Daly M, Walsh SB. (2023).** A systematic review of isotretinoin dosing in acne vulgaris. *JEADV Clinical Practice*, 2(3), 452–463. DOI: 10.1002/jvc2.154
+- **Daly M, Walsh SB. (2023).** A systematic review of isotretinoin dosing in acne vulgaris. *JEADV Clinical Practice*, 2(3), 452–463. [DOI: 10.1002/jvc2.154](https://doi.org/10.1002/jvc2.154)
 - **National Institute for Health and Care Excellence (NICE). (2021, aktualisiert 2023).** Acne vulgaris: management. NICE guideline NG198. [https://www.nice.org.uk/guidance/ng198](https://www.nice.org.uk/guidance/ng198)

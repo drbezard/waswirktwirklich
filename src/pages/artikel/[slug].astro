@@ -6,11 +6,11 @@ export async function getStaticPaths() {
   const articles = await getCollection('artikel');
   return articles.map((article) => ({
     params: { slug: article.data.slug },
-    props: { article },
+    props: { article, allArticles: articles },
   }));
 }
 
-const { article } = Astro.props;
+const { article, allArticles } = Astro.props;
 const { Content } = await render(article);
 
 const formattedDate = new Date(article.data.date).toLocaleDateString('de-DE', {
@@ -27,13 +27,61 @@ const readingTime = Math.max(5, Math.ceil(wordCount / 200));
 const catSlug = article.data.category.toLowerCase()
   .replace(/\s+/g, '-')
   .replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue');
+
+// Related articles: same category, excluding current, max 3
+const relatedArticles = allArticles
+  .filter((a) => a.data.slug !== article.data.slug && a.data.category === article.data.category)
+  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+  .slice(0, 3);
+
+// Canonical URL
+const siteUrl = 'https://waswirklichtwirkt.vercel.app';
+const canonicalUrl = `${siteUrl}/artikel/${article.data.slug}/`;
+
+// JSON-LD structured data for Google
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'MedicalWebPage',
+  headline: article.data.title,
+  description: article.data.excerpt,
+  datePublished: article.data.date,
+  dateModified: article.data.reviewDate || article.data.date,
+  inLanguage: 'de-DE',
+  url: canonicalUrl,
+  ...(article.data.image && { image: article.data.image }),
+  author: {
+    '@type': 'Organization',
+    name: 'Was Wirklich Wirkt',
+    url: siteUrl,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Was Wirklich Wirkt',
+    url: siteUrl,
+  },
+  ...(article.data.reviewed && article.data.reviewer && {
+    reviewedBy: {
+      '@type': 'Person',
+      name: article.data.reviewer,
+      ...(article.data.reviewerTitle && { jobTitle: article.data.reviewerTitle }),
+      ...(article.data.reviewerUrl && { url: article.data.reviewerUrl }),
+    },
+    lastReviewed: article.data.reviewDate || article.data.date,
+  }),
+  about: {
+    '@type': 'MedicalCondition',
+    name: article.data.category,
+  },
+};
 ---
 
 <Base
   title={article.data.seoTitle || article.data.title}
   description={article.data.seoDescription || article.data.excerpt}
   image={article.data.image}
+  canonical={canonicalUrl}
 >
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
   <article>
     <!-- Hero Image -->
     {article.data.image && (
@@ -159,6 +207,30 @@ const catSlug = article.data.category.toLowerCase()
               <li class="leading-relaxed">{source}</li>
             ))}
           </ol>
+        </div>
+      )}
+
+      <!-- Ähnliche Artikel -->
+      {relatedArticles.length > 0 && (
+        <div class="mt-14 pt-8 border-t border-border-light">
+          <h2 class="text-lg font-bold text-text mb-5">Weitere Artikel aus {article.data.category}</h2>
+          <div class="grid gap-3">
+            {relatedArticles.map((rel) => (
+              <a href={`/artikel/${rel.data.slug}`}
+                 class="group flex items-start gap-4 p-4 rounded-xl border border-border-light hover:border-primary/40 hover:bg-bg-subtle transition-all no-underline">
+                {rel.data.image && (
+                  <img src={rel.data.image} alt={rel.data.title} loading="lazy"
+                       class="w-20 h-20 rounded-lg object-cover flex-shrink-0" />
+                )}
+                <div class="flex-1 min-w-0">
+                  <h3 class="font-semibold text-text group-hover:text-primary transition-colors leading-snug mb-1">
+                    {rel.data.title}
+                  </h3>
+                  <p class="text-sm text-text-muted line-clamp-2">{rel.data.excerpt}</p>
+                </div>
+              </a>
+            ))}
+          </div>
         </div>
       )}
 
