@@ -1,0 +1,109 @@
+---
+export const prerender = false;
+
+import AuthLayout from '../../layouts/AuthLayout.astro';
+import { createSupabaseServerClient } from '../../lib/supabase/server';
+
+const user = Astro.locals.user!;
+const supabase = createSupabaseServerClient(Astro.request, Astro.cookies);
+
+let errorMessage: string | null = null;
+let article_slug: string | null = null;
+let article: any = null;
+
+if (Astro.request.method === 'POST') {
+  const formData = await Astro.request.formData();
+  article_slug = String(formData.get('article_slug') || '');
+
+  const action = String(formData.get('action') || '');
+
+  // Wenn das ist ein "bestätigen"-Submit: Reservierung anlegen + redirect zum Verifizieren
+  if (action === 'confirm_renewal') {
+    const { data: reservationId, error } = await supabase.rpc('reserve_article', {
+      p_article_slug: article_slug,
+    });
+
+    if (error) {
+      errorMessage = `Reservierung fehlgeschlagen: ${error.message}`;
+    } else if (reservationId) {
+      return Astro.redirect(`/arzt/artikel/${reservationId}`);
+    }
+  }
+
+  // Lade Artikel-Infos für die Bestätigungs-Seite
+  const { data: art } = await supabase
+    .from('articles')
+    .select('slug, title, category')
+    .eq('slug', article_slug)
+    .single();
+  article = art;
+}
+
+// Preis für Verlängerung
+const { data: settings } = await supabase
+  .from('settings')
+  .select('key, value')
+  .eq('key', 'renewal_price_cents')
+  .single();
+const renewalPrice = Number(settings?.value || 0);
+const priceEuro = (renewalPrice / 100).toFixed(2);
+---
+
+<AuthLayout title="Verlängerung" section="arzt" user={user}>
+  <div class="max-w-2xl mx-auto space-y-6">
+    <nav class="text-sm text-text-muted">
+      <a href="/arzt" class="hover:text-primary no-underline">Dashboard</a>
+      <span class="mx-2">/</span>
+      <span>Verlängerung</span>
+    </nav>
+
+    {errorMessage && (
+      <div class="p-4 rounded-xl bg-amber-50 border border-amber-200 text-sm text-amber-800">
+        {errorMessage}
+      </div>
+    )}
+
+    {article ? (
+      <div class="bg-white rounded-2xl border border-border-light p-6 space-y-4">
+        <h1 class="text-xl font-bold text-text">Artikel verlängern</h1>
+        <p class="text-text-secondary">
+          Du bist dabei, die Verifizierung für folgenden Artikel zu verlängern:
+        </p>
+
+        <div class="bg-bg-subtle rounded-xl p-4">
+          <div class="text-xs font-semibold text-primary uppercase tracking-wider">{article.category}</div>
+          <div class="font-semibold text-text mt-1">{article.title}</div>
+        </div>
+
+        <div class="text-sm text-text-secondary space-y-2">
+          <p>
+            <strong class="text-text">Preis für die Verlängerung:</strong> {priceEuro} €
+          </p>
+          <p>
+            <strong class="text-text">Gültigkeit nach Verlängerung:</strong> 1 Jahr ab heute
+          </p>
+          <p class="text-amber-700">
+            <strong>Wichtig:</strong> Die Verlängerung ist keine reine Zahlung — du musst den Artikel
+            erneut prüfen und den Disclaimer bestätigen.
+          </p>
+        </div>
+
+        <form method="post" class="flex gap-3 pt-2">
+          <input type="hidden" name="article_slug" value={article.slug} />
+          <input type="hidden" name="action" value="confirm_renewal" />
+          <a href="/arzt" class="px-5 py-2.5 border border-border rounded-lg text-text hover:bg-bg-subtle transition-colors">
+            Abbrechen
+          </a>
+          <button type="submit" class="flex-1 px-5 py-2.5 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors">
+            Weiter zur Verifizierung
+          </button>
+        </form>
+      </div>
+    ) : (
+      <div class="bg-white rounded-2xl border border-border-light p-6">
+        <p class="text-text-secondary">Bitte wähle einen Artikel im Dashboard zur Verlängerung aus.</p>
+        <a href="/arzt" class="mt-4 inline-block text-primary hover:text-primary-dark">← Zum Dashboard</a>
+      </div>
+    )}
+  </div>
+</AuthLayout>

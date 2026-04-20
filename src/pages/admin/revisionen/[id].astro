@@ -1,0 +1,164 @@
+---
+export const prerender = false;
+
+import AuthLayout from '../../../layouts/AuthLayout.astro';
+import { createSupabaseServerClient } from '../../../lib/supabase/server';
+
+const user = Astro.locals.user!;
+const supabase = createSupabaseServerClient(Astro.request, Astro.cookies);
+const revisionId = Astro.params.id!;
+
+let errorMessage: string | null = null;
+
+if (Astro.request.method === 'POST') {
+  const formData = await Astro.request.formData();
+  const action = String(formData.get('action'));
+
+  if (action === 'claim') {
+    const { error } = await supabase.rpc('admin_claim_revision', { p_revision_id: revisionId });
+    if (error) errorMessage = `Fehler: ${error.message}`;
+  } else if (action === 'resolve' || action === 'dismiss') {
+    const notes = String(formData.get('admin_notes') || '').trim() || null;
+    const { error } = await supabase.rpc('admin_resolve_revision', {
+      p_revision_id: revisionId,
+      p_status: action === 'resolve' ? 'resolved' : 'dismissed',
+      p_admin_notes: notes,
+    });
+    if (error) {
+      errorMessage = `Fehler: ${error.message}`;
+    } else {
+      return Astro.redirect('/admin/revisionen');
+    }
+  }
+}
+
+const { data: revision } = await supabase
+  .from('revisions')
+  .select(`
+    *,
+    doctor:doctor_id(id, full_name, title),
+    admin:admin_id(id, full_name),
+    article:articles(slug, title, category)
+  `)
+  .eq('id', revisionId)
+  .single();
+
+if (!revision) {
+  return Astro.redirect('/admin/revisionen');
+}
+
+function formatDate(iso: string) {
+  return new Date(iso).toLocaleString('de-DE', { dateStyle: 'medium', timeStyle: 'short' });
+}
+---
+
+<AuthLayout title="Revision bearbeiten" section="admin" user={user}>
+  <div class="max-w-3xl mx-auto space-y-6">
+    <nav class="text-sm text-text-muted">
+      <a href="/admin/revisionen" class="hover:text-primary no-underline">Revisionen</a>
+      <span class="mx-2">/</span>
+      <span>Details</span>
+    </nav>
+
+    {errorMessage && (
+      <div class="p-4 rounded-xl bg-amber-50 border border-amber-200 text-sm text-amber-800">
+        {errorMessage}
+      </div>
+    )}
+
+    <!-- Artikel-Info -->
+    <div class="bg-white rounded-2xl border border-border-light p-6">
+      <div class="text-xs font-semibold text-primary uppercase tracking-wider">{(revision as any).article?.category}</div>
+      <h1 class="text-xl font-bold text-text mt-1 mb-3">{(revision as any).article?.title}</h1>
+      <a
+        href={`/artikel/${revision.article_slug}`}
+        target="_blank"
+        rel="noopener"
+        class="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary font-medium rounded-lg hover:bg-primary/20 no-underline"
+      >
+        Artikel öffnen ↗
+      </a>
+    </div>
+
+    <!-- Revision-Details -->
+    <div class="bg-white rounded-2xl border border-border-light p-6 space-y-4">
+      <div class="flex items-start justify-between flex-wrap gap-2">
+        <h2 class="text-lg font-bold text-text">Revision-Anforderung</h2>
+        <span class={`text-xs font-semibold px-2 py-1 rounded-full ${
+          revision.status === 'open' ? 'bg-amber-100 text-amber-800' :
+          revision.status === 'in_admin_review' ? 'bg-blue-100 text-blue-800' :
+          revision.status === 'resolved' ? 'bg-green-100 text-green-800' : 'bg-gray-100 text-gray-800'
+        }`}>
+          {revision.status === 'open' ? 'Offen' :
+           revision.status === 'in_admin_review' ? 'In Bearbeitung' :
+           revision.status === 'resolved' ? 'Erledigt' : 'Abgelehnt'}
+        </span>
+      </div>
+
+      <div class="text-sm text-text-muted">
+        Von <strong>{(revision as any).doctor?.full_name || '–'}</strong> am {formatDate(revision.created_at)}
+        {(revision as any).doctor?.title && <span> · {(revision as any).doctor.title}</span>}
+      </div>
+
+      <div class="bg-bg-subtle rounded-xl p-4">
+        <div class="text-xs font-semibold text-text-muted uppercase tracking-wider mb-2">Kommentar des Arztes</div>
+        <p class="text-text whitespace-pre-wrap">{revision.comment}</p>
+      </div>
+
+      {revision.admin_notes && (
+        <div class="bg-blue-50 rounded-xl p-4">
+          <div class="text-xs font-semibold text-blue-700 uppercase tracking-wider mb-2">Admin-Notizen</div>
+          <p class="text-sm text-blue-900 whitespace-pre-wrap">{revision.admin_notes}</p>
+        </div>
+      )}
+
+      {(revision as any).admin && (
+        <div class="text-xs text-text-muted">
+          Bearbeitet von <strong>{(revision as any).admin.full_name}</strong>
+          {revision.resolved_at && <span> · abgeschlossen am {formatDate(revision.resolved_at)}</span>}
+        </div>
+      )}
+    </div>
+
+    <!-- Aktionen -->
+    {revision.status === 'open' && (
+      <form method="post" class="bg-white rounded-2xl border border-border-light p-6">
+        <h3 class="font-bold text-text mb-3">Fall übernehmen</h3>
+        <input type="hidden" name="action" value="claim" />
+        <p class="text-sm text-text-secondary mb-4">
+          Damit signalisierst du, dass du dich um diese Revision kümmerst. Status wechselt zu "in Bearbeitung".
+        </p>
+        <button type="submit" class="px-5 py-2.5 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark">
+          Fall übernehmen
+        </button>
+      </form>
+    )}
+
+    {revision.status === 'in_admin_review' && (
+      <form method="post" class="bg-white rounded-2xl border border-border-light p-6 space-y-4">
+        <h3 class="font-bold text-text">Fall abschließen</h3>
+        <p class="text-sm text-text-secondary">
+          Artikel wurde überarbeitet (oder die Revisionsanforderung ist nicht berechtigt). Wähle einen Abschluss:
+        </p>
+        <div>
+          <label for="admin_notes" class="block text-sm font-medium text-text mb-1.5">Interne Notizen (optional)</label>
+          <textarea
+            id="admin_notes"
+            name="admin_notes"
+            rows="3"
+            placeholder="Was wurde geändert? Oder warum wurde abgelehnt?"
+            class="w-full px-4 py-2.5 rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary/30"
+          ></textarea>
+        </div>
+        <div class="flex gap-3">
+          <button type="submit" name="action" value="resolve" class="flex-1 px-5 py-2.5 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700">
+            Als erledigt markieren (Artikel wieder verfügbar)
+          </button>
+          <button type="submit" name="action" value="dismiss" class="px-5 py-2.5 border border-border text-text rounded-lg hover:bg-bg-subtle">
+            Ablehnen
+          </button>
+        </div>
+      </form>
+    )}
+  </div>
+</AuthLayout>

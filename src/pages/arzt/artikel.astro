@@ -1,0 +1,144 @@
+---
+export const prerender = false;
+
+import AuthLayout from '../../layouts/AuthLayout.astro';
+import { createSupabaseServerClient } from '../../lib/supabase/server';
+
+const user = Astro.locals.user!;
+const supabase = createSupabaseServerClient(Astro.request, Astro.cookies);
+
+let errorMessage: string | null = null;
+let successMessage: string | null = null;
+
+// POST: Artikel übernehmen
+if (Astro.request.method === 'POST') {
+  const formData = await Astro.request.formData();
+  const articleSlug = String(formData.get('article_slug') || '');
+
+  if (!articleSlug) {
+    errorMessage = 'Kein Artikel ausgewählt.';
+  } else {
+    const { data: reservationId, error } = await supabase.rpc('reserve_article', {
+      p_article_slug: articleSlug,
+    });
+
+    if (error) {
+      if (error.message.includes('Article cannot be reserved')) {
+        errorMessage = 'Dieser Artikel ist nicht mehr verfügbar (wurde von jemand anderem übernommen oder bereits verifiziert).';
+      } else {
+        errorMessage = `Fehler beim Übernehmen: ${error.message}`;
+      }
+    } else if (reservationId) {
+      return Astro.redirect(`/arzt/artikel/${reservationId}`);
+    }
+  }
+}
+
+// Aktuelle Preise laden
+const { data: settings = [] } = await supabase
+  .from('settings')
+  .select('key, value')
+  .in('key', ['verification_price_cents', 'renewal_price_cents']);
+
+const verificationPrice = Number((settings || []).find((s) => s.key === 'verification_price_cents')?.value || 0);
+
+// Liste der verfügbaren Artikel (über article_states View)
+const { data: allStates = [] } = await supabase
+  .from('article_states')
+  .select('slug, title, category, state');
+
+const availableArticles = (allStates || []).filter((a) => a.state === 'unverified' || a.state === 'expired');
+
+// Nach Fachgebiet gruppieren
+const byCategory = availableArticles.reduce<Record<string, typeof availableArticles>>((acc, a) => {
+  if (!acc[a.category]) acc[a.category] = [];
+  acc[a.category].push(a);
+  return acc;
+}, {});
+
+const categories = Object.keys(byCategory).sort();
+const priceEuro = (verificationPrice / 100).toFixed(2);
+---
+
+<AuthLayout title="Verfügbare Artikel" section="arzt" user={user}>
+  <div class="space-y-6">
+    <div class="flex items-start justify-between gap-4 flex-wrap">
+      <div>
+        <h1 class="text-2xl font-bold text-text mb-1">Verfügbare Artikel</h1>
+        <p class="text-text-secondary">
+          Wähle einen Artikel, um ihn zu verifizieren. Nach Übernahme hast du ihn exklusiv.
+        </p>
+      </div>
+      <div class="bg-white rounded-xl border border-border-light p-4 text-sm">
+        <div class="text-text-muted">Preis pro Erstverifizierung:</div>
+        <div class="text-lg font-bold text-text">{priceEuro} €</div>
+      </div>
+    </div>
+
+    {errorMessage && (
+      <div class="p-4 rounded-xl bg-amber-50 border border-amber-200 text-sm text-amber-800">
+        {errorMessage}
+      </div>
+    )}
+
+    {availableArticles.length === 0 ? (
+      <div class="bg-white rounded-2xl border border-border-light p-12 text-center">
+        <p class="text-text-secondary">
+          Aktuell sind keine unverifizierten Artikel verfügbar. Schau später wieder rein!
+        </p>
+      </div>
+    ) : (
+      <div class="space-y-6">
+        {categories.map((category) => (
+          <section>
+            <h2 class="text-sm font-bold uppercase tracking-wider text-text-muted mb-3">
+              {category} ({byCategory[category].length})
+            </h2>
+            <div class="space-y-2">
+              {byCategory[category].map((article) => (
+                <div class="bg-white rounded-xl border border-border-light p-4 flex items-center justify-between gap-4">
+                  <div class="min-w-0 flex-1">
+                    <a
+                      href={`/artikel/${article.slug}`}
+                      target="_blank"
+                      rel="noopener"
+                      class="font-semibold text-text hover:text-primary no-underline"
+                    >
+                      {article.title}
+                    </a>
+                    <div class="text-xs text-text-muted mt-1 flex items-center gap-2 flex-wrap">
+                      {article.state === 'expired' && (
+                        <span class="px-1.5 py-0.5 rounded bg-amber-50 text-amber-700 font-medium">
+                          Vorherige Verifizierung abgelaufen
+                        </span>
+                      )}
+                      <a href={`/artikel/${article.slug}`} target="_blank" class="text-text-muted hover:text-primary underline">
+                        Artikel lesen ↗
+                      </a>
+                    </div>
+                  </div>
+                  <form method="post">
+                    <input type="hidden" name="article_slug" value={article.slug} />
+                    <button
+                      type="submit"
+                      class="px-4 py-2 bg-primary text-white font-medium rounded-lg hover:bg-primary-dark transition-colors whitespace-nowrap"
+                    >
+                      Übernehmen
+                    </button>
+                  </form>
+                </div>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    )}
+
+    <div class="bg-bg-subtle rounded-xl border border-border-light p-4 text-sm text-text-secondary">
+      <strong class="text-text">So funktioniert es:</strong>
+      Du wählst einen Artikel → liest ihn vollständig → bestätigst mit einem Klick + Disclaimer,
+      dass du ihn geprüft hast — oder schickst ihn zur Überarbeitung mit Kommentar.
+      Die Verifizierung ist für 1 Jahr gültig. Danach musst du sie aktiv verlängern ({(verificationPrice / 100).toFixed(0)} € bzw. Verlängerungspreis).
+    </div>
+  </div>
+</AuthLayout>

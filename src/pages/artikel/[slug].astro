@@ -35,7 +35,7 @@ const relatedArticles = allArticles
   .slice(0, 3);
 
 // Canonical URL
-const siteUrl = 'https://waswirklichtwirkt.vercel.app';
+const siteUrl = 'https://waswirktwirklich.com';
 const canonicalUrl = `${siteUrl}/artikel/${article.data.slug}/`;
 
 // Extract FAQ pairs from article body (section with "Fragen" or "fragen" in heading)
@@ -81,12 +81,12 @@ const articleJsonLd = {
   ...(article.data.image && { image: article.data.image }),
   author: {
     '@type': 'Organization',
-    name: 'Was Wirklich Wirkt',
+    name: 'Was Wirkt Wirklich',
     url: siteUrl,
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Was Wirklich Wirkt',
+    name: 'Was Wirkt Wirklich',
     url: siteUrl,
   },
   ...(article.data.reviewed && article.data.reviewer && {

@@ -1,0 +1,185 @@
+---
+export const prerender = false;
+
+import AuthLayout from '../../layouts/AuthLayout.astro';
+import { createSupabaseServerClient } from '../../lib/supabase/server';
+
+const user = Astro.locals.user!;
+const supabase = createSupabaseServerClient(Astro.request, Astro.cookies);
+
+// Aktive Reservierungen (in Bearbeitung)
+const { data: activeReservations = [] } = await supabase
+  .from('reservations')
+  .select('id, article_slug, reserved_at, free_assignment, articles(title, category)')
+  .eq('doctor_id', user.id)
+  .eq('status', 'active')
+  .order('reserved_at', { ascending: false });
+
+// Aktive Verifizierungen
+const { data: verifications = [] } = await supabase
+  .from('verifications')
+  .select('id, article_slug, kind, verified_at, expires_at, articles(title, category)')
+  .eq('doctor_id', user.id)
+  .is('revoked_at', null)
+  .order('verified_at', { ascending: false });
+
+const now = new Date();
+const in30days = new Date(now.getTime() + 30 * 24 * 60 * 60 * 1000);
+
+const verified = (verifications || []).filter((v) => new Date(v.expires_at) > now);
+const expiringSoon = verified.filter((v) => new Date(v.expires_at) <= in30days);
+const expired = (verifications || []).filter((v) => new Date(v.expires_at) <= now);
+
+function formatDate(iso: string) {
+  return new Date(iso).toLocaleDateString('de-DE', {
+    day: 'numeric', month: 'long', year: 'numeric',
+  });
+}
+---
+
+<AuthLayout title="Dashboard" section="arzt" user={user}>
+  <div class="space-y-8">
+    <div>
+      <h1 class="text-2xl font-bold text-text mb-1">Hallo{user.fullName ? `, ${user.fullName}` : ''}</h1>
+      <p class="text-text-secondary">Dein Überblick als verifizierender Arzt.</p>
+    </div>
+
+    <!-- Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-white rounded-xl border border-border-light p-4">
+        <div class="text-2xl font-bold text-text">{activeReservations?.length || 0}</div>
+        <div class="text-xs text-text-muted mt-1">In Bearbeitung</div>
+      </div>
+      <div class="bg-white rounded-xl border border-border-light p-4">
+        <div class="text-2xl font-bold text-green-600">{verified.length}</div>
+        <div class="text-xs text-text-muted mt-1">Aktuell verifiziert</div>
+      </div>
+      <div class="bg-white rounded-xl border border-border-light p-4">
+        <div class="text-2xl font-bold text-amber-600">{expiringSoon.length}</div>
+        <div class="text-xs text-text-muted mt-1">Läuft bald ab (30 T.)</div>
+      </div>
+      <div class="bg-white rounded-xl border border-border-light p-4">
+        <div class="text-2xl font-bold text-red-600">{expired.length}</div>
+        <div class="text-xs text-text-muted mt-1">Abgelaufen</div>
+      </div>
+    </div>
+
+    <!-- Aktive Reservierungen -->
+    {(activeReservations?.length ?? 0) > 0 && (
+      <section class="bg-white rounded-2xl border border-border-light p-6">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="text-lg font-bold text-text">In Bearbeitung</h2>
+          <a href="/arzt/artikel" class="text-sm text-primary hover:text-primary-dark">Weitere Artikel übernehmen →</a>
+        </div>
+        <div class="space-y-2">
+          {activeReservations!.map((r) => (
+            <a
+              href={`/arzt/artikel/${r.id}`}
+              class="flex items-center justify-between gap-4 p-4 rounded-xl border border-border-light hover:border-primary/40 hover:bg-bg-subtle transition-all no-underline"
+            >
+              <div class="min-w-0">
+                <div class="font-semibold text-text truncate">{(r as any).articles?.title || r.article_slug}</div>
+                <div class="text-xs text-text-muted mt-0.5">
+                  {(r as any).articles?.category}
+                  {r.free_assignment && (
+                    <span class="ml-2 px-1.5 py-0.5 rounded bg-blue-50 text-blue-700 text-[10px] font-medium">Kostenlos zugewiesen</span>
+                  )}
+                </div>
+              </div>
+              <div class="text-xs text-text-muted whitespace-nowrap">
+                Seit {formatDate(r.reserved_at)}
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Bald ablaufend -->
+    {expiringSoon.length > 0 && (
+      <section class="bg-amber-50 border border-amber-200 rounded-2xl p-6">
+        <h2 class="text-lg font-bold text-amber-900 mb-3">Läuft bald ab</h2>
+        <p class="text-sm text-amber-800 mb-4">
+          Diese Verifizierungen laufen in den nächsten 30 Tagen ab. Du kannst sie verlängern.
+        </p>
+        <div class="space-y-2">
+          {expiringSoon.map((v) => (
+            <div class="flex items-center justify-between gap-4 p-3 rounded-lg bg-white">
+              <div>
+                <div class="font-medium text-text">{(v as any).articles?.title || v.article_slug}</div>
+                <div class="text-xs text-text-muted">Läuft ab am {formatDate(v.expires_at)}</div>
+              </div>
+              <form method="post" action="/arzt/verlaengern">
+                <input type="hidden" name="article_slug" value={v.article_slug} />
+                <button type="submit" class="px-3 py-1.5 bg-primary text-white rounded-lg text-sm font-medium hover:bg-primary-dark">
+                  Verlängern
+                </button>
+              </form>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Aktuell verifiziert -->
+    {verified.length > 0 && (
+      <section class="bg-white rounded-2xl border border-border-light p-6">
+        <h2 class="text-lg font-bold text-text mb-4">Aktuell verifiziert ({verified.length})</h2>
+        <div class="divide-y divide-border-light">
+          {verified.map((v) => (
+            <div class="py-3 flex items-center justify-between gap-4">
+              <div class="min-w-0">
+                <div class="font-medium text-text truncate">{(v as any).articles?.title || v.article_slug}</div>
+                <div class="text-xs text-text-muted mt-0.5">
+                  Verifiziert am {formatDate(v.verified_at)} · gültig bis {formatDate(v.expires_at)}
+                </div>
+              </div>
+              <span class="text-xs font-bold text-green-700 bg-green-50 border border-green-200 px-2 py-1 rounded-full whitespace-nowrap">
+                Gültig
+              </span>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Abgelaufen -->
+    {expired.length > 0 && (
+      <section class="bg-white rounded-2xl border border-border-light p-6">
+        <h2 class="text-lg font-bold text-text mb-4">Abgelaufen ({expired.length})</h2>
+        <p class="text-sm text-text-secondary mb-3">
+          Du kannst sie zu einem reduzierten Preis verlängern.
+        </p>
+        <div class="divide-y divide-border-light">
+          {expired.map((v) => (
+            <div class="py-3 flex items-center justify-between gap-4">
+              <div class="min-w-0">
+                <div class="font-medium text-text truncate">{(v as any).articles?.title || v.article_slug}</div>
+                <div class="text-xs text-text-muted mt-0.5">
+                  Abgelaufen am {formatDate(v.expires_at)}
+                </div>
+              </div>
+              <form method="post" action="/arzt/verlaengern">
+                <input type="hidden" name="article_slug" value={v.article_slug} />
+                <button type="submit" class="px-3 py-1.5 bg-primary text-white rounded-lg text-sm font-medium hover:bg-primary-dark whitespace-nowrap">
+                  Verlängern
+                </button>
+              </form>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Empty state -->
+    {(activeReservations?.length ?? 0) === 0 && verified.length === 0 && expired.length === 0 && (
+      <section class="bg-white rounded-2xl border border-border-light p-12 text-center">
+        <h2 class="text-lg font-bold text-text mb-2">Willkommen!</h2>
+        <p class="text-text-secondary mb-6">Du hast noch keine Artikel übernommen.</p>
+        <a href="/arzt/artikel" class="inline-block px-6 py-2.5 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors no-underline">
+          Verfügbare Artikel durchsehen
+        </a>
+      </section>
+    )}
+  </div>
+</AuthLayout>

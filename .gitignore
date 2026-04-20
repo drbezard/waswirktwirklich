@@ -1,5 +1,6 @@
 # build output
 dist/
+.vercel/
 # generated types
 .astro/
 
@@ -15,7 +16,13 @@ pnpm-debug.log*
 
 # environment variables
 .env
+.env.local
 .env.production
+.env*.local
+
+# Supabase CLI local data
+supabase/.branches
+supabase/.temp
 
 # macOS-specific files
 .DS_Store

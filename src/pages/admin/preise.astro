@@ -1,0 +1,101 @@
+---
+export const prerender = false;
+
+import AuthLayout from '../../layouts/AuthLayout.astro';
+import { createSupabaseServerClient } from '../../lib/supabase/server';
+
+const user = Astro.locals.user!;
+const supabase = createSupabaseServerClient(Astro.request, Astro.cookies);
+
+let errorMessage: string | null = null;
+let successMessage: string | null = null;
+
+const PRICE_KEYS = [
+  { key: 'verification_price_cents', label: 'Erstverifizierung (Cent)', description: 'Preis pro Artikel, den ein Arzt zum ersten Mal verifiziert' },
+  { key: 'renewal_price_cents', label: 'Verlängerung (Cent)', description: 'Preis pro Verlängerung einer abgelaufenen oder bald ablaufenden Verifizierung' },
+  { key: 'verification_duration_days', label: 'Gültigkeitsdauer (Tage)', description: 'Wie lange eine Verifizierung gilt. Standard 365 = 1 Jahr' },
+  { key: 'reservation_timeout_days', label: 'Reservierungs-Timeout (Tage)', description: 'Nach wie vielen Tagen Inaktivität eine Reservierung automatisch abbricht' },
+];
+
+if (Astro.request.method === 'POST') {
+  const formData = await Astro.request.formData();
+  const updates: Array<Promise<any>> = [];
+
+  for (const { key } of PRICE_KEYS) {
+    const val = formData.get(key);
+    if (val !== null && val !== '') {
+      const num = parseInt(String(val), 10);
+      if (isNaN(num) || num < 0) {
+        errorMessage = `${key}: Muss eine positive Zahl sein.`;
+        break;
+      }
+      updates.push(
+        supabase
+          .from('settings')
+          .update({ value: num, updated_by: user.id })
+          .eq('key', key)
+      );
+    }
+  }
+
+  if (!errorMessage) {
+    const results = await Promise.all(updates);
+    const anyError = results.find((r) => r.error);
+    if (anyError?.error) {
+      errorMessage = `Fehler: ${anyError.error.message}`;
+    } else {
+      successMessage = 'Preise aktualisiert. Bestehende Verifizierungen bleiben unverändert (Preis ist dort bereits fixiert).';
+    }
+  }
+}
+
+const { data: settings = [] } = await supabase
+  .from('settings')
+  .select('key, value, description, updated_at');
+
+const current: Record<string, any> = {};
+for (const s of settings || []) {
+  current[s.key] = s.value;
+}
+---
+
+<AuthLayout title="Preise" section="admin" user={user}>
+  <div class="max-w-2xl space-y-6">
+    <h1 class="text-2xl font-bold text-text">Preise verwalten</h1>
+
+    {successMessage && <div class="p-4 rounded-xl bg-green-50 border border-green-200 text-sm text-green-800">{successMessage}</div>}
+    {errorMessage && <div class="p-4 rounded-xl bg-amber-50 border border-amber-200 text-sm text-amber-800">{errorMessage}</div>}
+
+    <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm text-amber-900">
+      <strong>Wichtig:</strong> Preise werden in <strong>Cent</strong> gespeichert. 4000 = 40 €. Änderungen gelten
+      nur für neue Verifizierungen — bereits bezahlte Verifizierungen behalten ihren ursprünglichen Preis.
+    </div>
+
+    <form method="post" class="bg-white rounded-2xl border border-border-light p-6 space-y-4">
+      {PRICE_KEYS.map(({ key, label, description }) => (
+        <div>
+          <label for={key} class="block text-sm font-medium text-text">{label}</label>
+          <p class="text-xs text-text-muted mb-1.5">{description}</p>
+          <input
+            type="number"
+            id={key}
+            name={key}
+            min="0"
+            value={current[key] ?? ''}
+            class="w-full md:w-48 px-4 py-2.5 rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary/30"
+          />
+          {key === 'verification_price_cents' && current[key] && (
+            <span class="ml-2 text-xs text-text-muted">= {(Number(current[key]) / 100).toFixed(2)} €</span>
+          )}
+          {key === 'renewal_price_cents' && current[key] && (
+            <span class="ml-2 text-xs text-text-muted">= {(Number(current[key]) / 100).toFixed(2)} €</span>
+          )}
+        </div>
+      ))}
+
+      <button type="submit" class="px-6 py-2.5 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark">
+        Preise speichern
+      </button>
+    </form>
+  </div>
+</AuthLayout>

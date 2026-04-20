@@ -1,0 +1,210 @@
+---
+export const prerender = false;
+
+import AuthLayout from '../../../layouts/AuthLayout.astro';
+import { createSupabaseServerClient } from '../../../lib/supabase/server';
+
+const user = Astro.locals.user!;
+const supabase = createSupabaseServerClient(Astro.request, Astro.cookies);
+const reservationId = Astro.params.id!;
+
+let errorMessage: string | null = null;
+
+// POST: Verifizieren oder Revision
+if (Astro.request.method === 'POST') {
+  const formData = await Astro.request.formData();
+  const action = String(formData.get('action'));
+
+  if (action === 'verify') {
+    const disclaimer = formData.get('disclaimer_confirmed') === 'on';
+    if (!disclaimer) {
+      errorMessage = 'Bitte bestätige den Disclaimer.';
+    } else {
+      const { error } = await supabase.rpc('verify_article', {
+        p_reservation_id: reservationId,
+        p_disclaimer_confirmed: true,
+      });
+
+      if (error) {
+        errorMessage = `Verifizierung fehlgeschlagen: ${error.message}`;
+      } else {
+        return Astro.redirect('/arzt?verified=1');
+      }
+    }
+  } else if (action === 'revise') {
+    const comment = String(formData.get('comment') || '').trim();
+    if (comment.length < 10) {
+      errorMessage = 'Der Revisions-Kommentar muss mindestens 10 Zeichen lang sein.';
+    } else {
+      const { error } = await supabase.rpc('request_revision', {
+        p_reservation_id: reservationId,
+        p_comment: comment,
+      });
+
+      if (error) {
+        errorMessage = `Revision fehlgeschlagen: ${error.message}`;
+      } else {
+        return Astro.redirect('/arzt?revised=1');
+      }
+    }
+  } else if (action === 'cancel') {
+    const { error } = await supabase.rpc('cancel_reservation', {
+      p_reservation_id: reservationId,
+    });
+    if (!error) {
+      return Astro.redirect('/arzt/artikel');
+    }
+    errorMessage = `Abbruch fehlgeschlagen: ${error.message}`;
+  }
+}
+
+// Reservierung laden
+const { data: reservation } = await supabase
+  .from('reservations')
+  .select('*, articles(title, category, excerpt, image_url)')
+  .eq('id', reservationId)
+  .eq('doctor_id', user.id)
+  .single();
+
+if (!reservation) {
+  return Astro.redirect('/arzt?error=not_found');
+}
+
+if (reservation.status !== 'active') {
+  return Astro.redirect('/arzt');
+}
+
+const article = (reservation as any).articles;
+
+function formatDate(iso: string) {
+  return new Date(iso).toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' });
+}
+---
+
+<AuthLayout title={article?.title || 'Artikel verifizieren'} section="arzt" user={user}>
+  <div class="max-w-3xl mx-auto space-y-6">
+    <nav class="text-sm text-text-muted">
+      <a href="/arzt" class="hover:text-primary no-underline">Dashboard</a>
+      <span class="mx-2">/</span>
+      <span>Artikel verifizieren</span>
+    </nav>
+
+    <div class="bg-white rounded-2xl border border-border-light p-6">
+      <div class="mb-4">
+        <div class="text-xs font-semibold text-primary uppercase tracking-wider">{article?.category}</div>
+        <h1 class="text-2xl font-bold text-text mt-1">{article?.title}</h1>
+        {article?.excerpt && (
+          <p class="text-text-secondary mt-2">{article.excerpt}</p>
+        )}
+      </div>
+
+      <div class="text-xs text-text-muted mb-4">
+        Übernommen am {formatDate(reservation.reserved_at)}
+        {reservation.free_assignment && (
+          <span class="ml-2 px-1.5 py-0.5 rounded bg-blue-50 text-blue-700 font-medium">
+            Kostenlos zugewiesen
+          </span>
+        )}
+      </div>
+
+      <a
+        href={`/artikel/${reservation.article_slug}`}
+        target="_blank"
+        rel="noopener"
+        class="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary font-medium rounded-lg hover:bg-primary/20 transition-colors no-underline"
+      >
+        Artikel in neuem Tab öffnen ↗
+      </a>
+    </div>
+
+    {errorMessage && (
+      <div class="p-4 rounded-xl bg-amber-50 border border-amber-200 text-sm text-amber-800">
+        {errorMessage}
+      </div>
+    )}
+
+    <!-- Verifizieren -->
+    <div class="bg-white rounded-2xl border border-border-light p-6">
+      <h2 class="text-lg font-bold text-text mb-2">Artikel freigeben</h2>
+      <p class="text-sm text-text-secondary mb-4">
+        Wenn der Artikel inhaltlich korrekt ist und den aktuellen Leitlinien entspricht, kannst du ihn hier verifizieren. Die Verifizierung ist 1 Jahr gültig.
+      </p>
+
+      <form method="post" class="space-y-4">
+        <input type="hidden" name="action" value="verify" />
+        <label class="flex items-start gap-3 text-sm text-text">
+          <input
+            type="checkbox"
+            name="disclaimer_confirmed"
+            class="mt-1 w-4 h-4 rounded border-border text-primary focus:ring-primary"
+            required
+          />
+          <span>
+            Ich bestätige, dass ich diesen Artikel <strong>vollständig gelesen</strong> und
+            <strong>nach bestem Wissen und Gewissen</strong> auf fachliche Korrektheit geprüft habe.
+            Ich erkenne an, dass meine Verifizierung 1 Jahr gültig ist und öffentlich mit meinem Namen angezeigt wird.
+          </span>
+        </label>
+
+        <button
+          type="submit"
+          class="w-full px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-colors"
+        >
+          ✓ Artikel verifizieren
+        </button>
+      </form>
+    </div>
+
+    <!-- Zur Revision -->
+    <div class="bg-white rounded-2xl border border-border-light p-6">
+      <h2 class="text-lg font-bold text-text mb-2">Zur Überarbeitung senden</h2>
+      <p class="text-sm text-text-secondary mb-4">
+        Wenn der Artikel inhaltliche Fehler oder Unklarheiten enthält, schicke ihn an die Redaktion zur Überarbeitung.
+      </p>
+
+      <form method="post" class="space-y-4">
+        <input type="hidden" name="action" value="revise" />
+        <div>
+          <label for="comment" class="block text-sm font-medium text-text mb-1.5">
+            Was stimmt nicht? (mind. 10 Zeichen)
+          </label>
+          <textarea
+            id="comment"
+            name="comment"
+            rows="5"
+            required
+            minlength="10"
+            class="w-full px-4 py-2.5 rounded-lg border border-border bg-white text-text placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
+            placeholder="z.B. Die Aussage zur Wirksamkeit von X ist nicht mehr aktuell (neue Meta-Analyse 2025). Außerdem fehlt die Abgrenzung zu Y…"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full px-6 py-3 bg-amber-600 text-white font-semibold rounded-lg hover:bg-amber-700 transition-colors"
+        >
+          Zur Überarbeitung senden
+        </button>
+      </form>
+    </div>
+
+    <!-- Abbrechen -->
+    <div class="bg-white rounded-2xl border border-border-light p-6">
+      <h2 class="text-sm font-bold text-text-muted uppercase tracking-wider mb-2">Reservierung aufgeben</h2>
+      <p class="text-sm text-text-secondary mb-4">
+        Falls du diesen Artikel doch nicht verifizieren möchtest, kannst du die Reservierung zurückgeben — andere Ärzte können ihn dann übernehmen.
+      </p>
+
+      <form method="post">
+        <input type="hidden" name="action" value="cancel" />
+        <button
+          type="submit"
+          class="text-sm text-text-muted hover:text-red-600 underline"
+          onclick="return confirm('Reservierung wirklich zurückgeben?')"
+        >
+          Reservierung zurückgeben
+        </button>
+      </form>
+    </div>
+  </div>
+</AuthLayout>

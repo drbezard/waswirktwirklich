@@ -1,5 +1,5 @@
 {
-  "name": "waswirklichtwirkt",
+  "name": "waswirktwirklich",
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -14,9 +14,13 @@
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
     "@astrojs/sitemap": "^3.7.2",
+    "@astrojs/vercel": "^10.0.4",
+    "@supabase/ssr": "^0.10.2",
+    "@supabase/supabase-js": "^2.103.0",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.2.2",
     "astro": "^6.1.5",
-    "tailwindcss": "^4.2.2"
+    "tailwindcss": "^4.2.2",
+    "zod": "^4.3.6"
   }
 }

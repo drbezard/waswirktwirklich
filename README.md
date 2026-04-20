@@ -1,6 +1,8 @@
-# Was Wirklich Wirkt
+# Was Wirkt Wirklich
 
 Evidenzbasierte medizinische Patientenartikel – erstellt von KI, geprüft von Fachärzten.
+
+**Live:** https://waswirktwirklich.com
 
 ## Tech Stack
 

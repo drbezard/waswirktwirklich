@@ -1,0 +1,154 @@
+---
+export const prerender = false;
+
+import AuthLayout from '../../../layouts/AuthLayout.astro';
+import { createSupabaseServerClient } from '../../../lib/supabase/server';
+import { getSupabaseAdminClient } from '../../../lib/supabase/admin';
+
+const user = Astro.locals.user!;
+const supabase = createSupabaseServerClient(Astro.request, Astro.cookies);
+
+let errorMessage: string | null = null;
+let successMessage: string | null = null;
+
+if (Astro.request.method === 'POST') {
+  const formData = await Astro.request.formData();
+  const action = String(formData.get('action'));
+  const admin = getSupabaseAdminClient();
+
+  if (action === 'invite') {
+    const email = String(formData.get('email') || '').trim().toLowerCase();
+    const fullName = String(formData.get('full_name') || '').trim();
+
+    if (!email) {
+      errorMessage = 'E-Mail-Adresse fehlt.';
+    } else {
+      const { data, error } = await admin.auth.admin.inviteUserByEmail(email, {
+        data: fullName ? { full_name: fullName } : undefined,
+        redirectTo: `${Astro.url.origin}/auth/callback?next=/arzt`,
+      });
+
+      if (error) {
+        errorMessage = `Einladung fehlgeschlagen: ${error.message}`;
+      } else {
+        successMessage = `Einladung an ${email} gesendet.`;
+      }
+    }
+  } else if (action === 'toggle_disabled') {
+    const doctorId = String(formData.get('doctor_id') || '');
+    const disabled = formData.get('disabled') === 'true';
+    await admin.from('profiles').update({ disabled_at: disabled ? new Date().toISOString() : null }).eq('id', doctorId);
+  } else if (action === 'set_role') {
+    const doctorId = String(formData.get('doctor_id') || '');
+    const role = String(formData.get('role') || 'doctor') as 'admin' | 'doctor';
+    await admin.from('profiles').update({ role }).eq('id', doctorId);
+  }
+}
+
+const { data: profiles = [] } = await supabase
+  .from('profiles')
+  .select('id, role, full_name, title, disabled_at, created_at')
+  .order('created_at', { ascending: false });
+
+function formatDate(iso: string) {
+  return new Date(iso).toLocaleDateString('de-DE', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+---
+
+<AuthLayout title="Ärzte" section="admin" user={user}>
+  <div class="space-y-6">
+    <h1 class="text-2xl font-bold text-text">Ärzte verwalten</h1>
+
+    {successMessage && (
+      <div class="p-4 rounded-xl bg-green-50 border border-green-200 text-sm text-green-800">{successMessage}</div>
+    )}
+    {errorMessage && (
+      <div class="p-4 rounded-xl bg-amber-50 border border-amber-200 text-sm text-amber-800">{errorMessage}</div>
+    )}
+
+    <!-- Arzt einladen -->
+    <form method="post" class="bg-white rounded-2xl border border-border-light p-6 space-y-4">
+      <h2 class="text-lg font-bold text-text">Arzt einladen</h2>
+      <input type="hidden" name="action" value="invite" />
+      <div class="grid md:grid-cols-2 gap-4">
+        <div>
+          <label for="email" class="block text-sm font-medium text-text mb-1.5">E-Mail *</label>
+          <input
+            type="email" id="email" name="email" required
+            class="w-full px-4 py-2.5 rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary/30"
+          />
+        </div>
+        <div>
+          <label for="full_name" class="block text-sm font-medium text-text mb-1.5">Voller Name</label>
+          <input
+            type="text" id="full_name" name="full_name"
+            class="w-full px-4 py-2.5 rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary/30"
+          />
+        </div>
+      </div>
+      <button type="submit" class="px-5 py-2.5 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark">
+        Einladung senden
+      </button>
+    </form>
+
+    <!-- Liste -->
+    <div class="bg-white rounded-2xl border border-border-light overflow-hidden">
+      <table class="w-full text-sm">
+        <thead class="bg-bg-subtle border-b border-border-light">
+          <tr>
+            <th class="text-left px-4 py-3 font-semibold text-text">Name</th>
+            <th class="text-left px-4 py-3 font-semibold text-text">Rolle</th>
+            <th class="text-left px-4 py-3 font-semibold text-text">Status</th>
+            <th class="text-left px-4 py-3 font-semibold text-text">Angelegt</th>
+            <th class="px-4 py-3"></th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-border-light">
+          {(profiles || []).map((p) => (
+            <tr>
+              <td class="px-4 py-3">
+                <div class="font-medium text-text">{p.full_name || '–'}</div>
+                {p.title && <div class="text-xs text-text-muted">{p.title}</div>}
+              </td>
+              <td class="px-4 py-3">
+                <span class={`text-xs font-semibold px-2 py-0.5 rounded-full ${p.role === 'admin' ? 'bg-purple-100 text-purple-800' : 'bg-blue-100 text-blue-800'}`}>
+                  {p.role}
+                </span>
+              </td>
+              <td class="px-4 py-3">
+                {p.disabled_at ? (
+                  <span class="text-xs text-red-700">Deaktiviert</span>
+                ) : (
+                  <span class="text-xs text-green-700">Aktiv</span>
+                )}
+              </td>
+              <td class="px-4 py-3 text-text-muted text-xs">{formatDate(p.created_at)}</td>
+              <td class="px-4 py-3 text-right">
+                {p.id !== user.id && (
+                  <div class="flex gap-2 justify-end">
+                    <form method="post" class="inline">
+                      <input type="hidden" name="action" value="toggle_disabled" />
+                      <input type="hidden" name="doctor_id" value={p.id} />
+                      <input type="hidden" name="disabled" value={p.disabled_at ? 'false' : 'true'} />
+                      <button type="submit" class="text-xs text-text-muted hover:text-red-600 underline">
+                        {p.disabled_at ? 'Aktivieren' : 'Deaktivieren'}
+                      </button>
+                    </form>
+                    <form method="post" class="inline">
+                      <input type="hidden" name="action" value="set_role" />
+                      <input type="hidden" name="doctor_id" value={p.id} />
+                      <input type="hidden" name="role" value={p.role === 'admin' ? 'doctor' : 'admin'} />
+                      <button type="submit" class="text-xs text-text-muted hover:text-primary underline">
+                        Zu {p.role === 'admin' ? 'Arzt' : 'Admin'} machen
+                      </button>
+                    </form>
+                  </div>
+                )}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</AuthLayout>

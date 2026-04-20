@@ -1,0 +1,94 @@
+---
+export const prerender = false;
+
+import AuthLayout from '../../layouts/AuthLayout.astro';
+import { createSupabaseServerClient } from '../../lib/supabase/server';
+
+const user = Astro.locals.user!;
+const supabase = createSupabaseServerClient(Astro.request, Astro.cookies);
+
+// Statistiken
+const [
+  { count: openRevisions },
+  { count: inReviewRevisions },
+  { count: activeReservations },
+  { count: activeVerifications },
+  { count: doctorsCount },
+  { data: articleStates },
+] = await Promise.all([
+  supabase.from('revisions').select('*', { count: 'exact', head: true }).eq('status', 'open'),
+  supabase.from('revisions').select('*', { count: 'exact', head: true }).eq('status', 'in_admin_review'),
+  supabase.from('reservations').select('*', { count: 'exact', head: true }).eq('status', 'active'),
+  supabase.from('verifications').select('*', { count: 'exact', head: true }).is('revoked_at', null),
+  supabase.from('profiles').select('*', { count: 'exact', head: true }).eq('role', 'doctor'),
+  supabase.from('article_states').select('state'),
+]);
+
+const stateCounts = (articleStates || []).reduce<Record<string, number>>((acc, s) => {
+  acc[s.state] = (acc[s.state] || 0) + 1;
+  return acc;
+}, {});
+---
+
+<AuthLayout title="Admin Dashboard" section="admin" user={user}>
+  <div class="space-y-8">
+    <div>
+      <h1 class="text-2xl font-bold text-text mb-1">Admin Dashboard</h1>
+      <p class="text-text-secondary">Überblick über die Plattform.</p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <a href="/admin/revisionen" class="bg-white rounded-xl border border-border-light p-4 no-underline hover:border-primary/40 transition-colors block">
+        <div class="text-2xl font-bold text-amber-600">{openRevisions ?? 0}</div>
+        <div class="text-xs text-text-muted mt-1">Offene Revisionen</div>
+      </a>
+      <a href="/admin/revisionen?status=in_admin_review" class="bg-white rounded-xl border border-border-light p-4 no-underline hover:border-primary/40 transition-colors block">
+        <div class="text-2xl font-bold text-blue-600">{inReviewRevisions ?? 0}</div>
+        <div class="text-xs text-text-muted mt-1">In Admin-Bearbeitung</div>
+      </a>
+      <div class="bg-white rounded-xl border border-border-light p-4">
+        <div class="text-2xl font-bold text-text">{activeReservations ?? 0}</div>
+        <div class="text-xs text-text-muted mt-1">Aktive Reservierungen</div>
+      </div>
+      <div class="bg-white rounded-xl border border-border-light p-4">
+        <div class="text-2xl font-bold text-green-600">{activeVerifications ?? 0}</div>
+        <div class="text-xs text-text-muted mt-1">Gültige Verifizierungen</div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <section class="bg-white rounded-2xl border border-border-light p-6">
+        <h2 class="text-lg font-bold text-text mb-4">Artikel-Status</h2>
+        <div class="space-y-2 text-sm">
+          <div class="flex justify-between py-1"><span>Unverifiziert</span><span class="font-semibold">{stateCounts.unverified || 0}</span></div>
+          <div class="flex justify-between py-1"><span>Reserviert</span><span class="font-semibold">{stateCounts.reserved || 0}</span></div>
+          <div class="flex justify-between py-1 text-green-700"><span>Verifiziert</span><span class="font-semibold">{stateCounts.verified || 0}</span></div>
+          <div class="flex justify-between py-1 text-red-700"><span>Abgelaufen</span><span class="font-semibold">{stateCounts.expired || 0}</span></div>
+          <div class="flex justify-between py-1 text-amber-700"><span>Revision angefordert</span><span class="font-semibold">{stateCounts.revision_requested || 0}</span></div>
+        </div>
+      </section>
+
+      <section class="bg-white rounded-2xl border border-border-light p-6">
+        <h2 class="text-lg font-bold text-text mb-4">Schnell-Aktionen</h2>
+        <div class="space-y-2">
+          <a href="/admin/revisionen" class="block p-3 rounded-lg border border-border-light hover:bg-bg-subtle no-underline">
+            <div class="font-medium text-text">Revisionen bearbeiten</div>
+            <div class="text-xs text-text-muted">Artikel mit Revisions-Anforderungen</div>
+          </a>
+          <a href="/admin/zuweisungen" class="block p-3 rounded-lg border border-border-light hover:bg-bg-subtle no-underline">
+            <div class="font-medium text-text">Artikel kostenlos zuweisen</div>
+            <div class="text-xs text-text-muted">Einem Arzt einen Artikel direkt geben</div>
+          </a>
+          <a href="/admin/aerzte" class="block p-3 rounded-lg border border-border-light hover:bg-bg-subtle no-underline">
+            <div class="font-medium text-text">Ärzte verwalten</div>
+            <div class="text-xs text-text-muted">{doctorsCount ?? 0} Ärzte registriert</div>
+          </a>
+          <a href="/admin/preise" class="block p-3 rounded-lg border border-border-light hover:bg-bg-subtle no-underline">
+            <div class="font-medium text-text">Preise verwalten</div>
+            <div class="text-xs text-text-muted">Erstverifizierung und Verlängerung</div>
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+</AuthLayout>

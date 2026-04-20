@@ -9,7 +9,7 @@ interface Props {
 }
 
 const { title, description = 'Keine Meinungen. Nur was die Wissenschaft belegt.', canonical, image } = Astro.props;
-const siteTitle = 'Was Wirklich Wirkt';
+const siteTitle = 'Was Wirkt Wirklich';
 const fullTitle = title === siteTitle ? `${siteTitle} – ${description}` : `${title} | ${siteTitle}`;
 ---
 
@@ -29,13 +29,13 @@ const fullTitle = title === siteTitle ? `${siteTitle} – ${description}` : `${t
     <meta property="og:type" content="website" />
     {image && <meta property="og:image" content={image} />}
     <meta name="robots" content="index, follow" />
-    <link rel="alternate" type="application/rss+xml" title="Was Wirklich Wirkt" href="/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Was Wirkt Wirklich" href="/rss.xml" />
   </head>
   <body class="min-h-screen flex flex-col bg-bg">
     <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-border-light">
       <div class="max-w-4xl mx-auto px-5 h-14 flex items-center justify-between">
         <a href="/" class="flex items-center gap-2 no-underline">
-          <span class="text-lg font-bold tracking-tight text-text">Was Wirklich Wirkt</span>
+          <span class="text-lg font-bold tracking-tight text-text">Was Wirkt Wirklich</span>
         </a>
         <nav class="flex items-center gap-6">
           <a href="/fachgebiete" class="text-sm font-medium text-text-secondary hover:text-primary transition-colors no-underline">

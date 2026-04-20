@@ -1,0 +1,56 @@
+name: Apply Database Migrations
+
+on:
+  # Läuft bei jedem Push auf main, wenn Migrationen oder der Workflow selbst
+  # geändert wurden. Nicht auf anderen Branches — damit ungeprüfte SQL nicht
+  # aus Versehen auf Produktion landet.
+  push:
+    branches: [main]
+    paths:
+      - 'supabase/migrations/**'
+      - 'supabase/scripts/apply-migrations.sh'
+      - '.github/workflows/apply-migrations.yml'
+
+  # Auch manuell auslösbar (nützlich beim Setup, zum Replay, oder zum
+  # Testen von beliebigen Branches aus)
+  workflow_dispatch:
+
+# Nur EIN Run auf einmal — verhindert Race-Conditions wenn mehrere
+# Migrationen gleichzeitig gepusht werden
+concurrency:
+  group: apply-migrations-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    name: Apply pending migrations
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check secret presence
+        run: |
+          if [ -z "${{ secrets.SUPABASE_DB_URL }}" ]; then
+            echo "::error::SUPABASE_DB_URL secret is not set"
+            exit 1
+          fi
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install psql
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y postgresql-client > /dev/null
+
+      - name: Apply pending migrations
+        env:
+          DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: ./supabase/scripts/apply-migrations.sh
+
+      - name: Verify schema health
+        env:
+          DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          echo "=== Applied migrations ==="
+          psql "$DB_URL" -c "SELECT filename, applied_at, applied_by FROM public._migrations ORDER BY filename;"

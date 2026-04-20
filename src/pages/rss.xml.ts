@@ -9,7 +9,7 @@ export async function GET(context: APIContext) {
   );
 
   return rss({
-    title: 'Was Wirklich Wirkt',
+    title: 'Was Wirkt Wirklich',
     description: 'Evidenzbasierte medizinische Patientenartikel – erstellt von KI, geprüft von Fachärzten.',
     site: context.site!,
     items: sorted.map((article) => ({

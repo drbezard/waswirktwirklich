@@ -1,0 +1,102 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  section?: 'arzt' | 'admin';
+  user?: {
+    email: string;
+    fullName: string | null;
+    role: 'doctor' | 'admin';
+  } | null;
+}
+
+const { title, section = 'arzt', user } = Astro.props;
+const fullTitle = `${title} | Was Wirkt Wirklich`;
+
+const navLinks = section === 'admin'
+  ? [
+      { href: '/admin', label: 'Dashboard' },
+      { href: '/admin/revisionen', label: 'Revisionen' },
+      { href: '/admin/aerzte', label: 'Ärzte' },
+      { href: '/admin/preise', label: 'Preise' },
+      { href: '/admin/zuweisungen', label: 'Zuweisungen' },
+    ]
+  : [
+      { href: '/arzt', label: 'Dashboard' },
+      { href: '/arzt/artikel', label: 'Artikel übernehmen' },
+      { href: '/arzt/profil', label: 'Profil' },
+    ];
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{fullTitle}</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen flex flex-col bg-bg-subtle">
+    <header class="bg-white border-b border-border-light">
+      <div class="max-w-6xl mx-auto px-5 h-14 flex items-center justify-between">
+        <div class="flex items-center gap-6">
+          <a href="/" class="flex items-center gap-2 no-underline">
+            <span class="text-lg font-bold tracking-tight text-text">Was Wirkt Wirklich</span>
+          </a>
+          <span class="text-xs uppercase tracking-wider font-semibold text-text-muted">
+            {section === 'admin' ? 'Admin-Bereich' : 'Arzt-Bereich'}
+          </span>
+        </div>
+        {user && (
+          <div class="flex items-center gap-4">
+            <span class="text-sm text-text-secondary hidden sm:block">
+              {user.fullName || user.email}
+            </span>
+            <form method="post" action="/auth/logout">
+              <button type="submit" class="text-sm text-text-muted hover:text-primary transition-colors">
+                Abmelden
+              </button>
+            </form>
+          </div>
+        )}
+      </div>
+      {user && (
+        <nav class="border-t border-border-light">
+          <div class="max-w-6xl mx-auto px-5 flex items-center gap-1 overflow-x-auto">
+            {navLinks.map((link) => (
+              <a
+                href={link.href}
+                class={`px-3 py-2.5 text-sm font-medium whitespace-nowrap no-underline transition-colors ${
+                  Astro.url.pathname === link.href
+                    ? 'text-primary border-b-2 border-primary'
+                    : 'text-text-secondary hover:text-primary'
+                }`}
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </nav>
+      )}
+    </header>
+
+    <main class="flex-1 py-8">
+      <div class="max-w-6xl mx-auto px-5">
+        <slot />
+      </div>
+    </main>
+
+    <footer class="border-t border-border-light bg-white mt-12">
+      <div class="max-w-6xl mx-auto px-5 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-text-muted">
+        <span>© 2026 Bezard Media GmbH</span>
+        <div class="flex gap-4">
+          <a href="/impressum" class="hover:text-primary no-underline">Impressum</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

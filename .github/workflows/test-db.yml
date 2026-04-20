@@ -1,0 +1,64 @@
+name: Test Supabase Connection
+
+on:
+  workflow_dispatch:  # Manuell auslösbar
+  push:
+    paths:
+      - '.github/workflows/test-db.yml'  # Bei Änderung an dieser Datei
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check secret presence
+        run: |
+          if [ -z "${{ secrets.SUPABASE_DB_URL }}" ]; then
+            echo "::error::SUPABASE_DB_URL secret is not set"
+            exit 1
+          fi
+          echo "✅ SUPABASE_DB_URL secret is configured"
+
+      - name: Install psql
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y postgresql-client > /dev/null
+
+      - name: List tables
+        env:
+          PGPASSWORD_AVOID_LOG: "yes"
+          DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          echo "=== Tabellen im public-Schema ==="
+          psql "$DB_URL" -c "\dt public.*" || (echo "::error::Connection failed"; exit 1)
+
+      - name: Count articles
+        env:
+          DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          echo "=== Artikel-Anzahl ==="
+          psql "$DB_URL" -c "SELECT COUNT(*) AS artikel_anzahl FROM public.articles;"
+
+      - name: List settings
+        env:
+          DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          echo "=== Einstellungen ==="
+          psql "$DB_URL" -c "SELECT key, value::text, description FROM public.settings ORDER BY key;"
+
+      - name: Article states summary
+        env:
+          DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          echo "=== Artikel-Zustände ==="
+          psql "$DB_URL" -c "SELECT state, COUNT(*) AS anzahl FROM public.article_states GROUP BY state ORDER BY state;"
+
+      - name: User profiles count
+        env:
+          DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+        run: |
+          echo "=== Profile/Ärzte ==="
+          psql "$DB_URL" -c "SELECT role, COUNT(*) AS anzahl FROM public.profiles GROUP BY role ORDER BY role;"
+
+      - name: Success
+        run: echo "✅ Alle Checks erfolgreich. Verbindung funktioniert."

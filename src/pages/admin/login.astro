@@ -1,0 +1,81 @@
+---
+export const prerender = false;
+
+import AuthLayout from '../../layouts/AuthLayout.astro';
+import { createSupabaseServerClient } from '../../lib/supabase/server';
+
+let errorMessage: string | null = null;
+let successMessage: string | null = null;
+
+if (Astro.locals.user?.role === 'admin') {
+  return Astro.redirect('/admin');
+}
+
+if (Astro.request.method === 'POST') {
+  const formData = await Astro.request.formData();
+  const email = String(formData.get('email') || '').trim().toLowerCase();
+
+  if (!email || !email.includes('@')) {
+    errorMessage = 'Bitte gib eine gültige E-Mail-Adresse ein.';
+  } else {
+    const supabase = createSupabaseServerClient(Astro.request, Astro.cookies);
+    const redirectTo = `${Astro.url.origin}/auth/callback?next=/admin`;
+
+    const { error } = await supabase.auth.signInWithOtp({
+      email,
+      options: { emailRedirectTo: redirectTo, shouldCreateUser: false },
+    });
+
+    if (error) {
+      errorMessage = 'Wenn diese E-Mail im System registriert ist, haben wir dir einen Login-Link geschickt.';
+    } else {
+      successMessage = 'Login-Link geschickt. Prüfe dein Postfach.';
+    }
+  }
+}
+---
+
+<AuthLayout title="Admin-Anmeldung" section="admin">
+  <div class="max-w-md mx-auto pt-8">
+    <div class="bg-white rounded-2xl border border-border shadow-sm p-8">
+      <h1 class="text-2xl font-bold text-text mb-2">Admin-Anmeldung</h1>
+      <p class="text-sm text-text-secondary mb-6">
+        Zugang nur für berechtigte Admins.
+      </p>
+
+      {successMessage && (
+        <div class="mb-6 p-4 rounded-xl bg-green-50 border border-green-200 text-sm text-green-800">
+          {successMessage}
+        </div>
+      )}
+      {errorMessage && (
+        <div class="mb-6 p-4 rounded-xl bg-amber-50 border border-amber-200 text-sm text-amber-800">
+          {errorMessage}
+        </div>
+      )}
+
+      {!successMessage && (
+        <form method="post" class="space-y-4">
+          <div>
+            <label for="email" class="block text-sm font-medium text-text mb-1.5">E-Mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autocomplete="email"
+              autofocus
+              class="w-full px-4 py-2.5 rounded-lg border border-border bg-white text-text focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full px-6 py-2.5 bg-primary text-white font-semibold rounded-lg hover:bg-primary-dark transition-colors"
+          >
+            Login-Link anfordern
+          </button>
+        </form>
+      )}
+    </div>
+  </div>
+</AuthLayout>
