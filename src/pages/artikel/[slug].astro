@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import ReviewerBadge from '../../components/ReviewerBadge.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -185,59 +186,30 @@ const faqJsonLd = faqs.length >= 2 ? {
         Zuletzt aktualisiert: {formattedDate} · Lesezeit: ca. {readingTime} Minuten · Evidenzcheck: Geprüft anhand aktueller Meta-Analysen und Leitlinien
       </p>
 
-      <!-- Reviewer Box (reviewed articles) -->
-      {article.data.reviewed && article.data.reviewer && (
-        <div class="mb-10 p-5 md:p-6 rounded-2xl border border-border-light bg-white shadow-sm">
+      <!-- Reviewer-Box: lädt Live-Status aus Supabase, Fallback = Markdown-Frontmatter -->
+      <ReviewerBadge
+        server:defer
+        slug={article.data.slug}
+        variant="full"
+        fallbackReviewed={article.data.reviewed}
+        fallbackReviewer={article.data.reviewer}
+        fallbackReviewerPhoto={article.data.reviewerPhoto}
+        fallbackReviewerTitle={article.data.reviewerTitle}
+        fallbackReviewerBio={article.data.reviewerBio}
+        fallbackReviewerUrl={article.data.reviewerUrl}
+        fallbackReviewDate={article.data.reviewDate}
+      >
+        <div slot="fallback" class="mb-10 p-5 md:p-6 rounded-2xl border border-border-light bg-white shadow-sm animate-pulse">
           <div class="flex items-start gap-4">
-            {article.data.reviewerPhoto && (
-              <img
-                src={article.data.reviewerPhoto}
-                alt={article.data.reviewer}
-                class="w-16 h-16 rounded-full object-cover flex-shrink-0"
-              />
-            )}
-            <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 mb-1 flex-wrap">
-                <span class="font-semibold text-text">{article.data.reviewer}</span>
-                <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-green-50 text-green-700 text-xs font-medium">
-                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                  </svg>
-                  Geprüft
-                </span>
-              </div>
-              {article.data.reviewerTitle && (
-                <p class="text-sm text-primary mb-2">{article.data.reviewerTitle}</p>
-              )}
-              {article.data.reviewerBio && (
-                <p class="text-sm text-text-secondary leading-relaxed mb-2">{article.data.reviewerBio}</p>
-              )}
-              {article.data.reviewerUrl && (
-                <a href={article.data.reviewerUrl} target="_blank" rel="noopener noreferrer"
-                   class="inline-flex items-center gap-1 text-sm text-primary hover:text-primary-dark no-underline transition-colors">
-                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                  {new URL(article.data.reviewerUrl!).hostname.replace('www.', '')}
-                </a>
-              )}
+            <div class="w-16 h-16 rounded-full bg-gray-200 flex-shrink-0"></div>
+            <div class="flex-1 min-w-0 space-y-2">
+              <div class="h-4 bg-gray-200 rounded w-48"></div>
+              <div class="h-3 bg-gray-200 rounded w-64"></div>
+              <div class="h-3 bg-gray-200 rounded w-40"></div>
             </div>
           </div>
         </div>
-      )}
-
-      <!-- Pending Review Box (unreviewed articles) -->
-      {!article.data.reviewed && (
-        <div class="mb-10 flex items-center gap-3 p-4 rounded-xl border border-amber-200 bg-amber-50/50">
-          <svg class="w-5 h-5 text-amber-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-          <div>
-            <span class="text-sm font-medium text-amber-800">Ausstehend – wartet auf Arzt-Review</span>
-            <p class="text-xs text-amber-600 mt-0.5">Dieser Artikel wurde noch nicht von einem Facharzt geprüft.</p>
-          </div>
-        </div>
-      )}
+      </ReviewerBadge>
 
       <!-- Die Kernaussage kommt jetzt aus dem Markdown-Inhalt mit class="kernaussage" -->
 

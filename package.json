@@ -7,7 +7,8 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "sync:articles": "node scripts/sync-articles.mjs",
+    "build": "node scripts/sync-articles.mjs && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -20,6 +21,7 @@
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.2.2",
     "astro": "^6.1.5",
+    "gray-matter": "^4.0.3",
     "tailwindcss": "^4.2.2",
     "zod": "^4.3.6"
   }

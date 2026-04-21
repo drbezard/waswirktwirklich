@@ -1,0 +1,201 @@
+---
+/**
+ * Server Island: Zeigt Verifizierungs-Status eines Artikels live aus Supabase.
+ *
+ * Wird mit `server:defer` in statische Seiten (ArticleCard, /artikel/[slug])
+ * eingebettet — die Seite bleibt statisch, nur dieses Badge lädt bei Aufruf
+ * nachträglich.
+ *
+ * Fallback: Wenn in der DB kein aktiver Eintrag existiert, werden die
+ * Markdown-Frontmatter-Felder als Fallback genutzt (damit Artikel, die
+ * vor der DB-Umstellung reviewed wurden, nicht plötzlich "Ausstehend" zeigen).
+ */
+
+import { createClient } from '@supabase/supabase-js';
+
+interface Props {
+  slug: string;
+  variant?: 'card' | 'full';
+  fallbackReviewed?: boolean;
+  fallbackReviewer?: string;
+  fallbackReviewerPhoto?: string;
+  fallbackReviewerTitle?: string;
+  fallbackReviewerBio?: string;
+  fallbackReviewerUrl?: string;
+  fallbackReviewDate?: string;
+}
+
+const {
+  slug,
+  variant = 'card',
+  fallbackReviewed,
+  fallbackReviewer,
+  fallbackReviewerPhoto,
+  fallbackReviewerTitle,
+  fallbackReviewerBio,
+  fallbackReviewerUrl,
+} = Astro.props;
+
+const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL;
+const supabaseAnonKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
+
+type Reviewer = {
+  fullName: string | null;
+  title: string | null;
+  photoUrl: string | null;
+  bio: string | null;
+  websiteUrl: string | null;
+};
+
+let reviewer: Reviewer | null = null;
+
+if (supabaseUrl && supabaseAnonKey) {
+  try {
+    const supabase = createClient(supabaseUrl, supabaseAnonKey, {
+      auth: { persistSession: false, autoRefreshToken: false },
+    });
+
+    const { data } = await supabase
+      .from('verifications')
+      .select('doctor_id')
+      .eq('article_slug', slug)
+      .is('revoked_at', null)
+      .gt('expires_at', new Date().toISOString())
+      .order('verified_at', { ascending: false })
+      .limit(1)
+      .maybeSingle();
+
+    if (data?.doctor_id) {
+      const { data: profile } = await supabase
+        .from('profiles')
+        .select('full_name, title, photo_url, bio, website_url')
+        .eq('id', data.doctor_id)
+        .maybeSingle();
+
+      if (profile) {
+        reviewer = {
+          fullName: profile.full_name,
+          title: profile.title,
+          photoUrl: profile.photo_url,
+          bio: profile.bio,
+          websiteUrl: profile.website_url,
+        };
+      }
+    }
+  } catch (err) {
+    console.error('[ReviewerBadge] Supabase-Abfrage fehlgeschlagen:', err);
+  }
+}
+
+const displayName = reviewer?.fullName || fallbackReviewer || null;
+const displayTitle = reviewer?.title || fallbackReviewerTitle || null;
+const displayPhoto = reviewer?.photoUrl || fallbackReviewerPhoto || null;
+const displayBio = reviewer?.bio || fallbackReviewerBio || null;
+const displayUrl = reviewer?.websiteUrl || fallbackReviewerUrl || null;
+
+const isReviewed = !!reviewer || (fallbackReviewed && !!fallbackReviewer);
+
+let websiteLabel: string | null = null;
+if (displayUrl) {
+  try {
+    websiteLabel = new URL(displayUrl).hostname.replace(/^www\./, '');
+  } catch {
+    websiteLabel = displayUrl;
+  }
+}
+---
+
+{variant === 'card' && (
+  isReviewed ? (
+    <div class="flex items-center gap-3 p-3 rounded-xl mb-4 bg-green-50 border border-green-100">
+      {displayPhoto ? (
+        <img src={displayPhoto} alt={displayName || ''} class="w-10 h-10 rounded-full object-cover border-2 border-green-200 flex-shrink-0" />
+      ) : (
+        <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
+          <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+        </div>
+      )}
+      <div class="flex-1 min-w-0">
+        <div class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 text-green-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+          </svg>
+          <span class="text-sm font-semibold text-green-800">
+            Geprüft von {displayName || 'Facharzt'}
+          </span>
+        </div>
+        <span class="text-xs text-green-600">Fachärztlich geprüft und freigegeben</span>
+      </div>
+      <span class="text-xs font-bold text-green-700 bg-green-100 px-2.5 py-1 rounded-full flex-shrink-0">
+        Geprüft
+      </span>
+    </div>
+  ) : (
+    <div class="flex items-center gap-3 p-3 rounded-xl mb-4 bg-gray-50 border border-gray-100">
+      <div class="w-10 h-10 rounded-full bg-amber-50 flex items-center justify-center flex-shrink-0 border border-amber-200">
+        <span class="text-amber-500 font-bold text-lg">?</span>
+      </div>
+      <div class="flex-1 min-w-0">
+        <span class="text-sm font-medium text-gray-700">Noch kein Arzt-Review</span>
+        <span class="block text-xs text-gray-500">Artikel wartet auf Fachprüfung</span>
+      </div>
+      <span class="text-xs font-bold text-orange-600 bg-orange-50 px-2.5 py-1 rounded-full flex-shrink-0 border border-orange-200">
+        Ausstehend
+      </span>
+    </div>
+  )
+)}
+
+{variant === 'full' && (
+  isReviewed ? (
+    <div class="mb-10 p-5 md:p-6 rounded-2xl border border-border-light bg-white shadow-sm">
+      <div class="flex items-start gap-4">
+        {displayPhoto && (
+          <img
+            src={displayPhoto}
+            alt={displayName || ''}
+            class="w-16 h-16 rounded-full object-cover flex-shrink-0"
+          />
+        )}
+        <div class="flex-1 min-w-0">
+          <div class="flex items-center gap-2 mb-1 flex-wrap">
+            <span class="font-semibold text-text">{displayName}</span>
+            <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-green-50 text-green-700 text-xs font-medium">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+              Geprüft
+            </span>
+          </div>
+          {displayTitle && (
+            <p class="text-sm text-primary mb-2">{displayTitle}</p>
+          )}
+          {displayBio && (
+            <p class="text-sm text-text-secondary leading-relaxed mb-2">{displayBio}</p>
+          )}
+          {displayUrl && websiteLabel && (
+            <a href={displayUrl} target="_blank" rel="noopener noreferrer"
+               class="inline-flex items-center gap-1 text-sm text-primary hover:text-primary-dark no-underline transition-colors">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              {websiteLabel}
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  ) : (
+    <div class="mb-10 flex items-center gap-3 p-4 rounded-xl border border-amber-200 bg-amber-50/50">
+      <svg class="w-5 h-5 text-amber-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <div>
+        <span class="text-sm font-medium text-amber-800">Ausstehend – wartet auf Arzt-Review</span>
+        <p class="text-xs text-amber-600 mt-0.5">Dieser Artikel wurde noch nicht von einem Facharzt geprüft.</p>
+      </div>
+    </div>
+  )
+)}
