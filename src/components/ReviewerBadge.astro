@@ -1,14 +1,11 @@
 ---
 /**
  * Server Island: Zeigt Verifizierungs-Status eines Artikels live aus Supabase.
+ * Wird mit `server:defer` eingebettet — die Seite bleibt statisch, nur dieses
+ * Badge lädt bei Aufruf dynamisch nach.
  *
- * Wird mit `server:defer` in statische Seiten (ArticleCard, /artikel/[slug])
- * eingebettet — die Seite bleibt statisch, nur dieses Badge lädt bei Aufruf
- * nachträglich.
- *
- * Fallback: Wenn in der DB kein aktiver Eintrag existiert, werden die
- * Markdown-Frontmatter-Felder als Fallback genutzt (damit Artikel, die
- * vor der DB-Umstellung reviewed wurden, nicht plötzlich "Ausstehend" zeigen).
+ * Source of Truth ist ausschließlich Supabase (verifications + profiles).
+ * Wenn kein aktiver Eintrag existiert → "Ausstehend"-Zustand.
  */
 
 import { createClient } from '@supabase/supabase-js';
@@ -16,25 +13,9 @@ import { createClient } from '@supabase/supabase-js';
 interface Props {
   slug: string;
   variant?: 'card' | 'full';
-  fallbackReviewed?: boolean;
-  fallbackReviewer?: string;
-  fallbackReviewerPhoto?: string;
-  fallbackReviewerTitle?: string;
-  fallbackReviewerBio?: string;
-  fallbackReviewerUrl?: string;
-  fallbackReviewDate?: string;
 }
 
-const {
-  slug,
-  variant = 'card',
-  fallbackReviewed,
-  fallbackReviewer,
-  fallbackReviewerPhoto,
-  fallbackReviewerTitle,
-  fallbackReviewerBio,
-  fallbackReviewerUrl,
-} = Astro.props;
+const { slug, variant = 'card' } = Astro.props;
 
 const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL;
 const supabaseAnonKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
@@ -87,20 +68,14 @@ if (supabaseUrl && supabaseAnonKey) {
   }
 }
 
-const displayName = reviewer?.fullName || fallbackReviewer || null;
-const displayTitle = reviewer?.title || fallbackReviewerTitle || null;
-const displayPhoto = reviewer?.photoUrl || fallbackReviewerPhoto || null;
-const displayBio = reviewer?.bio || fallbackReviewerBio || null;
-const displayUrl = reviewer?.websiteUrl || fallbackReviewerUrl || null;
-
-const isReviewed = !!reviewer || (fallbackReviewed && !!fallbackReviewer);
+const isReviewed = !!reviewer;
 
 let websiteLabel: string | null = null;
-if (displayUrl) {
+if (reviewer?.websiteUrl) {
   try {
-    websiteLabel = new URL(displayUrl).hostname.replace(/^www\./, '');
+    websiteLabel = new URL(reviewer.websiteUrl).hostname.replace(/^www\./, '');
   } catch {
-    websiteLabel = displayUrl;
+    websiteLabel = reviewer.websiteUrl;
   }
 }
 ---
@@ -108,8 +83,8 @@ if (displayUrl) {
 {variant === 'card' && (
   isReviewed ? (
     <div class="flex items-center gap-3 p-3 rounded-xl mb-4 bg-green-50 border border-green-100">
-      {displayPhoto ? (
-        <img src={displayPhoto} alt={displayName || ''} class="w-10 h-10 rounded-full object-cover border-2 border-green-200 flex-shrink-0" />
+      {reviewer!.photoUrl ? (
+        <img src={reviewer!.photoUrl} alt={reviewer!.fullName || ''} class="w-10 h-10 rounded-full object-cover border-2 border-green-200 flex-shrink-0" />
       ) : (
         <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center flex-shrink-0">
           <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -123,7 +98,7 @@ if (displayUrl) {
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
           </svg>
           <span class="text-sm font-semibold text-green-800">
-            Geprüft von {displayName || 'Facharzt'}
+            Geprüft von {reviewer!.fullName || 'Facharzt'}
           </span>
         </div>
         <span class="text-xs text-green-600">Fachärztlich geprüft und freigegeben</span>
@@ -152,16 +127,16 @@ if (displayUrl) {
   isReviewed ? (
     <div class="mb-10 p-5 md:p-6 rounded-2xl border border-border-light bg-white shadow-sm">
       <div class="flex items-start gap-4">
-        {displayPhoto && (
+        {reviewer!.photoUrl && (
           <img
-            src={displayPhoto}
-            alt={displayName || ''}
+            src={reviewer!.photoUrl}
+            alt={reviewer!.fullName || ''}
             class="w-16 h-16 rounded-full object-cover flex-shrink-0"
           />
         )}
         <div class="flex-1 min-w-0">
           <div class="flex items-center gap-2 mb-1 flex-wrap">
-            <span class="font-semibold text-text">{displayName}</span>
+            <span class="font-semibold text-text">{reviewer!.fullName}</span>
             <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-green-50 text-green-700 text-xs font-medium">
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -169,14 +144,14 @@ if (displayUrl) {
               Geprüft
             </span>
           </div>
-          {displayTitle && (
-            <p class="text-sm text-primary mb-2">{displayTitle}</p>
+          {reviewer!.title && (
+            <p class="text-sm text-primary mb-2">{reviewer!.title}</p>
           )}
-          {displayBio && (
-            <p class="text-sm text-text-secondary leading-relaxed mb-2">{displayBio}</p>
+          {reviewer!.bio && (
+            <p class="text-sm text-text-secondary leading-relaxed mb-2">{reviewer!.bio}</p>
           )}
-          {displayUrl && websiteLabel && (
-            <a href={displayUrl} target="_blank" rel="noopener noreferrer"
+          {reviewer!.websiteUrl && websiteLabel && (
+            <a href={reviewer!.websiteUrl} target="_blank" rel="noopener noreferrer"
                class="inline-flex items-center gap-1 text-sm text-primary hover:text-primary-dark no-underline transition-colors">
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />

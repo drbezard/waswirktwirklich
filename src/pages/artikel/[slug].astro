@@ -4,7 +4,7 @@ import ReviewerBadge from '../../components/ReviewerBadge.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
-  const articles = await getCollection('artikel');
+  const articles = await getCollection('artikel', ({ data }) => !data.draft);
   return articles.map((article) => ({
     params: { slug: article.data.slug },
     props: { article, allArticles: articles },
@@ -70,13 +70,15 @@ function extractFaq(body: string): Array<{ question: string; answer: string }> {
 const faqs = extractFaq(article.body || '');
 
 // Main JSON-LD: MedicalWebPage
+// Hinweis: reviewedBy fehlt bewusst — Verifizierungs-Status kommt jetzt live
+// aus Supabase via Server Island, nicht mehr aus Markdown-Frontmatter.
 const articleJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'MedicalWebPage',
   headline: article.data.title,
   description: article.data.excerpt,
   datePublished: article.data.date,
-  dateModified: article.data.reviewDate || article.data.date,
+  dateModified: article.data.date,
   inLanguage: 'de-DE',
   url: canonicalUrl,
   ...(article.data.image && { image: article.data.image }),
@@ -90,17 +92,6 @@ const articleJsonLd = {
     name: 'Was Wirkt Wirklich',
     url: siteUrl,
   },
-  ...(article.data.reviewed && article.data.reviewer && {
-    reviewedBy: {
-      '@type': 'Person',
-      name: article.data.reviewer,
-      ...(article.data.reviewerTitle && { jobTitle: article.data.reviewerTitle }),
-      ...(article.data.reviewerBio && { description: article.data.reviewerBio }),
-      ...(article.data.reviewerUrl && { url: article.data.reviewerUrl }),
-      ...(article.data.reviewerPhoto && { image: article.data.reviewerPhoto }),
-    },
-    lastReviewed: article.data.reviewDate || article.data.date,
-  }),
   about: {
     '@type': 'MedicalCondition',
     name: article.data.category,
@@ -186,19 +177,8 @@ const faqJsonLd = faqs.length >= 2 ? {
         Zuletzt aktualisiert: {formattedDate} · Lesezeit: ca. {readingTime} Minuten · Evidenzcheck: Geprüft anhand aktueller Meta-Analysen und Leitlinien
       </p>
 
-      <!-- Reviewer-Box: lädt Live-Status aus Supabase, Fallback = Markdown-Frontmatter -->
-      <ReviewerBadge
-        server:defer
-        slug={article.data.slug}
-        variant="full"
-        fallbackReviewed={article.data.reviewed}
-        fallbackReviewer={article.data.reviewer}
-        fallbackReviewerPhoto={article.data.reviewerPhoto}
-        fallbackReviewerTitle={article.data.reviewerTitle}
-        fallbackReviewerBio={article.data.reviewerBio}
-        fallbackReviewerUrl={article.data.reviewerUrl}
-        fallbackReviewDate={article.data.reviewDate}
-      >
+      <!-- Reviewer-Box: Live-Status aus Supabase via Server Island -->
+      <ReviewerBadge server:defer slug={article.data.slug} variant="full">
         <div slot="fallback" class="mb-10 p-5 md:p-6 rounded-2xl border border-border-light bg-white shadow-sm animate-pulse">
           <div class="flex items-start gap-4">
             <div class="w-16 h-16 rounded-full bg-gray-200 flex-shrink-0"></div>

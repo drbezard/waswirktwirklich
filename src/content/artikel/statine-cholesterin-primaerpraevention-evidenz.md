@@ -5,7 +5,6 @@ date: "2026-04-01"
 category: "Kardiologie"
 excerpt: "Statine senken das Herzrisiko — aber nicht bei jedem gleich stark. Was große Studien mit über 170.000 Patienten zeigen."
 image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663217967817/nvBCD5Lwybycfp3H24L723/statine-cholesterin-primaerpraevention-evidenz_dcaa6200.png"
-reviewed: false
 ---
 
 <section class="kernaussage">

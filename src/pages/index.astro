@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import { getCollection } from 'astro:content';
 
-const allArticles = await getCollection('artikel');
+const allArticles = await getCollection('artikel', ({ data }) => !data.draft);
 const sortedArticles = allArticles.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
 const articles = sortedArticles.slice(0, 5);
 
@@ -104,10 +104,6 @@ const searchData = sortedArticles.map(a => ({
             date={article.data.date}
             category={article.data.category}
             excerpt={article.data.excerpt}
-            reviewed={article.data.reviewed}
-            reviewer={article.data.reviewer}
-            reviewerPhoto={article.data.reviewerPhoto}
-            reviewerTitle={article.data.reviewerTitle}
             image={article.data.image}
           />
         ))}
@@ -126,10 +122,10 @@ const searchData = sortedArticles.map(a => ({
     <div class="max-w-4xl mx-auto px-5">
       <div class="border border-border rounded-2xl p-8 md:p-10 bg-bg-card">
         <span class="text-xs font-bold uppercase tracking-widest text-text-muted block mb-2">Über dieses Projekt</span>
-        <h2 class="text-2xl font-bold text-text mb-6">Warum „Was wirklich wirkt"?</h2>
+        <h2 class="text-2xl font-bold text-text mb-6">Warum „Was Wirkt Wirklich"?</h2>
         <div class="text-text-secondary text-base leading-relaxed space-y-4">
           <p>Das Gesundheitssystem ist durchzogen von Interessen: Pharmaunternehmen finanzieren Studien, Ärzte erhalten Honorare von Herstellern, Medien leben von Klicks durch Angst und Hoffnung. Das Ergebnis: Patienten wissen nicht mehr, was wirklich stimmt – und was nur gut klingt.</p>
-          <p><strong class="text-text">Was wirklich wirkt</strong> ist ein Gegenentwurf. Jeder Artikel wird von zwei der besten, voneinander unabhängigen KI-Modellen nach einem streng evidenzbasierten Prompt verfasst – ohne Meinung, ohne Interessenkonflikt, ohne Werbung. Nur Studien zählen: RCTs, Cochrane-Reviews, Meta-Analysen. Schwache Evidenz wird als solche benannt. Werbeversprechen werden kritisch hinterfragt.</p>
+          <p><strong class="text-text">Was Wirkt Wirklich</strong> ist ein Gegenentwurf. Jeder Artikel wird von zwei der besten, voneinander unabhängigen KI-Modellen nach einem streng evidenzbasierten Prompt verfasst – ohne Meinung, ohne Interessenkonflikt, ohne Werbung. Nur Studien zählen: RCTs, Cochrane-Reviews, Meta-Analysen. Schwache Evidenz wird als solche benannt. Werbeversprechen werden kritisch hinterfragt.</p>
         </div>
         <hr class="my-8 border-border-light" />
         <h3 class="text-lg font-bold text-text mb-4">Das Drei-Säulen-Prinzip:</h3>

@@ -5,12 +5,6 @@ date: "2026-03-27"
 category: "Orthopädie"
 excerpt: "Kreuzbandriss bedeutet nicht automatisch OP. Zwei große RCTs zeigen: Physiotherapie ist für viele Patienten gleichwertig."
 image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663217967817/nvBCD5Lwybycfp3H24L723/kreuzbandriss-op-physiotherapie-evidenz_e79f5cf6.png"
-reviewed: true
-reviewer: "Dr. Georg Bézard"
-reviewerTitle: "Facharzt für Unfallchirurgie & Orthopädie · Wien"
-reviewerPhoto: "https://d2xsxph8kpxj0f.cloudfront.net/310519663217967817/nvBCD5Lwybycfp3H24L723/dr-bezard_58e49f8b.jpg"
-reviewerUrl: "https://www.drbezard.com"
-reviewerBio: "Oberarzt für Orthopädie & Traumatologie sowie Facharzt für Unfallchirurgie in Wien. Spezialisiert auf minimalinvasive Schulter-, Hand- und Kniechirurgie. Privatpraxis für evidenzbasierte Orthopädie in Wien-Döbling und Tulln."
 ---
 
 <section class="kernaussage">

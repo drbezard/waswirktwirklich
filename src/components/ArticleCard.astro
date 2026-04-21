@@ -7,14 +7,10 @@ interface Props {
   date: string;
   category: string;
   excerpt: string;
-  reviewed: boolean;
-  reviewer?: string;
-  reviewerPhoto?: string;
-  reviewerTitle?: string;
   image?: string;
 }
 
-const { title, slug, date, category, excerpt, reviewed, reviewer, reviewerPhoto, reviewerTitle, image } = Astro.props;
+const { title, slug, date, category, excerpt, image } = Astro.props;
 
 const formattedDate = new Date(date).toLocaleDateString('de-DE', {
   day: 'numeric',
@@ -51,15 +47,7 @@ const formattedDate = new Date(date).toLocaleDateString('de-DE', {
 
     <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-5">{excerpt}</p>
 
-    <ReviewerBadge
-      server:defer
-      slug={slug}
-      variant="card"
-      fallbackReviewed={reviewed}
-      fallbackReviewer={reviewer}
-      fallbackReviewerPhoto={reviewerPhoto}
-      fallbackReviewerTitle={reviewerTitle}
-    >
+    <ReviewerBadge server:defer slug={slug} variant="card">
       <div slot="fallback" class="flex items-center gap-3 p-3 rounded-xl mb-4 bg-gray-50 border border-gray-100 animate-pulse">
         <div class="w-10 h-10 rounded-full bg-gray-200 flex-shrink-0"></div>
         <div class="flex-1 min-w-0 space-y-1.5">

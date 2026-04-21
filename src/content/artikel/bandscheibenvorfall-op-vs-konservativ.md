@@ -5,12 +5,6 @@ date: "2026-03-13"
 category: "Orthopädie"
 excerpt: "Die meisten Bandscheibenvorfälle heilen ohne Operation. Die OP bringt schnellere Schmerzlinderung, aber nach einem Jahr sind die Ergebnisse gleichwertig."
 image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663217967817/nvBCD5Lwybycfp3H24L723/bandscheibenvorfall-op-vs-konservativ_69096177.png"
-reviewed: true
-reviewer: "Dr. Georg Bézard"
-reviewerTitle: "Facharzt für Unfallchirurgie & Orthopädie · Wien"
-reviewerPhoto: "https://d2xsxph8kpxj0f.cloudfront.net/310519663217967817/nvBCD5Lwybycfp3H24L723/dr-bezard_58e49f8b.jpg"
-reviewerUrl: "https://www.drbezard.com"
-reviewerBio: "Oberarzt für Orthopädie & Traumatologie sowie Facharzt für Unfallchirurgie in Wien. Spezialisiert auf minimalinvasive Schulter-, Hand- und Kniechirurgie. Privatpraxis für evidenzbasierte Orthopädie in Wien-Döbling und Tulln."
 ---
 
 <section class="kernaussage">

@@ -1,5 +1,5 @@
 -- ============================================================================
---   KOMPLETTES DATENBANK-SETUP FÜR "WAS WIRKLICH WIRKT"
+--   KOMPLETTES DATENBANK-SETUP FÜR "WAS WIRKT WIRKLICH"
 -- ============================================================================
 -- 
 -- ANLEITUNG:

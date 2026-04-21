@@ -5,12 +5,6 @@ date: "2026-03-05"
 category: "Orthopädie"
 excerpt: "Bei degenerativen Meniskusrissen ist Physiotherapie genauso wirksam wie die Arthroskopie. Die FIDELITY-Studie zeigt: Die OP wirkt nicht besser als eine Schein-OP."
 image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663217967817/nvBCD5Lwybycfp3H24L723/meniskusriss-op-vs-physiotherapie_a9e0b2c2.png"
-reviewed: true
-reviewer: "Dr. Georg Bézard"
-reviewerTitle: "Facharzt für Unfallchirurgie & Orthopädie · Wien"
-reviewerPhoto: "https://d2xsxph8kpxj0f.cloudfront.net/310519663217967817/nvBCD5Lwybycfp3H24L723/dr-bezard_58e49f8b.jpg"
-reviewerUrl: "https://www.drbezard.com"
-reviewerBio: "Oberarzt für Orthopädie & Traumatologie sowie Facharzt für Unfallchirurgie in Wien. Spezialisiert auf minimalinvasive Schulter-, Hand- und Kniechirurgie. Privatpraxis für evidenzbasierte Orthopädie in Wien-Döbling und Tulln."
 ---
 
 <section class="kernaussage">

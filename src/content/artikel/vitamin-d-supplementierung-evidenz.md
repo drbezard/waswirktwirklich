@@ -5,7 +5,6 @@ date: "2026-04-07"
 category: "Innere Medizin"
 excerpt: "Vitamin-D-Pillen schützen Gesunde kaum vor Krebs, Herzkrankheiten oder Knochenbrüchen. Was die größten Studien wirklich zeigen."
 image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663217967817/nvBCD5Lwybycfp3H24L723/vitamin-d-supplementierung-evidenz_cc23cffa.png"
-reviewed: false
 ---
 
 <section class="kernaussage">

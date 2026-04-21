@@ -5,12 +5,6 @@ date: "2026-03-24"
 category: "Orthopädie"
 excerpt: "Die arthroskopische subakromiale Dekompression wirkt nicht besser als eine Schein-OP. Zwei große Placebo-kontrollierte Studien und ein 10-Jahres-Follow-up bestätigen: Physiotherapie ist die empfohlene Erstbehandlung."
 image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663217967817/nvBCD5Lwybycfp3H24L723/schulter-impingement-subakromiale-dekompression_8bfb7a38.png"
-reviewed: true
-reviewer: "Dr. Georg Bézard"
-reviewerTitle: "Facharzt für Unfallchirurgie & Orthopädie · Wien"
-reviewerPhoto: "https://d2xsxph8kpxj0f.cloudfront.net/310519663217967817/nvBCD5Lwybycfp3H24L723/dr-bezard_58e49f8b.jpg"
-reviewerUrl: "https://www.drbezard.com"
-reviewerBio: "Oberarzt für Orthopädie & Traumatologie sowie Facharzt für Unfallchirurgie in Wien. Spezialisiert auf minimalinvasive Schulter-, Hand- und Kniechirurgie. Privatpraxis für evidenzbasierte Orthopädie in Wien-Döbling und Tulln."
 ---
 
 <section class="kernaussage">

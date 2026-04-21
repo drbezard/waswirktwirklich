@@ -5,7 +5,6 @@ date: "2026-04-04"
 category: "Dermatologie"
 excerpt: "Cortison-Angst bei Neurodermitis führt oft zu schlechteren Verläufen. Was 291 Studien über Wirksamkeit und Sicherheit zeigen."
 image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663217967817/nvBCD5Lwybycfp3H24L723/neurodermitis-cortison-angst-evidenz_20dbaff1.png"
-reviewed: false
 ---
 
 <section class="kernaussage">
