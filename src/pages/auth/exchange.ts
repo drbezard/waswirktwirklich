@@ -10,7 +10,7 @@ import { createSupabaseServerClient } from '../../lib/supabase/server';
 export const prerender = false;
 
 // GET: Verify OTP mit token_hash (Supabase standard flow)
-export const GET: APIRoute = async ({ cookies, url, request }) => {
+export const GET: APIRoute = async ({ cookies, url, request, redirect }) => {
   const token_hash = url.searchParams.get('token_hash');
   const type = url.searchParams.get('type') as 'email' | 'magiclink' | null;
   const next = url.searchParams.get('next') || '/arzt';
@@ -23,10 +23,10 @@ export const GET: APIRoute = async ({ cookies, url, request }) => {
   const { error } = await supabase.auth.verifyOtp({ token_hash, type });
 
   if (error) {
-    return Response.redirect(`${url.origin}/arzt/login?error=link_invalid`, 303);
+    return redirect('/arzt/login?error=link_invalid', 303);
   }
 
-  return Response.redirect(`${url.origin}${next}`, 303);
+  return redirect(next, 303);
 };
 
 // POST: Hash-based flow (ältere Magic-Links senden Token im Hash)

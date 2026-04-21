@@ -12,7 +12,7 @@ import { createSupabaseServerClient } from '../../lib/supabase/server';
 
 export const prerender = false;
 
-export const GET: APIRoute = async ({ url, cookies, request }) => {
+export const GET: APIRoute = async ({ url, cookies, request, redirect }) => {
   const code = url.searchParams.get('code');
   const token_hash = url.searchParams.get('token_hash');
   const type = url.searchParams.get('type');
@@ -23,10 +23,7 @@ export const GET: APIRoute = async ({ url, cookies, request }) => {
   // Fehler-Parameter von Supabase durchgereicht
   if (error) {
     console.error('[auth/callback] Supabase error:', error, errorDescription);
-    return Response.redirect(
-      `${url.origin}/arzt/login?error=${encodeURIComponent(error)}`,
-      303
-    );
+    return redirect(`/arzt/login?error=${encodeURIComponent(error)}`, 303);
   }
 
   // === Flow 1: PKCE (Supabase default seit 2024) ===
@@ -36,19 +33,16 @@ export const GET: APIRoute = async ({ url, cookies, request }) => {
 
     if (exchangeError) {
       console.error('[auth/callback] exchangeCodeForSession failed:', exchangeError.message);
-      return Response.redirect(
-        `${url.origin}/arzt/login?error=${encodeURIComponent('link_expired_or_invalid')}`,
-        303
-      );
+      return redirect(`/arzt/login?error=${encodeURIComponent('link_expired_or_invalid')}`, 303);
     }
 
-    return Response.redirect(`${url.origin}${next}`, 303);
+    return redirect(next, 303);
   }
 
   // === Flow 2: OTP (token_hash + type) ===
   if (token_hash && type) {
-    return Response.redirect(
-      `${url.origin}/auth/exchange?token_hash=${encodeURIComponent(token_hash)}&type=${encodeURIComponent(type)}&next=${encodeURIComponent(next)}`,
+    return redirect(
+      `/auth/exchange?token_hash=${encodeURIComponent(token_hash)}&type=${encodeURIComponent(type)}&next=${encodeURIComponent(next)}`,
       303
     );
   }
