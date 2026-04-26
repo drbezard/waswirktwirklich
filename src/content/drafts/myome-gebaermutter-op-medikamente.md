@@ -140,7 +140,7 @@ Wann eine OP definitiv nicht indiziert ist:Bei asymptomatischen Myomen ohne Besc
 ## Quellenverzeichnis
 
 - Al-Hendy A, Myers ER, Stewart E, Alam N, Borah BJ, et al. (2021).Treatment of Uterine Fibroid Symptoms with Relugolix Combination Therapy.New England Journal of Medicine, 384(7), 630–642. DOI: 10.1056/NEJMoa2008283
-- Peng Y, Ding H, Wang Y, et al. (2024).Systematic review and meta-analysis of current evidence in uterine artery embolization vs myomectomy for symptomatic uterine fibroids.Scientific Reports, 14, 19045. DOI: 10.1038/s41598-024-69754-0
+- Peng Y, Ding H, Wang Y, et al. (2024).Systematic review and meta-analysis of current evidence in uterine artery embolization vs myomectomy for symptomatic uterine fibroids.Scientific Reports, 14, 19045. DOI: [10.1038/s41598-024-69754-0](https://doi.org/10.1038/s41598-024-69754-0)
 - Diaz I, Lumsden MA, Zeppernick M. (2025).Medical treatment of fibroids: FIGO best practice guidance.International Journal of Gynecology & Obstetrics, 171, 507–512. DOI: 10.1002/ijgo.70497
 - American College of Obstetricians and Gynecologists (ACOG). (2021).Management of Symptomatic Uterine Leiomyomas. ACOG Practice Bulletin No. 228.Obstetrics & Gynecology, 137(6), e100–e115. DOI: 10.1097/AOG.0000000000004401
 - National Institute for Health and Care Excellence (NICE). (2024).Linzagolix for treating moderate to severe symptoms of uterine fibroids. Technology Appraisal Guidance TA996.https://www.nice.org.uk/guidance/ta996

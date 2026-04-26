@@ -155,7 +155,7 @@ Wann eine Operation definitiv nicht angebracht ist:Bei reinen „Verdacht auf" o
 - American Academy of Orthopaedic Surgeons (AAOS) / American Society for Surgery of the Hand (ASSH). (2024).Management of Carpal Tunnel Syndrome: Evidence-Based Clinical Practice Guideline.https://www.aaos.org/cts-cpg
 - Gerritsen AA, de Vet HC, Scholten RJ, Bertelsmann FW, de Krom MC, Bouter LM. (2002).Splinting vs surgery in the treatment of carpal tunnel syndrome: a randomized controlled trial.JAMA, 288(10), 1245–1251. DOI: 10.1001/jama.288.10.1245
 - Shi Q, Bobos P, Lalone EA, Warren L, MacDermid JC. (2020).Comparison of the Short-Term and Long-Term Effects of Surgery and Nonsurgical Intervention in Treating Carpal Tunnel Syndrome: A Systematic Review and Meta-Analysis.HAND, 15(1), 13–22. DOI: 10.1177/1558944718787892
-- Palmbergen WAC, Beekman R, Heeren AM, et al. (2025).Surgery versus corticosteroid injection for carpal tunnel syndrome (DISTRICTS): an open-label, multicentre, randomised controlled trial.The Lancet, 405(10495), 2153–2163. DOI: 10.1016/S0140-6736(25)00368-X
+- Palmbergen WAC, Beekman R, Heeren AM, et al. (2025).Surgery versus corticosteroid injection for carpal tunnel syndrome (DISTRICTS): an open-label, multicentre, randomised controlled trial.The Lancet, 405(10495), 2153–2163. DOI: [10.1016/S0140-6736(25)00368-X](https://doi.org/10.1016/S0140-6736(25)00368-X)
 - Deutsche Gesellschaft für Handchirurgie et al. (2022).S3-Leitlinie Diagnostik und Therapie des Karpaltunnelsyndroms. AWMF-Register Nr. 005/003.https://register.awmf.org/de/leitlinien/detail/005-003
 
 ===== 6. EXPERTEN-REVIEW =====

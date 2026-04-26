@@ -150,12 +150,12 @@ Wann Dopaminagonisten definitiv nicht (mehr) die richtige Wahl sind:Bei bereits 
 
 ## Quellenverzeichnis
 
-- Winkelman JW, Berkowski JA, DelRosso LM, Koo BB, Scharf MT, Sharon D, Zak RS, Kazmi U, Falck-Ytter Y, Shelgikar AV, Trotti LM, Walters AS. (2025).Treatment of restless legs syndrome and periodic limb movement disorder: an American Academy of Sleep Medicine clinical practice guideline.Journal of Clinical Sleep Medicine, 21(1), 137–152. DOI: 10.5664/jcsm.11390
+- Winkelman JW, Berkowski JA, DelRosso LM, Koo BB, Scharf MT, Sharon D, Zak RS, Kazmi U, Falck-Ytter Y, Shelgikar AV, Trotti LM, Walters AS. (2025).Treatment of restless legs syndrome and periodic limb movement disorder: an American Academy of Sleep Medicine clinical practice guideline.Journal of Clinical Sleep Medicine, 21(1), 137–152. DOI: [10.5664/jcsm.11390](https://doi.org/10.5664/jcsm.11390)
 - Allen RP, Chen C, Garcia-Borreguero D, Polo O, DuBrava S, Miceli J, Knapp L, Winkelman JW. (2014).Comparison of pregabalin with pramipexole for restless legs syndrome.New England Journal of Medicine, 370(7), 621–631. DOI: 10.1056/NEJMoa1303646
-- Silver N, Allen RP, Senerth J, Earley CJ. (2011).A 10-year, longitudinal assessment of dopamine agonists and methadone in the treatment of restless legs syndrome.Sleep Medicine, 12(5), 440–444. DOI: 10.1016/j.sleep.2010.11.002
+- Silver N, Allen RP, Senerth J, Earley CJ. (2011).A 10-year, longitudinal assessment of dopamine agonists and methadone in the treatment of restless legs syndrome.Sleep Medicine, 12(5), 440–444. DOI: [10.1016/j.sleep.2010.11.002](https://doi.org/10.1016/j.sleep.2010.11.002)
 - Scholz H, Trenkwalder C, Kohnen R, Riemann D, Kriston L, Hornyak M. (2011).Dopamine agonists for restless legs syndrome.Cochrane Database of Systematic Reviews, Issue 3, Art. No.: CD006009. DOI: 10.1002/14651858.CD006009.pub2
 - Heidbreder A, Trenkwalder C, Bachmann CG, et al. (2022).Restless Legs Syndrom — S2k-Leitlinie der Deutschen Gesellschaft für Neurologie und der Deutschen Gesellschaft für Schlafforschung und Schlafmedizin.Somnologie, 26(3), 153–182. AWMF-Register Nr. 030/081.https://register.awmf.org/de/leitlinien/detail/030-081
-- Chenini S, Barateau L, Dauvilliers Y, et al. (2024).Dopamine agonists in restless leg syndrome treatment and their effects on sleep parameters: a systematic review and meta-analysis.Sleep Medicine, 119, 196–208. DOI: 10.1016/j.sleep.2024.04.039
+- Chenini S, Barateau L, Dauvilliers Y, et al. (2024).Dopamine agonists in restless leg syndrome treatment and their effects on sleep parameters: a systematic review and meta-analysis.Sleep Medicine, 119, 196–208. DOI: [10.1016/j.sleep.2024.04.039](https://doi.org/10.1016/j.sleep.2024.04.039)
 
 ===== 6. EXPERTEN-REVIEW =====
 

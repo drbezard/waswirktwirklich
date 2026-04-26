@@ -139,7 +139,7 @@ Wann HRT definitiv nicht indiziert ist:Bei bekanntem oder vermutetem Brustkrebs,
 - Rossouw JE, Anderson GL, Prentice RL et al. (2002).Risks and Benefits of Estrogen Plus Progestin in Healthy Postmenopausal Women: Principal Results From the Women's Health Initiative Randomized Controlled Trial.JAMA, 288(3), 321–333. DOI: 10.1001/jama.288.3.321
 - Anderson GL, Limacher M, Assaf AR et al. (2004).Effects of Conjugated Equine Estrogen in Postmenopausal Women With Hysterectomy: The Women's Health Initiative Randomized Controlled Trial.JAMA, 291(14), 1701–1712. DOI: 10.1001/jama.291.14.1701
 - Marjoribanks J, Farquhar C, Roberts H, Lethaby A, Lee J. (2017).Long-term hormone therapy for perimenopausal and postmenopausal women.Cochrane Database of Systematic Reviews, Issue 1, Art. No.: CD004143. DOI: 10.1002/14651858.CD004143.pub5
-- Boardman HM, Hartley L, Eisinga A et al. (2024).The benefits and risks of menopause hormone therapy for the cardiovascular system in postmenopausal women: a systematic review and meta-analysis.BMJ. 33 RCTs, 44.639 Frauen. DOI: 10.1186/s13643-023-02409-9
+- Boardman HM, Hartley L, Eisinga A et al. (2024).The benefits and risks of menopause hormone therapy for the cardiovascular system in postmenopausal women: a systematic review and meta-analysis.BMJ. 33 RCTs, 44.639 Frauen. DOI: [10.1186/s13643-023-02409-9](https://doi.org/10.1186/s13643-023-02409-9)
 - National Institute for Health and Care Excellence (NICE). (2024).Menopause: Identification and Management. NICE Guideline NG23, Update November 2024.https://www.nice.org.uk/guidance/ng23
 - DGGG/OEGGG. (2020).S3-Leitlinie Peri- und Postmenopause — Diagnostik und Interventionen. AWMF-Registernummer 015-062.https://register.awmf.org/de/leitlinien/detail/015-062
 

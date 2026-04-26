@@ -136,8 +136,8 @@ Wann ein Wunschkaiserschnitt definitiv nicht sinnvoll ist:Vor der 39. Schwangers
 
 ## Quellenverzeichnis
 
-- Keag OE, Norman JE, Stock SJ. (2018).Long-term risks and benefits associated with cesarean delivery for mother, baby, and subsequent pregnancies: Systematic review and meta-analysis.PLOS Medicine, 15(1), e1002494. DOI: 10.1371/journal.pmed.1002494
-- Adewale B et al. (2023).Planned cesarean delivery vs planned vaginal delivery: a systematic review and meta-analysis of randomized controlled trials.American Journal of Obstetrics & Gynecology MFM, 6(1), 101186. DOI: 10.1016/j.ajogmf.2023.101186
+- Keag OE, Norman JE, Stock SJ. (2018).Long-term risks and benefits associated with cesarean delivery for mother, baby, and subsequent pregnancies: Systematic review and meta-analysis.PLOS Medicine, 15(1), e1002494. DOI: [10.1371/journal.pmed.1002494](https://doi.org/10.1371/journal.pmed.1002494)
+- Adewale B et al. (2023).Planned cesarean delivery vs planned vaginal delivery: a systematic review and meta-analysis of randomized controlled trials.American Journal of Obstetrics & Gynecology MFM, 6(1), 101186. DOI: [10.1016/j.ajogmf.2023.101186](https://doi.org/10.1016/j.ajogmf.2023.101186)
 - Hofmeyr GJ, Hannah M, Lawrie TA. (2015).Planned caesarean section for term breech delivery.Cochrane Database of Systematic Reviews, Issue 7, Art. No.: CD000166. DOI: 10.1002/14651858.CD000166.pub2
 - American College of Obstetricians and Gynecologists (ACOG). (2019).Committee Opinion No. 761: Cesarean Delivery on Maternal Request.Obstetrics & Gynecology, 133(1), e73–e77. DOI: 10.1097/AOG.0000000000003006
 - Deutsche Gesellschaft für Gynäkologie und Geburtshilfe (DGGG). (2020).S3-Leitlinie Sectio caesarea. AWMF-Registernummer 015-084.https://register.awmf.org/de/leitlinien/detail/015-084

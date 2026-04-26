@@ -133,10 +133,10 @@ Wann Augentropfen definitiv nicht ausreichen:Bei schwerem Sicca-Syndrom mit Horn
 ## Quellenverzeichnis
 
 - Pucker AD, Ng SM, Nichols JJ. (2016).Over the counter (OTC) artificial tear drops for dry eye syndrome.Cochrane Database of Systematic Reviews, Issue 2, Art. No.: CD009729. DOI: 10.1002/14651858.CD009729.pub2
-- Jones L, Downie LE, Korb D, Benitez-del-Castillo JM, Dana R, Deng SX, et al. (2017).TFOS DEWS II Management and Therapy Report.The Ocular Surface, 15(3), 575–628. DOI: 10.1016/j.jtos.2017.05.006
-- Wan KH, Chen LJ, Young AL. (2015).Efficacy and Safety of Topical 0.05% Cyclosporine Eye Drops in the Treatment of Dry Eye Syndrome: A Systematic Review and Meta-analysis.The Ocular Surface, 13(3), 213–225. DOI: 10.1016/j.jtos.2014.12.006
-- Shao M, Xie H, Zhu J, Sun C, Chen S, Wang Y, et al. (2022).Comparison of seven cyclosporine A formulations for dry eye disease: A systematic review and network meta-analysis.Frontiers in Pharmacology, 13, 882803. DOI: 10.3389/fphar.2022.882803
-- Gomes JAP, Santo RM. (2019).Effectiveness of using preservative-free artificial tears versus preserved lubricants for the treatment of dry eyes: a systematic review.Arquivos Brasileiros de Oftalmologia, 82(5), 436–445. DOI: 10.5935/0004-2749.20190097
+- Jones L, Downie LE, Korb D, Benitez-del-Castillo JM, Dana R, Deng SX, et al. (2017).TFOS DEWS II Management and Therapy Report.The Ocular Surface, 15(3), 575–628. DOI: [10.1016/j.jtos.2017.05.006](https://doi.org/10.1016/j.jtos.2017.05.006)
+- Wan KH, Chen LJ, Young AL. (2015).Efficacy and Safety of Topical 0.05% Cyclosporine Eye Drops in the Treatment of Dry Eye Syndrome: A Systematic Review and Meta-analysis.The Ocular Surface, 13(3), 213–225. DOI: [10.1016/j.jtos.2014.12.006](https://doi.org/10.1016/j.jtos.2014.12.006)
+- Shao M, Xie H, Zhu J, Sun C, Chen S, Wang Y, et al. (2022).Comparison of seven cyclosporine A formulations for dry eye disease: A systematic review and network meta-analysis.Frontiers in Pharmacology, 13, 882803. DOI: [10.3389/fphar.2022.882803](https://doi.org/10.3389/fphar.2022.882803)
+- Gomes JAP, Santo RM. (2019).Effectiveness of using preservative-free artificial tears versus preserved lubricants for the treatment of dry eyes: a systematic review.Arquivos Brasileiros de Oftalmologia, 82(5), 436–445. DOI: [10.5935/0004-2749.20190097](https://doi.org/10.5935/0004-2749.20190097)
 
 ===== 6. EXPERTEN-REVIEW =====
 

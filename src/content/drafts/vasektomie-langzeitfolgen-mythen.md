@@ -135,10 +135,10 @@ Wann eine Vasektomie definitiv nicht durchgeführt werden sollte:Bei akuter Infe
 
 ## Quellenverzeichnis
 
-- Baboudjian M, Gondran-Tellier B, Boccon-Gibod A, Madeuf A, Lechevallier E, Karsenty G. (2022).Vasectomy and Risk of Prostate Cancer: A Systematic Review and Meta-analysis.European Urology Open Science, 41, 35–44. DOI: 10.1016/j.euros.2022.05.006
+- Baboudjian M, Gondran-Tellier B, Boccon-Gibod A, Madeuf A, Lechevallier E, Karsenty G. (2022).Vasectomy and Risk of Prostate Cancer: A Systematic Review and Meta-analysis.European Urology Open Science, 41, 35–44. DOI: [10.1016/j.euros.2022.05.006](https://doi.org/10.1016/j.euros.2022.05.006)
 - Husby A, Wohlfahrt J, Melbye M. (2020).Vasectomy and Prostate Cancer Risk: A 38-Year Nationwide Cohort Study.JNCI: Journal of the National Cancer Institute, 112(1), 71–77. DOI: 10.1093/jnci/djz099
-- Wang X et al. (2025).Vasectomy and prostate cancer risk: a pooled of cohort studies and Mendelian randomization analysis.BMC Cancer, 25, 332. DOI: 10.1186/s12885-025-13750-8
-- Cheng PJ, Jiang T, Pourabhari Langroudi A, Chen A, Basran S, Eisenberg ML. (2025).The review of the long-term health risks associated with vasectomy.International Journal of Impotence Research. DOI: 10.1038/s41443-025-01043-4
+- Wang X et al. (2025).Vasectomy and prostate cancer risk: a pooled of cohort studies and Mendelian randomization analysis.BMC Cancer, 25, 332. DOI: [10.1186/s12885-025-13750-8](https://doi.org/10.1186/s12885-025-13750-8)
+- Cheng PJ, Jiang T, Pourabhari Langroudi A, Chen A, Basran S, Eisenberg ML. (2025).The review of the long-term health risks associated with vasectomy.International Journal of Impotence Research. DOI: [10.1038/s41443-025-01043-4](https://doi.org/10.1038/s41443-025-01043-4)
 - American Urological Association (AUA). (2026).Vasectomy: AUA Guideline.Journal of Urology.https://www.auanet.org/guidelines/vasectomy-guideline
 - Tian J, Ren C, Li M. (2020).Incidence of Post-Vasectomy Pain: Systematic Review and Meta-Analysis.International Journal of Environmental Research and Public Health, 17(5), 1788. DOI: 10.3390/ijerph17051788
 

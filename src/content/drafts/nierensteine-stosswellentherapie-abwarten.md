@@ -148,9 +148,9 @@ Wann ESWL definitiv nicht indiziert ist:Bei Schwangerschaft, bei unkontrollierte
 
 ## Quellenverzeichnis
 
-- Jendeberg J, Geijer H, Lidén M, Nyman U. (2017).Size matters: The width and location of a ureteral stone accurately predict the chance of spontaneous passage.European Radiology, 27(11), 4775–4785. DOI: 10.1007/s00330-017-4852-6
+- Jendeberg J, Geijer H, Lidén M, Nyman U. (2017).Size matters: The width and location of a ureteral stone accurately predict the chance of spontaneous passage.European Radiology, 27(11), 4775–4785. DOI: [10.1007/s00330-017-4852-6](https://doi.org/10.1007/s00330-017-4852-6)
 - Setthawong V, Rattanasiri S, Thakkinstian A. (2023).Extracorporeal shock wave lithotripsy (ESWL) versus percutaneous nephrolithotomy (PCNL) or retrograde intrarenal surgery (RIRS) for kidney stones.Cochrane Database of Systematic Reviews, Issue 8, Art. No.: CD007044.pub4. DOI: 10.1002/14651858.CD007044.pub4
-- McClinton S et al. (2025).The PUrE randomised controlled trial 1: Clinical and cost effectiveness of flexible ureterorenoscopy and extracorporeal shockwave lithotripsy for lower pole stones of ≤10 mm.European Urology. DOI: 10.1016/j.eururo.2025.03.005
+- McClinton S et al. (2025).The PUrE randomised controlled trial 1: Clinical and cost effectiveness of flexible ureterorenoscopy and extracorporeal shockwave lithotripsy for lower pole stones of ≤10 mm.European Urology. DOI: [10.1016/j.eururo.2025.03.005](https://doi.org/10.1016/j.eururo.2025.03.005)
 - Campschroer T, Zhu X, Vernooij RWM, Lock MTWT. (2018).Alpha-blockers as medical expulsive therapy for ureteral stones.Cochrane Database of Systematic Reviews, Issue 4, Art. No.: CD008509.pub3. DOI: 10.1002/14651858.CD008509.pub3
 - European Association of Urology (EAU). (2025).EAU Guidelines on Urolithiasis.https://uroweb.org/guidelines/urolithiasis
 

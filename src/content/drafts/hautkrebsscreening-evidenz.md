@@ -135,7 +135,7 @@ Wann das bevölkerungsweite Screening definitiv nicht sinnvoll ist:Als Beruhigun
 
 - Johansson M, Brodersen J, Gøtzsche PC, Jørgensen KJ. (2019).Screening for reducing morbidity and mortality in malignant melanoma.Cochrane Database of Systematic Reviews, Issue 6, Art. No.: CD012352. DOI: 10.1002/14651858.CD012352.pub2
 - Henrikson NB, Ivlev I, Blasi PR, Nguyen MB, Senger CA, Perdue LA, Lin JS. (2023).Skin Cancer Screening: Updated Evidence Report and Systematic Review for the US Preventive Services Task Force.JAMA, 329(15), 1296–1307. DOI: 10.1001/jama.2023.3262
-- Katalinic A, Eisemann N, Waldmann A. (2012).Skin cancer screening in Germany. Documenting melanoma incidence and mortality from 2008 to 2013.British Journal of Cancer, 106, 970–974. DOI: 10.1038/bjc.2012.22
+- Katalinic A, Eisemann N, Waldmann A. (2012).Skin cancer screening in Germany. Documenting melanoma incidence and mortality from 2008 to 2013.British Journal of Cancer, 106, 970–974. DOI: [10.1038/bjc.2012.22](https://doi.org/10.1038/bjc.2012.22)
 - Datzmann T, Grünewald S, Schmitt J, Kaiser M, Roessler M. (2022).Are patients benefiting from participation in the German skin cancer screening programme? A large cohort study based on administrative data.British Journal of Dermatology, 186(1), 69–77. DOI: 10.1111/bjd.20658
 - Baltus H, Katalinic A, Eisemann N. (2025).Evaluation of skin cancer screening in Germany – a Microsimulation.JDDG: Journal der Deutschen Dermatologischen Gesellschaft. DOI: 10.1111/ddg.15539
 - US Preventive Services Task Force. (2023).Screening for Skin Cancer: US Preventive Services Task Force Recommendation Statement.JAMA, 329(15), 1290–1295. DOI: 10.1001/jama.2023.3342

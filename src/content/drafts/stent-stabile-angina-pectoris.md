@@ -141,7 +141,7 @@ Wann ein Stent bei stabiler Angina definitiv nicht indiziert ist:Bei asymptomati
 ## Quellenverzeichnis
 
 - Maron DJ, Hochman JS, Reynolds HR, et al. (2020).Initial Invasive or Conservative Strategy for Stable Coronary Disease.New England Journal of Medicine, 382(15), 1395–1407. DOI: 10.1056/NEJMoa1915922
-- Al-Lamee R, Thompson D, Dehbi HM, et al. (2018).Percutaneous coronary intervention in stable angina (ORBITA): a double-blind, randomised controlled trial.The Lancet, 391(10115), 31–40. DOI: 10.1016/S0140-6736(17)32714-9
+- Al-Lamee R, Thompson D, Dehbi HM, et al. (2018).Percutaneous coronary intervention in stable angina (ORBITA): a double-blind, randomised controlled trial.The Lancet, 391(10115), 31–40. DOI: [10.1016/S0140-6736(17)32714-9](https://doi.org/10.1016/S0140-6736(17)32714-9)
 - Rajkumar CA, Foley MJ, Ahmed-Jushuf F, et al. (2023).A Placebo-Controlled Trial of Percutaneous Coronary Intervention for Stable Angina.New England Journal of Medicine, 389(25), 2319–2330. DOI: 10.1056/NEJMoa2310610
 - Stergiopoulos K, Boden WE, Hartigan P, et al. (2014).Percutaneous Coronary Intervention Outcomes in Patients With Stable Obstructive Coronary Artery Disease and Myocardial Ischemia: A Collaborative Meta-analysis of Contemporary Randomized Clinical Trials.JAMA Internal Medicine, 174(2), 232–240. DOI: 10.1001/jamainternmed.2013.12855
 - European Society of Cardiology (ESC). (2024).ESC Guidelines for the Management of Chronic Coronary Syndromes.European Heart Journal.https://www.escardio.org/Guidelines

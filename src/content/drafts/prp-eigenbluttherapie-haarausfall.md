@@ -139,8 +139,8 @@ Wann PRP definitiv nicht indiziert ist:Bei vollständiger Kahlheit (Norwood-Hami
 
 ## Quellenverzeichnis
 
-- Anitua E et al. (2025).Platelet-Rich Plasma in the Management of Alopecia: A Systematic Review and Meta-Analysis of Clinical Evidence.Dermatology and Therapy. DOI: 10.1007/s13555-025-01542-8
-- Li M, Qu K, Lei Q et al. (2024).Effectiveness of Platelet-Rich Plasma in the Treatment of Androgenic Alopecia: A Meta-Analysis.Aesthetic Plastic Surgery, 48, 977–984. DOI: 10.1007/s00266-023-03603-9
+- Anitua E et al. (2025).Platelet-Rich Plasma in the Management of Alopecia: A Systematic Review and Meta-Analysis of Clinical Evidence.Dermatology and Therapy. DOI: [10.1007/s13555-025-01542-8](https://doi.org/10.1007/s13555-025-01542-8)
+- Li M, Qu K, Lei Q et al. (2024).Effectiveness of Platelet-Rich Plasma in the Treatment of Androgenic Alopecia: A Meta-Analysis.Aesthetic Plastic Surgery, 48, 977–984. DOI: [10.1007/s00266-023-03603-9](https://doi.org/10.1007/s00266-023-03603-9)
 - Zhang X, Ji Y, Zhou M, Zhou X, Xie Y, Zeng X, Shao F, Zhang C. (2023).Platelet-Rich Plasma for Androgenetic Alopecia: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.Journal of Cutaneous Medicine and Surgery, 27(5), 504–508. DOI: 10.1177/12034754231191461
 - Gentile P, Garcovich S, Bielli A, Scioli MG, Orlandi A, Cervelli V. (2015).The Effect of Platelet-Rich Plasma in Hair Regrowth: A Randomized Placebo-Controlled Trial.Stem Cells Translational Medicine, 4(11), 1317–1323. DOI: 10.5966/sctm.2015-0107
 - AWMF S3-Leitlinie Androgenetische Alopezie.Diagnostik und Therapie der androgenetischen Alopezie. Arbeitsgemeinschaft der Wissenschaftlichen Medizinischen Fachgesellschaften.https://register.awmf.org

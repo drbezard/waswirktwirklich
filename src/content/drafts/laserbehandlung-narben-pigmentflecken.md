@@ -151,7 +151,7 @@ Wann eine Laserbehandlung definitiv nicht sinnvoll ist:Bei aktivem Melasma ohne 
 - Abdel Hay R, Shalaby K, Zaher H, Hafez V, Chi CC, Dimitri S, Nabhan AF, Layton AM. (2016).Interventions for acne scars.Cochrane Database of Systematic Reviews, Issue 4, Art. No.: CD011946. DOI: 10.1002/14651858.CD011946.pub2
 - Zhang Q, et al. (2021).The efficacy of fractional CO2 laser in acne scar treatment: A meta-analysis.Dermatologic Therapy, 34(1), e14539. DOI: 10.1111/dth.14539
 - Ji Q, Luo L, Ni J, Pu X, Qiu H, Wu D. (2025).Fractional CO2 Laser to Treat Surgical Scars: A Systematic Review and Meta-Analysis on Optimal Timing.Journal of Cosmetic Dermatology, 24, e16708. DOI: 10.1111/jocd.16708
-- Foppiani JA, Khaity A, Al-Dardery NM, Hasan MT, El-Samahy M, Lee D, Abdelwahab OA, Abd-Alwahed AE, Khitti HM, Albakri K, Lin SJ. (2024).Laser Therapy in Hypertrophic and Keloid Scars: A Systematic Review and Network Meta-analysis.Aesthetic Plastic Surgery, 48(19), 3988–4006. DOI: 10.1007/s00266-024-04027-9
+- Foppiani JA, Khaity A, Al-Dardery NM, Hasan MT, El-Samahy M, Lee D, Abdelwahab OA, Abd-Alwahed AE, Khitti HM, Albakri K, Lin SJ. (2024).Laser Therapy in Hypertrophic and Keloid Scars: A Systematic Review and Network Meta-analysis.Aesthetic Plastic Surgery, 48(19), 3988–4006. DOI: [10.1007/s00266-024-04027-9](https://doi.org/10.1007/s00266-024-04027-9)
 - Chehrara M, et al. (2025).The Efficacy of Laser Therapy in Melasma Treatment: A Systematic Review and Meta-Analysis.Journal of Cosmetic Dermatology, 24(12). DOI: 10.1111/jocd.70602
 - Nast A, et al. (2020).S2k-Leitlinie Therapie pathologischer Narben (hypertrophe Narben und Keloide) – Update 2020.Journal der Deutschen Dermatologischen Gesellschaft (JDDG). AWMF-Register-Nr. 013-030. DOI: 10.1111/ddg.14279
 

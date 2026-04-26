@@ -148,7 +148,7 @@ Wann Cortison beim Hörsturz definitiv NICHT indiziert ist:Bei vollständiger Sp
 - Wei BPC, Stathopoulos D, O'Leary S. (2013).Steroids for idiopathic sudden sensorineural hearing loss.Cochrane Database of Systematic Reviews, Issue 7, Art. No.: CD003998. DOI: 10.1002/14651858.CD003998.pub3
 - Chandrasekhar SS, Tsai Do BS, Schwartz SR, Bontempo LJ, Faucett EA, Finestone SA, Hollingsworth DB, Kelley DM, Kmucha ST, Moonis G, Poling GL, Roberts JK, Stachler RJ, Zeitler DM, Corrigan MD, Nnacheta LC, Satterfield L. (2019).Clinical Practice Guideline: Sudden Hearing Loss (Update).Otolaryngology–Head and Neck Surgery, 161(1 Suppl), S1–S45. DOI: 10.1177/0194599819859885
 - Deutsche Gesellschaft für Hals-Nasen-Ohren-Heilkunde, Kopf- und Hals-Chirurgie (DGHNO-KHC). (2014).Hörsturz (Akuter idiopathischer sensorineuraler Hörverlust). S1-Leitlinie.AWMF-Register-Nr. 017/010. AWMF online. (Gültigkeit abgelaufen, Überarbeitung angekündigt.)
-- Plontke SK, Rahne T, Meisner C. (2024).Die HODOKORT-Studie und aktuelle Aspekte der Hörsturztherapie mit Glukokortikoiden.HNO, 72(6), 383–392. DOI: 10.1007/s00106-024-01458-3
+- Plontke SK, Rahne T, Meisner C. (2024).Die HODOKORT-Studie und aktuelle Aspekte der Hörsturztherapie mit Glukokortikoiden.HNO, 72(6), 383–392. DOI: [10.1007/s00106-024-01458-3](https://doi.org/10.1007/s00106-024-01458-3)
 
 ===== 6. EXPERTEN-REVIEW =====
 
