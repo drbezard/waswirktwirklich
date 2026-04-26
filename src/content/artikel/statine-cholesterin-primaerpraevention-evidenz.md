@@ -116,6 +116,8 @@ Die Evidenz zeigt nicht, dass Statine unnütz sind — sie zeigt, dass der Nutze
 - **„Können wir die Entscheidung gemeinsam treffen — auf Basis meines konkreten Risikos?“**
 Partizipative Entscheidungsfindung (Shared Decision Making) ist in den Leitlinien ausdrücklich vorgesehen. Sie haben das Recht, den absoluten Nutzen und die Risiken zu kennen, bevor Sie sich für oder gegen eine lebenslange Therapie entscheiden.
 
+> **Weiterfuehrender Artikel:** Wenn Sie mehr darüber erfahren möchten, welche Statin-Nebenwirkungen wirklich durch das Medikament verursacht werden und welche auf den Nocebo-Effekt zurückzuführen sind, lesen Sie: [Statine: Wie viele Nebenwirkungen sind wirklich durch das Medikament verursacht?](/artikel/statine-nebenwirkungen-nocebo)
+
 ## Quellenverzeichnis
 
 - **Cholesterol Treatment Trialists‘ (CTT) Collaborators, Mihaylova B, Emberson J, Blackwell L, Keech A, Simes J, Barnes EH, Voysey M, Gray A, Collins R, Baigent C. (2012).** The effects of lowering LDL cholesterol with statin therapy in people at low risk of vascular disease: meta-analysis of individual data from 27 randomised trials. *The Lancet*, 380(9841), 581–590. [DOI: 10.1016/S0140-6736(12)60367-5](https://doi.org/10.1016/S0140-6736%2812%2960367-5)
