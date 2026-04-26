@@ -1,0 +1,27 @@
+name: Freshness-Discovery
+
+on:
+  # 1. jeden Monat um 02:00 UTC
+  schedule:
+    - cron: '0 2 1 * *'
+  workflow_dispatch:
+
+concurrency:
+  group: freshness-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Run freshness check
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+          SUPABASE_PROJECT_REF: ${{ vars.SUPABASE_PROJECT_REF || secrets.SUPABASE_PROJECT_REF }}
+        run: node scripts/freshness-discovery.mjs
