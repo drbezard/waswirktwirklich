@@ -30,7 +30,7 @@ Auth: jeder Request braucht Header `X-Manus-Token: <MANUS_API_TOKEN>`.
 | `GET`   | `/topics?status=...&type=...` | Liste der Topics, gefiltert. |
 | `POST`  | `/topics` | Neues Topic anlegen. Body: `{title, description, source, type, source_url, suggested_tags}`. |
 | `POST`  | `/topics/<id>/transition` | Status-Wechsel. Body: `{new_status, notes?, draft_path?, article_slug?, tags?}`. |
-| `POST`  | `/upload-image` | Hero-Bild zum Storage-Bucket `article-images` hochladen. Multipart: `slug` + `file` (PNG/JPG/WebP, max 5 MB). Antwort enthält `url` für `image:`-Frontmatter. **Manus braucht damit keinen Supabase-Service-Role-Key in seiner Sandbox.** |
+| `POST`  | `/upload-image` | Hero-Bild zum Storage-Bucket `article-images` hochladen. Multipart: `slug` + `file` (PNG/JPG/WebP, max 5 MB). Antwort enthält `url` für `image:`-Frontmatter. **Manus braucht damit keinen Supabase-Service-Role-Key in seiner Sandbox.** Pflicht-Header zusätzlich zu `X-Manus-Token`: `Origin: https://waswirktwirklich.vercel.app` (Astro-CSRF-Schutz, sonst HTTP 403). |
 
 Erlaubte Status-Übergänge:
 
