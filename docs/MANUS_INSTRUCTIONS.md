@@ -30,6 +30,7 @@ Auth: jeder Request braucht Header `X-Manus-Token: <MANUS_API_TOKEN>`.
 | `GET`   | `/topics?status=...&type=...` | Liste der Topics, gefiltert. |
 | `POST`  | `/topics` | Neues Topic anlegen. Body: `{title, description, source, type, source_url, suggested_tags}`. |
 | `POST`  | `/topics/<id>/transition` | Status-Wechsel. Body: `{new_status, notes?, draft_path?, article_slug?, tags?}`. |
+| `POST`  | `/upload-image` | Hero-Bild zum Storage-Bucket `article-images` hochladen. Multipart: `slug` + `file` (PNG/JPG/WebP, max 5 MB). Antwort enthält `url` für `image:`-Frontmatter. **Manus braucht damit keinen Supabase-Service-Role-Key in seiner Sandbox.** |
 
 Erlaubte Status-Übergänge:
 
@@ -127,7 +128,12 @@ schlage einen neuen Tag im `notes`-Feld vor, der Admin nimmt ihn ggf. ins Vokabu
 
 ## Setup-Variablen
 
-Manus braucht Zugriff auf:
-- `MANUS_API_TOKEN` (Header für API-Auth)
-- Repo-Push-Recht via GitHub-App oder Token
-- Supabase-Service-Role-Key für Bild-Upload zu `article-images`
+Manus braucht in seiner Sandbox:
+- **`MANUS_API_TOKEN`** — Header für jeden API-Call (`X-Manus-Token: <token>`)
+- **GitHub-Push-Recht** auf `drbezard/waswirktwirklich` via Token oder GitHub-App
+  - PAT mit `repo`-Scope reicht
+  - oder Fine-grained PAT mit `Contents: Read and write` für genau dieses Repo
+
+**Nicht** mehr nötig: Supabase-Service-Role-Key. Bilder uploadet Manus über
+`POST /api/manus/upload-image` (Auth via Manus-Token, der Server hat den
+Service-Role-Key in Vercel-Env).
