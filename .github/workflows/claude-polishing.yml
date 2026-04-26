@@ -1,0 +1,58 @@
+name: Claude Polishing
+
+on:
+  # Alle 4 Stunden (zur Stunde 1, 5, 9, 13, 17, 21 UTC)
+  schedule:
+    - cron: '0 1,5,9,13,17,21 * * *'
+  workflow_dispatch:
+
+concurrency:
+  # Nur ein Polishing-Lauf gleichzeitig — verhindert Race-Conditions auf Drafts
+  group: claude-polishing
+  cancel-in-progress: false
+
+jobs:
+  polish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - name: Check secrets
+        run: |
+          if [ -z "${{ secrets.ANTHROPIC_API_KEY }}" ]; then
+            echo "::error::ANTHROPIC_API_KEY secret missing"; exit 1
+          fi
+          if [ -z "${{ secrets.MANUS_API_TOKEN }}" ]; then
+            echo "::error::MANUS_API_TOKEN secret missing"; exit 1
+          fi
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run polishing
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MANUS_API_TOKEN:   ${{ secrets.MANUS_API_TOKEN }}
+          MANUS_API_BASE:    https://waswirktwirklich.vercel.app/api/manus
+        run: node scripts/claude-polishing.mjs
+
+      - name: Commit polished drafts
+        run: |
+          git config user.name "claude-polish-bot"
+          git config user.email "noreply@anthropic.com"
+          git add src/content/drafts/
+          if git diff --staged --quiet; then
+            echo "Keine polierten Drafts zum Committen"
+          else
+            git commit -m "chore: claude-polished drafts"
+            git push
+          fi
