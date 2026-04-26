@@ -1,0 +1,114 @@
+---
+export const prerender = false;
+
+import AuthLayout from '../../layouts/AuthLayout.astro';
+import { createSupabaseServerClient } from '../../lib/supabase/server';
+
+const user = Astro.locals.user!;
+const supabase = createSupabaseServerClient(Astro.request, Astro.cookies);
+
+let flash: string | null = null;
+
+const SETTING_KEYS = [
+  'pipeline_paused',
+  'drafts_per_week_target',
+  'topics_discovery_per_day',
+  'max_pool_size_in_review',
+  'freshness_check_days',
+  'tags_vocabulary',
+];
+
+if (Astro.request.method === 'POST') {
+  const form = await Astro.request.formData();
+
+  const updates: Record<string, unknown> = {};
+  updates.pipeline_paused = form.get('pipeline_paused') === 'on';
+  updates.drafts_per_week_target = parseInt(String(form.get('drafts_per_week_target') || '0')) || 0;
+  updates.topics_discovery_per_day = parseInt(String(form.get('topics_discovery_per_day') || '0')) || 0;
+  updates.max_pool_size_in_review = parseInt(String(form.get('max_pool_size_in_review') || '0')) || 0;
+  updates.freshness_check_days = parseInt(String(form.get('freshness_check_days') || '0')) || 365;
+
+  const vocabRaw = String(form.get('tags_vocabulary') || '').trim();
+  const vocab = vocabRaw ? vocabRaw.split(/[\s,]+/).map(t => t.trim().toLowerCase()).filter(Boolean) : [];
+  updates.tags_vocabulary = vocab;
+
+  for (const [key, value] of Object.entries(updates)) {
+    await supabase.from('settings').update({ value, updated_by: user.id }).eq('key', key);
+  }
+  flash = 'Settings gespeichert.';
+}
+
+const { data: settings = [] } = await supabase
+  .from('settings')
+  .select('key, value, updated_at')
+  .in('key', SETTING_KEYS);
+
+function getValue(key: string): any {
+  return (settings || []).find((s: any) => s.key === key)?.value;
+}
+
+const paused = getValue('pipeline_paused') === true || getValue('pipeline_paused') === 'true';
+const draftsPerWeek = Number(getValue('drafts_per_week_target') ?? 3);
+const discoveryPerDay = Number(getValue('topics_discovery_per_day') ?? 5);
+const maxPool = Number(getValue('max_pool_size_in_review') ?? 5);
+const freshnessDays = Number(getValue('freshness_check_days') ?? 365);
+const vocab = Array.isArray(getValue('tags_vocabulary')) ? getValue('tags_vocabulary') : [];
+---
+
+<AuthLayout title="Pipeline-Settings" section="admin" user={user}>
+  <div class="max-w-2xl space-y-6">
+    <h1 class="text-2xl font-bold text-text">Pipeline-Settings</h1>
+    <p class="text-text-secondary text-sm">Steuert Tempo und Verhalten der Pipeline. Änderungen wirken sofort beim nächsten Manus-Lauf.</p>
+
+    {flash && <div class="p-3 rounded-lg bg-green-50 border border-green-200 text-sm text-green-900">{flash}</div>}
+
+    <form method="post" class="space-y-4 bg-white rounded-2xl border border-border-light p-6">
+      <label class="flex items-center gap-3 cursor-pointer">
+        <input type="checkbox" name="pipeline_paused" checked={paused}
+          class="w-5 h-5 rounded border-border-light text-amber-500 focus:ring-amber-500" />
+        <div>
+          <div class="font-semibold text-text">Pipeline pausieren</div>
+          <div class="text-xs text-text-muted">Manus blockt alle Schreib-Operationen mit 423 Locked.</div>
+        </div>
+      </label>
+
+      <hr class="border-border-light" />
+
+      <div class="grid grid-cols-2 gap-4">
+        <label class="block">
+          <span class="block text-sm font-medium text-text mb-1">Drafts pro Woche (Ziel)</span>
+          <input type="number" name="drafts_per_week_target" value={draftsPerWeek} min="0" max="20"
+            class="w-full px-3 py-2 rounded border border-border-light text-sm" />
+        </label>
+        <label class="block">
+          <span class="block text-sm font-medium text-text mb-1">Discovery pro Tag</span>
+          <input type="number" name="topics_discovery_per_day" value={discoveryPerDay} min="0" max="50"
+            class="w-full px-3 py-2 rounded border border-border-light text-sm" />
+        </label>
+        <label class="block">
+          <span class="block text-sm font-medium text-text mb-1">Max Pool im Review</span>
+          <input type="number" name="max_pool_size_in_review" value={maxPool} min="1" max="20"
+            class="w-full px-3 py-2 rounded border border-border-light text-sm" />
+          <span class="block text-xs text-text-muted mt-1">Wenn so viele in Review hängen, keine neuen Drafts</span>
+        </label>
+        <label class="block">
+          <span class="block text-sm font-medium text-text mb-1">Freshness-Check (Tage)</span>
+          <input type="number" name="freshness_check_days" value={freshnessDays} min="30" max="3650"
+            class="w-full px-3 py-2 rounded border border-border-light text-sm" />
+          <span class="block text-xs text-text-muted mt-1">Artikel nach so vielen Tagen prüfen</span>
+        </label>
+      </div>
+
+      <label class="block">
+        <span class="block text-sm font-medium text-text mb-1">Tag-Vokabular (komma- oder leerzeichen-getrennt)</span>
+        <textarea name="tags_vocabulary" rows="4"
+          class="w-full px-3 py-2 rounded border border-border-light text-sm font-mono">{vocab.join(', ')}</textarea>
+        <span class="block text-xs text-text-muted mt-1">Manus muss aus dieser Liste wählen.</span>
+      </label>
+
+      <button type="submit" class="px-6 py-2.5 bg-primary text-white rounded-lg font-medium hover:bg-primary-dark">
+        Speichern
+      </button>
+    </form>
+  </div>
+</AuthLayout>

@@ -8,6 +8,11 @@ excerpt: >-
   Studien mit über 3.000 Beschwerdefreien belegen.
 image: >-
   https://qyaivjcczncckifsrrps.supabase.co/storage/v1/object/public/article-images/rueckenschmerzen-mrt-bildgebung-evidenz.png
+tags:
+  - orthopaedie
+  - ruecken
+  - wirbelsaeule
+  - screening
 ---
 
 <section class="kernaussage">

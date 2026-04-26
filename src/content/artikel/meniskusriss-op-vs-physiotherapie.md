@@ -9,6 +9,11 @@ excerpt: >-
   Schein-OP.
 image: >-
   https://qyaivjcczncckifsrrps.supabase.co/storage/v1/object/public/article-images/meniskusriss-op-vs-physiotherapie.png
+tags:
+  - orthopaedie
+  - knie
+  - operation
+  - placebo-kontrolliert
 ---
 
 <section class="kernaussage">

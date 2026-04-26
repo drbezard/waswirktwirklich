@@ -8,6 +8,11 @@ excerpt: >-
   Knochenbrüchen. Was die größten Studien wirklich zeigen.
 image: >-
   https://qyaivjcczncckifsrrps.supabase.co/storage/v1/object/public/article-images/vitamin-d-supplementierung-evidenz.png
+tags:
+  - innere-medizin
+  - vitamin-d
+  - supplement
+  - placebo-kontrolliert
 ---
 
 <section class="kernaussage">

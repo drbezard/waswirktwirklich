@@ -17,10 +17,12 @@ const fullTitle = `${title} | Was Wirkt Wirklich`;
 const navLinks = section === 'admin'
   ? [
       { href: '/admin', label: 'Dashboard' },
+      { href: '/admin/pipeline', label: 'Pipeline' },
+      { href: '/admin/topics', label: 'Themen' },
+      { href: '/admin/prompts', label: 'Prompts' },
+      { href: '/admin/pipeline-settings', label: 'Settings' },
       { href: '/admin/revisionen', label: 'Revisionen' },
       { href: '/admin/aerzte', label: 'Ärzte' },
-      { href: '/admin/preise', label: 'Preise' },
-      { href: '/admin/zuweisungen', label: 'Zuweisungen' },
     ]
   : [
       { href: '/arzt', label: 'Dashboard' },

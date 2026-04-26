@@ -29,11 +29,29 @@ const catSlug = article.data.category.toLowerCase()
   .replace(/\s+/g, '-')
   .replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue');
 
-// Related articles: same category, excluding current, max 3
-const relatedArticles = allArticles
-  .filter((a) => a.data.slug !== article.data.slug && a.data.category === article.data.category)
-  .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
-  .slice(0, 3);
+// Related articles: Jaccard-Score auf Tags, Fallback gleiche Kategorie, max 3
+function jaccardScore(a: string[] | undefined, b: string[] | undefined): number {
+  if (!a || !b || a.length === 0 || b.length === 0) return 0;
+  const sa = new Set(a), sb = new Set(b);
+  let inter = 0;
+  for (const t of sa) if (sb.has(t)) inter++;
+  const union = sa.size + sb.size - inter;
+  return union === 0 ? 0 : inter / union;
+}
+
+const ownTags = article.data.tags;
+const scored = allArticles
+  .filter((a) => a.data.slug !== article.data.slug)
+  .map((a) => ({ article: a, score: jaccardScore(ownTags, a.data.tags) }));
+
+const tagBased = scored.filter((s) => s.score > 0).sort((a, b) => b.score - a.score).slice(0, 3);
+
+const relatedArticles = tagBased.length >= 2
+  ? tagBased.map((s) => s.article)
+  : allArticles
+      .filter((a) => a.data.slug !== article.data.slug && a.data.category === article.data.category)
+      .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
+      .slice(0, 3);
 
 // Canonical URL
 const siteUrl = 'https://waswirktwirklich.com';

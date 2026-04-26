@@ -8,6 +8,10 @@ excerpt: >-
   Studien zu Multifokal- vs. Monofokallinsen zeigen.
 image: >-
   https://qyaivjcczncckifsrrps.supabase.co/storage/v1/object/public/article-images/grauer-star-katarakt-op-linse-evidenz.png
+tags:
+  - augenheilkunde
+  - auge
+  - operation
 ---
 
 <section class="kernaussage">

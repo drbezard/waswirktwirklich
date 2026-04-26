@@ -1,0 +1,45 @@
+---
+export const prerender = false;
+
+import AuthLayout from '../../../layouts/AuthLayout.astro';
+import { createSupabaseServerClient } from '../../../lib/supabase/server';
+
+const user = Astro.locals.user!;
+const supabase = createSupabaseServerClient(Astro.request, Astro.cookies);
+
+const { data: prompts = [] } = await supabase
+  .from('prompts')
+  .select('key, title, description, version, updated_at, body')
+  .order('key');
+---
+
+<AuthLayout title="Master-Prompts" section="admin" user={user}>
+  <div class="max-w-3xl space-y-6">
+    <div>
+      <h1 class="text-2xl font-bold text-text mb-1">Master-Prompts</h1>
+      <p class="text-text-secondary text-sm">
+        Diese Prompts steuern Manus und Claude. Änderungen wirken sofort beim nächsten Lauf.
+        Versionen werden in <code>prompt_history</code> protokolliert; täglich synct ein Workflow nach <code>prompts/*.md</code> ins Repo.
+      </p>
+    </div>
+
+    <div class="grid gap-4">
+      {(prompts || []).map((p: any) => (
+        <a href={`/admin/prompts/${p.key}`} class="bg-white rounded-2xl border border-border-light p-5 no-underline hover:border-primary/40 block">
+          <div class="flex items-start justify-between gap-4">
+            <div class="flex-1 min-w-0">
+              <h2 class="text-lg font-bold text-text">{p.title}</h2>
+              <code class="text-xs text-text-muted">{p.key}</code>
+              {p.description && <p class="text-sm text-text-secondary mt-2">{p.description}</p>}
+            </div>
+            <div class="text-right">
+              <div class="text-sm font-semibold text-text">v{p.version}</div>
+              <div class="text-xs text-text-muted">{new Date(p.updated_at).toLocaleDateString('de-DE')}</div>
+            </div>
+          </div>
+          <div class="mt-3 text-xs text-text-muted">{p.body.length} Zeichen</div>
+        </a>
+      ))}
+    </div>
+  </div>
+</AuthLayout>

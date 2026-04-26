@@ -8,6 +8,10 @@ excerpt: >-
   wer wirklich geeignet ist.
 image: >-
   https://qyaivjcczncckifsrrps.supabase.co/storage/v1/object/public/article-images/augenlaser-operation-was-die-studien-wirklich-zeigen.png
+tags:
+  - augenheilkunde
+  - auge
+  - operation
 ---
 
 <section class="kernaussage">

@@ -8,6 +8,9 @@ excerpt: >-
   Studien über Wirksamkeit und Sicherheit zeigen.
 image: >-
   https://qyaivjcczncckifsrrps.supabase.co/storage/v1/object/public/article-images/neurodermitis-cortison-angst-evidenz.png
+tags:
+  - dermatologie
+  - medikament
 ---
 
 <section class="kernaussage">

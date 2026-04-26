@@ -8,6 +8,10 @@ excerpt: >-
   oft fehlt die Indikation. Was Studien zeigen.
 image: >-
   https://qyaivjcczncckifsrrps.supabase.co/storage/v1/object/public/article-images/protonenpumpenhemmer-langzeiteinnahme-evidenz.png
+tags:
+  - innere-medizin
+  - ppi
+  - medikament
 ---
 
 <section class="kernaussage">

@@ -8,6 +8,10 @@ excerpt: >-
   wirksamste Therapie. Was Studien über Risiken und Nutzen zeigen.
 image: >-
   https://qyaivjcczncckifsrrps.supabase.co/storage/v1/object/public/article-images/isotretinoin-akne-evidenz.png
+tags:
+  - dermatologie
+  - akne
+  - medikament
 ---
 
 <section class="kernaussage">

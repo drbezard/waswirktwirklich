@@ -8,6 +8,10 @@ excerpt: >-
   Physiotherapie ist für viele Patienten gleichwertig.
 image: >-
   https://qyaivjcczncckifsrrps.supabase.co/storage/v1/object/public/article-images/kreuzbandriss-op-physiotherapie-evidenz.png
+tags:
+  - orthopaedie
+  - knie
+  - operation
 ---
 
 <section class="kernaussage">

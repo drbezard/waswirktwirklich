@@ -1,0 +1,171 @@
+---
+export const prerender = false;
+
+import AuthLayout from '../../layouts/AuthLayout.astro';
+import { createSupabaseServerClient } from '../../lib/supabase/server';
+
+const user = Astro.locals.user!;
+const supabase = createSupabaseServerClient(Astro.request, Astro.cookies);
+
+let flash: string | null = null;
+
+// Pause-Toggle
+if (Astro.request.method === 'POST') {
+  const formData = await Astro.request.formData();
+  const action = String(formData.get('action') || '');
+
+  if (action === 'toggle_pause') {
+    const { data: cur } = await supabase
+      .from('settings').select('value').eq('key', 'pipeline_paused').maybeSingle();
+    const newValue = !(cur?.value === true || cur?.value === 'true');
+    await supabase.from('settings').update({ value: newValue, updated_by: user.id }).eq('key', 'pipeline_paused');
+    flash = newValue ? 'Pipeline pausiert.' : 'Pipeline läuft wieder.';
+  }
+}
+
+// Status-Übersicht (Pool, ohne final-Status)
+const { data: poolRows = [] } = await supabase
+  .from('topics')
+  .select('id, title, status, source, type, updated_at')
+  .not('status', 'in', '(published,discarded)')
+  .order('updated_at', { ascending: true });
+
+const STATUS_LABELS: Record<string, string> = {
+  discovered: 'Im Pool',
+  drafted: 'Manus hat Draft',
+  polished: 'Claude hat poliert',
+};
+
+const counts: Record<string, { count: number; oldest?: string }> = {};
+for (const row of poolRows ?? []) {
+  if (!counts[row.status]) counts[row.status] = { count: 0, oldest: row.title };
+  counts[row.status].count += 1;
+}
+
+// Globale Stats
+const [
+  { count: published },
+  { count: discarded },
+  { count: revisionTopics },
+  { count: refreshTopics },
+  { data: pauseRow },
+] = await Promise.all([
+  supabase.from('topics').select('*', { count: 'exact', head: true }).eq('status', 'published'),
+  supabase.from('topics').select('*', { count: 'exact', head: true }).eq('status', 'discarded'),
+  supabase.from('topics').select('*', { count: 'exact', head: true }).eq('type', 'revision').not('status', 'in', '(published,discarded)'),
+  supabase.from('topics').select('*', { count: 'exact', head: true }).eq('type', 'refresh').not('status', 'in', '(published,discarded)'),
+  supabase.from('settings').select('value').eq('key', 'pipeline_paused').maybeSingle(),
+]);
+
+const isPaused = pauseRow?.value === true || pauseRow?.value === 'true';
+
+function timeAgo(iso: string): string {
+  const ms = Date.now() - new Date(iso).getTime();
+  const m = Math.floor(ms / 60000);
+  if (m < 60) return `vor ${m} min`;
+  const h = Math.floor(m / 60);
+  if (h < 24) return `vor ${h} Std`;
+  return `vor ${Math.floor(h / 24)} Tagen`;
+}
+---
+
+<AuthLayout title="Pipeline" section="admin" user={user}>
+  <div class="space-y-6">
+    <div class="flex items-start justify-between gap-4">
+      <div>
+        <h1 class="text-2xl font-bold text-text mb-1">Pipeline</h1>
+        <p class="text-text-secondary text-sm">Status der Redaktions-Pipeline. Manus arbeitet autonom, Sie sehen mit.</p>
+      </div>
+      <form method="post">
+        <input type="hidden" name="action" value="toggle_pause" />
+        <button type="submit"
+          class={`px-4 py-2 rounded-lg font-medium text-sm transition-colors ${isPaused ? 'bg-amber-500 text-white hover:bg-amber-600' : 'bg-green-50 text-green-800 border border-green-200 hover:bg-green-100'}`}>
+          {isPaused ? '⏸ Pipeline pausiert · klicken zum Fortsetzen' : '▶ Läuft · klicken zum Pausieren'}
+        </button>
+      </form>
+    </div>
+
+    {flash && (
+      <div class="p-3 rounded-lg bg-blue-50 border border-blue-200 text-sm text-blue-900">{flash}</div>
+    )}
+
+    <section class="bg-white rounded-2xl border border-border-light p-6">
+      <h2 class="text-lg font-bold text-text mb-4">Pool (offene Themen)</h2>
+      <table class="w-full text-sm">
+        <thead class="text-text-muted text-xs uppercase tracking-wider">
+          <tr><th class="text-left pb-2">Status</th><th class="text-right pb-2">Anzahl</th><th class="text-left pb-2 pl-4">Älteste</th></tr>
+        </thead>
+        <tbody>
+          {Object.entries(STATUS_LABELS).map(([key, label]) => {
+            const c = counts[key];
+            return (
+              <tr class="border-t border-border-light">
+                <td class="py-2">{label}</td>
+                <td class="py-2 text-right font-semibold">{c?.count ?? 0}</td>
+                <td class="py-2 pl-4 text-text-muted truncate max-w-md">
+                  {c?.count ? (poolRows.find((r: any) => r.status === key)?.title) : '—'}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </section>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <a href="/admin/topics?status=published" class="bg-white rounded-xl border border-border-light p-4 no-underline hover:border-primary/40">
+        <div class="text-2xl font-bold text-green-700">{published ?? 0}</div>
+        <div class="text-xs text-text-muted mt-1">Veröffentlicht</div>
+      </a>
+      <a href="/admin/topics?type=revision" class="bg-white rounded-xl border border-border-light p-4 no-underline hover:border-primary/40">
+        <div class="text-2xl font-bold text-amber-600">{revisionTopics ?? 0}</div>
+        <div class="text-xs text-text-muted mt-1">Revisionen offen</div>
+      </a>
+      <a href="/admin/topics?type=refresh" class="bg-white rounded-xl border border-border-light p-4 no-underline hover:border-primary/40">
+        <div class="text-2xl font-bold text-blue-600">{refreshTopics ?? 0}</div>
+        <div class="text-xs text-text-muted mt-1">Refresh offen</div>
+      </a>
+      <a href="/admin/topics?status=discarded" class="bg-white rounded-xl border border-border-light p-4 no-underline hover:border-primary/40">
+        <div class="text-2xl font-bold text-text-muted">{discarded ?? 0}</div>
+        <div class="text-xs text-text-muted mt-1">Verworfen</div>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+      <a href="/admin/topics/new" class="bg-white rounded-xl border border-border-light p-4 no-underline hover:bg-bg-subtle">
+        <div class="font-semibold text-text">+ Neues Thema vorschlagen</div>
+        <div class="text-xs text-text-muted mt-1">Manuell, ohne Manus-Discovery</div>
+      </a>
+      <a href="/admin/topics" class="bg-white rounded-xl border border-border-light p-4 no-underline hover:bg-bg-subtle">
+        <div class="font-semibold text-text">Themen verwalten</div>
+        <div class="text-xs text-text-muted mt-1">Liste, Filter, Discard</div>
+      </a>
+      <a href="/admin/prompts" class="bg-white rounded-xl border border-border-light p-4 no-underline hover:bg-bg-subtle">
+        <div class="font-semibold text-text">Prompts bearbeiten</div>
+        <div class="text-xs text-text-muted mt-1">Manus + Claude steuern</div>
+      </a>
+    </div>
+
+    {poolRows && poolRows.length > 0 && (
+      <section class="bg-white rounded-2xl border border-border-light p-6">
+        <h2 class="text-lg font-bold text-text mb-4">Aktivste Themen</h2>
+        <ul class="divide-y divide-border-light">
+          {poolRows.slice(0, 10).map((row: any) => (
+            <li class="py-2 flex items-center gap-3">
+              <span class={`text-xs font-semibold px-2 py-0.5 rounded ${
+                row.status === 'discovered' ? 'bg-gray-100 text-gray-700' :
+                row.status === 'drafted'    ? 'bg-blue-50 text-blue-700' :
+                row.status === 'polished'   ? 'bg-purple-50 text-purple-700' : 'bg-gray-100'
+              }`}>{STATUS_LABELS[row.status] ?? row.status}</span>
+              <a href={`/admin/topics/${row.id}`} class="flex-1 truncate text-text hover:text-primary no-underline">
+                {row.title}
+              </a>
+              <span class="text-xs text-text-muted">{row.source}</span>
+              <span class="text-xs text-text-muted">{timeAgo(row.updated_at)}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+  </div>
+</AuthLayout>

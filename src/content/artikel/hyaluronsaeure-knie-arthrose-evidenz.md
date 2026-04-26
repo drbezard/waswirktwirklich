@@ -6,6 +6,13 @@ category: Orthopädie
 excerpt: Hyaluronsäure-Spritzen wirken bei Kniearthrose kaum besser als Placebo.
 image: >-
   https://qyaivjcczncckifsrrps.supabase.co/storage/v1/object/public/article-images/hyaluronsaeure-knie-arthrose-evidenz.png
+tags:
+  - orthopaedie
+  - knie
+  - arthrose
+  - injektion
+  - igel
+  - placebo-kontrolliert
 ---
 
 <section class=”kernaussage”>

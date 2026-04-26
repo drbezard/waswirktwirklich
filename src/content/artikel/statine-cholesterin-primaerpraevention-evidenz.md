@@ -8,6 +8,11 @@ excerpt: >-
   Studien mit über 170.000 Patienten zeigen.
 image: >-
   https://qyaivjcczncckifsrrps.supabase.co/storage/v1/object/public/article-images/statine-cholesterin-primaerpraevention-evidenz.png
+tags:
+  - kardiologie
+  - cholesterin
+  - medikament
+  - leitlinie
 ---
 
 <section class="kernaussage">

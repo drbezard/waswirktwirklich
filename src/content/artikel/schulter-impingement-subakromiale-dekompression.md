@@ -10,6 +10,11 @@ excerpt: >-
   Erstbehandlung.
 image: >-
   https://qyaivjcczncckifsrrps.supabase.co/storage/v1/object/public/article-images/schulter-impingement-subakromiale-dekompression.png
+tags:
+  - orthopaedie
+  - schulter
+  - operation
+  - placebo-kontrolliert
 ---
 
 <section class="kernaussage">

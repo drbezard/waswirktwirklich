@@ -1,0 +1,157 @@
+---
+export const prerender = false;
+
+import AuthLayout from '../../../layouts/AuthLayout.astro';
+import { createSupabaseServerClient } from '../../../lib/supabase/server';
+
+const user = Astro.locals.user!;
+const supabase = createSupabaseServerClient(Astro.request, Astro.cookies);
+
+const url = new URL(Astro.request.url);
+const filterStatus = url.searchParams.get('status');
+const filterSource = url.searchParams.get('source');
+const filterType = url.searchParams.get('type');
+
+let query = supabase
+  .from('topics')
+  .select('id, title, status, source, type, article_slug, created_at, updated_at, suggested_tags')
+  .order('updated_at', { ascending: false })
+  .limit(200);
+
+if (filterStatus) query = query.eq('status', filterStatus);
+if (filterSource) query = query.eq('source', filterSource);
+if (filterType) query = query.eq('type', filterType);
+
+const { data: topics = [] } = await query;
+
+let flash: string | null = null;
+
+if (Astro.request.method === 'POST') {
+  const form = await Astro.request.formData();
+  const action = String(form.get('action') || '');
+  const id = String(form.get('id') || '');
+
+  if (action === 'discard' && id) {
+    await supabase.rpc('transition_topic_status', {
+      p_topic_id: id,
+      p_new_status: 'discarded',
+      p_actor_id: user.id,
+      p_notes: 'Admin-Discard',
+    });
+    flash = 'Topic verworfen.';
+  }
+}
+
+function timeAgo(iso: string): string {
+  const ms = Date.now() - new Date(iso).getTime();
+  const m = Math.floor(ms / 60000);
+  if (m < 60) return `vor ${m} min`;
+  const h = Math.floor(m / 60);
+  if (h < 24) return `vor ${h} Std`;
+  return `vor ${Math.floor(h / 24)} Tagen`;
+}
+
+const STATUS_BADGES: Record<string, string> = {
+  discovered: 'bg-gray-100 text-gray-700',
+  drafted:    'bg-blue-50 text-blue-700',
+  polished:   'bg-purple-50 text-purple-700',
+  published:  'bg-green-50 text-green-700',
+  discarded:  'bg-red-50 text-red-700',
+};
+---
+
+<AuthLayout title="Themen" section="admin" user={user}>
+  <div class="space-y-6">
+    <div class="flex items-start justify-between gap-4 flex-wrap">
+      <div>
+        <h1 class="text-2xl font-bold text-text mb-1">Themen-Pool</h1>
+        <p class="text-text-secondary text-sm">{topics?.length ?? 0} Einträge angezeigt</p>
+      </div>
+      <a href="/admin/topics/new" class="px-4 py-2 bg-primary text-white rounded-lg font-medium text-sm hover:bg-primary-dark no-underline">
+        + Neues Thema
+      </a>
+    </div>
+
+    {flash && <div class="p-3 rounded-lg bg-blue-50 border border-blue-200 text-sm text-blue-900">{flash}</div>}
+
+    <form method="get" class="flex gap-2 flex-wrap items-end">
+      <label class="text-sm">
+        <span class="block text-xs text-text-muted mb-1">Status</span>
+        <select name="status" class="px-3 py-1.5 rounded border border-border-light text-sm bg-white">
+          <option value="">alle</option>
+          {['discovered','drafted','polished','published','discarded'].map(s => (
+            <option value={s} selected={filterStatus === s}>{s}</option>
+          ))}
+        </select>
+      </label>
+      <label class="text-sm">
+        <span class="block text-xs text-text-muted mb-1">Quelle</span>
+        <select name="source" class="px-3 py-1.5 rounded border border-border-light text-sm bg-white">
+          <option value="">alle</option>
+          {['admin','patient','manus','revision'].map(s => (
+            <option value={s} selected={filterSource === s}>{s}</option>
+          ))}
+        </select>
+      </label>
+      <label class="text-sm">
+        <span class="block text-xs text-text-muted mb-1">Typ</span>
+        <select name="type" class="px-3 py-1.5 rounded border border-border-light text-sm bg-white">
+          <option value="">alle</option>
+          {['new','revision','refresh'].map(s => (
+            <option value={s} selected={filterType === s}>{s}</option>
+          ))}
+        </select>
+      </label>
+      <button type="submit" class="px-3 py-1.5 rounded bg-bg-subtle border border-border-light text-sm hover:bg-white">Filtern</button>
+      <a href="/admin/topics" class="px-3 py-1.5 rounded text-sm text-text-muted hover:text-text no-underline">Reset</a>
+    </form>
+
+    {!topics || topics.length === 0 ? (
+      <div class="bg-white rounded-2xl border border-border-light p-12 text-center text-text-muted">
+        Keine Themen mit diesen Filtern.
+      </div>
+    ) : (
+      <div class="bg-white rounded-2xl border border-border-light overflow-hidden">
+        <table class="w-full text-sm">
+          <thead class="bg-bg-subtle text-xs uppercase tracking-wider text-text-muted">
+            <tr>
+              <th class="text-left p-3">Titel</th>
+              <th class="text-left p-3">Status</th>
+              <th class="text-left p-3">Quelle</th>
+              <th class="text-left p-3">Typ</th>
+              <th class="text-left p-3">Geändert</th>
+              <th class="text-right p-3">Aktion</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-border-light">
+            {topics.map((t: any) => (
+              <tr class="hover:bg-bg-subtle">
+                <td class="p-3">
+                  <a href={`/admin/topics/${t.id}`} class="text-text hover:text-primary no-underline font-medium">{t.title}</a>
+                  {t.article_slug && (
+                    <div class="text-xs text-text-muted mt-0.5">→ /artikel/{t.article_slug}</div>
+                  )}
+                </td>
+                <td class="p-3">
+                  <span class={`text-xs font-semibold px-2 py-0.5 rounded ${STATUS_BADGES[t.status] || ''}`}>{t.status}</span>
+                </td>
+                <td class="p-3 text-text-muted">{t.source}</td>
+                <td class="p-3 text-text-muted">{t.type}</td>
+                <td class="p-3 text-text-muted text-xs">{timeAgo(t.updated_at)}</td>
+                <td class="p-3 text-right">
+                  {!['published','discarded'].includes(t.status) && (
+                    <form method="post" class="inline" onsubmit="return confirm('Wirklich verwerfen?')">
+                      <input type="hidden" name="action" value="discard" />
+                      <input type="hidden" name="id" value={t.id} />
+                      <button type="submit" class="text-xs text-red-600 hover:text-red-800">Verwerfen</button>
+                    </form>
+                  )}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    )}
+  </div>
+</AuthLayout>

@@ -1,0 +1,150 @@
+---
+export const prerender = false;
+
+import AuthLayout from '../../../layouts/AuthLayout.astro';
+import { createSupabaseServerClient } from '../../../lib/supabase/server';
+
+const user = Astro.locals.user!;
+const supabase = createSupabaseServerClient(Astro.request, Astro.cookies);
+const id = Astro.params.id!;
+
+let flash: string | null = null;
+
+if (Astro.request.method === 'POST') {
+  const form = await Astro.request.formData();
+  const action = String(form.get('action') || '');
+
+  if (action === 'discard') {
+    await supabase.rpc('transition_topic_status', {
+      p_topic_id: id, p_new_status: 'discarded', p_actor_id: user.id,
+      p_notes: String(form.get('notes') || 'Admin-Discard'),
+    });
+    flash = 'Verworfen.';
+  } else if (action === 'override_status') {
+    const newStatus = String(form.get('new_status') || '');
+    if (['discovered','drafted','polished','published','discarded'].includes(newStatus)) {
+      await supabase.rpc('transition_topic_status', {
+        p_topic_id: id, p_new_status: newStatus, p_actor_id: user.id,
+        p_notes: 'Admin-Override',
+      });
+      flash = `Status manuell gesetzt: ${newStatus}`;
+    }
+  }
+}
+
+const { data: topic } = await supabase
+  .from('topics')
+  .select('*')
+  .eq('id', id)
+  .maybeSingle();
+
+if (!topic) return Astro.redirect('/admin/topics?error=not_found');
+
+const [{ data: parent }, { data: revision }, { data: auditLog }] = await Promise.all([
+  topic.parent_topic_id ? supabase.from('topics').select('id, title, status').eq('id', topic.parent_topic_id).maybeSingle() : Promise.resolve({ data: null }),
+  topic.revision_id ? supabase.from('revisions').select('id, comment, doctor_id').eq('id', topic.revision_id).maybeSingle() : Promise.resolve({ data: null }),
+  supabase.from('audit_log').select('action, created_at, payload').eq('entity_type', 'topic').eq('entity_id', id).order('created_at', { ascending: false }).limit(20),
+]);
+---
+
+<AuthLayout title={topic.title} section="admin" user={user}>
+  <div class="space-y-6 max-w-3xl">
+    <nav class="text-sm text-text-muted">
+      <a href="/admin/topics" class="hover:text-primary no-underline">Themen</a>
+      <span class="mx-2">/</span><span class="truncate">{topic.title}</span>
+    </nav>
+
+    {flash && <div class="p-3 rounded-lg bg-blue-50 border border-blue-200 text-sm text-blue-900">{flash}</div>}
+
+    <div class="bg-white rounded-2xl border border-border-light p-6 space-y-3">
+      <h1 class="text-2xl font-bold text-text">{topic.title}</h1>
+      {topic.description && <p class="text-text-secondary">{topic.description}</p>}
+
+      <div class="flex flex-wrap gap-3 text-sm pt-2">
+        <span class="px-2 py-0.5 rounded bg-gray-100 text-gray-700 text-xs font-semibold">Status: {topic.status}</span>
+        <span class="px-2 py-0.5 rounded bg-gray-100 text-gray-700 text-xs font-semibold">Quelle: {topic.source}</span>
+        <span class="px-2 py-0.5 rounded bg-gray-100 text-gray-700 text-xs font-semibold">Typ: {topic.type}</span>
+      </div>
+
+      <dl class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm pt-3">
+        <dt class="text-text-muted">Erstellt</dt><dd>{new Date(topic.created_at).toLocaleString('de-DE')}</dd>
+        <dt class="text-text-muted">Geändert</dt><dd>{new Date(topic.updated_at).toLocaleString('de-DE')}</dd>
+        {topic.published_at && (<><dt class="text-text-muted">Veröffentlicht</dt><dd>{new Date(topic.published_at).toLocaleString('de-DE')}</dd></>)}
+        {topic.article_slug && (<><dt class="text-text-muted">Artikel</dt><dd><a href={`/artikel/${topic.article_slug}`} target="_blank" class="text-primary no-underline">/artikel/{topic.article_slug} ↗</a></dd></>)}
+        {topic.draft_path && (<><dt class="text-text-muted">Draft</dt><dd class="font-mono text-xs">{topic.draft_path}</dd></>)}
+        {topic.source_url && (<><dt class="text-text-muted">Source-URL</dt><dd><a href={topic.source_url} target="_blank" class="text-primary no-underline truncate inline-block max-w-md">{topic.source_url} ↗</a></dd></>)}
+        {topic.suggested_tags && topic.suggested_tags.length > 0 && (
+          <><dt class="text-text-muted">Tags</dt><dd>{topic.suggested_tags.join(', ')}</dd></>
+        )}
+      </dl>
+
+      {parent && (
+        <div class="text-sm pt-2"><span class="text-text-muted">Parent-Topic:</span>
+          <a href={`/admin/topics/${parent.id}`} class="text-primary no-underline ml-1">{parent.title}</a>
+        </div>
+      )}
+      {topic.duplicate_of_id && (
+        <div class="text-sm text-amber-700">⚠ Möglicher Duplikat-Verdacht — siehe Topic {topic.duplicate_of_id}</div>
+      )}
+      {revision && (
+        <div class="text-sm pt-2 p-3 bg-amber-50 rounded">
+          <div class="font-semibold text-amber-900">Arzt-Revisions-Kommentar:</div>
+          <div class="text-amber-800 mt-1">{revision.comment}</div>
+        </div>
+      )}
+
+      {topic.notes && (
+        <details class="pt-2">
+          <summary class="text-xs text-text-muted cursor-pointer">Notizen-Verlauf anzeigen</summary>
+          <pre class="text-xs mt-2 p-3 bg-bg-subtle rounded whitespace-pre-wrap">{topic.notes}</pre>
+        </details>
+      )}
+    </div>
+
+    {!['discarded'].includes(topic.status) && (
+      <div class="bg-white rounded-2xl border border-border-light p-6 space-y-4">
+        <h2 class="text-lg font-bold text-text">Admin-Aktionen</h2>
+
+        <form method="post" class="flex items-end gap-2 flex-wrap">
+          <input type="hidden" name="action" value="override_status" />
+          <label class="text-sm flex-1">
+            <span class="block text-xs text-text-muted mb-1">Status manuell setzen (Override)</span>
+            <select name="new_status" class="w-full px-3 py-1.5 rounded border border-border-light text-sm bg-white">
+              {['discovered','drafted','polished','published','discarded'].map(s => (
+                <option value={s} selected={s === topic.status}>{s}</option>
+              ))}
+            </select>
+          </label>
+          <button type="submit" class="px-4 py-1.5 rounded bg-bg-subtle border border-border-light text-sm hover:bg-white">
+            Übernehmen
+          </button>
+        </form>
+
+        {topic.status !== 'discarded' && (
+          <form method="post" onsubmit="return confirm('Wirklich verwerfen?')">
+            <input type="hidden" name="action" value="discard" />
+            <input type="text" name="notes" placeholder="Grund (optional)"
+              class="w-full px-3 py-1.5 mb-2 rounded border border-border-light text-sm" />
+            <button type="submit" class="text-sm text-red-600 hover:text-red-800">Topic verwerfen</button>
+          </form>
+        )}
+      </div>
+    )}
+
+    {auditLog && auditLog.length > 0 && (
+      <div class="bg-white rounded-2xl border border-border-light p-6">
+        <h2 class="text-lg font-bold text-text mb-3">Verlauf</h2>
+        <ul class="text-sm space-y-2">
+          {auditLog.map((e: any) => (
+            <li class="flex items-baseline gap-3 border-b border-border-light pb-2">
+              <span class="text-xs text-text-muted whitespace-nowrap">{new Date(e.created_at).toLocaleString('de-DE')}</span>
+              <span class="font-mono text-xs">{e.action}</span>
+              {e.payload?.new_status && <span class="text-xs">→ {e.payload.new_status}</span>}
+              {e.payload?.notes && <span class="text-xs text-text-muted">— {e.payload.notes}</span>}
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
+  </div>
+</AuthLayout>

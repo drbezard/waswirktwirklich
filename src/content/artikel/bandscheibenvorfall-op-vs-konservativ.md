@@ -9,6 +9,11 @@ excerpt: >-
   gleichwertig.
 image: >-
   https://qyaivjcczncckifsrrps.supabase.co/storage/v1/object/public/article-images/bandscheibenvorfall-op-vs-konservativ.png
+tags:
+  - orthopaedie
+  - ruecken
+  - wirbelsaeule
+  - operation
 ---
 
 <section class="kernaussage">

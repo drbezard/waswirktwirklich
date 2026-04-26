@@ -8,6 +8,10 @@ excerpt: >-
   reichen. Die Evidenz aus großen Studien.
 image: >-
   https://qyaivjcczncckifsrrps.supabase.co/storage/v1/object/public/article-images/vorhofflimmern-katheterablation-evidenz.png
+tags:
+  - kardiologie
+  - herz
+  - operation
 ---
 
 <section class="kernaussage">

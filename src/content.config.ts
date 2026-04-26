@@ -11,6 +11,7 @@ const artikel = defineCollection({
     excerpt: z.string(),
     image: z.string().optional(),
     draft: z.boolean().default(false),
+    tags: z.array(z.string()).optional(),
     prompt: z.string().optional(),
     sources: z.array(z.string()).optional(),
     seoTitle: z.string().optional(),

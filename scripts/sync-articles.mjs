@@ -54,6 +54,7 @@ for (const file of files) {
     category: String(data.category),
     excerpt: data.excerpt ? String(data.excerpt) : null,
     image_url: data.image ? String(data.image) : null,
+    tags: Array.isArray(data.tags) ? data.tags : null,
   });
 }
 

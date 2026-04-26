@@ -17,6 +17,31 @@ if (Astro.request.method === 'POST') {
   if (action === 'claim') {
     const { error } = await supabase.rpc('admin_claim_revision', { p_revision_id: revisionId });
     if (error) errorMessage = `Fehler: ${error.message}`;
+  } else if (action === 'send_to_pipeline') {
+    // Topic anlegen mit source=revision, type=revision
+    const { data: rev } = await supabase
+      .from('revisions')
+      .select('article_slug, comment, doctor_id, articles(title)')
+      .eq('id', revisionId).single();
+    if (rev) {
+      const articleTitle = (rev as any).articles?.title || rev.article_slug;
+      await supabase.from('topics').insert({
+        title: `Revision: ${articleTitle}`,
+        description: `Arzt-Revision für /artikel/${rev.article_slug}\n\nKommentar: ${rev.comment}`,
+        source: 'revision',
+        type: 'revision',
+        status: 'discovered',
+        article_slug: rev.article_slug,
+        revision_id: revisionId,
+        submitted_by: user.id,
+      });
+      // Revision-Notiz erweitern
+      await supabase.from('revisions').update({
+        admin_notes: (await supabase.from('revisions').select('admin_notes').eq('id', revisionId).single()).data?.admin_notes
+          ? undefined : '[' + new Date().toISOString().slice(0,16).replace('T',' ') + '] In Pipeline geschickt',
+      }).eq('id', revisionId);
+    }
+    return Astro.redirect('/admin/topics?type=revision');
   } else if (action === 'resolve' || action === 'dismiss') {
     const notes = String(formData.get('admin_notes') || '').trim() || null;
     const { error } = await supabase.rpc('admin_resolve_revision', {
@@ -150,9 +175,12 @@ function formatDate(iso: string) {
             class="w-full px-4 py-2.5 rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary/30"
           ></textarea>
         </div>
-        <div class="flex gap-3">
-          <button type="submit" name="action" value="resolve" class="flex-1 px-5 py-2.5 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700">
-            Als erledigt markieren (Artikel wieder verfügbar)
+        <div class="flex gap-3 flex-wrap">
+          <button type="submit" name="action" value="send_to_pipeline" class="flex-1 px-5 py-2.5 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700">
+            In Pipeline schicken (Manus überarbeitet)
+          </button>
+          <button type="submit" name="action" value="resolve" class="px-5 py-2.5 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700">
+            Manuell erledigt
           </button>
           <button type="submit" name="action" value="dismiss" class="px-5 py-2.5 border border-border text-text rounded-lg hover:bg-bg-subtle">
             Ablehnen
