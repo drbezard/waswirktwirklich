@@ -46,12 +46,16 @@ const scored = allArticles
 
 const tagBased = scored.filter((s) => s.score > 0).sort((a, b) => b.score - a.score).slice(0, 3);
 
-const relatedArticles = tagBased.length >= 2
+const useTagBased = tagBased.length >= 2;
+const relatedArticles = useTagBased
   ? tagBased.map((s) => s.article)
   : allArticles
       .filter((a) => a.data.slug !== article.data.slug && a.data.category === article.data.category)
       .sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime())
       .slice(0, 3);
+const relatedHeading = useTagBased
+  ? 'Verwandte Artikel'
+  : `Weitere Artikel aus ${article.data.category}`;
 
 // Canonical URL
 const siteUrl = 'https://waswirktwirklich.com';
@@ -256,7 +260,7 @@ const faqJsonLd = faqs.length >= 2 ? {
       <!-- Ähnliche Artikel -->
       {relatedArticles.length > 0 && (
         <div class="mt-14 pt-8 border-t border-border-light">
-          <h2 class="text-lg font-bold text-text mb-5">Weitere Artikel aus {article.data.category}</h2>
+          <h2 class="text-lg font-bold text-text mb-5">{relatedHeading}</h2>
           <div class="grid gap-3">
             {relatedArticles.map((rel) => (
               <a href={`/artikel/${rel.data.slug}`}
